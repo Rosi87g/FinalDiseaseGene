@@ -1,6 +1,6 @@
 export default async function DrugPage({ params }) {
   const { id } = await params;
-  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/drugs/${id}`);
+  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/v1/drugs/${id}`);
   const drug = await res.json();
 
   return (
