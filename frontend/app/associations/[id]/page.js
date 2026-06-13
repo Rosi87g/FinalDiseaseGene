@@ -1,48 +1,40 @@
-async function getAssociationData(id) {
-  try {
-    const res = await fetch(`http://localhost:8000/api/v1/associations/${id}`, {
-      cache: 'no-store'
-    });
-    if (!res.ok) {
-      console.error(`API Error: ${res.status} for ID: ${id}`);
-      return null;
-    }
-    return await res.json();
-  } catch (err) {
-    console.error("Fetch failed:", err);
-    return null;
-  }
-}
-
-// 2. Main Page Component
-export default async function AssociationPage({ params }) {
+export default async function PubPage({ params }) {
   const { id } = await params;
-  const data = await getAssociationData(id);
+  
+  // 1. Fetch data
+  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/v1/publications/${id}`, { cache: 'no-store' });
+  
+  if (!res.ok) {
+    return <div className="p-8 text-white">Publication not found.</div>;
+  }
+  
+  const pub = await res.json();
 
-  // 3. Render the UI
   return (
     <div className="p-8 text-white min-h-screen bg-gray-900">
-      <h1 className="text-4xl font-bold">Association Details</h1>
-      <p className="mt-4 text-xl text-gray-400">ID: {id}</p>
-
-      <div className="mt-6 grid grid-cols-2 gap-4">
-        <div className="bg-gray-800 p-4 rounded shadow-md">
-          <h2 className="text-sm text-gray-400 uppercase tracking-wider">Gene ID</h2>
-          <p className="text-2xl mt-1">{data.gene_id || "N/A"}</p>
-        </div>
-        <div className="bg-gray-800 p-4 rounded shadow-md">
-          <h2 className="text-sm text-gray-400 uppercase tracking-wider">Disease ID</h2>
-          <p className="text-2xl mt-1">{data.disease_id || "N/A"}</p>
-        </div>
-        <div className="bg-gray-800 p-4 rounded shadow-md">
-          <h2 className="text-sm text-gray-400 uppercase tracking-wider">Confidence</h2>          
-          <p className="text-2xl mt-1">{data.confidence_score || "N/A"}</p>
-        </div>
-        <div className="bg-gray-800 p-4 rounded shadow-md">
-          <h2 className="text-sm text-gray-400 uppercase tracking-wider">Evidence Level</h2>
-          <p className="text-2xl mt-1">{data.evidence_level || "N/A"}</p>
-        </div>
+      {/* Title and Metadata */}
+      <h1 className="text-4xl font-bold">{pub.title}</h1>
+      <div className="mt-2 text-lg text-gray-400">
+        <span>{pub.journal}</span>
+        {pub.year && <span className="ml-2">• {pub.year}</span>}
       </div>
+
+      {/* Abstract Section */}
+      <div className="mt-8 bg-gray-800 p-6 rounded-lg shadow-md">
+        <h2 className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-2">Abstract</h2>
+        <p className="text-gray-300 leading-relaxed">
+          {pub.abstract || "No abstract available for this publication."}
+        </p>
+      </div>
+
+      {/* External Links (Conditional rendering to prevent errors) */}
+      {pub.doi && (
+        <div className="mt-6">
+          <a href={`https://doi.org/${pub.doi}`} className="text-blue-400 hover:underline">
+            View DOI: {pub.doi}
+          </a>
+        </div>
+      )}
     </div>
   );
 }
