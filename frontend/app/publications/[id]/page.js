@@ -2,7 +2,7 @@ export default async function PubPage({ params }) {
   const { id } = await params;
   
   // 1. Fetch data
-  const res = await fetch(`http://localhost:8000/api/v1/publications/${id}`, { cache: 'no-store' });
+  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/v1/publications/${id}`, { cache: 'no-store' });
   
   if (!res.ok) {
     return <div className="p-8 text-white">Publication not found.</div>;
