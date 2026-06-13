@@ -1,0 +1,55 @@
+{
+  "stats": {
+    "diseases": {
+      "total": 500,
+      "success": 500,
+      "failed": 0,
+      "skipped": 0
+    },
+    "genes": {
+      "total": 1500,
+      "success": 1500,
+      "failed": 0,
+      "skipped": 0
+    },
+    "variants": {
+      "total": 2000,
+      "success": 2000,
+      "failed": 0,
+      "skipped": 0
+    },
+    "associations": {
+      "total": 9924,
+      "success": 9924,
+      "failed": 0,
+      "skipped": 0
+    },
+    "pathways": {
+      "total": 300,
+      "success": 300,
+      "failed": 0,
+      "skipped": 0
+    },
+    "drug_targets": {
+      "total": 500,
+      "success": 500,
+      "failed": 0,
+      "skipped": 0
+    },
+    "publications": {
+      "total": 1000,
+      "success": 1000,
+      "failed": 0,
+      "skipped": 0
+    }
+  },
+  "rejections": {
+    "diseases": [],
+    "genes": [],
+    "variants": [],
+    "associations": [],
+    "pathways": [],
+    "drug_targets": [],
+    "publications": []
+  }
+}
