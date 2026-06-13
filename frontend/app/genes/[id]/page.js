@@ -1,6 +1,6 @@
 async function getGeneData(id) {
   // Using the prefix /api/v1/ based on your backend structure
-  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/genes/${id}`);
+  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/v1/genes/${id}`);
   
   if (!res.ok) {
     throw new Error(`Failed to fetch data: ${res.status}`);
