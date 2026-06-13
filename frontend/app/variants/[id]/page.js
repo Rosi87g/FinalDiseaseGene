@@ -1,5 +1,5 @@
 async function getVariantData(id) {
-  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/variants/${id}`);;
+  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/v1/variants/${id}`);;
   if (!res.ok) throw new Error(`Failed to fetch: ${res.status}`);
   return res.json();
 }
