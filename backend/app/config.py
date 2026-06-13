@@ -30,7 +30,7 @@ class Settings(BaseSettings):
         "http://127.0.0.1:3000",
         "capacitor://localhost",
         "http://localhost",
-        "https://disease-gene-map-h1r2.vercel.app",
+        "https://final-disease-gene.vercel.app",
     ]
 
     # Email (Legacy Gmail - not used)
