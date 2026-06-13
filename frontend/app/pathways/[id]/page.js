@@ -1,6 +1,6 @@
 export default async function PathwayPage({ params }) {
   const { id } = await params;
-  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/pathways/${id}`);;
+  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/v1/pathways/${id}`);;
   const pathway = await res.json();
 
   return (
