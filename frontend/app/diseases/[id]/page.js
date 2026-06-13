@@ -1,7 +1,7 @@
 // 1. Fetching function for diseases
 async function getDiseaseData(id) {
   // Ensure the path matches your backend route for diseases
-  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/diseases/${id}`);
+  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/v1/diseases/${id}`);
   
   if (!res.ok) {
     throw new Error(`Failed to fetch disease data: ${res.status}`);
