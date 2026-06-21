@@ -21,6 +21,7 @@ import {
   FolderOpen,
   Database,
   Sparkles,
+  Smartphone,
 } from 'lucide-react'
 import { useEffect, useState, useCallback } from 'react'
 
@@ -34,6 +35,7 @@ export default function RootLayout({
   const [realTime, setRealTime] = useState('')
   const [ping, setPing] = useState(24)
   const [sidebarOpen, setSidebarOpen] = useState(false)
+  const [isApp, setIsApp] = useState(false)
 
   useEffect(() => {
     const updateTime = () => {
@@ -74,6 +76,15 @@ export default function RootLayout({
   }, [loadUser])
 
   useEffect(() => { setSidebarOpen(false) }, [pathname])
+
+  useEffect(() => {
+    // Capacitor injects this global automatically when running inside the native shell.
+    const inCapacitor = typeof window !== 'undefined' && !!(window as any).Capacitor?.isNativePlatform?.()
+    // Fallback for a TWA/PWA-builder shell: set the app's start URL to include ?source=app
+    const params = new URLSearchParams(window.location.search)
+    const fromAppParam = params.get('source') === 'app'
+    setIsApp(inCapacitor || fromAppParam)
+  }, [])
 
   const isActive = (path: string) => {
     if (path === '/') return pathname === '/'
@@ -236,6 +247,17 @@ export default function RootLayout({
               <div className="flex flex-col gap-0.5">
                 <span className="text-[9px] font-mono font-bold tracking-widest text-zinc-200 uppercase px-3 mb-2 block">// GRAPH_ANALYTICS</span>
                 <Link href="/analytics" className={getLinkClass('/analytics')}><PieChart className="w-3.5 h-3.5" /> Visualizations</Link>
+                {!isApp && (
+                  <Link href="/download" className={getLinkClass('/download')}>
+                    <Smartphone className="w-3.5 h-3.5" />
+                    <span className="flex-1">Download APK</span>
+                    {!isActive('/download') && (
+                      <span className="text-[8px] bg-[#f59e0b]/10 text-[#f59e0b] border border-[#f59e0b]/20 px-1.5 py-0.5 rounded font-mono leading-none">
+                        v1.0
+                      </span>
+                    )}
+                  </Link>
+                )}
                 <Link href="/favorites" className={getLinkClass('/favorites')}><Bookmark className="w-3.5 h-3.5" /> My Saved Lists</Link>
                 <Link href="/about" className={getLinkClass('/about')}><Activity className="w-3.5 h-3.5" /> About</Link>
                 <Link href="/admin" className={getLinkClass('/admin')}><ShieldAlert className="w-3.5 h-3.5" /> Admin Matrix Panel</Link>
