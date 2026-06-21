@@ -3,7 +3,7 @@
 import { useState, Suspense } from 'react'
 import { useRouter, useSearchParams } from 'next/navigation'
 import Link from 'next/link'
-import { Terminal, ShieldAlert, ShieldCheck, KeyRound } from 'lucide-react'
+import { Terminal, ShieldAlert, ShieldCheck, KeyRound, Check, X } from 'lucide-react'
 
 function ResetPasswordForm() {
   const router = useRouter()
@@ -16,6 +16,14 @@ function ResetPasswordForm() {
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState('')
   const [success, setSuccess] = useState('')
+  const [passwordFocused, setPasswordFocused] = useState(false)
+
+  const passwordRules = {
+    minLength: newPassword.length >= 8,
+    hasUpper: /[A-Z]/.test(newPassword),
+    hasNumber: /[0-9]/.test(newPassword),
+  }
+  const isPasswordValid = passwordRules.minLength && passwordRules.hasUpper && passwordRules.hasNumber
 
   const handleReset = async (e: React.FormEvent) => {
     e.preventDefault()
@@ -26,8 +34,8 @@ function ResetPasswordForm() {
       return
     }
 
-    if (newPassword.length < 8) {
-      setError('Password must be at least 8 characters')
+    if (!isPasswordValid) {
+      setError('Password does not meet the minimum security requirements')
       return
     }
 
@@ -112,13 +120,23 @@ function ResetPasswordForm() {
           </label>
           <input
             type="password"
-            placeholder="Min. 8 characters"
+            placeholder="Min. 8 characters, 1 uppercase, 1 number"
             value={newPassword}
             onChange={(e) => setNewPassword(e.target.value)}
+            onFocus={() => setPasswordFocused(true)}
+            onBlur={() => setPasswordFocused(false)}
             required
             disabled={loading || !!success}
             className="w-full px-3 py-2.5 bg-[#050507] border border-[#181b24] rounded text-[13px] text-white font-mono placeholder:text-zinc-500 focus:outline-none focus:border-[#00f5d4]/50 transition-colors"
           />
+
+          {(passwordFocused || newPassword.length > 0) && !success && (
+            <div className="bg-[#050507] border border-[#181b24] rounded p-2.5 space-y-1.5 mt-1.5">
+              <PasswordRule met={passwordRules.minLength} label="At least 8 characters" />
+              <PasswordRule met={passwordRules.hasUpper} label="One uppercase letter" />
+              <PasswordRule met={passwordRules.hasNumber} label="One number" />
+            </div>
+          )}
         </div>
 
         {/* Confirm Password */}
@@ -156,7 +174,7 @@ function ResetPasswordForm() {
         <div className="pt-3">
           <button
             type="submit"
-            disabled={loading || !!success}
+            disabled={loading || !!success || !isPasswordValid}
             className="w-full py-3.5 bg-[#00f5d4] text-[#050507] font-mono font-bold text-[13px] rounded hover:bg-[#00d7ba] disabled:bg-zinc-800 disabled:text-zinc-500 transition-colors duration-150 shadow-[0_0_15px_rgba(0,245,212,0.3)] uppercase tracking-wider flex items-center justify-center gap-1.5"
           >
             <KeyRound className="w-4 h-4" />
@@ -171,6 +189,15 @@ function ResetPasswordForm() {
         </div>
 
       </form>
+    </div>
+  )
+}
+
+function PasswordRule({ met, label }: { met: boolean; label: string }) {
+  return (
+    <div className={`flex items-center gap-1.5 text-[11px] font-mono transition-colors ${met ? 'text-[#00f5d4]' : 'text-zinc-500'}`}>
+      {met ? <Check className="w-3 h-3 shrink-0" /> : <X className="w-3 h-3 shrink-0" />}
+      <span>{label}</span>
     </div>
   )
 }
