@@ -86,6 +86,22 @@ export default function RootLayout({
     setIsApp(inCapacitor || fromAppParam)
   }, [])
 
+  useEffect(() => {
+    let cancelled = false
+    ;(async () => {
+      try {
+        const isNative = typeof window !== 'undefined' && !!(window as any).Capacitor?.isNativePlatform?.()
+        if (!isNative) return
+        const { SplashScreen } = await import('@capacitor/splash-screen')
+        if (cancelled) return
+        await SplashScreen.hide({ fadeOutDuration: 350 })
+      } catch {
+        // Splash plugin not available (e.g. web build) — ignore.
+      }
+    })()
+    return () => { cancelled = true }
+  }, [])
+
   const isActive = (path: string) => {
     if (path === '/') return pathname === '/'
     return pathname === path || pathname.startsWith(path + '/')
@@ -96,6 +112,22 @@ export default function RootLayout({
       return 'flex items-center gap-2.5 px-3 py-2 rounded text-xs font-mono font-medium transition-all duration-150 border-l-2 text-[#00f5d4] bg-[#00f5d4]/5 border-[#00f5d4]'
     }
     return 'flex items-center gap-2.5 px-3 py-2 rounded text-xs font-mono font-medium transition-all duration-150 border-l-2 text-zinc-400 hover:text-zinc-200 hover:bg-[#111726] border-transparent'
+  }
+
+  // Auth pages (signin/signup) render as a standalone page —
+  // no sidebar, no header/footer chrome, just the page content.
+  const isAuthPage = pathname === '/signin' || pathname === '/signup'
+
+  if (isAuthPage) {
+    return (
+      <html lang="en" className="dark">
+        <body className="bg-[#050507] text-zinc-200 h-screen w-screen font-sans antialiased selection:bg-[#00f5d4]/20 selection:text-[#00f5d4] overflow-y-auto">
+          <div className="min-h-screen w-full bg-gradient-to-br from-[#0d0b1a] via-[#110d1f] to-[#1a0b14] flex items-center justify-center">
+            {children}
+          </div>
+        </body>
+      </html>
+    )
   }
 
   return (
