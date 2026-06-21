@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
-import { Terminal, ShieldAlert, LogIn } from 'lucide-react'
+import { Terminal, ShieldAlert, LogIn, Dna } from 'lucide-react'
 
 export default function SignInPage() {
   const router = useRouter()
@@ -79,8 +79,21 @@ export default function SignInPage() {
   }
 
   return (
-    <div className="w-full flex items-start justify-center pt-16 px-4 font-sans antialiased text-zinc-200 selection:bg-[#00f5d4]/20 selection:text-[#00f5d4]">
+    <div className="w-full flex items-center justify-center py-10 px-4 font-sans antialiased text-zinc-200 selection:bg-[#00f5d4]/20 selection:text-[#00f5d4]">
       <div className="w-full max-w-md">
+
+        <div className="flex items-center justify-center gap-2.5 mb-6">
+          <div className="relative bg-[#050507] border border-[#1d222e] p-1.5 rounded text-[#00f5d4]">
+            <Dna className="w-4 h-4 animate-[spin_8s_linear_infinite]" />
+            <span className="absolute -top-0.5 -right-0.5 flex h-1.5 w-1.5">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#00f5d4] opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-[#00f5d4]"></span>
+            </span>
+          </div>
+          <span className="text-xs font-bold tracking-widest text-white font-mono uppercase">
+            DiseaseGeneMap
+          </span>
+        </div>
 
         <div className="bg-[#0d0e12] border border-[#181b24] p-6 md:p-8 rounded relative overflow-hidden shadow-[0_10px_40px_rgba(0,0,0,0.7)]">
 
