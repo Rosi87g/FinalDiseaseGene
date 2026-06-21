@@ -13,6 +13,7 @@ from app.services.security import (
 )
 from app.services.email_service import send_otp_email
 from app.config import settings
+from app.schemas.user import validate_password_strength
 from pydantic import BaseModel
 from datetime import timedelta
 
@@ -106,8 +107,10 @@ def reset_password(
     if user.verification_code != payload.otp:
         raise HTTPException(status_code=400, detail="Invalid or expired OTP")
 
-    if len(payload.new_password) < 8:
-        raise HTTPException(status_code=400, detail="Password must be at least 8 characters")
+    try:
+        validate_password_strength(payload.new_password)
+    except ValueError as e:
+        raise HTTPException(status_code=400, detail=str(e))
 
     user.password_hash = get_password_hash(payload.new_password)
     user.verification_code = None
