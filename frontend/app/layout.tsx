@@ -32,7 +32,11 @@ import { useEffect, useState, useCallback, useRef } from 'react'
 type ServerStatus = 'checking' | 'online' | 'offline'
 
 const API_BASE = (process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000')
-const HEALTH_URL = `${API_BASE}/health`
+// Use /api/v1/stats instead of /health — this hits the real DB so it only
+// resolves when the server is truly ready (not just the process started).
+const HEALTH_URL = `${API_BASE}/api/v1/stats`
+// Minimum time (ms) the spinner is shown — prevents a blink if server responds instantly
+const MIN_SPINNER_MS = 1200
 
 // ─── DNA Logo SVG (matches Android ic_launcher foreground design) ─────────────
 function DnaLogoMark({ size = 28 }: { size?: number }) {
@@ -226,12 +230,18 @@ export default function RootLayout({
   // ── Check server health ──
   const checkServer = useCallback(async () => {
     setServerStatus('checking')
+    const start = Date.now()
     try {
       const res = await fetch(HEALTH_URL, {
         method: 'GET',
-        signal: AbortSignal.timeout(8000),
+        signal: AbortSignal.timeout(12000),  // Render free tier can be slow
         cache: 'no-store',
       })
+      // Enforce minimum spinner time so it never just blinks
+      const elapsed = Date.now() - start
+      if (elapsed < MIN_SPINNER_MS) {
+        await new Promise(r => setTimeout(r, MIN_SPINNER_MS - elapsed))
+      }
       if (res.ok) {
         setServerStatus('online')
       } else {
