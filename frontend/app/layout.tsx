@@ -233,8 +233,7 @@ export default function RootLayout({
     const start = Date.now()
     try {
       const res = await fetch(HEALTH_URL, {
-        method: 'GET',
-        signal: AbortSignal.timeout(12000),  // Render free tier can be slow
+        method: 'GET',        
         cache: 'no-store',
       })
       // Enforce minimum spinner time so it never just blinks
