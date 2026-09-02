@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">diseaseGene</string>
+    <string name="title_activity_main">diseaseGene</string>
+    <string name="package_name">com.romcom.diseasegenemap</string>
+    <string name="custom_url_scheme">com.romcom.diseasegenemap</string>
+</resources>

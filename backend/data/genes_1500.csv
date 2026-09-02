@@ -1,0 +1,1501 @@
+gene_id,gene_symbol,gene_name,chromosome,function,protein
+GENE0001,BRCA1,BRCA1 Associated Gene,1,DNA Repair,BRCA1 Protein
+GENE0002,BRCA2,BRCA2 Associated Gene,2,Cell Signaling,BRCA2 Protein
+GENE0003,TP53,TP53 Associated Gene,3,Tumor Suppression,TP53 Protein
+GENE0004,EGFR,EGFR Associated Gene,4,Immune Regulation,EGFR Protein
+GENE0005,KRAS,KRAS Associated Gene,5,Protein Synthesis,KRAS Protein
+GENE0006,APOE,APOE Associated Gene,6,Metabolism,APOE Protein
+GENE0007,CFTR,CFTR Associated Gene,7,Signal Transduction,CFTR Protein
+GENE0008,PTEN,PTEN Associated Gene,8,Apoptosis,PTEN Protein
+GENE0009,ALK,ALK Associated Gene,9,Cell Cycle Control,ALK Protein
+GENE0010,VEGFA,VEGFA Associated Gene,10,Gene Expression,VEGFA Protein
+GENE0011,TNF,TNF Associated Gene,11,DNA Repair,TNF Protein
+GENE0012,IL6,IL6 Associated Gene,12,Cell Signaling,IL6 Protein
+GENE0013,ESR1,ESR1 Associated Gene,13,Tumor Suppression,ESR1 Protein
+GENE0014,ERBB2,ERBB2 Associated Gene,14,Immune Regulation,ERBB2 Protein
+GENE0015,MYC,MYC Associated Gene,15,Protein Synthesis,MYC Protein
+GENE0016,CDKN2A,CDKN2A Associated Gene,16,Metabolism,CDKN2A Protein
+GENE0017,KIT,KIT Associated Gene,17,Signal Transduction,KIT Protein
+GENE0018,PDGFRA,PDGFRA Associated Gene,18,Apoptosis,PDGFRA Protein
+GENE0019,JAK2,JAK2 Associated Gene,19,Cell Cycle Control,JAK2 Protein
+GENE0020,RET,RET Associated Gene,20,Gene Expression,RET Protein
+GENE0021,GENE0021,GENE0021 Associated Gene,21,DNA Repair,GENE0021 Protein
+GENE0022,GENE0022,GENE0022 Associated Gene,22,Cell Signaling,GENE0022 Protein
+GENE0023,GENE0023,GENE0023 Associated Gene,1,Tumor Suppression,GENE0023 Protein
+GENE0024,GENE0024,GENE0024 Associated Gene,2,Immune Regulation,GENE0024 Protein
+GENE0025,GENE0025,GENE0025 Associated Gene,3,Protein Synthesis,GENE0025 Protein
+GENE0026,GENE0026,GENE0026 Associated Gene,4,Metabolism,GENE0026 Protein
+GENE0027,GENE0027,GENE0027 Associated Gene,5,Signal Transduction,GENE0027 Protein
+GENE0028,GENE0028,GENE0028 Associated Gene,6,Apoptosis,GENE0028 Protein
+GENE0029,GENE0029,GENE0029 Associated Gene,7,Cell Cycle Control,GENE0029 Protein
+GENE0030,GENE0030,GENE0030 Associated Gene,8,Gene Expression,GENE0030 Protein
+GENE0031,GENE0031,GENE0031 Associated Gene,9,DNA Repair,GENE0031 Protein
+GENE0032,GENE0032,GENE0032 Associated Gene,10,Cell Signaling,GENE0032 Protein
+GENE0033,GENE0033,GENE0033 Associated Gene,11,Tumor Suppression,GENE0033 Protein
+GENE0034,GENE0034,GENE0034 Associated Gene,12,Immune Regulation,GENE0034 Protein
+GENE0035,GENE0035,GENE0035 Associated Gene,13,Protein Synthesis,GENE0035 Protein
+GENE0036,GENE0036,GENE0036 Associated Gene,14,Metabolism,GENE0036 Protein
+GENE0037,GENE0037,GENE0037 Associated Gene,15,Signal Transduction,GENE0037 Protein
+GENE0038,GENE0038,GENE0038 Associated Gene,16,Apoptosis,GENE0038 Protein
+GENE0039,GENE0039,GENE0039 Associated Gene,17,Cell Cycle Control,GENE0039 Protein
+GENE0040,GENE0040,GENE0040 Associated Gene,18,Gene Expression,GENE0040 Protein
+GENE0041,GENE0041,GENE0041 Associated Gene,19,DNA Repair,GENE0041 Protein
+GENE0042,GENE0042,GENE0042 Associated Gene,20,Cell Signaling,GENE0042 Protein
+GENE0043,GENE0043,GENE0043 Associated Gene,21,Tumor Suppression,GENE0043 Protein
+GENE0044,GENE0044,GENE0044 Associated Gene,22,Immune Regulation,GENE0044 Protein
+GENE0045,GENE0045,GENE0045 Associated Gene,1,Protein Synthesis,GENE0045 Protein
+GENE0046,GENE0046,GENE0046 Associated Gene,2,Metabolism,GENE0046 Protein
+GENE0047,GENE0047,GENE0047 Associated Gene,3,Signal Transduction,GENE0047 Protein
+GENE0048,GENE0048,GENE0048 Associated Gene,4,Apoptosis,GENE0048 Protein
+GENE0049,GENE0049,GENE0049 Associated Gene,5,Cell Cycle Control,GENE0049 Protein
+GENE0050,GENE0050,GENE0050 Associated Gene,6,Gene Expression,GENE0050 Protein
+GENE0051,GENE0051,GENE0051 Associated Gene,7,DNA Repair,GENE0051 Protein
+GENE0052,GENE0052,GENE0052 Associated Gene,8,Cell Signaling,GENE0052 Protein
+GENE0053,GENE0053,GENE0053 Associated Gene,9,Tumor Suppression,GENE0053 Protein
+GENE0054,GENE0054,GENE0054 Associated Gene,10,Immune Regulation,GENE0054 Protein
+GENE0055,GENE0055,GENE0055 Associated Gene,11,Protein Synthesis,GENE0055 Protein
+GENE0056,GENE0056,GENE0056 Associated Gene,12,Metabolism,GENE0056 Protein
+GENE0057,GENE0057,GENE0057 Associated Gene,13,Signal Transduction,GENE0057 Protein
+GENE0058,GENE0058,GENE0058 Associated Gene,14,Apoptosis,GENE0058 Protein
+GENE0059,GENE0059,GENE0059 Associated Gene,15,Cell Cycle Control,GENE0059 Protein
+GENE0060,GENE0060,GENE0060 Associated Gene,16,Gene Expression,GENE0060 Protein
+GENE0061,GENE0061,GENE0061 Associated Gene,17,DNA Repair,GENE0061 Protein
+GENE0062,GENE0062,GENE0062 Associated Gene,18,Cell Signaling,GENE0062 Protein
+GENE0063,GENE0063,GENE0063 Associated Gene,19,Tumor Suppression,GENE0063 Protein
+GENE0064,GENE0064,GENE0064 Associated Gene,20,Immune Regulation,GENE0064 Protein
+GENE0065,GENE0065,GENE0065 Associated Gene,21,Protein Synthesis,GENE0065 Protein
+GENE0066,GENE0066,GENE0066 Associated Gene,22,Metabolism,GENE0066 Protein
+GENE0067,GENE0067,GENE0067 Associated Gene,1,Signal Transduction,GENE0067 Protein
+GENE0068,GENE0068,GENE0068 Associated Gene,2,Apoptosis,GENE0068 Protein
+GENE0069,GENE0069,GENE0069 Associated Gene,3,Cell Cycle Control,GENE0069 Protein
+GENE0070,GENE0070,GENE0070 Associated Gene,4,Gene Expression,GENE0070 Protein
+GENE0071,GENE0071,GENE0071 Associated Gene,5,DNA Repair,GENE0071 Protein
+GENE0072,GENE0072,GENE0072 Associated Gene,6,Cell Signaling,GENE0072 Protein
+GENE0073,GENE0073,GENE0073 Associated Gene,7,Tumor Suppression,GENE0073 Protein
+GENE0074,GENE0074,GENE0074 Associated Gene,8,Immune Regulation,GENE0074 Protein
+GENE0075,GENE0075,GENE0075 Associated Gene,9,Protein Synthesis,GENE0075 Protein
+GENE0076,GENE0076,GENE0076 Associated Gene,10,Metabolism,GENE0076 Protein
+GENE0077,GENE0077,GENE0077 Associated Gene,11,Signal Transduction,GENE0077 Protein
+GENE0078,GENE0078,GENE0078 Associated Gene,12,Apoptosis,GENE0078 Protein
+GENE0079,GENE0079,GENE0079 Associated Gene,13,Cell Cycle Control,GENE0079 Protein
+GENE0080,GENE0080,GENE0080 Associated Gene,14,Gene Expression,GENE0080 Protein
+GENE0081,GENE0081,GENE0081 Associated Gene,15,DNA Repair,GENE0081 Protein
+GENE0082,GENE0082,GENE0082 Associated Gene,16,Cell Signaling,GENE0082 Protein
+GENE0083,GENE0083,GENE0083 Associated Gene,17,Tumor Suppression,GENE0083 Protein
+GENE0084,GENE0084,GENE0084 Associated Gene,18,Immune Regulation,GENE0084 Protein
+GENE0085,GENE0085,GENE0085 Associated Gene,19,Protein Synthesis,GENE0085 Protein
+GENE0086,GENE0086,GENE0086 Associated Gene,20,Metabolism,GENE0086 Protein
+GENE0087,GENE0087,GENE0087 Associated Gene,21,Signal Transduction,GENE0087 Protein
+GENE0088,GENE0088,GENE0088 Associated Gene,22,Apoptosis,GENE0088 Protein
+GENE0089,GENE0089,GENE0089 Associated Gene,1,Cell Cycle Control,GENE0089 Protein
+GENE0090,GENE0090,GENE0090 Associated Gene,2,Gene Expression,GENE0090 Protein
+GENE0091,GENE0091,GENE0091 Associated Gene,3,DNA Repair,GENE0091 Protein
+GENE0092,GENE0092,GENE0092 Associated Gene,4,Cell Signaling,GENE0092 Protein
+GENE0093,GENE0093,GENE0093 Associated Gene,5,Tumor Suppression,GENE0093 Protein
+GENE0094,GENE0094,GENE0094 Associated Gene,6,Immune Regulation,GENE0094 Protein
+GENE0095,GENE0095,GENE0095 Associated Gene,7,Protein Synthesis,GENE0095 Protein
+GENE0096,GENE0096,GENE0096 Associated Gene,8,Metabolism,GENE0096 Protein
+GENE0097,GENE0097,GENE0097 Associated Gene,9,Signal Transduction,GENE0097 Protein
+GENE0098,GENE0098,GENE0098 Associated Gene,10,Apoptosis,GENE0098 Protein
+GENE0099,GENE0099,GENE0099 Associated Gene,11,Cell Cycle Control,GENE0099 Protein
+GENE0100,GENE0100,GENE0100 Associated Gene,12,Gene Expression,GENE0100 Protein
+GENE0101,GENE0101,GENE0101 Associated Gene,13,DNA Repair,GENE0101 Protein
+GENE0102,GENE0102,GENE0102 Associated Gene,14,Cell Signaling,GENE0102 Protein
+GENE0103,GENE0103,GENE0103 Associated Gene,15,Tumor Suppression,GENE0103 Protein
+GENE0104,GENE0104,GENE0104 Associated Gene,16,Immune Regulation,GENE0104 Protein
+GENE0105,GENE0105,GENE0105 Associated Gene,17,Protein Synthesis,GENE0105 Protein
+GENE0106,GENE0106,GENE0106 Associated Gene,18,Metabolism,GENE0106 Protein
+GENE0107,GENE0107,GENE0107 Associated Gene,19,Signal Transduction,GENE0107 Protein
+GENE0108,GENE0108,GENE0108 Associated Gene,20,Apoptosis,GENE0108 Protein
+GENE0109,GENE0109,GENE0109 Associated Gene,21,Cell Cycle Control,GENE0109 Protein
+GENE0110,GENE0110,GENE0110 Associated Gene,22,Gene Expression,GENE0110 Protein
+GENE0111,GENE0111,GENE0111 Associated Gene,1,DNA Repair,GENE0111 Protein
+GENE0112,GENE0112,GENE0112 Associated Gene,2,Cell Signaling,GENE0112 Protein
+GENE0113,GENE0113,GENE0113 Associated Gene,3,Tumor Suppression,GENE0113 Protein
+GENE0114,GENE0114,GENE0114 Associated Gene,4,Immune Regulation,GENE0114 Protein
+GENE0115,GENE0115,GENE0115 Associated Gene,5,Protein Synthesis,GENE0115 Protein
+GENE0116,GENE0116,GENE0116 Associated Gene,6,Metabolism,GENE0116 Protein
+GENE0117,GENE0117,GENE0117 Associated Gene,7,Signal Transduction,GENE0117 Protein
+GENE0118,GENE0118,GENE0118 Associated Gene,8,Apoptosis,GENE0118 Protein
+GENE0119,GENE0119,GENE0119 Associated Gene,9,Cell Cycle Control,GENE0119 Protein
+GENE0120,GENE0120,GENE0120 Associated Gene,10,Gene Expression,GENE0120 Protein
+GENE0121,GENE0121,GENE0121 Associated Gene,11,DNA Repair,GENE0121 Protein
+GENE0122,GENE0122,GENE0122 Associated Gene,12,Cell Signaling,GENE0122 Protein
+GENE0123,GENE0123,GENE0123 Associated Gene,13,Tumor Suppression,GENE0123 Protein
+GENE0124,GENE0124,GENE0124 Associated Gene,14,Immune Regulation,GENE0124 Protein
+GENE0125,GENE0125,GENE0125 Associated Gene,15,Protein Synthesis,GENE0125 Protein
+GENE0126,GENE0126,GENE0126 Associated Gene,16,Metabolism,GENE0126 Protein
+GENE0127,GENE0127,GENE0127 Associated Gene,17,Signal Transduction,GENE0127 Protein
+GENE0128,GENE0128,GENE0128 Associated Gene,18,Apoptosis,GENE0128 Protein
+GENE0129,GENE0129,GENE0129 Associated Gene,19,Cell Cycle Control,GENE0129 Protein
+GENE0130,GENE0130,GENE0130 Associated Gene,20,Gene Expression,GENE0130 Protein
+GENE0131,GENE0131,GENE0131 Associated Gene,21,DNA Repair,GENE0131 Protein
+GENE0132,GENE0132,GENE0132 Associated Gene,22,Cell Signaling,GENE0132 Protein
+GENE0133,GENE0133,GENE0133 Associated Gene,1,Tumor Suppression,GENE0133 Protein
+GENE0134,GENE0134,GENE0134 Associated Gene,2,Immune Regulation,GENE0134 Protein
+GENE0135,GENE0135,GENE0135 Associated Gene,3,Protein Synthesis,GENE0135 Protein
+GENE0136,GENE0136,GENE0136 Associated Gene,4,Metabolism,GENE0136 Protein
+GENE0137,GENE0137,GENE0137 Associated Gene,5,Signal Transduction,GENE0137 Protein
+GENE0138,GENE0138,GENE0138 Associated Gene,6,Apoptosis,GENE0138 Protein
+GENE0139,GENE0139,GENE0139 Associated Gene,7,Cell Cycle Control,GENE0139 Protein
+GENE0140,GENE0140,GENE0140 Associated Gene,8,Gene Expression,GENE0140 Protein
+GENE0141,GENE0141,GENE0141 Associated Gene,9,DNA Repair,GENE0141 Protein
+GENE0142,GENE0142,GENE0142 Associated Gene,10,Cell Signaling,GENE0142 Protein
+GENE0143,GENE0143,GENE0143 Associated Gene,11,Tumor Suppression,GENE0143 Protein
+GENE0144,GENE0144,GENE0144 Associated Gene,12,Immune Regulation,GENE0144 Protein
+GENE0145,GENE0145,GENE0145 Associated Gene,13,Protein Synthesis,GENE0145 Protein
+GENE0146,GENE0146,GENE0146 Associated Gene,14,Metabolism,GENE0146 Protein
+GENE0147,GENE0147,GENE0147 Associated Gene,15,Signal Transduction,GENE0147 Protein
+GENE0148,GENE0148,GENE0148 Associated Gene,16,Apoptosis,GENE0148 Protein
+GENE0149,GENE0149,GENE0149 Associated Gene,17,Cell Cycle Control,GENE0149 Protein
+GENE0150,GENE0150,GENE0150 Associated Gene,18,Gene Expression,GENE0150 Protein
+GENE0151,GENE0151,GENE0151 Associated Gene,19,DNA Repair,GENE0151 Protein
+GENE0152,GENE0152,GENE0152 Associated Gene,20,Cell Signaling,GENE0152 Protein
+GENE0153,GENE0153,GENE0153 Associated Gene,21,Tumor Suppression,GENE0153 Protein
+GENE0154,GENE0154,GENE0154 Associated Gene,22,Immune Regulation,GENE0154 Protein
+GENE0155,GENE0155,GENE0155 Associated Gene,1,Protein Synthesis,GENE0155 Protein
+GENE0156,GENE0156,GENE0156 Associated Gene,2,Metabolism,GENE0156 Protein
+GENE0157,GENE0157,GENE0157 Associated Gene,3,Signal Transduction,GENE0157 Protein
+GENE0158,GENE0158,GENE0158 Associated Gene,4,Apoptosis,GENE0158 Protein
+GENE0159,GENE0159,GENE0159 Associated Gene,5,Cell Cycle Control,GENE0159 Protein
+GENE0160,GENE0160,GENE0160 Associated Gene,6,Gene Expression,GENE0160 Protein
+GENE0161,GENE0161,GENE0161 Associated Gene,7,DNA Repair,GENE0161 Protein
+GENE0162,GENE0162,GENE0162 Associated Gene,8,Cell Signaling,GENE0162 Protein
+GENE0163,GENE0163,GENE0163 Associated Gene,9,Tumor Suppression,GENE0163 Protein
+GENE0164,GENE0164,GENE0164 Associated Gene,10,Immune Regulation,GENE0164 Protein
+GENE0165,GENE0165,GENE0165 Associated Gene,11,Protein Synthesis,GENE0165 Protein
+GENE0166,GENE0166,GENE0166 Associated Gene,12,Metabolism,GENE0166 Protein
+GENE0167,GENE0167,GENE0167 Associated Gene,13,Signal Transduction,GENE0167 Protein
+GENE0168,GENE0168,GENE0168 Associated Gene,14,Apoptosis,GENE0168 Protein
+GENE0169,GENE0169,GENE0169 Associated Gene,15,Cell Cycle Control,GENE0169 Protein
+GENE0170,GENE0170,GENE0170 Associated Gene,16,Gene Expression,GENE0170 Protein
+GENE0171,GENE0171,GENE0171 Associated Gene,17,DNA Repair,GENE0171 Protein
+GENE0172,GENE0172,GENE0172 Associated Gene,18,Cell Signaling,GENE0172 Protein
+GENE0173,GENE0173,GENE0173 Associated Gene,19,Tumor Suppression,GENE0173 Protein
+GENE0174,GENE0174,GENE0174 Associated Gene,20,Immune Regulation,GENE0174 Protein
+GENE0175,GENE0175,GENE0175 Associated Gene,21,Protein Synthesis,GENE0175 Protein
+GENE0176,GENE0176,GENE0176 Associated Gene,22,Metabolism,GENE0176 Protein
+GENE0177,GENE0177,GENE0177 Associated Gene,1,Signal Transduction,GENE0177 Protein
+GENE0178,GENE0178,GENE0178 Associated Gene,2,Apoptosis,GENE0178 Protein
+GENE0179,GENE0179,GENE0179 Associated Gene,3,Cell Cycle Control,GENE0179 Protein
+GENE0180,GENE0180,GENE0180 Associated Gene,4,Gene Expression,GENE0180 Protein
+GENE0181,GENE0181,GENE0181 Associated Gene,5,DNA Repair,GENE0181 Protein
+GENE0182,GENE0182,GENE0182 Associated Gene,6,Cell Signaling,GENE0182 Protein
+GENE0183,GENE0183,GENE0183 Associated Gene,7,Tumor Suppression,GENE0183 Protein
+GENE0184,GENE0184,GENE0184 Associated Gene,8,Immune Regulation,GENE0184 Protein
+GENE0185,GENE0185,GENE0185 Associated Gene,9,Protein Synthesis,GENE0185 Protein
+GENE0186,GENE0186,GENE0186 Associated Gene,10,Metabolism,GENE0186 Protein
+GENE0187,GENE0187,GENE0187 Associated Gene,11,Signal Transduction,GENE0187 Protein
+GENE0188,GENE0188,GENE0188 Associated Gene,12,Apoptosis,GENE0188 Protein
+GENE0189,GENE0189,GENE0189 Associated Gene,13,Cell Cycle Control,GENE0189 Protein
+GENE0190,GENE0190,GENE0190 Associated Gene,14,Gene Expression,GENE0190 Protein
+GENE0191,GENE0191,GENE0191 Associated Gene,15,DNA Repair,GENE0191 Protein
+GENE0192,GENE0192,GENE0192 Associated Gene,16,Cell Signaling,GENE0192 Protein
+GENE0193,GENE0193,GENE0193 Associated Gene,17,Tumor Suppression,GENE0193 Protein
+GENE0194,GENE0194,GENE0194 Associated Gene,18,Immune Regulation,GENE0194 Protein
+GENE0195,GENE0195,GENE0195 Associated Gene,19,Protein Synthesis,GENE0195 Protein
+GENE0196,GENE0196,GENE0196 Associated Gene,20,Metabolism,GENE0196 Protein
+GENE0197,GENE0197,GENE0197 Associated Gene,21,Signal Transduction,GENE0197 Protein
+GENE0198,GENE0198,GENE0198 Associated Gene,22,Apoptosis,GENE0198 Protein
+GENE0199,GENE0199,GENE0199 Associated Gene,1,Cell Cycle Control,GENE0199 Protein
+GENE0200,GENE0200,GENE0200 Associated Gene,2,Gene Expression,GENE0200 Protein
+GENE0201,GENE0201,GENE0201 Associated Gene,3,DNA Repair,GENE0201 Protein
+GENE0202,GENE0202,GENE0202 Associated Gene,4,Cell Signaling,GENE0202 Protein
+GENE0203,GENE0203,GENE0203 Associated Gene,5,Tumor Suppression,GENE0203 Protein
+GENE0204,GENE0204,GENE0204 Associated Gene,6,Immune Regulation,GENE0204 Protein
+GENE0205,GENE0205,GENE0205 Associated Gene,7,Protein Synthesis,GENE0205 Protein
+GENE0206,GENE0206,GENE0206 Associated Gene,8,Metabolism,GENE0206 Protein
+GENE0207,GENE0207,GENE0207 Associated Gene,9,Signal Transduction,GENE0207 Protein
+GENE0208,GENE0208,GENE0208 Associated Gene,10,Apoptosis,GENE0208 Protein
+GENE0209,GENE0209,GENE0209 Associated Gene,11,Cell Cycle Control,GENE0209 Protein
+GENE0210,GENE0210,GENE0210 Associated Gene,12,Gene Expression,GENE0210 Protein
+GENE0211,GENE0211,GENE0211 Associated Gene,13,DNA Repair,GENE0211 Protein
+GENE0212,GENE0212,GENE0212 Associated Gene,14,Cell Signaling,GENE0212 Protein
+GENE0213,GENE0213,GENE0213 Associated Gene,15,Tumor Suppression,GENE0213 Protein
+GENE0214,GENE0214,GENE0214 Associated Gene,16,Immune Regulation,GENE0214 Protein
+GENE0215,GENE0215,GENE0215 Associated Gene,17,Protein Synthesis,GENE0215 Protein
+GENE0216,GENE0216,GENE0216 Associated Gene,18,Metabolism,GENE0216 Protein
+GENE0217,GENE0217,GENE0217 Associated Gene,19,Signal Transduction,GENE0217 Protein
+GENE0218,GENE0218,GENE0218 Associated Gene,20,Apoptosis,GENE0218 Protein
+GENE0219,GENE0219,GENE0219 Associated Gene,21,Cell Cycle Control,GENE0219 Protein
+GENE0220,GENE0220,GENE0220 Associated Gene,22,Gene Expression,GENE0220 Protein
+GENE0221,GENE0221,GENE0221 Associated Gene,1,DNA Repair,GENE0221 Protein
+GENE0222,GENE0222,GENE0222 Associated Gene,2,Cell Signaling,GENE0222 Protein
+GENE0223,GENE0223,GENE0223 Associated Gene,3,Tumor Suppression,GENE0223 Protein
+GENE0224,GENE0224,GENE0224 Associated Gene,4,Immune Regulation,GENE0224 Protein
+GENE0225,GENE0225,GENE0225 Associated Gene,5,Protein Synthesis,GENE0225 Protein
+GENE0226,GENE0226,GENE0226 Associated Gene,6,Metabolism,GENE0226 Protein
+GENE0227,GENE0227,GENE0227 Associated Gene,7,Signal Transduction,GENE0227 Protein
+GENE0228,GENE0228,GENE0228 Associated Gene,8,Apoptosis,GENE0228 Protein
+GENE0229,GENE0229,GENE0229 Associated Gene,9,Cell Cycle Control,GENE0229 Protein
+GENE0230,GENE0230,GENE0230 Associated Gene,10,Gene Expression,GENE0230 Protein
+GENE0231,GENE0231,GENE0231 Associated Gene,11,DNA Repair,GENE0231 Protein
+GENE0232,GENE0232,GENE0232 Associated Gene,12,Cell Signaling,GENE0232 Protein
+GENE0233,GENE0233,GENE0233 Associated Gene,13,Tumor Suppression,GENE0233 Protein
+GENE0234,GENE0234,GENE0234 Associated Gene,14,Immune Regulation,GENE0234 Protein
+GENE0235,GENE0235,GENE0235 Associated Gene,15,Protein Synthesis,GENE0235 Protein
+GENE0236,GENE0236,GENE0236 Associated Gene,16,Metabolism,GENE0236 Protein
+GENE0237,GENE0237,GENE0237 Associated Gene,17,Signal Transduction,GENE0237 Protein
+GENE0238,GENE0238,GENE0238 Associated Gene,18,Apoptosis,GENE0238 Protein
+GENE0239,GENE0239,GENE0239 Associated Gene,19,Cell Cycle Control,GENE0239 Protein
+GENE0240,GENE0240,GENE0240 Associated Gene,20,Gene Expression,GENE0240 Protein
+GENE0241,GENE0241,GENE0241 Associated Gene,21,DNA Repair,GENE0241 Protein
+GENE0242,GENE0242,GENE0242 Associated Gene,22,Cell Signaling,GENE0242 Protein
+GENE0243,GENE0243,GENE0243 Associated Gene,1,Tumor Suppression,GENE0243 Protein
+GENE0244,GENE0244,GENE0244 Associated Gene,2,Immune Regulation,GENE0244 Protein
+GENE0245,GENE0245,GENE0245 Associated Gene,3,Protein Synthesis,GENE0245 Protein
+GENE0246,GENE0246,GENE0246 Associated Gene,4,Metabolism,GENE0246 Protein
+GENE0247,GENE0247,GENE0247 Associated Gene,5,Signal Transduction,GENE0247 Protein
+GENE0248,GENE0248,GENE0248 Associated Gene,6,Apoptosis,GENE0248 Protein
+GENE0249,GENE0249,GENE0249 Associated Gene,7,Cell Cycle Control,GENE0249 Protein
+GENE0250,GENE0250,GENE0250 Associated Gene,8,Gene Expression,GENE0250 Protein
+GENE0251,GENE0251,GENE0251 Associated Gene,9,DNA Repair,GENE0251 Protein
+GENE0252,GENE0252,GENE0252 Associated Gene,10,Cell Signaling,GENE0252 Protein
+GENE0253,GENE0253,GENE0253 Associated Gene,11,Tumor Suppression,GENE0253 Protein
+GENE0254,GENE0254,GENE0254 Associated Gene,12,Immune Regulation,GENE0254 Protein
+GENE0255,GENE0255,GENE0255 Associated Gene,13,Protein Synthesis,GENE0255 Protein
+GENE0256,GENE0256,GENE0256 Associated Gene,14,Metabolism,GENE0256 Protein
+GENE0257,GENE0257,GENE0257 Associated Gene,15,Signal Transduction,GENE0257 Protein
+GENE0258,GENE0258,GENE0258 Associated Gene,16,Apoptosis,GENE0258 Protein
+GENE0259,GENE0259,GENE0259 Associated Gene,17,Cell Cycle Control,GENE0259 Protein
+GENE0260,GENE0260,GENE0260 Associated Gene,18,Gene Expression,GENE0260 Protein
+GENE0261,GENE0261,GENE0261 Associated Gene,19,DNA Repair,GENE0261 Protein
+GENE0262,GENE0262,GENE0262 Associated Gene,20,Cell Signaling,GENE0262 Protein
+GENE0263,GENE0263,GENE0263 Associated Gene,21,Tumor Suppression,GENE0263 Protein
+GENE0264,GENE0264,GENE0264 Associated Gene,22,Immune Regulation,GENE0264 Protein
+GENE0265,GENE0265,GENE0265 Associated Gene,1,Protein Synthesis,GENE0265 Protein
+GENE0266,GENE0266,GENE0266 Associated Gene,2,Metabolism,GENE0266 Protein
+GENE0267,GENE0267,GENE0267 Associated Gene,3,Signal Transduction,GENE0267 Protein
+GENE0268,GENE0268,GENE0268 Associated Gene,4,Apoptosis,GENE0268 Protein
+GENE0269,GENE0269,GENE0269 Associated Gene,5,Cell Cycle Control,GENE0269 Protein
+GENE0270,GENE0270,GENE0270 Associated Gene,6,Gene Expression,GENE0270 Protein
+GENE0271,GENE0271,GENE0271 Associated Gene,7,DNA Repair,GENE0271 Protein
+GENE0272,GENE0272,GENE0272 Associated Gene,8,Cell Signaling,GENE0272 Protein
+GENE0273,GENE0273,GENE0273 Associated Gene,9,Tumor Suppression,GENE0273 Protein
+GENE0274,GENE0274,GENE0274 Associated Gene,10,Immune Regulation,GENE0274 Protein
+GENE0275,GENE0275,GENE0275 Associated Gene,11,Protein Synthesis,GENE0275 Protein
+GENE0276,GENE0276,GENE0276 Associated Gene,12,Metabolism,GENE0276 Protein
+GENE0277,GENE0277,GENE0277 Associated Gene,13,Signal Transduction,GENE0277 Protein
+GENE0278,GENE0278,GENE0278 Associated Gene,14,Apoptosis,GENE0278 Protein
+GENE0279,GENE0279,GENE0279 Associated Gene,15,Cell Cycle Control,GENE0279 Protein
+GENE0280,GENE0280,GENE0280 Associated Gene,16,Gene Expression,GENE0280 Protein
+GENE0281,GENE0281,GENE0281 Associated Gene,17,DNA Repair,GENE0281 Protein
+GENE0282,GENE0282,GENE0282 Associated Gene,18,Cell Signaling,GENE0282 Protein
+GENE0283,GENE0283,GENE0283 Associated Gene,19,Tumor Suppression,GENE0283 Protein
+GENE0284,GENE0284,GENE0284 Associated Gene,20,Immune Regulation,GENE0284 Protein
+GENE0285,GENE0285,GENE0285 Associated Gene,21,Protein Synthesis,GENE0285 Protein
+GENE0286,GENE0286,GENE0286 Associated Gene,22,Metabolism,GENE0286 Protein
+GENE0287,GENE0287,GENE0287 Associated Gene,1,Signal Transduction,GENE0287 Protein
+GENE0288,GENE0288,GENE0288 Associated Gene,2,Apoptosis,GENE0288 Protein
+GENE0289,GENE0289,GENE0289 Associated Gene,3,Cell Cycle Control,GENE0289 Protein
+GENE0290,GENE0290,GENE0290 Associated Gene,4,Gene Expression,GENE0290 Protein
+GENE0291,GENE0291,GENE0291 Associated Gene,5,DNA Repair,GENE0291 Protein
+GENE0292,GENE0292,GENE0292 Associated Gene,6,Cell Signaling,GENE0292 Protein
+GENE0293,GENE0293,GENE0293 Associated Gene,7,Tumor Suppression,GENE0293 Protein
+GENE0294,GENE0294,GENE0294 Associated Gene,8,Immune Regulation,GENE0294 Protein
+GENE0295,GENE0295,GENE0295 Associated Gene,9,Protein Synthesis,GENE0295 Protein
+GENE0296,GENE0296,GENE0296 Associated Gene,10,Metabolism,GENE0296 Protein
+GENE0297,GENE0297,GENE0297 Associated Gene,11,Signal Transduction,GENE0297 Protein
+GENE0298,GENE0298,GENE0298 Associated Gene,12,Apoptosis,GENE0298 Protein
+GENE0299,GENE0299,GENE0299 Associated Gene,13,Cell Cycle Control,GENE0299 Protein
+GENE0300,GENE0300,GENE0300 Associated Gene,14,Gene Expression,GENE0300 Protein
+GENE0301,GENE0301,GENE0301 Associated Gene,15,DNA Repair,GENE0301 Protein
+GENE0302,GENE0302,GENE0302 Associated Gene,16,Cell Signaling,GENE0302 Protein
+GENE0303,GENE0303,GENE0303 Associated Gene,17,Tumor Suppression,GENE0303 Protein
+GENE0304,GENE0304,GENE0304 Associated Gene,18,Immune Regulation,GENE0304 Protein
+GENE0305,GENE0305,GENE0305 Associated Gene,19,Protein Synthesis,GENE0305 Protein
+GENE0306,GENE0306,GENE0306 Associated Gene,20,Metabolism,GENE0306 Protein
+GENE0307,GENE0307,GENE0307 Associated Gene,21,Signal Transduction,GENE0307 Protein
+GENE0308,GENE0308,GENE0308 Associated Gene,22,Apoptosis,GENE0308 Protein
+GENE0309,GENE0309,GENE0309 Associated Gene,1,Cell Cycle Control,GENE0309 Protein
+GENE0310,GENE0310,GENE0310 Associated Gene,2,Gene Expression,GENE0310 Protein
+GENE0311,GENE0311,GENE0311 Associated Gene,3,DNA Repair,GENE0311 Protein
+GENE0312,GENE0312,GENE0312 Associated Gene,4,Cell Signaling,GENE0312 Protein
+GENE0313,GENE0313,GENE0313 Associated Gene,5,Tumor Suppression,GENE0313 Protein
+GENE0314,GENE0314,GENE0314 Associated Gene,6,Immune Regulation,GENE0314 Protein
+GENE0315,GENE0315,GENE0315 Associated Gene,7,Protein Synthesis,GENE0315 Protein
+GENE0316,GENE0316,GENE0316 Associated Gene,8,Metabolism,GENE0316 Protein
+GENE0317,GENE0317,GENE0317 Associated Gene,9,Signal Transduction,GENE0317 Protein
+GENE0318,GENE0318,GENE0318 Associated Gene,10,Apoptosis,GENE0318 Protein
+GENE0319,GENE0319,GENE0319 Associated Gene,11,Cell Cycle Control,GENE0319 Protein
+GENE0320,GENE0320,GENE0320 Associated Gene,12,Gene Expression,GENE0320 Protein
+GENE0321,GENE0321,GENE0321 Associated Gene,13,DNA Repair,GENE0321 Protein
+GENE0322,GENE0322,GENE0322 Associated Gene,14,Cell Signaling,GENE0322 Protein
+GENE0323,GENE0323,GENE0323 Associated Gene,15,Tumor Suppression,GENE0323 Protein
+GENE0324,GENE0324,GENE0324 Associated Gene,16,Immune Regulation,GENE0324 Protein
+GENE0325,GENE0325,GENE0325 Associated Gene,17,Protein Synthesis,GENE0325 Protein
+GENE0326,GENE0326,GENE0326 Associated Gene,18,Metabolism,GENE0326 Protein
+GENE0327,GENE0327,GENE0327 Associated Gene,19,Signal Transduction,GENE0327 Protein
+GENE0328,GENE0328,GENE0328 Associated Gene,20,Apoptosis,GENE0328 Protein
+GENE0329,GENE0329,GENE0329 Associated Gene,21,Cell Cycle Control,GENE0329 Protein
+GENE0330,GENE0330,GENE0330 Associated Gene,22,Gene Expression,GENE0330 Protein
+GENE0331,GENE0331,GENE0331 Associated Gene,1,DNA Repair,GENE0331 Protein
+GENE0332,GENE0332,GENE0332 Associated Gene,2,Cell Signaling,GENE0332 Protein
+GENE0333,GENE0333,GENE0333 Associated Gene,3,Tumor Suppression,GENE0333 Protein
+GENE0334,GENE0334,GENE0334 Associated Gene,4,Immune Regulation,GENE0334 Protein
+GENE0335,GENE0335,GENE0335 Associated Gene,5,Protein Synthesis,GENE0335 Protein
+GENE0336,GENE0336,GENE0336 Associated Gene,6,Metabolism,GENE0336 Protein
+GENE0337,GENE0337,GENE0337 Associated Gene,7,Signal Transduction,GENE0337 Protein
+GENE0338,GENE0338,GENE0338 Associated Gene,8,Apoptosis,GENE0338 Protein
+GENE0339,GENE0339,GENE0339 Associated Gene,9,Cell Cycle Control,GENE0339 Protein
+GENE0340,GENE0340,GENE0340 Associated Gene,10,Gene Expression,GENE0340 Protein
+GENE0341,GENE0341,GENE0341 Associated Gene,11,DNA Repair,GENE0341 Protein
+GENE0342,GENE0342,GENE0342 Associated Gene,12,Cell Signaling,GENE0342 Protein
+GENE0343,GENE0343,GENE0343 Associated Gene,13,Tumor Suppression,GENE0343 Protein
+GENE0344,GENE0344,GENE0344 Associated Gene,14,Immune Regulation,GENE0344 Protein
+GENE0345,GENE0345,GENE0345 Associated Gene,15,Protein Synthesis,GENE0345 Protein
+GENE0346,GENE0346,GENE0346 Associated Gene,16,Metabolism,GENE0346 Protein
+GENE0347,GENE0347,GENE0347 Associated Gene,17,Signal Transduction,GENE0347 Protein
+GENE0348,GENE0348,GENE0348 Associated Gene,18,Apoptosis,GENE0348 Protein
+GENE0349,GENE0349,GENE0349 Associated Gene,19,Cell Cycle Control,GENE0349 Protein
+GENE0350,GENE0350,GENE0350 Associated Gene,20,Gene Expression,GENE0350 Protein
+GENE0351,GENE0351,GENE0351 Associated Gene,21,DNA Repair,GENE0351 Protein
+GENE0352,GENE0352,GENE0352 Associated Gene,22,Cell Signaling,GENE0352 Protein
+GENE0353,GENE0353,GENE0353 Associated Gene,1,Tumor Suppression,GENE0353 Protein
+GENE0354,GENE0354,GENE0354 Associated Gene,2,Immune Regulation,GENE0354 Protein
+GENE0355,GENE0355,GENE0355 Associated Gene,3,Protein Synthesis,GENE0355 Protein
+GENE0356,GENE0356,GENE0356 Associated Gene,4,Metabolism,GENE0356 Protein
+GENE0357,GENE0357,GENE0357 Associated Gene,5,Signal Transduction,GENE0357 Protein
+GENE0358,GENE0358,GENE0358 Associated Gene,6,Apoptosis,GENE0358 Protein
+GENE0359,GENE0359,GENE0359 Associated Gene,7,Cell Cycle Control,GENE0359 Protein
+GENE0360,GENE0360,GENE0360 Associated Gene,8,Gene Expression,GENE0360 Protein
+GENE0361,GENE0361,GENE0361 Associated Gene,9,DNA Repair,GENE0361 Protein
+GENE0362,GENE0362,GENE0362 Associated Gene,10,Cell Signaling,GENE0362 Protein
+GENE0363,GENE0363,GENE0363 Associated Gene,11,Tumor Suppression,GENE0363 Protein
+GENE0364,GENE0364,GENE0364 Associated Gene,12,Immune Regulation,GENE0364 Protein
+GENE0365,GENE0365,GENE0365 Associated Gene,13,Protein Synthesis,GENE0365 Protein
+GENE0366,GENE0366,GENE0366 Associated Gene,14,Metabolism,GENE0366 Protein
+GENE0367,GENE0367,GENE0367 Associated Gene,15,Signal Transduction,GENE0367 Protein
+GENE0368,GENE0368,GENE0368 Associated Gene,16,Apoptosis,GENE0368 Protein
+GENE0369,GENE0369,GENE0369 Associated Gene,17,Cell Cycle Control,GENE0369 Protein
+GENE0370,GENE0370,GENE0370 Associated Gene,18,Gene Expression,GENE0370 Protein
+GENE0371,GENE0371,GENE0371 Associated Gene,19,DNA Repair,GENE0371 Protein
+GENE0372,GENE0372,GENE0372 Associated Gene,20,Cell Signaling,GENE0372 Protein
+GENE0373,GENE0373,GENE0373 Associated Gene,21,Tumor Suppression,GENE0373 Protein
+GENE0374,GENE0374,GENE0374 Associated Gene,22,Immune Regulation,GENE0374 Protein
+GENE0375,GENE0375,GENE0375 Associated Gene,1,Protein Synthesis,GENE0375 Protein
+GENE0376,GENE0376,GENE0376 Associated Gene,2,Metabolism,GENE0376 Protein
+GENE0377,GENE0377,GENE0377 Associated Gene,3,Signal Transduction,GENE0377 Protein
+GENE0378,GENE0378,GENE0378 Associated Gene,4,Apoptosis,GENE0378 Protein
+GENE0379,GENE0379,GENE0379 Associated Gene,5,Cell Cycle Control,GENE0379 Protein
+GENE0380,GENE0380,GENE0380 Associated Gene,6,Gene Expression,GENE0380 Protein
+GENE0381,GENE0381,GENE0381 Associated Gene,7,DNA Repair,GENE0381 Protein
+GENE0382,GENE0382,GENE0382 Associated Gene,8,Cell Signaling,GENE0382 Protein
+GENE0383,GENE0383,GENE0383 Associated Gene,9,Tumor Suppression,GENE0383 Protein
+GENE0384,GENE0384,GENE0384 Associated Gene,10,Immune Regulation,GENE0384 Protein
+GENE0385,GENE0385,GENE0385 Associated Gene,11,Protein Synthesis,GENE0385 Protein
+GENE0386,GENE0386,GENE0386 Associated Gene,12,Metabolism,GENE0386 Protein
+GENE0387,GENE0387,GENE0387 Associated Gene,13,Signal Transduction,GENE0387 Protein
+GENE0388,GENE0388,GENE0388 Associated Gene,14,Apoptosis,GENE0388 Protein
+GENE0389,GENE0389,GENE0389 Associated Gene,15,Cell Cycle Control,GENE0389 Protein
+GENE0390,GENE0390,GENE0390 Associated Gene,16,Gene Expression,GENE0390 Protein
+GENE0391,GENE0391,GENE0391 Associated Gene,17,DNA Repair,GENE0391 Protein
+GENE0392,GENE0392,GENE0392 Associated Gene,18,Cell Signaling,GENE0392 Protein
+GENE0393,GENE0393,GENE0393 Associated Gene,19,Tumor Suppression,GENE0393 Protein
+GENE0394,GENE0394,GENE0394 Associated Gene,20,Immune Regulation,GENE0394 Protein
+GENE0395,GENE0395,GENE0395 Associated Gene,21,Protein Synthesis,GENE0395 Protein
+GENE0396,GENE0396,GENE0396 Associated Gene,22,Metabolism,GENE0396 Protein
+GENE0397,GENE0397,GENE0397 Associated Gene,1,Signal Transduction,GENE0397 Protein
+GENE0398,GENE0398,GENE0398 Associated Gene,2,Apoptosis,GENE0398 Protein
+GENE0399,GENE0399,GENE0399 Associated Gene,3,Cell Cycle Control,GENE0399 Protein
+GENE0400,GENE0400,GENE0400 Associated Gene,4,Gene Expression,GENE0400 Protein
+GENE0401,GENE0401,GENE0401 Associated Gene,5,DNA Repair,GENE0401 Protein
+GENE0402,GENE0402,GENE0402 Associated Gene,6,Cell Signaling,GENE0402 Protein
+GENE0403,GENE0403,GENE0403 Associated Gene,7,Tumor Suppression,GENE0403 Protein
+GENE0404,GENE0404,GENE0404 Associated Gene,8,Immune Regulation,GENE0404 Protein
+GENE0405,GENE0405,GENE0405 Associated Gene,9,Protein Synthesis,GENE0405 Protein
+GENE0406,GENE0406,GENE0406 Associated Gene,10,Metabolism,GENE0406 Protein
+GENE0407,GENE0407,GENE0407 Associated Gene,11,Signal Transduction,GENE0407 Protein
+GENE0408,GENE0408,GENE0408 Associated Gene,12,Apoptosis,GENE0408 Protein
+GENE0409,GENE0409,GENE0409 Associated Gene,13,Cell Cycle Control,GENE0409 Protein
+GENE0410,GENE0410,GENE0410 Associated Gene,14,Gene Expression,GENE0410 Protein
+GENE0411,GENE0411,GENE0411 Associated Gene,15,DNA Repair,GENE0411 Protein
+GENE0412,GENE0412,GENE0412 Associated Gene,16,Cell Signaling,GENE0412 Protein
+GENE0413,GENE0413,GENE0413 Associated Gene,17,Tumor Suppression,GENE0413 Protein
+GENE0414,GENE0414,GENE0414 Associated Gene,18,Immune Regulation,GENE0414 Protein
+GENE0415,GENE0415,GENE0415 Associated Gene,19,Protein Synthesis,GENE0415 Protein
+GENE0416,GENE0416,GENE0416 Associated Gene,20,Metabolism,GENE0416 Protein
+GENE0417,GENE0417,GENE0417 Associated Gene,21,Signal Transduction,GENE0417 Protein
+GENE0418,GENE0418,GENE0418 Associated Gene,22,Apoptosis,GENE0418 Protein
+GENE0419,GENE0419,GENE0419 Associated Gene,1,Cell Cycle Control,GENE0419 Protein
+GENE0420,GENE0420,GENE0420 Associated Gene,2,Gene Expression,GENE0420 Protein
+GENE0421,GENE0421,GENE0421 Associated Gene,3,DNA Repair,GENE0421 Protein
+GENE0422,GENE0422,GENE0422 Associated Gene,4,Cell Signaling,GENE0422 Protein
+GENE0423,GENE0423,GENE0423 Associated Gene,5,Tumor Suppression,GENE0423 Protein
+GENE0424,GENE0424,GENE0424 Associated Gene,6,Immune Regulation,GENE0424 Protein
+GENE0425,GENE0425,GENE0425 Associated Gene,7,Protein Synthesis,GENE0425 Protein
+GENE0426,GENE0426,GENE0426 Associated Gene,8,Metabolism,GENE0426 Protein
+GENE0427,GENE0427,GENE0427 Associated Gene,9,Signal Transduction,GENE0427 Protein
+GENE0428,GENE0428,GENE0428 Associated Gene,10,Apoptosis,GENE0428 Protein
+GENE0429,GENE0429,GENE0429 Associated Gene,11,Cell Cycle Control,GENE0429 Protein
+GENE0430,GENE0430,GENE0430 Associated Gene,12,Gene Expression,GENE0430 Protein
+GENE0431,GENE0431,GENE0431 Associated Gene,13,DNA Repair,GENE0431 Protein
+GENE0432,GENE0432,GENE0432 Associated Gene,14,Cell Signaling,GENE0432 Protein
+GENE0433,GENE0433,GENE0433 Associated Gene,15,Tumor Suppression,GENE0433 Protein
+GENE0434,GENE0434,GENE0434 Associated Gene,16,Immune Regulation,GENE0434 Protein
+GENE0435,GENE0435,GENE0435 Associated Gene,17,Protein Synthesis,GENE0435 Protein
+GENE0436,GENE0436,GENE0436 Associated Gene,18,Metabolism,GENE0436 Protein
+GENE0437,GENE0437,GENE0437 Associated Gene,19,Signal Transduction,GENE0437 Protein
+GENE0438,GENE0438,GENE0438 Associated Gene,20,Apoptosis,GENE0438 Protein
+GENE0439,GENE0439,GENE0439 Associated Gene,21,Cell Cycle Control,GENE0439 Protein
+GENE0440,GENE0440,GENE0440 Associated Gene,22,Gene Expression,GENE0440 Protein
+GENE0441,GENE0441,GENE0441 Associated Gene,1,DNA Repair,GENE0441 Protein
+GENE0442,GENE0442,GENE0442 Associated Gene,2,Cell Signaling,GENE0442 Protein
+GENE0443,GENE0443,GENE0443 Associated Gene,3,Tumor Suppression,GENE0443 Protein
+GENE0444,GENE0444,GENE0444 Associated Gene,4,Immune Regulation,GENE0444 Protein
+GENE0445,GENE0445,GENE0445 Associated Gene,5,Protein Synthesis,GENE0445 Protein
+GENE0446,GENE0446,GENE0446 Associated Gene,6,Metabolism,GENE0446 Protein
+GENE0447,GENE0447,GENE0447 Associated Gene,7,Signal Transduction,GENE0447 Protein
+GENE0448,GENE0448,GENE0448 Associated Gene,8,Apoptosis,GENE0448 Protein
+GENE0449,GENE0449,GENE0449 Associated Gene,9,Cell Cycle Control,GENE0449 Protein
+GENE0450,GENE0450,GENE0450 Associated Gene,10,Gene Expression,GENE0450 Protein
+GENE0451,GENE0451,GENE0451 Associated Gene,11,DNA Repair,GENE0451 Protein
+GENE0452,GENE0452,GENE0452 Associated Gene,12,Cell Signaling,GENE0452 Protein
+GENE0453,GENE0453,GENE0453 Associated Gene,13,Tumor Suppression,GENE0453 Protein
+GENE0454,GENE0454,GENE0454 Associated Gene,14,Immune Regulation,GENE0454 Protein
+GENE0455,GENE0455,GENE0455 Associated Gene,15,Protein Synthesis,GENE0455 Protein
+GENE0456,GENE0456,GENE0456 Associated Gene,16,Metabolism,GENE0456 Protein
+GENE0457,GENE0457,GENE0457 Associated Gene,17,Signal Transduction,GENE0457 Protein
+GENE0458,GENE0458,GENE0458 Associated Gene,18,Apoptosis,GENE0458 Protein
+GENE0459,GENE0459,GENE0459 Associated Gene,19,Cell Cycle Control,GENE0459 Protein
+GENE0460,GENE0460,GENE0460 Associated Gene,20,Gene Expression,GENE0460 Protein
+GENE0461,GENE0461,GENE0461 Associated Gene,21,DNA Repair,GENE0461 Protein
+GENE0462,GENE0462,GENE0462 Associated Gene,22,Cell Signaling,GENE0462 Protein
+GENE0463,GENE0463,GENE0463 Associated Gene,1,Tumor Suppression,GENE0463 Protein
+GENE0464,GENE0464,GENE0464 Associated Gene,2,Immune Regulation,GENE0464 Protein
+GENE0465,GENE0465,GENE0465 Associated Gene,3,Protein Synthesis,GENE0465 Protein
+GENE0466,GENE0466,GENE0466 Associated Gene,4,Metabolism,GENE0466 Protein
+GENE0467,GENE0467,GENE0467 Associated Gene,5,Signal Transduction,GENE0467 Protein
+GENE0468,GENE0468,GENE0468 Associated Gene,6,Apoptosis,GENE0468 Protein
+GENE0469,GENE0469,GENE0469 Associated Gene,7,Cell Cycle Control,GENE0469 Protein
+GENE0470,GENE0470,GENE0470 Associated Gene,8,Gene Expression,GENE0470 Protein
+GENE0471,GENE0471,GENE0471 Associated Gene,9,DNA Repair,GENE0471 Protein
+GENE0472,GENE0472,GENE0472 Associated Gene,10,Cell Signaling,GENE0472 Protein
+GENE0473,GENE0473,GENE0473 Associated Gene,11,Tumor Suppression,GENE0473 Protein
+GENE0474,GENE0474,GENE0474 Associated Gene,12,Immune Regulation,GENE0474 Protein
+GENE0475,GENE0475,GENE0475 Associated Gene,13,Protein Synthesis,GENE0475 Protein
+GENE0476,GENE0476,GENE0476 Associated Gene,14,Metabolism,GENE0476 Protein
+GENE0477,GENE0477,GENE0477 Associated Gene,15,Signal Transduction,GENE0477 Protein
+GENE0478,GENE0478,GENE0478 Associated Gene,16,Apoptosis,GENE0478 Protein
+GENE0479,GENE0479,GENE0479 Associated Gene,17,Cell Cycle Control,GENE0479 Protein
+GENE0480,GENE0480,GENE0480 Associated Gene,18,Gene Expression,GENE0480 Protein
+GENE0481,GENE0481,GENE0481 Associated Gene,19,DNA Repair,GENE0481 Protein
+GENE0482,GENE0482,GENE0482 Associated Gene,20,Cell Signaling,GENE0482 Protein
+GENE0483,GENE0483,GENE0483 Associated Gene,21,Tumor Suppression,GENE0483 Protein
+GENE0484,GENE0484,GENE0484 Associated Gene,22,Immune Regulation,GENE0484 Protein
+GENE0485,GENE0485,GENE0485 Associated Gene,1,Protein Synthesis,GENE0485 Protein
+GENE0486,GENE0486,GENE0486 Associated Gene,2,Metabolism,GENE0486 Protein
+GENE0487,GENE0487,GENE0487 Associated Gene,3,Signal Transduction,GENE0487 Protein
+GENE0488,GENE0488,GENE0488 Associated Gene,4,Apoptosis,GENE0488 Protein
+GENE0489,GENE0489,GENE0489 Associated Gene,5,Cell Cycle Control,GENE0489 Protein
+GENE0490,GENE0490,GENE0490 Associated Gene,6,Gene Expression,GENE0490 Protein
+GENE0491,GENE0491,GENE0491 Associated Gene,7,DNA Repair,GENE0491 Protein
+GENE0492,GENE0492,GENE0492 Associated Gene,8,Cell Signaling,GENE0492 Protein
+GENE0493,GENE0493,GENE0493 Associated Gene,9,Tumor Suppression,GENE0493 Protein
+GENE0494,GENE0494,GENE0494 Associated Gene,10,Immune Regulation,GENE0494 Protein
+GENE0495,GENE0495,GENE0495 Associated Gene,11,Protein Synthesis,GENE0495 Protein
+GENE0496,GENE0496,GENE0496 Associated Gene,12,Metabolism,GENE0496 Protein
+GENE0497,GENE0497,GENE0497 Associated Gene,13,Signal Transduction,GENE0497 Protein
+GENE0498,GENE0498,GENE0498 Associated Gene,14,Apoptosis,GENE0498 Protein
+GENE0499,GENE0499,GENE0499 Associated Gene,15,Cell Cycle Control,GENE0499 Protein
+GENE0500,GENE0500,GENE0500 Associated Gene,16,Gene Expression,GENE0500 Protein
+GENE0501,GENE0501,GENE0501 Associated Gene,17,DNA Repair,GENE0501 Protein
+GENE0502,GENE0502,GENE0502 Associated Gene,18,Cell Signaling,GENE0502 Protein
+GENE0503,GENE0503,GENE0503 Associated Gene,19,Tumor Suppression,GENE0503 Protein
+GENE0504,GENE0504,GENE0504 Associated Gene,20,Immune Regulation,GENE0504 Protein
+GENE0505,GENE0505,GENE0505 Associated Gene,21,Protein Synthesis,GENE0505 Protein
+GENE0506,GENE0506,GENE0506 Associated Gene,22,Metabolism,GENE0506 Protein
+GENE0507,GENE0507,GENE0507 Associated Gene,1,Signal Transduction,GENE0507 Protein
+GENE0508,GENE0508,GENE0508 Associated Gene,2,Apoptosis,GENE0508 Protein
+GENE0509,GENE0509,GENE0509 Associated Gene,3,Cell Cycle Control,GENE0509 Protein
+GENE0510,GENE0510,GENE0510 Associated Gene,4,Gene Expression,GENE0510 Protein
+GENE0511,GENE0511,GENE0511 Associated Gene,5,DNA Repair,GENE0511 Protein
+GENE0512,GENE0512,GENE0512 Associated Gene,6,Cell Signaling,GENE0512 Protein
+GENE0513,GENE0513,GENE0513 Associated Gene,7,Tumor Suppression,GENE0513 Protein
+GENE0514,GENE0514,GENE0514 Associated Gene,8,Immune Regulation,GENE0514 Protein
+GENE0515,GENE0515,GENE0515 Associated Gene,9,Protein Synthesis,GENE0515 Protein
+GENE0516,GENE0516,GENE0516 Associated Gene,10,Metabolism,GENE0516 Protein
+GENE0517,GENE0517,GENE0517 Associated Gene,11,Signal Transduction,GENE0517 Protein
+GENE0518,GENE0518,GENE0518 Associated Gene,12,Apoptosis,GENE0518 Protein
+GENE0519,GENE0519,GENE0519 Associated Gene,13,Cell Cycle Control,GENE0519 Protein
+GENE0520,GENE0520,GENE0520 Associated Gene,14,Gene Expression,GENE0520 Protein
+GENE0521,GENE0521,GENE0521 Associated Gene,15,DNA Repair,GENE0521 Protein
+GENE0522,GENE0522,GENE0522 Associated Gene,16,Cell Signaling,GENE0522 Protein
+GENE0523,GENE0523,GENE0523 Associated Gene,17,Tumor Suppression,GENE0523 Protein
+GENE0524,GENE0524,GENE0524 Associated Gene,18,Immune Regulation,GENE0524 Protein
+GENE0525,GENE0525,GENE0525 Associated Gene,19,Protein Synthesis,GENE0525 Protein
+GENE0526,GENE0526,GENE0526 Associated Gene,20,Metabolism,GENE0526 Protein
+GENE0527,GENE0527,GENE0527 Associated Gene,21,Signal Transduction,GENE0527 Protein
+GENE0528,GENE0528,GENE0528 Associated Gene,22,Apoptosis,GENE0528 Protein
+GENE0529,GENE0529,GENE0529 Associated Gene,1,Cell Cycle Control,GENE0529 Protein
+GENE0530,GENE0530,GENE0530 Associated Gene,2,Gene Expression,GENE0530 Protein
+GENE0531,GENE0531,GENE0531 Associated Gene,3,DNA Repair,GENE0531 Protein
+GENE0532,GENE0532,GENE0532 Associated Gene,4,Cell Signaling,GENE0532 Protein
+GENE0533,GENE0533,GENE0533 Associated Gene,5,Tumor Suppression,GENE0533 Protein
+GENE0534,GENE0534,GENE0534 Associated Gene,6,Immune Regulation,GENE0534 Protein
+GENE0535,GENE0535,GENE0535 Associated Gene,7,Protein Synthesis,GENE0535 Protein
+GENE0536,GENE0536,GENE0536 Associated Gene,8,Metabolism,GENE0536 Protein
+GENE0537,GENE0537,GENE0537 Associated Gene,9,Signal Transduction,GENE0537 Protein
+GENE0538,GENE0538,GENE0538 Associated Gene,10,Apoptosis,GENE0538 Protein
+GENE0539,GENE0539,GENE0539 Associated Gene,11,Cell Cycle Control,GENE0539 Protein
+GENE0540,GENE0540,GENE0540 Associated Gene,12,Gene Expression,GENE0540 Protein
+GENE0541,GENE0541,GENE0541 Associated Gene,13,DNA Repair,GENE0541 Protein
+GENE0542,GENE0542,GENE0542 Associated Gene,14,Cell Signaling,GENE0542 Protein
+GENE0543,GENE0543,GENE0543 Associated Gene,15,Tumor Suppression,GENE0543 Protein
+GENE0544,GENE0544,GENE0544 Associated Gene,16,Immune Regulation,GENE0544 Protein
+GENE0545,GENE0545,GENE0545 Associated Gene,17,Protein Synthesis,GENE0545 Protein
+GENE0546,GENE0546,GENE0546 Associated Gene,18,Metabolism,GENE0546 Protein
+GENE0547,GENE0547,GENE0547 Associated Gene,19,Signal Transduction,GENE0547 Protein
+GENE0548,GENE0548,GENE0548 Associated Gene,20,Apoptosis,GENE0548 Protein
+GENE0549,GENE0549,GENE0549 Associated Gene,21,Cell Cycle Control,GENE0549 Protein
+GENE0550,GENE0550,GENE0550 Associated Gene,22,Gene Expression,GENE0550 Protein
+GENE0551,GENE0551,GENE0551 Associated Gene,1,DNA Repair,GENE0551 Protein
+GENE0552,GENE0552,GENE0552 Associated Gene,2,Cell Signaling,GENE0552 Protein
+GENE0553,GENE0553,GENE0553 Associated Gene,3,Tumor Suppression,GENE0553 Protein
+GENE0554,GENE0554,GENE0554 Associated Gene,4,Immune Regulation,GENE0554 Protein
+GENE0555,GENE0555,GENE0555 Associated Gene,5,Protein Synthesis,GENE0555 Protein
+GENE0556,GENE0556,GENE0556 Associated Gene,6,Metabolism,GENE0556 Protein
+GENE0557,GENE0557,GENE0557 Associated Gene,7,Signal Transduction,GENE0557 Protein
+GENE0558,GENE0558,GENE0558 Associated Gene,8,Apoptosis,GENE0558 Protein
+GENE0559,GENE0559,GENE0559 Associated Gene,9,Cell Cycle Control,GENE0559 Protein
+GENE0560,GENE0560,GENE0560 Associated Gene,10,Gene Expression,GENE0560 Protein
+GENE0561,GENE0561,GENE0561 Associated Gene,11,DNA Repair,GENE0561 Protein
+GENE0562,GENE0562,GENE0562 Associated Gene,12,Cell Signaling,GENE0562 Protein
+GENE0563,GENE0563,GENE0563 Associated Gene,13,Tumor Suppression,GENE0563 Protein
+GENE0564,GENE0564,GENE0564 Associated Gene,14,Immune Regulation,GENE0564 Protein
+GENE0565,GENE0565,GENE0565 Associated Gene,15,Protein Synthesis,GENE0565 Protein
+GENE0566,GENE0566,GENE0566 Associated Gene,16,Metabolism,GENE0566 Protein
+GENE0567,GENE0567,GENE0567 Associated Gene,17,Signal Transduction,GENE0567 Protein
+GENE0568,GENE0568,GENE0568 Associated Gene,18,Apoptosis,GENE0568 Protein
+GENE0569,GENE0569,GENE0569 Associated Gene,19,Cell Cycle Control,GENE0569 Protein
+GENE0570,GENE0570,GENE0570 Associated Gene,20,Gene Expression,GENE0570 Protein
+GENE0571,GENE0571,GENE0571 Associated Gene,21,DNA Repair,GENE0571 Protein
+GENE0572,GENE0572,GENE0572 Associated Gene,22,Cell Signaling,GENE0572 Protein
+GENE0573,GENE0573,GENE0573 Associated Gene,1,Tumor Suppression,GENE0573 Protein
+GENE0574,GENE0574,GENE0574 Associated Gene,2,Immune Regulation,GENE0574 Protein
+GENE0575,GENE0575,GENE0575 Associated Gene,3,Protein Synthesis,GENE0575 Protein
+GENE0576,GENE0576,GENE0576 Associated Gene,4,Metabolism,GENE0576 Protein
+GENE0577,GENE0577,GENE0577 Associated Gene,5,Signal Transduction,GENE0577 Protein
+GENE0578,GENE0578,GENE0578 Associated Gene,6,Apoptosis,GENE0578 Protein
+GENE0579,GENE0579,GENE0579 Associated Gene,7,Cell Cycle Control,GENE0579 Protein
+GENE0580,GENE0580,GENE0580 Associated Gene,8,Gene Expression,GENE0580 Protein
+GENE0581,GENE0581,GENE0581 Associated Gene,9,DNA Repair,GENE0581 Protein
+GENE0582,GENE0582,GENE0582 Associated Gene,10,Cell Signaling,GENE0582 Protein
+GENE0583,GENE0583,GENE0583 Associated Gene,11,Tumor Suppression,GENE0583 Protein
+GENE0584,GENE0584,GENE0584 Associated Gene,12,Immune Regulation,GENE0584 Protein
+GENE0585,GENE0585,GENE0585 Associated Gene,13,Protein Synthesis,GENE0585 Protein
+GENE0586,GENE0586,GENE0586 Associated Gene,14,Metabolism,GENE0586 Protein
+GENE0587,GENE0587,GENE0587 Associated Gene,15,Signal Transduction,GENE0587 Protein
+GENE0588,GENE0588,GENE0588 Associated Gene,16,Apoptosis,GENE0588 Protein
+GENE0589,GENE0589,GENE0589 Associated Gene,17,Cell Cycle Control,GENE0589 Protein
+GENE0590,GENE0590,GENE0590 Associated Gene,18,Gene Expression,GENE0590 Protein
+GENE0591,GENE0591,GENE0591 Associated Gene,19,DNA Repair,GENE0591 Protein
+GENE0592,GENE0592,GENE0592 Associated Gene,20,Cell Signaling,GENE0592 Protein
+GENE0593,GENE0593,GENE0593 Associated Gene,21,Tumor Suppression,GENE0593 Protein
+GENE0594,GENE0594,GENE0594 Associated Gene,22,Immune Regulation,GENE0594 Protein
+GENE0595,GENE0595,GENE0595 Associated Gene,1,Protein Synthesis,GENE0595 Protein
+GENE0596,GENE0596,GENE0596 Associated Gene,2,Metabolism,GENE0596 Protein
+GENE0597,GENE0597,GENE0597 Associated Gene,3,Signal Transduction,GENE0597 Protein
+GENE0598,GENE0598,GENE0598 Associated Gene,4,Apoptosis,GENE0598 Protein
+GENE0599,GENE0599,GENE0599 Associated Gene,5,Cell Cycle Control,GENE0599 Protein
+GENE0600,GENE0600,GENE0600 Associated Gene,6,Gene Expression,GENE0600 Protein
+GENE0601,GENE0601,GENE0601 Associated Gene,7,DNA Repair,GENE0601 Protein
+GENE0602,GENE0602,GENE0602 Associated Gene,8,Cell Signaling,GENE0602 Protein
+GENE0603,GENE0603,GENE0603 Associated Gene,9,Tumor Suppression,GENE0603 Protein
+GENE0604,GENE0604,GENE0604 Associated Gene,10,Immune Regulation,GENE0604 Protein
+GENE0605,GENE0605,GENE0605 Associated Gene,11,Protein Synthesis,GENE0605 Protein
+GENE0606,GENE0606,GENE0606 Associated Gene,12,Metabolism,GENE0606 Protein
+GENE0607,GENE0607,GENE0607 Associated Gene,13,Signal Transduction,GENE0607 Protein
+GENE0608,GENE0608,GENE0608 Associated Gene,14,Apoptosis,GENE0608 Protein
+GENE0609,GENE0609,GENE0609 Associated Gene,15,Cell Cycle Control,GENE0609 Protein
+GENE0610,GENE0610,GENE0610 Associated Gene,16,Gene Expression,GENE0610 Protein
+GENE0611,GENE0611,GENE0611 Associated Gene,17,DNA Repair,GENE0611 Protein
+GENE0612,GENE0612,GENE0612 Associated Gene,18,Cell Signaling,GENE0612 Protein
+GENE0613,GENE0613,GENE0613 Associated Gene,19,Tumor Suppression,GENE0613 Protein
+GENE0614,GENE0614,GENE0614 Associated Gene,20,Immune Regulation,GENE0614 Protein
+GENE0615,GENE0615,GENE0615 Associated Gene,21,Protein Synthesis,GENE0615 Protein
+GENE0616,GENE0616,GENE0616 Associated Gene,22,Metabolism,GENE0616 Protein
+GENE0617,GENE0617,GENE0617 Associated Gene,1,Signal Transduction,GENE0617 Protein
+GENE0618,GENE0618,GENE0618 Associated Gene,2,Apoptosis,GENE0618 Protein
+GENE0619,GENE0619,GENE0619 Associated Gene,3,Cell Cycle Control,GENE0619 Protein
+GENE0620,GENE0620,GENE0620 Associated Gene,4,Gene Expression,GENE0620 Protein
+GENE0621,GENE0621,GENE0621 Associated Gene,5,DNA Repair,GENE0621 Protein
+GENE0622,GENE0622,GENE0622 Associated Gene,6,Cell Signaling,GENE0622 Protein
+GENE0623,GENE0623,GENE0623 Associated Gene,7,Tumor Suppression,GENE0623 Protein
+GENE0624,GENE0624,GENE0624 Associated Gene,8,Immune Regulation,GENE0624 Protein
+GENE0625,GENE0625,GENE0625 Associated Gene,9,Protein Synthesis,GENE0625 Protein
+GENE0626,GENE0626,GENE0626 Associated Gene,10,Metabolism,GENE0626 Protein
+GENE0627,GENE0627,GENE0627 Associated Gene,11,Signal Transduction,GENE0627 Protein
+GENE0628,GENE0628,GENE0628 Associated Gene,12,Apoptosis,GENE0628 Protein
+GENE0629,GENE0629,GENE0629 Associated Gene,13,Cell Cycle Control,GENE0629 Protein
+GENE0630,GENE0630,GENE0630 Associated Gene,14,Gene Expression,GENE0630 Protein
+GENE0631,GENE0631,GENE0631 Associated Gene,15,DNA Repair,GENE0631 Protein
+GENE0632,GENE0632,GENE0632 Associated Gene,16,Cell Signaling,GENE0632 Protein
+GENE0633,GENE0633,GENE0633 Associated Gene,17,Tumor Suppression,GENE0633 Protein
+GENE0634,GENE0634,GENE0634 Associated Gene,18,Immune Regulation,GENE0634 Protein
+GENE0635,GENE0635,GENE0635 Associated Gene,19,Protein Synthesis,GENE0635 Protein
+GENE0636,GENE0636,GENE0636 Associated Gene,20,Metabolism,GENE0636 Protein
+GENE0637,GENE0637,GENE0637 Associated Gene,21,Signal Transduction,GENE0637 Protein
+GENE0638,GENE0638,GENE0638 Associated Gene,22,Apoptosis,GENE0638 Protein
+GENE0639,GENE0639,GENE0639 Associated Gene,1,Cell Cycle Control,GENE0639 Protein
+GENE0640,GENE0640,GENE0640 Associated Gene,2,Gene Expression,GENE0640 Protein
+GENE0641,GENE0641,GENE0641 Associated Gene,3,DNA Repair,GENE0641 Protein
+GENE0642,GENE0642,GENE0642 Associated Gene,4,Cell Signaling,GENE0642 Protein
+GENE0643,GENE0643,GENE0643 Associated Gene,5,Tumor Suppression,GENE0643 Protein
+GENE0644,GENE0644,GENE0644 Associated Gene,6,Immune Regulation,GENE0644 Protein
+GENE0645,GENE0645,GENE0645 Associated Gene,7,Protein Synthesis,GENE0645 Protein
+GENE0646,GENE0646,GENE0646 Associated Gene,8,Metabolism,GENE0646 Protein
+GENE0647,GENE0647,GENE0647 Associated Gene,9,Signal Transduction,GENE0647 Protein
+GENE0648,GENE0648,GENE0648 Associated Gene,10,Apoptosis,GENE0648 Protein
+GENE0649,GENE0649,GENE0649 Associated Gene,11,Cell Cycle Control,GENE0649 Protein
+GENE0650,GENE0650,GENE0650 Associated Gene,12,Gene Expression,GENE0650 Protein
+GENE0651,GENE0651,GENE0651 Associated Gene,13,DNA Repair,GENE0651 Protein
+GENE0652,GENE0652,GENE0652 Associated Gene,14,Cell Signaling,GENE0652 Protein
+GENE0653,GENE0653,GENE0653 Associated Gene,15,Tumor Suppression,GENE0653 Protein
+GENE0654,GENE0654,GENE0654 Associated Gene,16,Immune Regulation,GENE0654 Protein
+GENE0655,GENE0655,GENE0655 Associated Gene,17,Protein Synthesis,GENE0655 Protein
+GENE0656,GENE0656,GENE0656 Associated Gene,18,Metabolism,GENE0656 Protein
+GENE0657,GENE0657,GENE0657 Associated Gene,19,Signal Transduction,GENE0657 Protein
+GENE0658,GENE0658,GENE0658 Associated Gene,20,Apoptosis,GENE0658 Protein
+GENE0659,GENE0659,GENE0659 Associated Gene,21,Cell Cycle Control,GENE0659 Protein
+GENE0660,GENE0660,GENE0660 Associated Gene,22,Gene Expression,GENE0660 Protein
+GENE0661,GENE0661,GENE0661 Associated Gene,1,DNA Repair,GENE0661 Protein
+GENE0662,GENE0662,GENE0662 Associated Gene,2,Cell Signaling,GENE0662 Protein
+GENE0663,GENE0663,GENE0663 Associated Gene,3,Tumor Suppression,GENE0663 Protein
+GENE0664,GENE0664,GENE0664 Associated Gene,4,Immune Regulation,GENE0664 Protein
+GENE0665,GENE0665,GENE0665 Associated Gene,5,Protein Synthesis,GENE0665 Protein
+GENE0666,GENE0666,GENE0666 Associated Gene,6,Metabolism,GENE0666 Protein
+GENE0667,GENE0667,GENE0667 Associated Gene,7,Signal Transduction,GENE0667 Protein
+GENE0668,GENE0668,GENE0668 Associated Gene,8,Apoptosis,GENE0668 Protein
+GENE0669,GENE0669,GENE0669 Associated Gene,9,Cell Cycle Control,GENE0669 Protein
+GENE0670,GENE0670,GENE0670 Associated Gene,10,Gene Expression,GENE0670 Protein
+GENE0671,GENE0671,GENE0671 Associated Gene,11,DNA Repair,GENE0671 Protein
+GENE0672,GENE0672,GENE0672 Associated Gene,12,Cell Signaling,GENE0672 Protein
+GENE0673,GENE0673,GENE0673 Associated Gene,13,Tumor Suppression,GENE0673 Protein
+GENE0674,GENE0674,GENE0674 Associated Gene,14,Immune Regulation,GENE0674 Protein
+GENE0675,GENE0675,GENE0675 Associated Gene,15,Protein Synthesis,GENE0675 Protein
+GENE0676,GENE0676,GENE0676 Associated Gene,16,Metabolism,GENE0676 Protein
+GENE0677,GENE0677,GENE0677 Associated Gene,17,Signal Transduction,GENE0677 Protein
+GENE0678,GENE0678,GENE0678 Associated Gene,18,Apoptosis,GENE0678 Protein
+GENE0679,GENE0679,GENE0679 Associated Gene,19,Cell Cycle Control,GENE0679 Protein
+GENE0680,GENE0680,GENE0680 Associated Gene,20,Gene Expression,GENE0680 Protein
+GENE0681,GENE0681,GENE0681 Associated Gene,21,DNA Repair,GENE0681 Protein
+GENE0682,GENE0682,GENE0682 Associated Gene,22,Cell Signaling,GENE0682 Protein
+GENE0683,GENE0683,GENE0683 Associated Gene,1,Tumor Suppression,GENE0683 Protein
+GENE0684,GENE0684,GENE0684 Associated Gene,2,Immune Regulation,GENE0684 Protein
+GENE0685,GENE0685,GENE0685 Associated Gene,3,Protein Synthesis,GENE0685 Protein
+GENE0686,GENE0686,GENE0686 Associated Gene,4,Metabolism,GENE0686 Protein
+GENE0687,GENE0687,GENE0687 Associated Gene,5,Signal Transduction,GENE0687 Protein
+GENE0688,GENE0688,GENE0688 Associated Gene,6,Apoptosis,GENE0688 Protein
+GENE0689,GENE0689,GENE0689 Associated Gene,7,Cell Cycle Control,GENE0689 Protein
+GENE0690,GENE0690,GENE0690 Associated Gene,8,Gene Expression,GENE0690 Protein
+GENE0691,GENE0691,GENE0691 Associated Gene,9,DNA Repair,GENE0691 Protein
+GENE0692,GENE0692,GENE0692 Associated Gene,10,Cell Signaling,GENE0692 Protein
+GENE0693,GENE0693,GENE0693 Associated Gene,11,Tumor Suppression,GENE0693 Protein
+GENE0694,GENE0694,GENE0694 Associated Gene,12,Immune Regulation,GENE0694 Protein
+GENE0695,GENE0695,GENE0695 Associated Gene,13,Protein Synthesis,GENE0695 Protein
+GENE0696,GENE0696,GENE0696 Associated Gene,14,Metabolism,GENE0696 Protein
+GENE0697,GENE0697,GENE0697 Associated Gene,15,Signal Transduction,GENE0697 Protein
+GENE0698,GENE0698,GENE0698 Associated Gene,16,Apoptosis,GENE0698 Protein
+GENE0699,GENE0699,GENE0699 Associated Gene,17,Cell Cycle Control,GENE0699 Protein
+GENE0700,GENE0700,GENE0700 Associated Gene,18,Gene Expression,GENE0700 Protein
+GENE0701,GENE0701,GENE0701 Associated Gene,19,DNA Repair,GENE0701 Protein
+GENE0702,GENE0702,GENE0702 Associated Gene,20,Cell Signaling,GENE0702 Protein
+GENE0703,GENE0703,GENE0703 Associated Gene,21,Tumor Suppression,GENE0703 Protein
+GENE0704,GENE0704,GENE0704 Associated Gene,22,Immune Regulation,GENE0704 Protein
+GENE0705,GENE0705,GENE0705 Associated Gene,1,Protein Synthesis,GENE0705 Protein
+GENE0706,GENE0706,GENE0706 Associated Gene,2,Metabolism,GENE0706 Protein
+GENE0707,GENE0707,GENE0707 Associated Gene,3,Signal Transduction,GENE0707 Protein
+GENE0708,GENE0708,GENE0708 Associated Gene,4,Apoptosis,GENE0708 Protein
+GENE0709,GENE0709,GENE0709 Associated Gene,5,Cell Cycle Control,GENE0709 Protein
+GENE0710,GENE0710,GENE0710 Associated Gene,6,Gene Expression,GENE0710 Protein
+GENE0711,GENE0711,GENE0711 Associated Gene,7,DNA Repair,GENE0711 Protein
+GENE0712,GENE0712,GENE0712 Associated Gene,8,Cell Signaling,GENE0712 Protein
+GENE0713,GENE0713,GENE0713 Associated Gene,9,Tumor Suppression,GENE0713 Protein
+GENE0714,GENE0714,GENE0714 Associated Gene,10,Immune Regulation,GENE0714 Protein
+GENE0715,GENE0715,GENE0715 Associated Gene,11,Protein Synthesis,GENE0715 Protein
+GENE0716,GENE0716,GENE0716 Associated Gene,12,Metabolism,GENE0716 Protein
+GENE0717,GENE0717,GENE0717 Associated Gene,13,Signal Transduction,GENE0717 Protein
+GENE0718,GENE0718,GENE0718 Associated Gene,14,Apoptosis,GENE0718 Protein
+GENE0719,GENE0719,GENE0719 Associated Gene,15,Cell Cycle Control,GENE0719 Protein
+GENE0720,GENE0720,GENE0720 Associated Gene,16,Gene Expression,GENE0720 Protein
+GENE0721,GENE0721,GENE0721 Associated Gene,17,DNA Repair,GENE0721 Protein
+GENE0722,GENE0722,GENE0722 Associated Gene,18,Cell Signaling,GENE0722 Protein
+GENE0723,GENE0723,GENE0723 Associated Gene,19,Tumor Suppression,GENE0723 Protein
+GENE0724,GENE0724,GENE0724 Associated Gene,20,Immune Regulation,GENE0724 Protein
+GENE0725,GENE0725,GENE0725 Associated Gene,21,Protein Synthesis,GENE0725 Protein
+GENE0726,GENE0726,GENE0726 Associated Gene,22,Metabolism,GENE0726 Protein
+GENE0727,GENE0727,GENE0727 Associated Gene,1,Signal Transduction,GENE0727 Protein
+GENE0728,GENE0728,GENE0728 Associated Gene,2,Apoptosis,GENE0728 Protein
+GENE0729,GENE0729,GENE0729 Associated Gene,3,Cell Cycle Control,GENE0729 Protein
+GENE0730,GENE0730,GENE0730 Associated Gene,4,Gene Expression,GENE0730 Protein
+GENE0731,GENE0731,GENE0731 Associated Gene,5,DNA Repair,GENE0731 Protein
+GENE0732,GENE0732,GENE0732 Associated Gene,6,Cell Signaling,GENE0732 Protein
+GENE0733,GENE0733,GENE0733 Associated Gene,7,Tumor Suppression,GENE0733 Protein
+GENE0734,GENE0734,GENE0734 Associated Gene,8,Immune Regulation,GENE0734 Protein
+GENE0735,GENE0735,GENE0735 Associated Gene,9,Protein Synthesis,GENE0735 Protein
+GENE0736,GENE0736,GENE0736 Associated Gene,10,Metabolism,GENE0736 Protein
+GENE0737,GENE0737,GENE0737 Associated Gene,11,Signal Transduction,GENE0737 Protein
+GENE0738,GENE0738,GENE0738 Associated Gene,12,Apoptosis,GENE0738 Protein
+GENE0739,GENE0739,GENE0739 Associated Gene,13,Cell Cycle Control,GENE0739 Protein
+GENE0740,GENE0740,GENE0740 Associated Gene,14,Gene Expression,GENE0740 Protein
+GENE0741,GENE0741,GENE0741 Associated Gene,15,DNA Repair,GENE0741 Protein
+GENE0742,GENE0742,GENE0742 Associated Gene,16,Cell Signaling,GENE0742 Protein
+GENE0743,GENE0743,GENE0743 Associated Gene,17,Tumor Suppression,GENE0743 Protein
+GENE0744,GENE0744,GENE0744 Associated Gene,18,Immune Regulation,GENE0744 Protein
+GENE0745,GENE0745,GENE0745 Associated Gene,19,Protein Synthesis,GENE0745 Protein
+GENE0746,GENE0746,GENE0746 Associated Gene,20,Metabolism,GENE0746 Protein
+GENE0747,GENE0747,GENE0747 Associated Gene,21,Signal Transduction,GENE0747 Protein
+GENE0748,GENE0748,GENE0748 Associated Gene,22,Apoptosis,GENE0748 Protein
+GENE0749,GENE0749,GENE0749 Associated Gene,1,Cell Cycle Control,GENE0749 Protein
+GENE0750,GENE0750,GENE0750 Associated Gene,2,Gene Expression,GENE0750 Protein
+GENE0751,GENE0751,GENE0751 Associated Gene,3,DNA Repair,GENE0751 Protein
+GENE0752,GENE0752,GENE0752 Associated Gene,4,Cell Signaling,GENE0752 Protein
+GENE0753,GENE0753,GENE0753 Associated Gene,5,Tumor Suppression,GENE0753 Protein
+GENE0754,GENE0754,GENE0754 Associated Gene,6,Immune Regulation,GENE0754 Protein
+GENE0755,GENE0755,GENE0755 Associated Gene,7,Protein Synthesis,GENE0755 Protein
+GENE0756,GENE0756,GENE0756 Associated Gene,8,Metabolism,GENE0756 Protein
+GENE0757,GENE0757,GENE0757 Associated Gene,9,Signal Transduction,GENE0757 Protein
+GENE0758,GENE0758,GENE0758 Associated Gene,10,Apoptosis,GENE0758 Protein
+GENE0759,GENE0759,GENE0759 Associated Gene,11,Cell Cycle Control,GENE0759 Protein
+GENE0760,GENE0760,GENE0760 Associated Gene,12,Gene Expression,GENE0760 Protein
+GENE0761,GENE0761,GENE0761 Associated Gene,13,DNA Repair,GENE0761 Protein
+GENE0762,GENE0762,GENE0762 Associated Gene,14,Cell Signaling,GENE0762 Protein
+GENE0763,GENE0763,GENE0763 Associated Gene,15,Tumor Suppression,GENE0763 Protein
+GENE0764,GENE0764,GENE0764 Associated Gene,16,Immune Regulation,GENE0764 Protein
+GENE0765,GENE0765,GENE0765 Associated Gene,17,Protein Synthesis,GENE0765 Protein
+GENE0766,GENE0766,GENE0766 Associated Gene,18,Metabolism,GENE0766 Protein
+GENE0767,GENE0767,GENE0767 Associated Gene,19,Signal Transduction,GENE0767 Protein
+GENE0768,GENE0768,GENE0768 Associated Gene,20,Apoptosis,GENE0768 Protein
+GENE0769,GENE0769,GENE0769 Associated Gene,21,Cell Cycle Control,GENE0769 Protein
+GENE0770,GENE0770,GENE0770 Associated Gene,22,Gene Expression,GENE0770 Protein
+GENE0771,GENE0771,GENE0771 Associated Gene,1,DNA Repair,GENE0771 Protein
+GENE0772,GENE0772,GENE0772 Associated Gene,2,Cell Signaling,GENE0772 Protein
+GENE0773,GENE0773,GENE0773 Associated Gene,3,Tumor Suppression,GENE0773 Protein
+GENE0774,GENE0774,GENE0774 Associated Gene,4,Immune Regulation,GENE0774 Protein
+GENE0775,GENE0775,GENE0775 Associated Gene,5,Protein Synthesis,GENE0775 Protein
+GENE0776,GENE0776,GENE0776 Associated Gene,6,Metabolism,GENE0776 Protein
+GENE0777,GENE0777,GENE0777 Associated Gene,7,Signal Transduction,GENE0777 Protein
+GENE0778,GENE0778,GENE0778 Associated Gene,8,Apoptosis,GENE0778 Protein
+GENE0779,GENE0779,GENE0779 Associated Gene,9,Cell Cycle Control,GENE0779 Protein
+GENE0780,GENE0780,GENE0780 Associated Gene,10,Gene Expression,GENE0780 Protein
+GENE0781,GENE0781,GENE0781 Associated Gene,11,DNA Repair,GENE0781 Protein
+GENE0782,GENE0782,GENE0782 Associated Gene,12,Cell Signaling,GENE0782 Protein
+GENE0783,GENE0783,GENE0783 Associated Gene,13,Tumor Suppression,GENE0783 Protein
+GENE0784,GENE0784,GENE0784 Associated Gene,14,Immune Regulation,GENE0784 Protein
+GENE0785,GENE0785,GENE0785 Associated Gene,15,Protein Synthesis,GENE0785 Protein
+GENE0786,GENE0786,GENE0786 Associated Gene,16,Metabolism,GENE0786 Protein
+GENE0787,GENE0787,GENE0787 Associated Gene,17,Signal Transduction,GENE0787 Protein
+GENE0788,GENE0788,GENE0788 Associated Gene,18,Apoptosis,GENE0788 Protein
+GENE0789,GENE0789,GENE0789 Associated Gene,19,Cell Cycle Control,GENE0789 Protein
+GENE0790,GENE0790,GENE0790 Associated Gene,20,Gene Expression,GENE0790 Protein
+GENE0791,GENE0791,GENE0791 Associated Gene,21,DNA Repair,GENE0791 Protein
+GENE0792,GENE0792,GENE0792 Associated Gene,22,Cell Signaling,GENE0792 Protein
+GENE0793,GENE0793,GENE0793 Associated Gene,1,Tumor Suppression,GENE0793 Protein
+GENE0794,GENE0794,GENE0794 Associated Gene,2,Immune Regulation,GENE0794 Protein
+GENE0795,GENE0795,GENE0795 Associated Gene,3,Protein Synthesis,GENE0795 Protein
+GENE0796,GENE0796,GENE0796 Associated Gene,4,Metabolism,GENE0796 Protein
+GENE0797,GENE0797,GENE0797 Associated Gene,5,Signal Transduction,GENE0797 Protein
+GENE0798,GENE0798,GENE0798 Associated Gene,6,Apoptosis,GENE0798 Protein
+GENE0799,GENE0799,GENE0799 Associated Gene,7,Cell Cycle Control,GENE0799 Protein
+GENE0800,GENE0800,GENE0800 Associated Gene,8,Gene Expression,GENE0800 Protein
+GENE0801,GENE0801,GENE0801 Associated Gene,9,DNA Repair,GENE0801 Protein
+GENE0802,GENE0802,GENE0802 Associated Gene,10,Cell Signaling,GENE0802 Protein
+GENE0803,GENE0803,GENE0803 Associated Gene,11,Tumor Suppression,GENE0803 Protein
+GENE0804,GENE0804,GENE0804 Associated Gene,12,Immune Regulation,GENE0804 Protein
+GENE0805,GENE0805,GENE0805 Associated Gene,13,Protein Synthesis,GENE0805 Protein
+GENE0806,GENE0806,GENE0806 Associated Gene,14,Metabolism,GENE0806 Protein
+GENE0807,GENE0807,GENE0807 Associated Gene,15,Signal Transduction,GENE0807 Protein
+GENE0808,GENE0808,GENE0808 Associated Gene,16,Apoptosis,GENE0808 Protein
+GENE0809,GENE0809,GENE0809 Associated Gene,17,Cell Cycle Control,GENE0809 Protein
+GENE0810,GENE0810,GENE0810 Associated Gene,18,Gene Expression,GENE0810 Protein
+GENE0811,GENE0811,GENE0811 Associated Gene,19,DNA Repair,GENE0811 Protein
+GENE0812,GENE0812,GENE0812 Associated Gene,20,Cell Signaling,GENE0812 Protein
+GENE0813,GENE0813,GENE0813 Associated Gene,21,Tumor Suppression,GENE0813 Protein
+GENE0814,GENE0814,GENE0814 Associated Gene,22,Immune Regulation,GENE0814 Protein
+GENE0815,GENE0815,GENE0815 Associated Gene,1,Protein Synthesis,GENE0815 Protein
+GENE0816,GENE0816,GENE0816 Associated Gene,2,Metabolism,GENE0816 Protein
+GENE0817,GENE0817,GENE0817 Associated Gene,3,Signal Transduction,GENE0817 Protein
+GENE0818,GENE0818,GENE0818 Associated Gene,4,Apoptosis,GENE0818 Protein
+GENE0819,GENE0819,GENE0819 Associated Gene,5,Cell Cycle Control,GENE0819 Protein
+GENE0820,GENE0820,GENE0820 Associated Gene,6,Gene Expression,GENE0820 Protein
+GENE0821,GENE0821,GENE0821 Associated Gene,7,DNA Repair,GENE0821 Protein
+GENE0822,GENE0822,GENE0822 Associated Gene,8,Cell Signaling,GENE0822 Protein
+GENE0823,GENE0823,GENE0823 Associated Gene,9,Tumor Suppression,GENE0823 Protein
+GENE0824,GENE0824,GENE0824 Associated Gene,10,Immune Regulation,GENE0824 Protein
+GENE0825,GENE0825,GENE0825 Associated Gene,11,Protein Synthesis,GENE0825 Protein
+GENE0826,GENE0826,GENE0826 Associated Gene,12,Metabolism,GENE0826 Protein
+GENE0827,GENE0827,GENE0827 Associated Gene,13,Signal Transduction,GENE0827 Protein
+GENE0828,GENE0828,GENE0828 Associated Gene,14,Apoptosis,GENE0828 Protein
+GENE0829,GENE0829,GENE0829 Associated Gene,15,Cell Cycle Control,GENE0829 Protein
+GENE0830,GENE0830,GENE0830 Associated Gene,16,Gene Expression,GENE0830 Protein
+GENE0831,GENE0831,GENE0831 Associated Gene,17,DNA Repair,GENE0831 Protein
+GENE0832,GENE0832,GENE0832 Associated Gene,18,Cell Signaling,GENE0832 Protein
+GENE0833,GENE0833,GENE0833 Associated Gene,19,Tumor Suppression,GENE0833 Protein
+GENE0834,GENE0834,GENE0834 Associated Gene,20,Immune Regulation,GENE0834 Protein
+GENE0835,GENE0835,GENE0835 Associated Gene,21,Protein Synthesis,GENE0835 Protein
+GENE0836,GENE0836,GENE0836 Associated Gene,22,Metabolism,GENE0836 Protein
+GENE0837,GENE0837,GENE0837 Associated Gene,1,Signal Transduction,GENE0837 Protein
+GENE0838,GENE0838,GENE0838 Associated Gene,2,Apoptosis,GENE0838 Protein
+GENE0839,GENE0839,GENE0839 Associated Gene,3,Cell Cycle Control,GENE0839 Protein
+GENE0840,GENE0840,GENE0840 Associated Gene,4,Gene Expression,GENE0840 Protein
+GENE0841,GENE0841,GENE0841 Associated Gene,5,DNA Repair,GENE0841 Protein
+GENE0842,GENE0842,GENE0842 Associated Gene,6,Cell Signaling,GENE0842 Protein
+GENE0843,GENE0843,GENE0843 Associated Gene,7,Tumor Suppression,GENE0843 Protein
+GENE0844,GENE0844,GENE0844 Associated Gene,8,Immune Regulation,GENE0844 Protein
+GENE0845,GENE0845,GENE0845 Associated Gene,9,Protein Synthesis,GENE0845 Protein
+GENE0846,GENE0846,GENE0846 Associated Gene,10,Metabolism,GENE0846 Protein
+GENE0847,GENE0847,GENE0847 Associated Gene,11,Signal Transduction,GENE0847 Protein
+GENE0848,GENE0848,GENE0848 Associated Gene,12,Apoptosis,GENE0848 Protein
+GENE0849,GENE0849,GENE0849 Associated Gene,13,Cell Cycle Control,GENE0849 Protein
+GENE0850,GENE0850,GENE0850 Associated Gene,14,Gene Expression,GENE0850 Protein
+GENE0851,GENE0851,GENE0851 Associated Gene,15,DNA Repair,GENE0851 Protein
+GENE0852,GENE0852,GENE0852 Associated Gene,16,Cell Signaling,GENE0852 Protein
+GENE0853,GENE0853,GENE0853 Associated Gene,17,Tumor Suppression,GENE0853 Protein
+GENE0854,GENE0854,GENE0854 Associated Gene,18,Immune Regulation,GENE0854 Protein
+GENE0855,GENE0855,GENE0855 Associated Gene,19,Protein Synthesis,GENE0855 Protein
+GENE0856,GENE0856,GENE0856 Associated Gene,20,Metabolism,GENE0856 Protein
+GENE0857,GENE0857,GENE0857 Associated Gene,21,Signal Transduction,GENE0857 Protein
+GENE0858,GENE0858,GENE0858 Associated Gene,22,Apoptosis,GENE0858 Protein
+GENE0859,GENE0859,GENE0859 Associated Gene,1,Cell Cycle Control,GENE0859 Protein
+GENE0860,GENE0860,GENE0860 Associated Gene,2,Gene Expression,GENE0860 Protein
+GENE0861,GENE0861,GENE0861 Associated Gene,3,DNA Repair,GENE0861 Protein
+GENE0862,GENE0862,GENE0862 Associated Gene,4,Cell Signaling,GENE0862 Protein
+GENE0863,GENE0863,GENE0863 Associated Gene,5,Tumor Suppression,GENE0863 Protein
+GENE0864,GENE0864,GENE0864 Associated Gene,6,Immune Regulation,GENE0864 Protein
+GENE0865,GENE0865,GENE0865 Associated Gene,7,Protein Synthesis,GENE0865 Protein
+GENE0866,GENE0866,GENE0866 Associated Gene,8,Metabolism,GENE0866 Protein
+GENE0867,GENE0867,GENE0867 Associated Gene,9,Signal Transduction,GENE0867 Protein
+GENE0868,GENE0868,GENE0868 Associated Gene,10,Apoptosis,GENE0868 Protein
+GENE0869,GENE0869,GENE0869 Associated Gene,11,Cell Cycle Control,GENE0869 Protein
+GENE0870,GENE0870,GENE0870 Associated Gene,12,Gene Expression,GENE0870 Protein
+GENE0871,GENE0871,GENE0871 Associated Gene,13,DNA Repair,GENE0871 Protein
+GENE0872,GENE0872,GENE0872 Associated Gene,14,Cell Signaling,GENE0872 Protein
+GENE0873,GENE0873,GENE0873 Associated Gene,15,Tumor Suppression,GENE0873 Protein
+GENE0874,GENE0874,GENE0874 Associated Gene,16,Immune Regulation,GENE0874 Protein
+GENE0875,GENE0875,GENE0875 Associated Gene,17,Protein Synthesis,GENE0875 Protein
+GENE0876,GENE0876,GENE0876 Associated Gene,18,Metabolism,GENE0876 Protein
+GENE0877,GENE0877,GENE0877 Associated Gene,19,Signal Transduction,GENE0877 Protein
+GENE0878,GENE0878,GENE0878 Associated Gene,20,Apoptosis,GENE0878 Protein
+GENE0879,GENE0879,GENE0879 Associated Gene,21,Cell Cycle Control,GENE0879 Protein
+GENE0880,GENE0880,GENE0880 Associated Gene,22,Gene Expression,GENE0880 Protein
+GENE0881,GENE0881,GENE0881 Associated Gene,1,DNA Repair,GENE0881 Protein
+GENE0882,GENE0882,GENE0882 Associated Gene,2,Cell Signaling,GENE0882 Protein
+GENE0883,GENE0883,GENE0883 Associated Gene,3,Tumor Suppression,GENE0883 Protein
+GENE0884,GENE0884,GENE0884 Associated Gene,4,Immune Regulation,GENE0884 Protein
+GENE0885,GENE0885,GENE0885 Associated Gene,5,Protein Synthesis,GENE0885 Protein
+GENE0886,GENE0886,GENE0886 Associated Gene,6,Metabolism,GENE0886 Protein
+GENE0887,GENE0887,GENE0887 Associated Gene,7,Signal Transduction,GENE0887 Protein
+GENE0888,GENE0888,GENE0888 Associated Gene,8,Apoptosis,GENE0888 Protein
+GENE0889,GENE0889,GENE0889 Associated Gene,9,Cell Cycle Control,GENE0889 Protein
+GENE0890,GENE0890,GENE0890 Associated Gene,10,Gene Expression,GENE0890 Protein
+GENE0891,GENE0891,GENE0891 Associated Gene,11,DNA Repair,GENE0891 Protein
+GENE0892,GENE0892,GENE0892 Associated Gene,12,Cell Signaling,GENE0892 Protein
+GENE0893,GENE0893,GENE0893 Associated Gene,13,Tumor Suppression,GENE0893 Protein
+GENE0894,GENE0894,GENE0894 Associated Gene,14,Immune Regulation,GENE0894 Protein
+GENE0895,GENE0895,GENE0895 Associated Gene,15,Protein Synthesis,GENE0895 Protein
+GENE0896,GENE0896,GENE0896 Associated Gene,16,Metabolism,GENE0896 Protein
+GENE0897,GENE0897,GENE0897 Associated Gene,17,Signal Transduction,GENE0897 Protein
+GENE0898,GENE0898,GENE0898 Associated Gene,18,Apoptosis,GENE0898 Protein
+GENE0899,GENE0899,GENE0899 Associated Gene,19,Cell Cycle Control,GENE0899 Protein
+GENE0900,GENE0900,GENE0900 Associated Gene,20,Gene Expression,GENE0900 Protein
+GENE0901,GENE0901,GENE0901 Associated Gene,21,DNA Repair,GENE0901 Protein
+GENE0902,GENE0902,GENE0902 Associated Gene,22,Cell Signaling,GENE0902 Protein
+GENE0903,GENE0903,GENE0903 Associated Gene,1,Tumor Suppression,GENE0903 Protein
+GENE0904,GENE0904,GENE0904 Associated Gene,2,Immune Regulation,GENE0904 Protein
+GENE0905,GENE0905,GENE0905 Associated Gene,3,Protein Synthesis,GENE0905 Protein
+GENE0906,GENE0906,GENE0906 Associated Gene,4,Metabolism,GENE0906 Protein
+GENE0907,GENE0907,GENE0907 Associated Gene,5,Signal Transduction,GENE0907 Protein
+GENE0908,GENE0908,GENE0908 Associated Gene,6,Apoptosis,GENE0908 Protein
+GENE0909,GENE0909,GENE0909 Associated Gene,7,Cell Cycle Control,GENE0909 Protein
+GENE0910,GENE0910,GENE0910 Associated Gene,8,Gene Expression,GENE0910 Protein
+GENE0911,GENE0911,GENE0911 Associated Gene,9,DNA Repair,GENE0911 Protein
+GENE0912,GENE0912,GENE0912 Associated Gene,10,Cell Signaling,GENE0912 Protein
+GENE0913,GENE0913,GENE0913 Associated Gene,11,Tumor Suppression,GENE0913 Protein
+GENE0914,GENE0914,GENE0914 Associated Gene,12,Immune Regulation,GENE0914 Protein
+GENE0915,GENE0915,GENE0915 Associated Gene,13,Protein Synthesis,GENE0915 Protein
+GENE0916,GENE0916,GENE0916 Associated Gene,14,Metabolism,GENE0916 Protein
+GENE0917,GENE0917,GENE0917 Associated Gene,15,Signal Transduction,GENE0917 Protein
+GENE0918,GENE0918,GENE0918 Associated Gene,16,Apoptosis,GENE0918 Protein
+GENE0919,GENE0919,GENE0919 Associated Gene,17,Cell Cycle Control,GENE0919 Protein
+GENE0920,GENE0920,GENE0920 Associated Gene,18,Gene Expression,GENE0920 Protein
+GENE0921,GENE0921,GENE0921 Associated Gene,19,DNA Repair,GENE0921 Protein
+GENE0922,GENE0922,GENE0922 Associated Gene,20,Cell Signaling,GENE0922 Protein
+GENE0923,GENE0923,GENE0923 Associated Gene,21,Tumor Suppression,GENE0923 Protein
+GENE0924,GENE0924,GENE0924 Associated Gene,22,Immune Regulation,GENE0924 Protein
+GENE0925,GENE0925,GENE0925 Associated Gene,1,Protein Synthesis,GENE0925 Protein
+GENE0926,GENE0926,GENE0926 Associated Gene,2,Metabolism,GENE0926 Protein
+GENE0927,GENE0927,GENE0927 Associated Gene,3,Signal Transduction,GENE0927 Protein
+GENE0928,GENE0928,GENE0928 Associated Gene,4,Apoptosis,GENE0928 Protein
+GENE0929,GENE0929,GENE0929 Associated Gene,5,Cell Cycle Control,GENE0929 Protein
+GENE0930,GENE0930,GENE0930 Associated Gene,6,Gene Expression,GENE0930 Protein
+GENE0931,GENE0931,GENE0931 Associated Gene,7,DNA Repair,GENE0931 Protein
+GENE0932,GENE0932,GENE0932 Associated Gene,8,Cell Signaling,GENE0932 Protein
+GENE0933,GENE0933,GENE0933 Associated Gene,9,Tumor Suppression,GENE0933 Protein
+GENE0934,GENE0934,GENE0934 Associated Gene,10,Immune Regulation,GENE0934 Protein
+GENE0935,GENE0935,GENE0935 Associated Gene,11,Protein Synthesis,GENE0935 Protein
+GENE0936,GENE0936,GENE0936 Associated Gene,12,Metabolism,GENE0936 Protein
+GENE0937,GENE0937,GENE0937 Associated Gene,13,Signal Transduction,GENE0937 Protein
+GENE0938,GENE0938,GENE0938 Associated Gene,14,Apoptosis,GENE0938 Protein
+GENE0939,GENE0939,GENE0939 Associated Gene,15,Cell Cycle Control,GENE0939 Protein
+GENE0940,GENE0940,GENE0940 Associated Gene,16,Gene Expression,GENE0940 Protein
+GENE0941,GENE0941,GENE0941 Associated Gene,17,DNA Repair,GENE0941 Protein
+GENE0942,GENE0942,GENE0942 Associated Gene,18,Cell Signaling,GENE0942 Protein
+GENE0943,GENE0943,GENE0943 Associated Gene,19,Tumor Suppression,GENE0943 Protein
+GENE0944,GENE0944,GENE0944 Associated Gene,20,Immune Regulation,GENE0944 Protein
+GENE0945,GENE0945,GENE0945 Associated Gene,21,Protein Synthesis,GENE0945 Protein
+GENE0946,GENE0946,GENE0946 Associated Gene,22,Metabolism,GENE0946 Protein
+GENE0947,GENE0947,GENE0947 Associated Gene,1,Signal Transduction,GENE0947 Protein
+GENE0948,GENE0948,GENE0948 Associated Gene,2,Apoptosis,GENE0948 Protein
+GENE0949,GENE0949,GENE0949 Associated Gene,3,Cell Cycle Control,GENE0949 Protein
+GENE0950,GENE0950,GENE0950 Associated Gene,4,Gene Expression,GENE0950 Protein
+GENE0951,GENE0951,GENE0951 Associated Gene,5,DNA Repair,GENE0951 Protein
+GENE0952,GENE0952,GENE0952 Associated Gene,6,Cell Signaling,GENE0952 Protein
+GENE0953,GENE0953,GENE0953 Associated Gene,7,Tumor Suppression,GENE0953 Protein
+GENE0954,GENE0954,GENE0954 Associated Gene,8,Immune Regulation,GENE0954 Protein
+GENE0955,GENE0955,GENE0955 Associated Gene,9,Protein Synthesis,GENE0955 Protein
+GENE0956,GENE0956,GENE0956 Associated Gene,10,Metabolism,GENE0956 Protein
+GENE0957,GENE0957,GENE0957 Associated Gene,11,Signal Transduction,GENE0957 Protein
+GENE0958,GENE0958,GENE0958 Associated Gene,12,Apoptosis,GENE0958 Protein
+GENE0959,GENE0959,GENE0959 Associated Gene,13,Cell Cycle Control,GENE0959 Protein
+GENE0960,GENE0960,GENE0960 Associated Gene,14,Gene Expression,GENE0960 Protein
+GENE0961,GENE0961,GENE0961 Associated Gene,15,DNA Repair,GENE0961 Protein
+GENE0962,GENE0962,GENE0962 Associated Gene,16,Cell Signaling,GENE0962 Protein
+GENE0963,GENE0963,GENE0963 Associated Gene,17,Tumor Suppression,GENE0963 Protein
+GENE0964,GENE0964,GENE0964 Associated Gene,18,Immune Regulation,GENE0964 Protein
+GENE0965,GENE0965,GENE0965 Associated Gene,19,Protein Synthesis,GENE0965 Protein
+GENE0966,GENE0966,GENE0966 Associated Gene,20,Metabolism,GENE0966 Protein
+GENE0967,GENE0967,GENE0967 Associated Gene,21,Signal Transduction,GENE0967 Protein
+GENE0968,GENE0968,GENE0968 Associated Gene,22,Apoptosis,GENE0968 Protein
+GENE0969,GENE0969,GENE0969 Associated Gene,1,Cell Cycle Control,GENE0969 Protein
+GENE0970,GENE0970,GENE0970 Associated Gene,2,Gene Expression,GENE0970 Protein
+GENE0971,GENE0971,GENE0971 Associated Gene,3,DNA Repair,GENE0971 Protein
+GENE0972,GENE0972,GENE0972 Associated Gene,4,Cell Signaling,GENE0972 Protein
+GENE0973,GENE0973,GENE0973 Associated Gene,5,Tumor Suppression,GENE0973 Protein
+GENE0974,GENE0974,GENE0974 Associated Gene,6,Immune Regulation,GENE0974 Protein
+GENE0975,GENE0975,GENE0975 Associated Gene,7,Protein Synthesis,GENE0975 Protein
+GENE0976,GENE0976,GENE0976 Associated Gene,8,Metabolism,GENE0976 Protein
+GENE0977,GENE0977,GENE0977 Associated Gene,9,Signal Transduction,GENE0977 Protein
+GENE0978,GENE0978,GENE0978 Associated Gene,10,Apoptosis,GENE0978 Protein
+GENE0979,GENE0979,GENE0979 Associated Gene,11,Cell Cycle Control,GENE0979 Protein
+GENE0980,GENE0980,GENE0980 Associated Gene,12,Gene Expression,GENE0980 Protein
+GENE0981,GENE0981,GENE0981 Associated Gene,13,DNA Repair,GENE0981 Protein
+GENE0982,GENE0982,GENE0982 Associated Gene,14,Cell Signaling,GENE0982 Protein
+GENE0983,GENE0983,GENE0983 Associated Gene,15,Tumor Suppression,GENE0983 Protein
+GENE0984,GENE0984,GENE0984 Associated Gene,16,Immune Regulation,GENE0984 Protein
+GENE0985,GENE0985,GENE0985 Associated Gene,17,Protein Synthesis,GENE0985 Protein
+GENE0986,GENE0986,GENE0986 Associated Gene,18,Metabolism,GENE0986 Protein
+GENE0987,GENE0987,GENE0987 Associated Gene,19,Signal Transduction,GENE0987 Protein
+GENE0988,GENE0988,GENE0988 Associated Gene,20,Apoptosis,GENE0988 Protein
+GENE0989,GENE0989,GENE0989 Associated Gene,21,Cell Cycle Control,GENE0989 Protein
+GENE0990,GENE0990,GENE0990 Associated Gene,22,Gene Expression,GENE0990 Protein
+GENE0991,GENE0991,GENE0991 Associated Gene,1,DNA Repair,GENE0991 Protein
+GENE0992,GENE0992,GENE0992 Associated Gene,2,Cell Signaling,GENE0992 Protein
+GENE0993,GENE0993,GENE0993 Associated Gene,3,Tumor Suppression,GENE0993 Protein
+GENE0994,GENE0994,GENE0994 Associated Gene,4,Immune Regulation,GENE0994 Protein
+GENE0995,GENE0995,GENE0995 Associated Gene,5,Protein Synthesis,GENE0995 Protein
+GENE0996,GENE0996,GENE0996 Associated Gene,6,Metabolism,GENE0996 Protein
+GENE0997,GENE0997,GENE0997 Associated Gene,7,Signal Transduction,GENE0997 Protein
+GENE0998,GENE0998,GENE0998 Associated Gene,8,Apoptosis,GENE0998 Protein
+GENE0999,GENE0999,GENE0999 Associated Gene,9,Cell Cycle Control,GENE0999 Protein
+GENE1000,GENE1000,GENE1000 Associated Gene,10,Gene Expression,GENE1000 Protein
+GENE1001,GENE1001,GENE1001 Associated Gene,11,DNA Repair,GENE1001 Protein
+GENE1002,GENE1002,GENE1002 Associated Gene,12,Cell Signaling,GENE1002 Protein
+GENE1003,GENE1003,GENE1003 Associated Gene,13,Tumor Suppression,GENE1003 Protein
+GENE1004,GENE1004,GENE1004 Associated Gene,14,Immune Regulation,GENE1004 Protein
+GENE1005,GENE1005,GENE1005 Associated Gene,15,Protein Synthesis,GENE1005 Protein
+GENE1006,GENE1006,GENE1006 Associated Gene,16,Metabolism,GENE1006 Protein
+GENE1007,GENE1007,GENE1007 Associated Gene,17,Signal Transduction,GENE1007 Protein
+GENE1008,GENE1008,GENE1008 Associated Gene,18,Apoptosis,GENE1008 Protein
+GENE1009,GENE1009,GENE1009 Associated Gene,19,Cell Cycle Control,GENE1009 Protein
+GENE1010,GENE1010,GENE1010 Associated Gene,20,Gene Expression,GENE1010 Protein
+GENE1011,GENE1011,GENE1011 Associated Gene,21,DNA Repair,GENE1011 Protein
+GENE1012,GENE1012,GENE1012 Associated Gene,22,Cell Signaling,GENE1012 Protein
+GENE1013,GENE1013,GENE1013 Associated Gene,1,Tumor Suppression,GENE1013 Protein
+GENE1014,GENE1014,GENE1014 Associated Gene,2,Immune Regulation,GENE1014 Protein
+GENE1015,GENE1015,GENE1015 Associated Gene,3,Protein Synthesis,GENE1015 Protein
+GENE1016,GENE1016,GENE1016 Associated Gene,4,Metabolism,GENE1016 Protein
+GENE1017,GENE1017,GENE1017 Associated Gene,5,Signal Transduction,GENE1017 Protein
+GENE1018,GENE1018,GENE1018 Associated Gene,6,Apoptosis,GENE1018 Protein
+GENE1019,GENE1019,GENE1019 Associated Gene,7,Cell Cycle Control,GENE1019 Protein
+GENE1020,GENE1020,GENE1020 Associated Gene,8,Gene Expression,GENE1020 Protein
+GENE1021,GENE1021,GENE1021 Associated Gene,9,DNA Repair,GENE1021 Protein
+GENE1022,GENE1022,GENE1022 Associated Gene,10,Cell Signaling,GENE1022 Protein
+GENE1023,GENE1023,GENE1023 Associated Gene,11,Tumor Suppression,GENE1023 Protein
+GENE1024,GENE1024,GENE1024 Associated Gene,12,Immune Regulation,GENE1024 Protein
+GENE1025,GENE1025,GENE1025 Associated Gene,13,Protein Synthesis,GENE1025 Protein
+GENE1026,GENE1026,GENE1026 Associated Gene,14,Metabolism,GENE1026 Protein
+GENE1027,GENE1027,GENE1027 Associated Gene,15,Signal Transduction,GENE1027 Protein
+GENE1028,GENE1028,GENE1028 Associated Gene,16,Apoptosis,GENE1028 Protein
+GENE1029,GENE1029,GENE1029 Associated Gene,17,Cell Cycle Control,GENE1029 Protein
+GENE1030,GENE1030,GENE1030 Associated Gene,18,Gene Expression,GENE1030 Protein
+GENE1031,GENE1031,GENE1031 Associated Gene,19,DNA Repair,GENE1031 Protein
+GENE1032,GENE1032,GENE1032 Associated Gene,20,Cell Signaling,GENE1032 Protein
+GENE1033,GENE1033,GENE1033 Associated Gene,21,Tumor Suppression,GENE1033 Protein
+GENE1034,GENE1034,GENE1034 Associated Gene,22,Immune Regulation,GENE1034 Protein
+GENE1035,GENE1035,GENE1035 Associated Gene,1,Protein Synthesis,GENE1035 Protein
+GENE1036,GENE1036,GENE1036 Associated Gene,2,Metabolism,GENE1036 Protein
+GENE1037,GENE1037,GENE1037 Associated Gene,3,Signal Transduction,GENE1037 Protein
+GENE1038,GENE1038,GENE1038 Associated Gene,4,Apoptosis,GENE1038 Protein
+GENE1039,GENE1039,GENE1039 Associated Gene,5,Cell Cycle Control,GENE1039 Protein
+GENE1040,GENE1040,GENE1040 Associated Gene,6,Gene Expression,GENE1040 Protein
+GENE1041,GENE1041,GENE1041 Associated Gene,7,DNA Repair,GENE1041 Protein
+GENE1042,GENE1042,GENE1042 Associated Gene,8,Cell Signaling,GENE1042 Protein
+GENE1043,GENE1043,GENE1043 Associated Gene,9,Tumor Suppression,GENE1043 Protein
+GENE1044,GENE1044,GENE1044 Associated Gene,10,Immune Regulation,GENE1044 Protein
+GENE1045,GENE1045,GENE1045 Associated Gene,11,Protein Synthesis,GENE1045 Protein
+GENE1046,GENE1046,GENE1046 Associated Gene,12,Metabolism,GENE1046 Protein
+GENE1047,GENE1047,GENE1047 Associated Gene,13,Signal Transduction,GENE1047 Protein
+GENE1048,GENE1048,GENE1048 Associated Gene,14,Apoptosis,GENE1048 Protein
+GENE1049,GENE1049,GENE1049 Associated Gene,15,Cell Cycle Control,GENE1049 Protein
+GENE1050,GENE1050,GENE1050 Associated Gene,16,Gene Expression,GENE1050 Protein
+GENE1051,GENE1051,GENE1051 Associated Gene,17,DNA Repair,GENE1051 Protein
+GENE1052,GENE1052,GENE1052 Associated Gene,18,Cell Signaling,GENE1052 Protein
+GENE1053,GENE1053,GENE1053 Associated Gene,19,Tumor Suppression,GENE1053 Protein
+GENE1054,GENE1054,GENE1054 Associated Gene,20,Immune Regulation,GENE1054 Protein
+GENE1055,GENE1055,GENE1055 Associated Gene,21,Protein Synthesis,GENE1055 Protein
+GENE1056,GENE1056,GENE1056 Associated Gene,22,Metabolism,GENE1056 Protein
+GENE1057,GENE1057,GENE1057 Associated Gene,1,Signal Transduction,GENE1057 Protein
+GENE1058,GENE1058,GENE1058 Associated Gene,2,Apoptosis,GENE1058 Protein
+GENE1059,GENE1059,GENE1059 Associated Gene,3,Cell Cycle Control,GENE1059 Protein
+GENE1060,GENE1060,GENE1060 Associated Gene,4,Gene Expression,GENE1060 Protein
+GENE1061,GENE1061,GENE1061 Associated Gene,5,DNA Repair,GENE1061 Protein
+GENE1062,GENE1062,GENE1062 Associated Gene,6,Cell Signaling,GENE1062 Protein
+GENE1063,GENE1063,GENE1063 Associated Gene,7,Tumor Suppression,GENE1063 Protein
+GENE1064,GENE1064,GENE1064 Associated Gene,8,Immune Regulation,GENE1064 Protein
+GENE1065,GENE1065,GENE1065 Associated Gene,9,Protein Synthesis,GENE1065 Protein
+GENE1066,GENE1066,GENE1066 Associated Gene,10,Metabolism,GENE1066 Protein
+GENE1067,GENE1067,GENE1067 Associated Gene,11,Signal Transduction,GENE1067 Protein
+GENE1068,GENE1068,GENE1068 Associated Gene,12,Apoptosis,GENE1068 Protein
+GENE1069,GENE1069,GENE1069 Associated Gene,13,Cell Cycle Control,GENE1069 Protein
+GENE1070,GENE1070,GENE1070 Associated Gene,14,Gene Expression,GENE1070 Protein
+GENE1071,GENE1071,GENE1071 Associated Gene,15,DNA Repair,GENE1071 Protein
+GENE1072,GENE1072,GENE1072 Associated Gene,16,Cell Signaling,GENE1072 Protein
+GENE1073,GENE1073,GENE1073 Associated Gene,17,Tumor Suppression,GENE1073 Protein
+GENE1074,GENE1074,GENE1074 Associated Gene,18,Immune Regulation,GENE1074 Protein
+GENE1075,GENE1075,GENE1075 Associated Gene,19,Protein Synthesis,GENE1075 Protein
+GENE1076,GENE1076,GENE1076 Associated Gene,20,Metabolism,GENE1076 Protein
+GENE1077,GENE1077,GENE1077 Associated Gene,21,Signal Transduction,GENE1077 Protein
+GENE1078,GENE1078,GENE1078 Associated Gene,22,Apoptosis,GENE1078 Protein
+GENE1079,GENE1079,GENE1079 Associated Gene,1,Cell Cycle Control,GENE1079 Protein
+GENE1080,GENE1080,GENE1080 Associated Gene,2,Gene Expression,GENE1080 Protein
+GENE1081,GENE1081,GENE1081 Associated Gene,3,DNA Repair,GENE1081 Protein
+GENE1082,GENE1082,GENE1082 Associated Gene,4,Cell Signaling,GENE1082 Protein
+GENE1083,GENE1083,GENE1083 Associated Gene,5,Tumor Suppression,GENE1083 Protein
+GENE1084,GENE1084,GENE1084 Associated Gene,6,Immune Regulation,GENE1084 Protein
+GENE1085,GENE1085,GENE1085 Associated Gene,7,Protein Synthesis,GENE1085 Protein
+GENE1086,GENE1086,GENE1086 Associated Gene,8,Metabolism,GENE1086 Protein
+GENE1087,GENE1087,GENE1087 Associated Gene,9,Signal Transduction,GENE1087 Protein
+GENE1088,GENE1088,GENE1088 Associated Gene,10,Apoptosis,GENE1088 Protein
+GENE1089,GENE1089,GENE1089 Associated Gene,11,Cell Cycle Control,GENE1089 Protein
+GENE1090,GENE1090,GENE1090 Associated Gene,12,Gene Expression,GENE1090 Protein
+GENE1091,GENE1091,GENE1091 Associated Gene,13,DNA Repair,GENE1091 Protein
+GENE1092,GENE1092,GENE1092 Associated Gene,14,Cell Signaling,GENE1092 Protein
+GENE1093,GENE1093,GENE1093 Associated Gene,15,Tumor Suppression,GENE1093 Protein
+GENE1094,GENE1094,GENE1094 Associated Gene,16,Immune Regulation,GENE1094 Protein
+GENE1095,GENE1095,GENE1095 Associated Gene,17,Protein Synthesis,GENE1095 Protein
+GENE1096,GENE1096,GENE1096 Associated Gene,18,Metabolism,GENE1096 Protein
+GENE1097,GENE1097,GENE1097 Associated Gene,19,Signal Transduction,GENE1097 Protein
+GENE1098,GENE1098,GENE1098 Associated Gene,20,Apoptosis,GENE1098 Protein
+GENE1099,GENE1099,GENE1099 Associated Gene,21,Cell Cycle Control,GENE1099 Protein
+GENE1100,GENE1100,GENE1100 Associated Gene,22,Gene Expression,GENE1100 Protein
+GENE1101,GENE1101,GENE1101 Associated Gene,1,DNA Repair,GENE1101 Protein
+GENE1102,GENE1102,GENE1102 Associated Gene,2,Cell Signaling,GENE1102 Protein
+GENE1103,GENE1103,GENE1103 Associated Gene,3,Tumor Suppression,GENE1103 Protein
+GENE1104,GENE1104,GENE1104 Associated Gene,4,Immune Regulation,GENE1104 Protein
+GENE1105,GENE1105,GENE1105 Associated Gene,5,Protein Synthesis,GENE1105 Protein
+GENE1106,GENE1106,GENE1106 Associated Gene,6,Metabolism,GENE1106 Protein
+GENE1107,GENE1107,GENE1107 Associated Gene,7,Signal Transduction,GENE1107 Protein
+GENE1108,GENE1108,GENE1108 Associated Gene,8,Apoptosis,GENE1108 Protein
+GENE1109,GENE1109,GENE1109 Associated Gene,9,Cell Cycle Control,GENE1109 Protein
+GENE1110,GENE1110,GENE1110 Associated Gene,10,Gene Expression,GENE1110 Protein
+GENE1111,GENE1111,GENE1111 Associated Gene,11,DNA Repair,GENE1111 Protein
+GENE1112,GENE1112,GENE1112 Associated Gene,12,Cell Signaling,GENE1112 Protein
+GENE1113,GENE1113,GENE1113 Associated Gene,13,Tumor Suppression,GENE1113 Protein
+GENE1114,GENE1114,GENE1114 Associated Gene,14,Immune Regulation,GENE1114 Protein
+GENE1115,GENE1115,GENE1115 Associated Gene,15,Protein Synthesis,GENE1115 Protein
+GENE1116,GENE1116,GENE1116 Associated Gene,16,Metabolism,GENE1116 Protein
+GENE1117,GENE1117,GENE1117 Associated Gene,17,Signal Transduction,GENE1117 Protein
+GENE1118,GENE1118,GENE1118 Associated Gene,18,Apoptosis,GENE1118 Protein
+GENE1119,GENE1119,GENE1119 Associated Gene,19,Cell Cycle Control,GENE1119 Protein
+GENE1120,GENE1120,GENE1120 Associated Gene,20,Gene Expression,GENE1120 Protein
+GENE1121,GENE1121,GENE1121 Associated Gene,21,DNA Repair,GENE1121 Protein
+GENE1122,GENE1122,GENE1122 Associated Gene,22,Cell Signaling,GENE1122 Protein
+GENE1123,GENE1123,GENE1123 Associated Gene,1,Tumor Suppression,GENE1123 Protein
+GENE1124,GENE1124,GENE1124 Associated Gene,2,Immune Regulation,GENE1124 Protein
+GENE1125,GENE1125,GENE1125 Associated Gene,3,Protein Synthesis,GENE1125 Protein
+GENE1126,GENE1126,GENE1126 Associated Gene,4,Metabolism,GENE1126 Protein
+GENE1127,GENE1127,GENE1127 Associated Gene,5,Signal Transduction,GENE1127 Protein
+GENE1128,GENE1128,GENE1128 Associated Gene,6,Apoptosis,GENE1128 Protein
+GENE1129,GENE1129,GENE1129 Associated Gene,7,Cell Cycle Control,GENE1129 Protein
+GENE1130,GENE1130,GENE1130 Associated Gene,8,Gene Expression,GENE1130 Protein
+GENE1131,GENE1131,GENE1131 Associated Gene,9,DNA Repair,GENE1131 Protein
+GENE1132,GENE1132,GENE1132 Associated Gene,10,Cell Signaling,GENE1132 Protein
+GENE1133,GENE1133,GENE1133 Associated Gene,11,Tumor Suppression,GENE1133 Protein
+GENE1134,GENE1134,GENE1134 Associated Gene,12,Immune Regulation,GENE1134 Protein
+GENE1135,GENE1135,GENE1135 Associated Gene,13,Protein Synthesis,GENE1135 Protein
+GENE1136,GENE1136,GENE1136 Associated Gene,14,Metabolism,GENE1136 Protein
+GENE1137,GENE1137,GENE1137 Associated Gene,15,Signal Transduction,GENE1137 Protein
+GENE1138,GENE1138,GENE1138 Associated Gene,16,Apoptosis,GENE1138 Protein
+GENE1139,GENE1139,GENE1139 Associated Gene,17,Cell Cycle Control,GENE1139 Protein
+GENE1140,GENE1140,GENE1140 Associated Gene,18,Gene Expression,GENE1140 Protein
+GENE1141,GENE1141,GENE1141 Associated Gene,19,DNA Repair,GENE1141 Protein
+GENE1142,GENE1142,GENE1142 Associated Gene,20,Cell Signaling,GENE1142 Protein
+GENE1143,GENE1143,GENE1143 Associated Gene,21,Tumor Suppression,GENE1143 Protein
+GENE1144,GENE1144,GENE1144 Associated Gene,22,Immune Regulation,GENE1144 Protein
+GENE1145,GENE1145,GENE1145 Associated Gene,1,Protein Synthesis,GENE1145 Protein
+GENE1146,GENE1146,GENE1146 Associated Gene,2,Metabolism,GENE1146 Protein
+GENE1147,GENE1147,GENE1147 Associated Gene,3,Signal Transduction,GENE1147 Protein
+GENE1148,GENE1148,GENE1148 Associated Gene,4,Apoptosis,GENE1148 Protein
+GENE1149,GENE1149,GENE1149 Associated Gene,5,Cell Cycle Control,GENE1149 Protein
+GENE1150,GENE1150,GENE1150 Associated Gene,6,Gene Expression,GENE1150 Protein
+GENE1151,GENE1151,GENE1151 Associated Gene,7,DNA Repair,GENE1151 Protein
+GENE1152,GENE1152,GENE1152 Associated Gene,8,Cell Signaling,GENE1152 Protein
+GENE1153,GENE1153,GENE1153 Associated Gene,9,Tumor Suppression,GENE1153 Protein
+GENE1154,GENE1154,GENE1154 Associated Gene,10,Immune Regulation,GENE1154 Protein
+GENE1155,GENE1155,GENE1155 Associated Gene,11,Protein Synthesis,GENE1155 Protein
+GENE1156,GENE1156,GENE1156 Associated Gene,12,Metabolism,GENE1156 Protein
+GENE1157,GENE1157,GENE1157 Associated Gene,13,Signal Transduction,GENE1157 Protein
+GENE1158,GENE1158,GENE1158 Associated Gene,14,Apoptosis,GENE1158 Protein
+GENE1159,GENE1159,GENE1159 Associated Gene,15,Cell Cycle Control,GENE1159 Protein
+GENE1160,GENE1160,GENE1160 Associated Gene,16,Gene Expression,GENE1160 Protein
+GENE1161,GENE1161,GENE1161 Associated Gene,17,DNA Repair,GENE1161 Protein
+GENE1162,GENE1162,GENE1162 Associated Gene,18,Cell Signaling,GENE1162 Protein
+GENE1163,GENE1163,GENE1163 Associated Gene,19,Tumor Suppression,GENE1163 Protein
+GENE1164,GENE1164,GENE1164 Associated Gene,20,Immune Regulation,GENE1164 Protein
+GENE1165,GENE1165,GENE1165 Associated Gene,21,Protein Synthesis,GENE1165 Protein
+GENE1166,GENE1166,GENE1166 Associated Gene,22,Metabolism,GENE1166 Protein
+GENE1167,GENE1167,GENE1167 Associated Gene,1,Signal Transduction,GENE1167 Protein
+GENE1168,GENE1168,GENE1168 Associated Gene,2,Apoptosis,GENE1168 Protein
+GENE1169,GENE1169,GENE1169 Associated Gene,3,Cell Cycle Control,GENE1169 Protein
+GENE1170,GENE1170,GENE1170 Associated Gene,4,Gene Expression,GENE1170 Protein
+GENE1171,GENE1171,GENE1171 Associated Gene,5,DNA Repair,GENE1171 Protein
+GENE1172,GENE1172,GENE1172 Associated Gene,6,Cell Signaling,GENE1172 Protein
+GENE1173,GENE1173,GENE1173 Associated Gene,7,Tumor Suppression,GENE1173 Protein
+GENE1174,GENE1174,GENE1174 Associated Gene,8,Immune Regulation,GENE1174 Protein
+GENE1175,GENE1175,GENE1175 Associated Gene,9,Protein Synthesis,GENE1175 Protein
+GENE1176,GENE1176,GENE1176 Associated Gene,10,Metabolism,GENE1176 Protein
+GENE1177,GENE1177,GENE1177 Associated Gene,11,Signal Transduction,GENE1177 Protein
+GENE1178,GENE1178,GENE1178 Associated Gene,12,Apoptosis,GENE1178 Protein
+GENE1179,GENE1179,GENE1179 Associated Gene,13,Cell Cycle Control,GENE1179 Protein
+GENE1180,GENE1180,GENE1180 Associated Gene,14,Gene Expression,GENE1180 Protein
+GENE1181,GENE1181,GENE1181 Associated Gene,15,DNA Repair,GENE1181 Protein
+GENE1182,GENE1182,GENE1182 Associated Gene,16,Cell Signaling,GENE1182 Protein
+GENE1183,GENE1183,GENE1183 Associated Gene,17,Tumor Suppression,GENE1183 Protein
+GENE1184,GENE1184,GENE1184 Associated Gene,18,Immune Regulation,GENE1184 Protein
+GENE1185,GENE1185,GENE1185 Associated Gene,19,Protein Synthesis,GENE1185 Protein
+GENE1186,GENE1186,GENE1186 Associated Gene,20,Metabolism,GENE1186 Protein
+GENE1187,GENE1187,GENE1187 Associated Gene,21,Signal Transduction,GENE1187 Protein
+GENE1188,GENE1188,GENE1188 Associated Gene,22,Apoptosis,GENE1188 Protein
+GENE1189,GENE1189,GENE1189 Associated Gene,1,Cell Cycle Control,GENE1189 Protein
+GENE1190,GENE1190,GENE1190 Associated Gene,2,Gene Expression,GENE1190 Protein
+GENE1191,GENE1191,GENE1191 Associated Gene,3,DNA Repair,GENE1191 Protein
+GENE1192,GENE1192,GENE1192 Associated Gene,4,Cell Signaling,GENE1192 Protein
+GENE1193,GENE1193,GENE1193 Associated Gene,5,Tumor Suppression,GENE1193 Protein
+GENE1194,GENE1194,GENE1194 Associated Gene,6,Immune Regulation,GENE1194 Protein
+GENE1195,GENE1195,GENE1195 Associated Gene,7,Protein Synthesis,GENE1195 Protein
+GENE1196,GENE1196,GENE1196 Associated Gene,8,Metabolism,GENE1196 Protein
+GENE1197,GENE1197,GENE1197 Associated Gene,9,Signal Transduction,GENE1197 Protein
+GENE1198,GENE1198,GENE1198 Associated Gene,10,Apoptosis,GENE1198 Protein
+GENE1199,GENE1199,GENE1199 Associated Gene,11,Cell Cycle Control,GENE1199 Protein
+GENE1200,GENE1200,GENE1200 Associated Gene,12,Gene Expression,GENE1200 Protein
+GENE1201,GENE1201,GENE1201 Associated Gene,13,DNA Repair,GENE1201 Protein
+GENE1202,GENE1202,GENE1202 Associated Gene,14,Cell Signaling,GENE1202 Protein
+GENE1203,GENE1203,GENE1203 Associated Gene,15,Tumor Suppression,GENE1203 Protein
+GENE1204,GENE1204,GENE1204 Associated Gene,16,Immune Regulation,GENE1204 Protein
+GENE1205,GENE1205,GENE1205 Associated Gene,17,Protein Synthesis,GENE1205 Protein
+GENE1206,GENE1206,GENE1206 Associated Gene,18,Metabolism,GENE1206 Protein
+GENE1207,GENE1207,GENE1207 Associated Gene,19,Signal Transduction,GENE1207 Protein
+GENE1208,GENE1208,GENE1208 Associated Gene,20,Apoptosis,GENE1208 Protein
+GENE1209,GENE1209,GENE1209 Associated Gene,21,Cell Cycle Control,GENE1209 Protein
+GENE1210,GENE1210,GENE1210 Associated Gene,22,Gene Expression,GENE1210 Protein
+GENE1211,GENE1211,GENE1211 Associated Gene,1,DNA Repair,GENE1211 Protein
+GENE1212,GENE1212,GENE1212 Associated Gene,2,Cell Signaling,GENE1212 Protein
+GENE1213,GENE1213,GENE1213 Associated Gene,3,Tumor Suppression,GENE1213 Protein
+GENE1214,GENE1214,GENE1214 Associated Gene,4,Immune Regulation,GENE1214 Protein
+GENE1215,GENE1215,GENE1215 Associated Gene,5,Protein Synthesis,GENE1215 Protein
+GENE1216,GENE1216,GENE1216 Associated Gene,6,Metabolism,GENE1216 Protein
+GENE1217,GENE1217,GENE1217 Associated Gene,7,Signal Transduction,GENE1217 Protein
+GENE1218,GENE1218,GENE1218 Associated Gene,8,Apoptosis,GENE1218 Protein
+GENE1219,GENE1219,GENE1219 Associated Gene,9,Cell Cycle Control,GENE1219 Protein
+GENE1220,GENE1220,GENE1220 Associated Gene,10,Gene Expression,GENE1220 Protein
+GENE1221,GENE1221,GENE1221 Associated Gene,11,DNA Repair,GENE1221 Protein
+GENE1222,GENE1222,GENE1222 Associated Gene,12,Cell Signaling,GENE1222 Protein
+GENE1223,GENE1223,GENE1223 Associated Gene,13,Tumor Suppression,GENE1223 Protein
+GENE1224,GENE1224,GENE1224 Associated Gene,14,Immune Regulation,GENE1224 Protein
+GENE1225,GENE1225,GENE1225 Associated Gene,15,Protein Synthesis,GENE1225 Protein
+GENE1226,GENE1226,GENE1226 Associated Gene,16,Metabolism,GENE1226 Protein
+GENE1227,GENE1227,GENE1227 Associated Gene,17,Signal Transduction,GENE1227 Protein
+GENE1228,GENE1228,GENE1228 Associated Gene,18,Apoptosis,GENE1228 Protein
+GENE1229,GENE1229,GENE1229 Associated Gene,19,Cell Cycle Control,GENE1229 Protein
+GENE1230,GENE1230,GENE1230 Associated Gene,20,Gene Expression,GENE1230 Protein
+GENE1231,GENE1231,GENE1231 Associated Gene,21,DNA Repair,GENE1231 Protein
+GENE1232,GENE1232,GENE1232 Associated Gene,22,Cell Signaling,GENE1232 Protein
+GENE1233,GENE1233,GENE1233 Associated Gene,1,Tumor Suppression,GENE1233 Protein
+GENE1234,GENE1234,GENE1234 Associated Gene,2,Immune Regulation,GENE1234 Protein
+GENE1235,GENE1235,GENE1235 Associated Gene,3,Protein Synthesis,GENE1235 Protein
+GENE1236,GENE1236,GENE1236 Associated Gene,4,Metabolism,GENE1236 Protein
+GENE1237,GENE1237,GENE1237 Associated Gene,5,Signal Transduction,GENE1237 Protein
+GENE1238,GENE1238,GENE1238 Associated Gene,6,Apoptosis,GENE1238 Protein
+GENE1239,GENE1239,GENE1239 Associated Gene,7,Cell Cycle Control,GENE1239 Protein
+GENE1240,GENE1240,GENE1240 Associated Gene,8,Gene Expression,GENE1240 Protein
+GENE1241,GENE1241,GENE1241 Associated Gene,9,DNA Repair,GENE1241 Protein
+GENE1242,GENE1242,GENE1242 Associated Gene,10,Cell Signaling,GENE1242 Protein
+GENE1243,GENE1243,GENE1243 Associated Gene,11,Tumor Suppression,GENE1243 Protein
+GENE1244,GENE1244,GENE1244 Associated Gene,12,Immune Regulation,GENE1244 Protein
+GENE1245,GENE1245,GENE1245 Associated Gene,13,Protein Synthesis,GENE1245 Protein
+GENE1246,GENE1246,GENE1246 Associated Gene,14,Metabolism,GENE1246 Protein
+GENE1247,GENE1247,GENE1247 Associated Gene,15,Signal Transduction,GENE1247 Protein
+GENE1248,GENE1248,GENE1248 Associated Gene,16,Apoptosis,GENE1248 Protein
+GENE1249,GENE1249,GENE1249 Associated Gene,17,Cell Cycle Control,GENE1249 Protein
+GENE1250,GENE1250,GENE1250 Associated Gene,18,Gene Expression,GENE1250 Protein
+GENE1251,GENE1251,GENE1251 Associated Gene,19,DNA Repair,GENE1251 Protein
+GENE1252,GENE1252,GENE1252 Associated Gene,20,Cell Signaling,GENE1252 Protein
+GENE1253,GENE1253,GENE1253 Associated Gene,21,Tumor Suppression,GENE1253 Protein
+GENE1254,GENE1254,GENE1254 Associated Gene,22,Immune Regulation,GENE1254 Protein
+GENE1255,GENE1255,GENE1255 Associated Gene,1,Protein Synthesis,GENE1255 Protein
+GENE1256,GENE1256,GENE1256 Associated Gene,2,Metabolism,GENE1256 Protein
+GENE1257,GENE1257,GENE1257 Associated Gene,3,Signal Transduction,GENE1257 Protein
+GENE1258,GENE1258,GENE1258 Associated Gene,4,Apoptosis,GENE1258 Protein
+GENE1259,GENE1259,GENE1259 Associated Gene,5,Cell Cycle Control,GENE1259 Protein
+GENE1260,GENE1260,GENE1260 Associated Gene,6,Gene Expression,GENE1260 Protein
+GENE1261,GENE1261,GENE1261 Associated Gene,7,DNA Repair,GENE1261 Protein
+GENE1262,GENE1262,GENE1262 Associated Gene,8,Cell Signaling,GENE1262 Protein
+GENE1263,GENE1263,GENE1263 Associated Gene,9,Tumor Suppression,GENE1263 Protein
+GENE1264,GENE1264,GENE1264 Associated Gene,10,Immune Regulation,GENE1264 Protein
+GENE1265,GENE1265,GENE1265 Associated Gene,11,Protein Synthesis,GENE1265 Protein
+GENE1266,GENE1266,GENE1266 Associated Gene,12,Metabolism,GENE1266 Protein
+GENE1267,GENE1267,GENE1267 Associated Gene,13,Signal Transduction,GENE1267 Protein
+GENE1268,GENE1268,GENE1268 Associated Gene,14,Apoptosis,GENE1268 Protein
+GENE1269,GENE1269,GENE1269 Associated Gene,15,Cell Cycle Control,GENE1269 Protein
+GENE1270,GENE1270,GENE1270 Associated Gene,16,Gene Expression,GENE1270 Protein
+GENE1271,GENE1271,GENE1271 Associated Gene,17,DNA Repair,GENE1271 Protein
+GENE1272,GENE1272,GENE1272 Associated Gene,18,Cell Signaling,GENE1272 Protein
+GENE1273,GENE1273,GENE1273 Associated Gene,19,Tumor Suppression,GENE1273 Protein
+GENE1274,GENE1274,GENE1274 Associated Gene,20,Immune Regulation,GENE1274 Protein
+GENE1275,GENE1275,GENE1275 Associated Gene,21,Protein Synthesis,GENE1275 Protein
+GENE1276,GENE1276,GENE1276 Associated Gene,22,Metabolism,GENE1276 Protein
+GENE1277,GENE1277,GENE1277 Associated Gene,1,Signal Transduction,GENE1277 Protein
+GENE1278,GENE1278,GENE1278 Associated Gene,2,Apoptosis,GENE1278 Protein
+GENE1279,GENE1279,GENE1279 Associated Gene,3,Cell Cycle Control,GENE1279 Protein
+GENE1280,GENE1280,GENE1280 Associated Gene,4,Gene Expression,GENE1280 Protein
+GENE1281,GENE1281,GENE1281 Associated Gene,5,DNA Repair,GENE1281 Protein
+GENE1282,GENE1282,GENE1282 Associated Gene,6,Cell Signaling,GENE1282 Protein
+GENE1283,GENE1283,GENE1283 Associated Gene,7,Tumor Suppression,GENE1283 Protein
+GENE1284,GENE1284,GENE1284 Associated Gene,8,Immune Regulation,GENE1284 Protein
+GENE1285,GENE1285,GENE1285 Associated Gene,9,Protein Synthesis,GENE1285 Protein
+GENE1286,GENE1286,GENE1286 Associated Gene,10,Metabolism,GENE1286 Protein
+GENE1287,GENE1287,GENE1287 Associated Gene,11,Signal Transduction,GENE1287 Protein
+GENE1288,GENE1288,GENE1288 Associated Gene,12,Apoptosis,GENE1288 Protein
+GENE1289,GENE1289,GENE1289 Associated Gene,13,Cell Cycle Control,GENE1289 Protein
+GENE1290,GENE1290,GENE1290 Associated Gene,14,Gene Expression,GENE1290 Protein
+GENE1291,GENE1291,GENE1291 Associated Gene,15,DNA Repair,GENE1291 Protein
+GENE1292,GENE1292,GENE1292 Associated Gene,16,Cell Signaling,GENE1292 Protein
+GENE1293,GENE1293,GENE1293 Associated Gene,17,Tumor Suppression,GENE1293 Protein
+GENE1294,GENE1294,GENE1294 Associated Gene,18,Immune Regulation,GENE1294 Protein
+GENE1295,GENE1295,GENE1295 Associated Gene,19,Protein Synthesis,GENE1295 Protein
+GENE1296,GENE1296,GENE1296 Associated Gene,20,Metabolism,GENE1296 Protein
+GENE1297,GENE1297,GENE1297 Associated Gene,21,Signal Transduction,GENE1297 Protein
+GENE1298,GENE1298,GENE1298 Associated Gene,22,Apoptosis,GENE1298 Protein
+GENE1299,GENE1299,GENE1299 Associated Gene,1,Cell Cycle Control,GENE1299 Protein
+GENE1300,GENE1300,GENE1300 Associated Gene,2,Gene Expression,GENE1300 Protein
+GENE1301,GENE1301,GENE1301 Associated Gene,3,DNA Repair,GENE1301 Protein
+GENE1302,GENE1302,GENE1302 Associated Gene,4,Cell Signaling,GENE1302 Protein
+GENE1303,GENE1303,GENE1303 Associated Gene,5,Tumor Suppression,GENE1303 Protein
+GENE1304,GENE1304,GENE1304 Associated Gene,6,Immune Regulation,GENE1304 Protein
+GENE1305,GENE1305,GENE1305 Associated Gene,7,Protein Synthesis,GENE1305 Protein
+GENE1306,GENE1306,GENE1306 Associated Gene,8,Metabolism,GENE1306 Protein
+GENE1307,GENE1307,GENE1307 Associated Gene,9,Signal Transduction,GENE1307 Protein
+GENE1308,GENE1308,GENE1308 Associated Gene,10,Apoptosis,GENE1308 Protein
+GENE1309,GENE1309,GENE1309 Associated Gene,11,Cell Cycle Control,GENE1309 Protein
+GENE1310,GENE1310,GENE1310 Associated Gene,12,Gene Expression,GENE1310 Protein
+GENE1311,GENE1311,GENE1311 Associated Gene,13,DNA Repair,GENE1311 Protein
+GENE1312,GENE1312,GENE1312 Associated Gene,14,Cell Signaling,GENE1312 Protein
+GENE1313,GENE1313,GENE1313 Associated Gene,15,Tumor Suppression,GENE1313 Protein
+GENE1314,GENE1314,GENE1314 Associated Gene,16,Immune Regulation,GENE1314 Protein
+GENE1315,GENE1315,GENE1315 Associated Gene,17,Protein Synthesis,GENE1315 Protein
+GENE1316,GENE1316,GENE1316 Associated Gene,18,Metabolism,GENE1316 Protein
+GENE1317,GENE1317,GENE1317 Associated Gene,19,Signal Transduction,GENE1317 Protein
+GENE1318,GENE1318,GENE1318 Associated Gene,20,Apoptosis,GENE1318 Protein
+GENE1319,GENE1319,GENE1319 Associated Gene,21,Cell Cycle Control,GENE1319 Protein
+GENE1320,GENE1320,GENE1320 Associated Gene,22,Gene Expression,GENE1320 Protein
+GENE1321,GENE1321,GENE1321 Associated Gene,1,DNA Repair,GENE1321 Protein
+GENE1322,GENE1322,GENE1322 Associated Gene,2,Cell Signaling,GENE1322 Protein
+GENE1323,GENE1323,GENE1323 Associated Gene,3,Tumor Suppression,GENE1323 Protein
+GENE1324,GENE1324,GENE1324 Associated Gene,4,Immune Regulation,GENE1324 Protein
+GENE1325,GENE1325,GENE1325 Associated Gene,5,Protein Synthesis,GENE1325 Protein
+GENE1326,GENE1326,GENE1326 Associated Gene,6,Metabolism,GENE1326 Protein
+GENE1327,GENE1327,GENE1327 Associated Gene,7,Signal Transduction,GENE1327 Protein
+GENE1328,GENE1328,GENE1328 Associated Gene,8,Apoptosis,GENE1328 Protein
+GENE1329,GENE1329,GENE1329 Associated Gene,9,Cell Cycle Control,GENE1329 Protein
+GENE1330,GENE1330,GENE1330 Associated Gene,10,Gene Expression,GENE1330 Protein
+GENE1331,GENE1331,GENE1331 Associated Gene,11,DNA Repair,GENE1331 Protein
+GENE1332,GENE1332,GENE1332 Associated Gene,12,Cell Signaling,GENE1332 Protein
+GENE1333,GENE1333,GENE1333 Associated Gene,13,Tumor Suppression,GENE1333 Protein
+GENE1334,GENE1334,GENE1334 Associated Gene,14,Immune Regulation,GENE1334 Protein
+GENE1335,GENE1335,GENE1335 Associated Gene,15,Protein Synthesis,GENE1335 Protein
+GENE1336,GENE1336,GENE1336 Associated Gene,16,Metabolism,GENE1336 Protein
+GENE1337,GENE1337,GENE1337 Associated Gene,17,Signal Transduction,GENE1337 Protein
+GENE1338,GENE1338,GENE1338 Associated Gene,18,Apoptosis,GENE1338 Protein
+GENE1339,GENE1339,GENE1339 Associated Gene,19,Cell Cycle Control,GENE1339 Protein
+GENE1340,GENE1340,GENE1340 Associated Gene,20,Gene Expression,GENE1340 Protein
+GENE1341,GENE1341,GENE1341 Associated Gene,21,DNA Repair,GENE1341 Protein
+GENE1342,GENE1342,GENE1342 Associated Gene,22,Cell Signaling,GENE1342 Protein
+GENE1343,GENE1343,GENE1343 Associated Gene,1,Tumor Suppression,GENE1343 Protein
+GENE1344,GENE1344,GENE1344 Associated Gene,2,Immune Regulation,GENE1344 Protein
+GENE1345,GENE1345,GENE1345 Associated Gene,3,Protein Synthesis,GENE1345 Protein
+GENE1346,GENE1346,GENE1346 Associated Gene,4,Metabolism,GENE1346 Protein
+GENE1347,GENE1347,GENE1347 Associated Gene,5,Signal Transduction,GENE1347 Protein
+GENE1348,GENE1348,GENE1348 Associated Gene,6,Apoptosis,GENE1348 Protein
+GENE1349,GENE1349,GENE1349 Associated Gene,7,Cell Cycle Control,GENE1349 Protein
+GENE1350,GENE1350,GENE1350 Associated Gene,8,Gene Expression,GENE1350 Protein
+GENE1351,GENE1351,GENE1351 Associated Gene,9,DNA Repair,GENE1351 Protein
+GENE1352,GENE1352,GENE1352 Associated Gene,10,Cell Signaling,GENE1352 Protein
+GENE1353,GENE1353,GENE1353 Associated Gene,11,Tumor Suppression,GENE1353 Protein
+GENE1354,GENE1354,GENE1354 Associated Gene,12,Immune Regulation,GENE1354 Protein
+GENE1355,GENE1355,GENE1355 Associated Gene,13,Protein Synthesis,GENE1355 Protein
+GENE1356,GENE1356,GENE1356 Associated Gene,14,Metabolism,GENE1356 Protein
+GENE1357,GENE1357,GENE1357 Associated Gene,15,Signal Transduction,GENE1357 Protein
+GENE1358,GENE1358,GENE1358 Associated Gene,16,Apoptosis,GENE1358 Protein
+GENE1359,GENE1359,GENE1359 Associated Gene,17,Cell Cycle Control,GENE1359 Protein
+GENE1360,GENE1360,GENE1360 Associated Gene,18,Gene Expression,GENE1360 Protein
+GENE1361,GENE1361,GENE1361 Associated Gene,19,DNA Repair,GENE1361 Protein
+GENE1362,GENE1362,GENE1362 Associated Gene,20,Cell Signaling,GENE1362 Protein
+GENE1363,GENE1363,GENE1363 Associated Gene,21,Tumor Suppression,GENE1363 Protein
+GENE1364,GENE1364,GENE1364 Associated Gene,22,Immune Regulation,GENE1364 Protein
+GENE1365,GENE1365,GENE1365 Associated Gene,1,Protein Synthesis,GENE1365 Protein
+GENE1366,GENE1366,GENE1366 Associated Gene,2,Metabolism,GENE1366 Protein
+GENE1367,GENE1367,GENE1367 Associated Gene,3,Signal Transduction,GENE1367 Protein
+GENE1368,GENE1368,GENE1368 Associated Gene,4,Apoptosis,GENE1368 Protein
+GENE1369,GENE1369,GENE1369 Associated Gene,5,Cell Cycle Control,GENE1369 Protein
+GENE1370,GENE1370,GENE1370 Associated Gene,6,Gene Expression,GENE1370 Protein
+GENE1371,GENE1371,GENE1371 Associated Gene,7,DNA Repair,GENE1371 Protein
+GENE1372,GENE1372,GENE1372 Associated Gene,8,Cell Signaling,GENE1372 Protein
+GENE1373,GENE1373,GENE1373 Associated Gene,9,Tumor Suppression,GENE1373 Protein
+GENE1374,GENE1374,GENE1374 Associated Gene,10,Immune Regulation,GENE1374 Protein
+GENE1375,GENE1375,GENE1375 Associated Gene,11,Protein Synthesis,GENE1375 Protein
+GENE1376,GENE1376,GENE1376 Associated Gene,12,Metabolism,GENE1376 Protein
+GENE1377,GENE1377,GENE1377 Associated Gene,13,Signal Transduction,GENE1377 Protein
+GENE1378,GENE1378,GENE1378 Associated Gene,14,Apoptosis,GENE1378 Protein
+GENE1379,GENE1379,GENE1379 Associated Gene,15,Cell Cycle Control,GENE1379 Protein
+GENE1380,GENE1380,GENE1380 Associated Gene,16,Gene Expression,GENE1380 Protein
+GENE1381,GENE1381,GENE1381 Associated Gene,17,DNA Repair,GENE1381 Protein
+GENE1382,GENE1382,GENE1382 Associated Gene,18,Cell Signaling,GENE1382 Protein
+GENE1383,GENE1383,GENE1383 Associated Gene,19,Tumor Suppression,GENE1383 Protein
+GENE1384,GENE1384,GENE1384 Associated Gene,20,Immune Regulation,GENE1384 Protein
+GENE1385,GENE1385,GENE1385 Associated Gene,21,Protein Synthesis,GENE1385 Protein
+GENE1386,GENE1386,GENE1386 Associated Gene,22,Metabolism,GENE1386 Protein
+GENE1387,GENE1387,GENE1387 Associated Gene,1,Signal Transduction,GENE1387 Protein
+GENE1388,GENE1388,GENE1388 Associated Gene,2,Apoptosis,GENE1388 Protein
+GENE1389,GENE1389,GENE1389 Associated Gene,3,Cell Cycle Control,GENE1389 Protein
+GENE1390,GENE1390,GENE1390 Associated Gene,4,Gene Expression,GENE1390 Protein
+GENE1391,GENE1391,GENE1391 Associated Gene,5,DNA Repair,GENE1391 Protein
+GENE1392,GENE1392,GENE1392 Associated Gene,6,Cell Signaling,GENE1392 Protein
+GENE1393,GENE1393,GENE1393 Associated Gene,7,Tumor Suppression,GENE1393 Protein
+GENE1394,GENE1394,GENE1394 Associated Gene,8,Immune Regulation,GENE1394 Protein
+GENE1395,GENE1395,GENE1395 Associated Gene,9,Protein Synthesis,GENE1395 Protein
+GENE1396,GENE1396,GENE1396 Associated Gene,10,Metabolism,GENE1396 Protein
+GENE1397,GENE1397,GENE1397 Associated Gene,11,Signal Transduction,GENE1397 Protein
+GENE1398,GENE1398,GENE1398 Associated Gene,12,Apoptosis,GENE1398 Protein
+GENE1399,GENE1399,GENE1399 Associated Gene,13,Cell Cycle Control,GENE1399 Protein
+GENE1400,GENE1400,GENE1400 Associated Gene,14,Gene Expression,GENE1400 Protein
+GENE1401,GENE1401,GENE1401 Associated Gene,15,DNA Repair,GENE1401 Protein
+GENE1402,GENE1402,GENE1402 Associated Gene,16,Cell Signaling,GENE1402 Protein
+GENE1403,GENE1403,GENE1403 Associated Gene,17,Tumor Suppression,GENE1403 Protein
+GENE1404,GENE1404,GENE1404 Associated Gene,18,Immune Regulation,GENE1404 Protein
+GENE1405,GENE1405,GENE1405 Associated Gene,19,Protein Synthesis,GENE1405 Protein
+GENE1406,GENE1406,GENE1406 Associated Gene,20,Metabolism,GENE1406 Protein
+GENE1407,GENE1407,GENE1407 Associated Gene,21,Signal Transduction,GENE1407 Protein
+GENE1408,GENE1408,GENE1408 Associated Gene,22,Apoptosis,GENE1408 Protein
+GENE1409,GENE1409,GENE1409 Associated Gene,1,Cell Cycle Control,GENE1409 Protein
+GENE1410,GENE1410,GENE1410 Associated Gene,2,Gene Expression,GENE1410 Protein
+GENE1411,GENE1411,GENE1411 Associated Gene,3,DNA Repair,GENE1411 Protein
+GENE1412,GENE1412,GENE1412 Associated Gene,4,Cell Signaling,GENE1412 Protein
+GENE1413,GENE1413,GENE1413 Associated Gene,5,Tumor Suppression,GENE1413 Protein
+GENE1414,GENE1414,GENE1414 Associated Gene,6,Immune Regulation,GENE1414 Protein
+GENE1415,GENE1415,GENE1415 Associated Gene,7,Protein Synthesis,GENE1415 Protein
+GENE1416,GENE1416,GENE1416 Associated Gene,8,Metabolism,GENE1416 Protein
+GENE1417,GENE1417,GENE1417 Associated Gene,9,Signal Transduction,GENE1417 Protein
+GENE1418,GENE1418,GENE1418 Associated Gene,10,Apoptosis,GENE1418 Protein
+GENE1419,GENE1419,GENE1419 Associated Gene,11,Cell Cycle Control,GENE1419 Protein
+GENE1420,GENE1420,GENE1420 Associated Gene,12,Gene Expression,GENE1420 Protein
+GENE1421,GENE1421,GENE1421 Associated Gene,13,DNA Repair,GENE1421 Protein
+GENE1422,GENE1422,GENE1422 Associated Gene,14,Cell Signaling,GENE1422 Protein
+GENE1423,GENE1423,GENE1423 Associated Gene,15,Tumor Suppression,GENE1423 Protein
+GENE1424,GENE1424,GENE1424 Associated Gene,16,Immune Regulation,GENE1424 Protein
+GENE1425,GENE1425,GENE1425 Associated Gene,17,Protein Synthesis,GENE1425 Protein
+GENE1426,GENE1426,GENE1426 Associated Gene,18,Metabolism,GENE1426 Protein
+GENE1427,GENE1427,GENE1427 Associated Gene,19,Signal Transduction,GENE1427 Protein
+GENE1428,GENE1428,GENE1428 Associated Gene,20,Apoptosis,GENE1428 Protein
+GENE1429,GENE1429,GENE1429 Associated Gene,21,Cell Cycle Control,GENE1429 Protein
+GENE1430,GENE1430,GENE1430 Associated Gene,22,Gene Expression,GENE1430 Protein
+GENE1431,GENE1431,GENE1431 Associated Gene,1,DNA Repair,GENE1431 Protein
+GENE1432,GENE1432,GENE1432 Associated Gene,2,Cell Signaling,GENE1432 Protein
+GENE1433,GENE1433,GENE1433 Associated Gene,3,Tumor Suppression,GENE1433 Protein
+GENE1434,GENE1434,GENE1434 Associated Gene,4,Immune Regulation,GENE1434 Protein
+GENE1435,GENE1435,GENE1435 Associated Gene,5,Protein Synthesis,GENE1435 Protein
+GENE1436,GENE1436,GENE1436 Associated Gene,6,Metabolism,GENE1436 Protein
+GENE1437,GENE1437,GENE1437 Associated Gene,7,Signal Transduction,GENE1437 Protein
+GENE1438,GENE1438,GENE1438 Associated Gene,8,Apoptosis,GENE1438 Protein
+GENE1439,GENE1439,GENE1439 Associated Gene,9,Cell Cycle Control,GENE1439 Protein
+GENE1440,GENE1440,GENE1440 Associated Gene,10,Gene Expression,GENE1440 Protein
+GENE1441,GENE1441,GENE1441 Associated Gene,11,DNA Repair,GENE1441 Protein
+GENE1442,GENE1442,GENE1442 Associated Gene,12,Cell Signaling,GENE1442 Protein
+GENE1443,GENE1443,GENE1443 Associated Gene,13,Tumor Suppression,GENE1443 Protein
+GENE1444,GENE1444,GENE1444 Associated Gene,14,Immune Regulation,GENE1444 Protein
+GENE1445,GENE1445,GENE1445 Associated Gene,15,Protein Synthesis,GENE1445 Protein
+GENE1446,GENE1446,GENE1446 Associated Gene,16,Metabolism,GENE1446 Protein
+GENE1447,GENE1447,GENE1447 Associated Gene,17,Signal Transduction,GENE1447 Protein
+GENE1448,GENE1448,GENE1448 Associated Gene,18,Apoptosis,GENE1448 Protein
+GENE1449,GENE1449,GENE1449 Associated Gene,19,Cell Cycle Control,GENE1449 Protein
+GENE1450,GENE1450,GENE1450 Associated Gene,20,Gene Expression,GENE1450 Protein
+GENE1451,GENE1451,GENE1451 Associated Gene,21,DNA Repair,GENE1451 Protein
+GENE1452,GENE1452,GENE1452 Associated Gene,22,Cell Signaling,GENE1452 Protein
+GENE1453,GENE1453,GENE1453 Associated Gene,1,Tumor Suppression,GENE1453 Protein
+GENE1454,GENE1454,GENE1454 Associated Gene,2,Immune Regulation,GENE1454 Protein
+GENE1455,GENE1455,GENE1455 Associated Gene,3,Protein Synthesis,GENE1455 Protein
+GENE1456,GENE1456,GENE1456 Associated Gene,4,Metabolism,GENE1456 Protein
+GENE1457,GENE1457,GENE1457 Associated Gene,5,Signal Transduction,GENE1457 Protein
+GENE1458,GENE1458,GENE1458 Associated Gene,6,Apoptosis,GENE1458 Protein
+GENE1459,GENE1459,GENE1459 Associated Gene,7,Cell Cycle Control,GENE1459 Protein
+GENE1460,GENE1460,GENE1460 Associated Gene,8,Gene Expression,GENE1460 Protein
+GENE1461,GENE1461,GENE1461 Associated Gene,9,DNA Repair,GENE1461 Protein
+GENE1462,GENE1462,GENE1462 Associated Gene,10,Cell Signaling,GENE1462 Protein
+GENE1463,GENE1463,GENE1463 Associated Gene,11,Tumor Suppression,GENE1463 Protein
+GENE1464,GENE1464,GENE1464 Associated Gene,12,Immune Regulation,GENE1464 Protein
+GENE1465,GENE1465,GENE1465 Associated Gene,13,Protein Synthesis,GENE1465 Protein
+GENE1466,GENE1466,GENE1466 Associated Gene,14,Metabolism,GENE1466 Protein
+GENE1467,GENE1467,GENE1467 Associated Gene,15,Signal Transduction,GENE1467 Protein
+GENE1468,GENE1468,GENE1468 Associated Gene,16,Apoptosis,GENE1468 Protein
+GENE1469,GENE1469,GENE1469 Associated Gene,17,Cell Cycle Control,GENE1469 Protein
+GENE1470,GENE1470,GENE1470 Associated Gene,18,Gene Expression,GENE1470 Protein
+GENE1471,GENE1471,GENE1471 Associated Gene,19,DNA Repair,GENE1471 Protein
+GENE1472,GENE1472,GENE1472 Associated Gene,20,Cell Signaling,GENE1472 Protein
+GENE1473,GENE1473,GENE1473 Associated Gene,21,Tumor Suppression,GENE1473 Protein
+GENE1474,GENE1474,GENE1474 Associated Gene,22,Immune Regulation,GENE1474 Protein
+GENE1475,GENE1475,GENE1475 Associated Gene,1,Protein Synthesis,GENE1475 Protein
+GENE1476,GENE1476,GENE1476 Associated Gene,2,Metabolism,GENE1476 Protein
+GENE1477,GENE1477,GENE1477 Associated Gene,3,Signal Transduction,GENE1477 Protein
+GENE1478,GENE1478,GENE1478 Associated Gene,4,Apoptosis,GENE1478 Protein
+GENE1479,GENE1479,GENE1479 Associated Gene,5,Cell Cycle Control,GENE1479 Protein
+GENE1480,GENE1480,GENE1480 Associated Gene,6,Gene Expression,GENE1480 Protein
+GENE1481,GENE1481,GENE1481 Associated Gene,7,DNA Repair,GENE1481 Protein
+GENE1482,GENE1482,GENE1482 Associated Gene,8,Cell Signaling,GENE1482 Protein
+GENE1483,GENE1483,GENE1483 Associated Gene,9,Tumor Suppression,GENE1483 Protein
+GENE1484,GENE1484,GENE1484 Associated Gene,10,Immune Regulation,GENE1484 Protein
+GENE1485,GENE1485,GENE1485 Associated Gene,11,Protein Synthesis,GENE1485 Protein
+GENE1486,GENE1486,GENE1486 Associated Gene,12,Metabolism,GENE1486 Protein
+GENE1487,GENE1487,GENE1487 Associated Gene,13,Signal Transduction,GENE1487 Protein
+GENE1488,GENE1488,GENE1488 Associated Gene,14,Apoptosis,GENE1488 Protein
+GENE1489,GENE1489,GENE1489 Associated Gene,15,Cell Cycle Control,GENE1489 Protein
+GENE1490,GENE1490,GENE1490 Associated Gene,16,Gene Expression,GENE1490 Protein
+GENE1491,GENE1491,GENE1491 Associated Gene,17,DNA Repair,GENE1491 Protein
+GENE1492,GENE1492,GENE1492 Associated Gene,18,Cell Signaling,GENE1492 Protein
+GENE1493,GENE1493,GENE1493 Associated Gene,19,Tumor Suppression,GENE1493 Protein
+GENE1494,GENE1494,GENE1494 Associated Gene,20,Immune Regulation,GENE1494 Protein
+GENE1495,GENE1495,GENE1495 Associated Gene,21,Protein Synthesis,GENE1495 Protein
+GENE1496,GENE1496,GENE1496 Associated Gene,22,Metabolism,GENE1496 Protein
+GENE1497,GENE1497,GENE1497 Associated Gene,1,Signal Transduction,GENE1497 Protein
+GENE1498,GENE1498,GENE1498 Associated Gene,2,Apoptosis,GENE1498 Protein
+GENE1499,GENE1499,GENE1499 Associated Gene,3,Cell Cycle Control,GENE1499 Protein
+GENE1500,GENE1500,GENE1500 Associated Gene,4,Gene Expression,GENE1500 Protein

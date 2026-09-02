@@ -1,0 +1,2001 @@
+variant_id,gene_id,variant_name,mutation_type,clinical_significance
+VAR0001,GENE1036,R175H,Missense,Pathogenic
+VAR0002,GENE0755,L858R,Missense,Uncertain Significance
+VAR0003,GENE1417,Q61R,Missense,Likely Benign
+VAR0004,GENE0661,c.68_69delAG,Deletion,Likely Pathogenic
+VAR0005,GENE0470,Q61R,Missense,Benign
+VAR0006,GENE1311,E545K,Missense,Benign
+VAR0007,GENE1193,Q61R,Missense,Uncertain Significance
+VAR0008,GENE0523,Y220C,Missense,Likely Benign
+VAR0009,GENE0744,L858R,Missense,Likely Pathogenic
+VAR0010,GENE0705,T790M,Missense,Pathogenic
+VAR0011,GENE0774,V600E,Missense,Benign
+VAR0012,GENE0302,c.68_69delAG,Deletion,Benign
+VAR0013,GENE0615,E545K,Missense,Pathogenic
+VAR0014,GENE1366,G12D,Missense,Likely Benign
+VAR0015,GENE0349,L858R,Missense,Likely Benign
+VAR0016,GENE0768,R175H,Missense,Likely Benign
+VAR0017,GENE0700,R175H,Missense,Likely Benign
+VAR0018,GENE0458,V600E,Missense,Likely Benign
+VAR0019,GENE1495,G12D,Missense,Likely Pathogenic
+VAR0020,GENE1412,c.68_69delAG,Deletion,Uncertain Significance
+VAR0021,GENE0987,L858R,Missense,Pathogenic
+VAR0022,GENE0760,R175H,Missense,Likely Pathogenic
+VAR0023,GENE1458,F508del,Deletion,Pathogenic
+VAR0024,GENE1135,G12D,Missense,Uncertain Significance
+VAR0025,GENE0297,c.68_69delAG,Deletion,Likely Benign
+VAR0026,GENE0551,Y220C,Missense,Benign
+VAR0027,GENE0357,Y220C,Missense,Uncertain Significance
+VAR0028,GENE1146,L858R,Missense,Pathogenic
+VAR0029,GENE0899,G12D,Missense,Pathogenic
+VAR0030,GENE0846,T790M,Missense,Uncertain Significance
+VAR0031,GENE1178,T790M,Missense,Pathogenic
+VAR0032,GENE0924,R175H,Missense,Uncertain Significance
+VAR0033,GENE0268,V600E,Missense,Likely Pathogenic
+VAR0034,GENE0517,c.68_69delAG,Deletion,Likely Benign
+VAR0035,GENE1068,Q61R,Missense,Pathogenic
+VAR0036,GENE1023,V600E,Missense,Uncertain Significance
+VAR0037,GENE0388,E545K,Missense,Uncertain Significance
+VAR0038,GENE0497,T790M,Missense,Uncertain Significance
+VAR0039,GENE0259,T790M,Missense,Pathogenic
+VAR0040,GENE0899,R175H,Missense,Benign
+VAR0041,GENE0575,c.68_69delAG,Deletion,Likely Benign
+VAR0042,GENE1246,G12D,Missense,Uncertain Significance
+VAR0043,GENE0299,L858R,Missense,Uncertain Significance
+VAR0044,GENE0525,V600E,Missense,Uncertain Significance
+VAR0045,GENE0667,Q61R,Missense,Likely Benign
+VAR0046,GENE0253,F508del,Deletion,Pathogenic
+VAR0047,GENE1440,F508del,Deletion,Uncertain Significance
+VAR0048,GENE0958,E545K,Missense,Uncertain Significance
+VAR0049,GENE1384,R175H,Missense,Uncertain Significance
+VAR0050,GENE0664,F508del,Deletion,Likely Pathogenic
+VAR0051,GENE0836,c.68_69delAG,Deletion,Likely Benign
+VAR0052,GENE1025,E545K,Missense,Benign
+VAR0053,GENE0616,c.68_69delAG,Deletion,Pathogenic
+VAR0054,GENE1291,V600E,Missense,Pathogenic
+VAR0055,GENE1076,c.68_69delAG,Deletion,Benign
+VAR0056,GENE0852,Q61R,Missense,Likely Benign
+VAR0057,GENE1084,E545K,Missense,Benign
+VAR0058,GENE0827,F508del,Deletion,Benign
+VAR0059,GENE0875,V600E,Missense,Benign
+VAR0060,GENE0025,R175H,Missense,Pathogenic
+VAR0061,GENE0696,R175H,Missense,Uncertain Significance
+VAR0062,GENE1021,L858R,Missense,Benign
+VAR0063,GENE0192,G12D,Missense,Benign
+VAR0064,GENE1062,F508del,Deletion,Benign
+VAR0065,GENE1126,V600E,Missense,Pathogenic
+VAR0066,GENE0081,R175H,Missense,Benign
+VAR0067,GENE0605,G12D,Missense,Likely Pathogenic
+VAR0068,GENE0465,Q61R,Missense,Uncertain Significance
+VAR0069,GENE0448,L858R,Missense,Uncertain Significance
+VAR0070,GENE0882,G12D,Missense,Likely Pathogenic
+VAR0071,GENE0130,G12D,Missense,Benign
+VAR0072,GENE1197,V600E,Missense,Likely Pathogenic
+VAR0073,GENE1222,R175H,Missense,Uncertain Significance
+VAR0074,GENE1441,G12D,Missense,Likely Pathogenic
+VAR0075,GENE0599,E545K,Missense,Pathogenic
+VAR0076,GENE0353,Y220C,Missense,Likely Benign
+VAR0077,GENE1437,T790M,Missense,Benign
+VAR0078,GENE1469,R175H,Missense,Likely Benign
+VAR0079,GENE1405,F508del,Deletion,Likely Pathogenic
+VAR0080,GENE0593,T790M,Missense,Likely Benign
+VAR0081,GENE0955,R175H,Missense,Likely Benign
+VAR0082,GENE0562,L858R,Missense,Likely Benign
+VAR0083,GENE0204,G12D,Missense,Uncertain Significance
+VAR0084,GENE1018,L858R,Missense,Uncertain Significance
+VAR0085,GENE0310,G12D,Missense,Likely Pathogenic
+VAR0086,GENE0006,T790M,Missense,Benign
+VAR0087,GENE0835,c.68_69delAG,Deletion,Likely Pathogenic
+VAR0088,GENE0780,c.68_69delAG,Deletion,Likely Benign
+VAR0089,GENE0664,V600E,Missense,Uncertain Significance
+VAR0090,GENE0452,c.68_69delAG,Deletion,Pathogenic
+VAR0091,GENE1414,c.68_69delAG,Deletion,Likely Pathogenic
+VAR0092,GENE1151,Y220C,Missense,Uncertain Significance
+VAR0093,GENE0067,Y220C,Missense,Likely Benign
+VAR0094,GENE1432,T790M,Missense,Likely Benign
+VAR0095,GENE0232,c.68_69delAG,Deletion,Pathogenic
+VAR0096,GENE1135,E545K,Missense,Benign
+VAR0097,GENE0049,V600E,Missense,Pathogenic
+VAR0098,GENE1073,R175H,Missense,Likely Benign
+VAR0099,GENE0546,T790M,Missense,Likely Pathogenic
+VAR0100,GENE0961,Q61R,Missense,Uncertain Significance
+VAR0101,GENE0360,T790M,Missense,Pathogenic
+VAR0102,GENE0076,T790M,Missense,Benign
+VAR0103,GENE0373,E545K,Missense,Pathogenic
+VAR0104,GENE0928,L858R,Missense,Uncertain Significance
+VAR0105,GENE1094,Y220C,Missense,Pathogenic
+VAR0106,GENE1275,R175H,Missense,Pathogenic
+VAR0107,GENE1204,T790M,Missense,Likely Pathogenic
+VAR0108,GENE1198,E545K,Missense,Likely Pathogenic
+VAR0109,GENE0874,Q61R,Missense,Uncertain Significance
+VAR0110,GENE1138,Y220C,Missense,Likely Pathogenic
+VAR0111,GENE0647,Y220C,Missense,Benign
+VAR0112,GENE0130,T790M,Missense,Likely Pathogenic
+VAR0113,GENE0139,V600E,Missense,Likely Benign
+VAR0114,GENE0475,R175H,Missense,Benign
+VAR0115,GENE0818,G12D,Missense,Benign
+VAR0116,GENE0684,V600E,Missense,Benign
+VAR0117,GENE0576,F508del,Deletion,Pathogenic
+VAR0118,GENE0624,Y220C,Missense,Uncertain Significance
+VAR0119,GENE1376,T790M,Missense,Likely Benign
+VAR0120,GENE0090,c.68_69delAG,Deletion,Benign
+VAR0121,GENE1231,T790M,Missense,Likely Pathogenic
+VAR0122,GENE0670,L858R,Missense,Likely Benign
+VAR0123,GENE1447,V600E,Missense,Pathogenic
+VAR0124,GENE1127,F508del,Deletion,Benign
+VAR0125,GENE1077,G12D,Missense,Likely Pathogenic
+VAR0126,GENE1455,c.68_69delAG,Deletion,Likely Benign
+VAR0127,GENE1230,T790M,Missense,Uncertain Significance
+VAR0128,GENE0970,E545K,Missense,Uncertain Significance
+VAR0129,GENE1327,L858R,Missense,Likely Pathogenic
+VAR0130,GENE0802,E545K,Missense,Likely Pathogenic
+VAR0131,GENE0509,Q61R,Missense,Benign
+VAR0132,GENE0818,L858R,Missense,Likely Benign
+VAR0133,GENE0297,R175H,Missense,Likely Pathogenic
+VAR0134,GENE0664,F508del,Deletion,Pathogenic
+VAR0135,GENE0815,Y220C,Missense,Likely Benign
+VAR0136,GENE0646,T790M,Missense,Pathogenic
+VAR0137,GENE1015,V600E,Missense,Likely Benign
+VAR0138,GENE0740,R175H,Missense,Uncertain Significance
+VAR0139,GENE0461,c.68_69delAG,Deletion,Likely Pathogenic
+VAR0140,GENE1028,R175H,Missense,Uncertain Significance
+VAR0141,GENE1205,V600E,Missense,Pathogenic
+VAR0142,GENE0355,Y220C,Missense,Likely Benign
+VAR0143,GENE0520,G12D,Missense,Likely Benign
+VAR0144,GENE0330,R175H,Missense,Likely Benign
+VAR0145,GENE1276,V600E,Missense,Pathogenic
+VAR0146,GENE0325,T790M,Missense,Pathogenic
+VAR0147,GENE1152,L858R,Missense,Uncertain Significance
+VAR0148,GENE1275,T790M,Missense,Likely Pathogenic
+VAR0149,GENE0807,G12D,Missense,Pathogenic
+VAR0150,GENE0651,R175H,Missense,Pathogenic
+VAR0151,GENE0631,c.68_69delAG,Deletion,Benign
+VAR0152,GENE1373,R175H,Missense,Likely Benign
+VAR0153,GENE0447,E545K,Missense,Likely Pathogenic
+VAR0154,GENE0392,V600E,Missense,Uncertain Significance
+VAR0155,GENE0925,R175H,Missense,Likely Pathogenic
+VAR0156,GENE0441,L858R,Missense,Uncertain Significance
+VAR0157,GENE1303,G12D,Missense,Likely Benign
+VAR0158,GENE0600,E545K,Missense,Likely Benign
+VAR0159,GENE0750,c.68_69delAG,Deletion,Likely Benign
+VAR0160,GENE1024,Q61R,Missense,Benign
+VAR0161,GENE0729,Q61R,Missense,Likely Pathogenic
+VAR0162,GENE0749,R175H,Missense,Likely Pathogenic
+VAR0163,GENE0080,G12D,Missense,Benign
+VAR0164,GENE0036,G12D,Missense,Likely Benign
+VAR0165,GENE0587,F508del,Deletion,Likely Pathogenic
+VAR0166,GENE0155,Y220C,Missense,Likely Pathogenic
+VAR0167,GENE0274,V600E,Missense,Uncertain Significance
+VAR0168,GENE0203,Q61R,Missense,Likely Pathogenic
+VAR0169,GENE1264,L858R,Missense,Pathogenic
+VAR0170,GENE0479,T790M,Missense,Benign
+VAR0171,GENE0951,Q61R,Missense,Pathogenic
+VAR0172,GENE0300,L858R,Missense,Uncertain Significance
+VAR0173,GENE0735,G12D,Missense,Likely Pathogenic
+VAR0174,GENE1385,Q61R,Missense,Benign
+VAR0175,GENE0136,Q61R,Missense,Likely Benign
+VAR0176,GENE1243,Q61R,Missense,Likely Pathogenic
+VAR0177,GENE0368,V600E,Missense,Likely Pathogenic
+VAR0178,GENE1364,Y220C,Missense,Uncertain Significance
+VAR0179,GENE0910,Y220C,Missense,Pathogenic
+VAR0180,GENE1458,V600E,Missense,Likely Pathogenic
+VAR0181,GENE0901,F508del,Deletion,Likely Benign
+VAR0182,GENE0917,R175H,Missense,Pathogenic
+VAR0183,GENE1290,L858R,Missense,Likely Pathogenic
+VAR0184,GENE0302,V600E,Missense,Likely Benign
+VAR0185,GENE1115,L858R,Missense,Pathogenic
+VAR0186,GENE0803,F508del,Deletion,Benign
+VAR0187,GENE0063,Q61R,Missense,Likely Benign
+VAR0188,GENE1048,c.68_69delAG,Deletion,Likely Benign
+VAR0189,GENE1068,T790M,Missense,Benign
+VAR0190,GENE0470,Y220C,Missense,Uncertain Significance
+VAR0191,GENE1399,E545K,Missense,Uncertain Significance
+VAR0192,GENE1192,G12D,Missense,Likely Benign
+VAR0193,GENE0245,E545K,Missense,Uncertain Significance
+VAR0194,GENE0621,Y220C,Missense,Uncertain Significance
+VAR0195,GENE0762,T790M,Missense,Likely Pathogenic
+VAR0196,GENE0019,T790M,Missense,Likely Pathogenic
+VAR0197,GENE1416,F508del,Deletion,Pathogenic
+VAR0198,GENE1416,Y220C,Missense,Benign
+VAR0199,GENE0428,Y220C,Missense,Benign
+VAR0200,GENE0438,c.68_69delAG,Deletion,Likely Pathogenic
+VAR0201,GENE0798,F508del,Deletion,Benign
+VAR0202,GENE0427,Q61R,Missense,Uncertain Significance
+VAR0203,GENE0863,Q61R,Missense,Pathogenic
+VAR0204,GENE0164,E545K,Missense,Likely Benign
+VAR0205,GENE0906,V600E,Missense,Likely Pathogenic
+VAR0206,GENE1371,E545K,Missense,Benign
+VAR0207,GENE0147,F508del,Deletion,Pathogenic
+VAR0208,GENE0324,F508del,Deletion,Benign
+VAR0209,GENE0119,R175H,Missense,Likely Pathogenic
+VAR0210,GENE1387,Q61R,Missense,Pathogenic
+VAR0211,GENE0939,L858R,Missense,Pathogenic
+VAR0212,GENE0556,Y220C,Missense,Likely Benign
+VAR0213,GENE1015,c.68_69delAG,Deletion,Benign
+VAR0214,GENE0848,V600E,Missense,Likely Benign
+VAR0215,GENE0491,T790M,Missense,Likely Pathogenic
+VAR0216,GENE0282,Y220C,Missense,Pathogenic
+VAR0217,GENE0853,Y220C,Missense,Likely Pathogenic
+VAR0218,GENE0715,E545K,Missense,Likely Benign
+VAR0219,GENE0562,G12D,Missense,Uncertain Significance
+VAR0220,GENE0133,G12D,Missense,Likely Benign
+VAR0221,GENE0096,G12D,Missense,Likely Pathogenic
+VAR0222,GENE1357,T790M,Missense,Benign
+VAR0223,GENE0017,G12D,Missense,Likely Pathogenic
+VAR0224,GENE0078,V600E,Missense,Pathogenic
+VAR0225,GENE0237,V600E,Missense,Benign
+VAR0226,GENE0339,R175H,Missense,Pathogenic
+VAR0227,GENE0345,Q61R,Missense,Uncertain Significance
+VAR0228,GENE1045,Q61R,Missense,Benign
+VAR0229,GENE0412,F508del,Deletion,Likely Benign
+VAR0230,GENE1335,G12D,Missense,Likely Benign
+VAR0231,GENE1173,E545K,Missense,Uncertain Significance
+VAR0232,GENE0212,F508del,Deletion,Benign
+VAR0233,GENE0534,L858R,Missense,Likely Benign
+VAR0234,GENE1162,R175H,Missense,Pathogenic
+VAR0235,GENE0371,F508del,Deletion,Uncertain Significance
+VAR0236,GENE0008,Q61R,Missense,Uncertain Significance
+VAR0237,GENE0432,G12D,Missense,Likely Pathogenic
+VAR0238,GENE1386,F508del,Deletion,Likely Pathogenic
+VAR0239,GENE0557,L858R,Missense,Pathogenic
+VAR0240,GENE0702,Y220C,Missense,Likely Pathogenic
+VAR0241,GENE0868,F508del,Deletion,Likely Pathogenic
+VAR0242,GENE0596,T790M,Missense,Pathogenic
+VAR0243,GENE0154,Y220C,Missense,Likely Benign
+VAR0244,GENE0772,c.68_69delAG,Deletion,Benign
+VAR0245,GENE0008,R175H,Missense,Likely Benign
+VAR0246,GENE0713,R175H,Missense,Likely Benign
+VAR0247,GENE0956,V600E,Missense,Benign
+VAR0248,GENE0141,E545K,Missense,Uncertain Significance
+VAR0249,GENE1247,T790M,Missense,Likely Benign
+VAR0250,GENE0330,E545K,Missense,Benign
+VAR0251,GENE1345,E545K,Missense,Benign
+VAR0252,GENE0034,Q61R,Missense,Pathogenic
+VAR0253,GENE1314,V600E,Missense,Benign
+VAR0254,GENE1006,R175H,Missense,Pathogenic
+VAR0255,GENE1438,F508del,Deletion,Uncertain Significance
+VAR0256,GENE0759,T790M,Missense,Benign
+VAR0257,GENE0323,Q61R,Missense,Pathogenic
+VAR0258,GENE0158,F508del,Deletion,Likely Benign
+VAR0259,GENE0757,T790M,Missense,Benign
+VAR0260,GENE0065,L858R,Missense,Uncertain Significance
+VAR0261,GENE1333,Q61R,Missense,Likely Benign
+VAR0262,GENE0476,T790M,Missense,Pathogenic
+VAR0263,GENE0096,c.68_69delAG,Deletion,Uncertain Significance
+VAR0264,GENE0240,Q61R,Missense,Likely Pathogenic
+VAR0265,GENE0761,R175H,Missense,Uncertain Significance
+VAR0266,GENE0223,V600E,Missense,Likely Pathogenic
+VAR0267,GENE1390,G12D,Missense,Pathogenic
+VAR0268,GENE1214,G12D,Missense,Likely Pathogenic
+VAR0269,GENE0876,R175H,Missense,Likely Benign
+VAR0270,GENE0294,L858R,Missense,Pathogenic
+VAR0271,GENE0144,c.68_69delAG,Deletion,Benign
+VAR0272,GENE0790,c.68_69delAG,Deletion,Likely Benign
+VAR0273,GENE1411,Q61R,Missense,Likely Pathogenic
+VAR0274,GENE0026,c.68_69delAG,Deletion,Likely Benign
+VAR0275,GENE0824,V600E,Missense,Uncertain Significance
+VAR0276,GENE0990,F508del,Deletion,Likely Pathogenic
+VAR0277,GENE1373,E545K,Missense,Likely Pathogenic
+VAR0278,GENE0598,T790M,Missense,Likely Benign
+VAR0279,GENE0812,E545K,Missense,Benign
+VAR0280,GENE1106,T790M,Missense,Uncertain Significance
+VAR0281,GENE0226,G12D,Missense,Benign
+VAR0282,GENE0011,E545K,Missense,Uncertain Significance
+VAR0283,GENE0289,Y220C,Missense,Pathogenic
+VAR0284,GENE1011,Y220C,Missense,Pathogenic
+VAR0285,GENE0001,R175H,Missense,Likely Pathogenic
+VAR0286,GENE0031,F508del,Deletion,Likely Pathogenic
+VAR0287,GENE1212,T790M,Missense,Pathogenic
+VAR0288,GENE1189,V600E,Missense,Benign
+VAR0289,GENE1263,V600E,Missense,Likely Benign
+VAR0290,GENE0827,Q61R,Missense,Benign
+VAR0291,GENE0441,Q61R,Missense,Uncertain Significance
+VAR0292,GENE1136,G12D,Missense,Pathogenic
+VAR0293,GENE0306,Y220C,Missense,Uncertain Significance
+VAR0294,GENE0069,Q61R,Missense,Likely Pathogenic
+VAR0295,GENE1105,R175H,Missense,Pathogenic
+VAR0296,GENE1256,Q61R,Missense,Uncertain Significance
+VAR0297,GENE0751,T790M,Missense,Likely Benign
+VAR0298,GENE0366,c.68_69delAG,Deletion,Benign
+VAR0299,GENE0658,G12D,Missense,Uncertain Significance
+VAR0300,GENE1470,Y220C,Missense,Pathogenic
+VAR0301,GENE0032,Y220C,Missense,Pathogenic
+VAR0302,GENE0770,L858R,Missense,Likely Pathogenic
+VAR0303,GENE1168,Y220C,Missense,Pathogenic
+VAR0304,GENE0819,G12D,Missense,Likely Pathogenic
+VAR0305,GENE0933,c.68_69delAG,Deletion,Benign
+VAR0306,GENE1171,V600E,Missense,Likely Pathogenic
+VAR0307,GENE1356,Q61R,Missense,Uncertain Significance
+VAR0308,GENE0222,Y220C,Missense,Likely Benign
+VAR0309,GENE1197,L858R,Missense,Pathogenic
+VAR0310,GENE0120,F508del,Deletion,Uncertain Significance
+VAR0311,GENE1150,G12D,Missense,Benign
+VAR0312,GENE0801,c.68_69delAG,Deletion,Likely Benign
+VAR0313,GENE1041,T790M,Missense,Likely Benign
+VAR0314,GENE0500,c.68_69delAG,Deletion,Likely Benign
+VAR0315,GENE0002,G12D,Missense,Uncertain Significance
+VAR0316,GENE0846,G12D,Missense,Benign
+VAR0317,GENE0436,G12D,Missense,Likely Pathogenic
+VAR0318,GENE1468,E545K,Missense,Likely Pathogenic
+VAR0319,GENE1180,L858R,Missense,Pathogenic
+VAR0320,GENE0881,F508del,Deletion,Likely Pathogenic
+VAR0321,GENE0771,R175H,Missense,Uncertain Significance
+VAR0322,GENE1352,L858R,Missense,Likely Pathogenic
+VAR0323,GENE0794,T790M,Missense,Pathogenic
+VAR0324,GENE0822,L858R,Missense,Uncertain Significance
+VAR0325,GENE1078,F508del,Deletion,Uncertain Significance
+VAR0326,GENE0965,Q61R,Missense,Uncertain Significance
+VAR0327,GENE0718,Q61R,Missense,Pathogenic
+VAR0328,GENE0173,V600E,Missense,Likely Benign
+VAR0329,GENE0087,T790M,Missense,Benign
+VAR0330,GENE0957,F508del,Deletion,Likely Pathogenic
+VAR0331,GENE1478,V600E,Missense,Benign
+VAR0332,GENE0282,T790M,Missense,Benign
+VAR0333,GENE1001,Q61R,Missense,Likely Benign
+VAR0334,GENE1115,Q61R,Missense,Benign
+VAR0335,GENE0700,L858R,Missense,Pathogenic
+VAR0336,GENE1280,T790M,Missense,Uncertain Significance
+VAR0337,GENE1159,G12D,Missense,Likely Pathogenic
+VAR0338,GENE1054,T790M,Missense,Benign
+VAR0339,GENE0007,T790M,Missense,Benign
+VAR0340,GENE1390,c.68_69delAG,Deletion,Pathogenic
+VAR0341,GENE0309,Q61R,Missense,Uncertain Significance
+VAR0342,GENE0398,T790M,Missense,Uncertain Significance
+VAR0343,GENE0016,R175H,Missense,Uncertain Significance
+VAR0344,GENE1264,V600E,Missense,Likely Benign
+VAR0345,GENE0056,T790M,Missense,Likely Pathogenic
+VAR0346,GENE1222,Y220C,Missense,Likely Pathogenic
+VAR0347,GENE0488,c.68_69delAG,Deletion,Benign
+VAR0348,GENE0778,Q61R,Missense,Likely Pathogenic
+VAR0349,GENE0150,G12D,Missense,Uncertain Significance
+VAR0350,GENE0511,E545K,Missense,Uncertain Significance
+VAR0351,GENE1268,F508del,Deletion,Pathogenic
+VAR0352,GENE0297,Y220C,Missense,Likely Benign
+VAR0353,GENE0409,Q61R,Missense,Uncertain Significance
+VAR0354,GENE0270,F508del,Deletion,Benign
+VAR0355,GENE1366,F508del,Deletion,Uncertain Significance
+VAR0356,GENE1365,V600E,Missense,Benign
+VAR0357,GENE0389,c.68_69delAG,Deletion,Likely Benign
+VAR0358,GENE0889,T790M,Missense,Likely Benign
+VAR0359,GENE0364,E545K,Missense,Likely Pathogenic
+VAR0360,GENE0885,L858R,Missense,Likely Pathogenic
+VAR0361,GENE0111,Q61R,Missense,Likely Pathogenic
+VAR0362,GENE0373,T790M,Missense,Likely Benign
+VAR0363,GENE1199,F508del,Deletion,Uncertain Significance
+VAR0364,GENE0322,c.68_69delAG,Deletion,Likely Pathogenic
+VAR0365,GENE0391,G12D,Missense,Uncertain Significance
+VAR0366,GENE0831,L858R,Missense,Likely Benign
+VAR0367,GENE0972,c.68_69delAG,Deletion,Uncertain Significance
+VAR0368,GENE0572,c.68_69delAG,Deletion,Uncertain Significance
+VAR0369,GENE0917,R175H,Missense,Likely Benign
+VAR0370,GENE0591,Q61R,Missense,Likely Pathogenic
+VAR0371,GENE0677,T790M,Missense,Likely Benign
+VAR0372,GENE1049,V600E,Missense,Pathogenic
+VAR0373,GENE1347,G12D,Missense,Uncertain Significance
+VAR0374,GENE0751,R175H,Missense,Likely Pathogenic
+VAR0375,GENE1113,L858R,Missense,Likely Pathogenic
+VAR0376,GENE0410,E545K,Missense,Pathogenic
+VAR0377,GENE0532,L858R,Missense,Benign
+VAR0378,GENE1008,Y220C,Missense,Pathogenic
+VAR0379,GENE0451,Q61R,Missense,Benign
+VAR0380,GENE0513,Q61R,Missense,Uncertain Significance
+VAR0381,GENE1392,L858R,Missense,Uncertain Significance
+VAR0382,GENE0570,L858R,Missense,Uncertain Significance
+VAR0383,GENE1160,Y220C,Missense,Benign
+VAR0384,GENE0104,R175H,Missense,Likely Pathogenic
+VAR0385,GENE0104,G12D,Missense,Pathogenic
+VAR0386,GENE1072,E545K,Missense,Uncertain Significance
+VAR0387,GENE0011,T790M,Missense,Uncertain Significance
+VAR0388,GENE1454,T790M,Missense,Benign
+VAR0389,GENE1016,E545K,Missense,Pathogenic
+VAR0390,GENE0139,F508del,Deletion,Likely Benign
+VAR0391,GENE0451,E545K,Missense,Pathogenic
+VAR0392,GENE0725,G12D,Missense,Uncertain Significance
+VAR0393,GENE1294,Q61R,Missense,Likely Pathogenic
+VAR0394,GENE0819,Y220C,Missense,Likely Pathogenic
+VAR0395,GENE0164,Y220C,Missense,Pathogenic
+VAR0396,GENE1284,V600E,Missense,Uncertain Significance
+VAR0397,GENE1197,c.68_69delAG,Deletion,Likely Benign
+VAR0398,GENE0636,G12D,Missense,Benign
+VAR0399,GENE1415,R175H,Missense,Uncertain Significance
+VAR0400,GENE1342,E545K,Missense,Uncertain Significance
+VAR0401,GENE0213,T790M,Missense,Pathogenic
+VAR0402,GENE0882,V600E,Missense,Likely Pathogenic
+VAR0403,GENE1001,T790M,Missense,Likely Benign
+VAR0404,GENE0006,Y220C,Missense,Uncertain Significance
+VAR0405,GENE1233,G12D,Missense,Likely Pathogenic
+VAR0406,GENE0434,L858R,Missense,Benign
+VAR0407,GENE0938,E545K,Missense,Uncertain Significance
+VAR0408,GENE0850,V600E,Missense,Pathogenic
+VAR0409,GENE0711,V600E,Missense,Likely Pathogenic
+VAR0410,GENE1293,Y220C,Missense,Likely Benign
+VAR0411,GENE0742,R175H,Missense,Likely Pathogenic
+VAR0412,GENE1025,Q61R,Missense,Benign
+VAR0413,GENE0618,R175H,Missense,Uncertain Significance
+VAR0414,GENE1395,c.68_69delAG,Deletion,Likely Pathogenic
+VAR0415,GENE0690,F508del,Deletion,Benign
+VAR0416,GENE0892,E545K,Missense,Benign
+VAR0417,GENE0355,L858R,Missense,Likely Pathogenic
+VAR0418,GENE1288,R175H,Missense,Uncertain Significance
+VAR0419,GENE0247,F508del,Deletion,Pathogenic
+VAR0420,GENE0778,E545K,Missense,Pathogenic
+VAR0421,GENE0875,L858R,Missense,Uncertain Significance
+VAR0422,GENE1128,G12D,Missense,Pathogenic
+VAR0423,GENE0056,L858R,Missense,Likely Pathogenic
+VAR0424,GENE0435,Q61R,Missense,Benign
+VAR0425,GENE0750,Y220C,Missense,Uncertain Significance
+VAR0426,GENE1497,c.68_69delAG,Deletion,Likely Pathogenic
+VAR0427,GENE0280,Y220C,Missense,Likely Pathogenic
+VAR0428,GENE0422,E545K,Missense,Uncertain Significance
+VAR0429,GENE0332,V600E,Missense,Benign
+VAR0430,GENE1462,E545K,Missense,Benign
+VAR0431,GENE0976,G12D,Missense,Likely Benign
+VAR0432,GENE0492,E545K,Missense,Uncertain Significance
+VAR0433,GENE0827,Q61R,Missense,Likely Pathogenic
+VAR0434,GENE0683,V600E,Missense,Likely Pathogenic
+VAR0435,GENE0974,F508del,Deletion,Pathogenic
+VAR0436,GENE0734,Y220C,Missense,Likely Pathogenic
+VAR0437,GENE0218,T790M,Missense,Likely Benign
+VAR0438,GENE0089,R175H,Missense,Likely Benign
+VAR0439,GENE0643,V600E,Missense,Likely Benign
+VAR0440,GENE0471,T790M,Missense,Pathogenic
+VAR0441,GENE0943,c.68_69delAG,Deletion,Uncertain Significance
+VAR0442,GENE0516,F508del,Deletion,Likely Pathogenic
+VAR0443,GENE1261,R175H,Missense,Likely Pathogenic
+VAR0444,GENE1066,R175H,Missense,Pathogenic
+VAR0445,GENE0609,T790M,Missense,Uncertain Significance
+VAR0446,GENE0636,R175H,Missense,Uncertain Significance
+VAR0447,GENE0976,E545K,Missense,Likely Benign
+VAR0448,GENE1092,Y220C,Missense,Pathogenic
+VAR0449,GENE0015,Y220C,Missense,Uncertain Significance
+VAR0450,GENE1287,Y220C,Missense,Likely Benign
+VAR0451,GENE0654,F508del,Deletion,Uncertain Significance
+VAR0452,GENE1330,Q61R,Missense,Uncertain Significance
+VAR0453,GENE0138,L858R,Missense,Benign
+VAR0454,GENE0560,c.68_69delAG,Deletion,Uncertain Significance
+VAR0455,GENE0194,E545K,Missense,Uncertain Significance
+VAR0456,GENE0470,L858R,Missense,Uncertain Significance
+VAR0457,GENE0417,Q61R,Missense,Pathogenic
+VAR0458,GENE0434,G12D,Missense,Benign
+VAR0459,GENE0369,E545K,Missense,Likely Benign
+VAR0460,GENE1004,T790M,Missense,Likely Benign
+VAR0461,GENE1058,c.68_69delAG,Deletion,Likely Pathogenic
+VAR0462,GENE1058,E545K,Missense,Uncertain Significance
+VAR0463,GENE1087,c.68_69delAG,Deletion,Benign
+VAR0464,GENE0882,Y220C,Missense,Likely Benign
+VAR0465,GENE0052,E545K,Missense,Pathogenic
+VAR0466,GENE0715,Y220C,Missense,Uncertain Significance
+VAR0467,GENE0726,F508del,Deletion,Pathogenic
+VAR0468,GENE1138,L858R,Missense,Uncertain Significance
+VAR0469,GENE0891,V600E,Missense,Pathogenic
+VAR0470,GENE1307,T790M,Missense,Likely Benign
+VAR0471,GENE1216,E545K,Missense,Benign
+VAR0472,GENE0167,Y220C,Missense,Likely Pathogenic
+VAR0473,GENE1273,R175H,Missense,Uncertain Significance
+VAR0474,GENE0658,Y220C,Missense,Likely Benign
+VAR0475,GENE0143,E545K,Missense,Likely Pathogenic
+VAR0476,GENE0642,Q61R,Missense,Likely Benign
+VAR0477,GENE0643,R175H,Missense,Likely Pathogenic
+VAR0478,GENE1059,F508del,Deletion,Pathogenic
+VAR0479,GENE0936,R175H,Missense,Uncertain Significance
+VAR0480,GENE0079,Q61R,Missense,Likely Benign
+VAR0481,GENE0885,F508del,Deletion,Likely Benign
+VAR0482,GENE0897,V600E,Missense,Likely Pathogenic
+VAR0483,GENE0742,G12D,Missense,Benign
+VAR0484,GENE1237,R175H,Missense,Likely Pathogenic
+VAR0485,GENE0556,G12D,Missense,Likely Pathogenic
+VAR0486,GENE0379,c.68_69delAG,Deletion,Pathogenic
+VAR0487,GENE0881,T790M,Missense,Pathogenic
+VAR0488,GENE1046,F508del,Deletion,Benign
+VAR0489,GENE0351,G12D,Missense,Pathogenic
+VAR0490,GENE0869,V600E,Missense,Benign
+VAR0491,GENE0451,T790M,Missense,Likely Benign
+VAR0492,GENE0292,G12D,Missense,Uncertain Significance
+VAR0493,GENE0028,V600E,Missense,Likely Benign
+VAR0494,GENE0434,Q61R,Missense,Likely Benign
+VAR0495,GENE0621,F508del,Deletion,Uncertain Significance
+VAR0496,GENE1196,R175H,Missense,Benign
+VAR0497,GENE0300,E545K,Missense,Pathogenic
+VAR0498,GENE0999,V600E,Missense,Likely Pathogenic
+VAR0499,GENE0912,R175H,Missense,Pathogenic
+VAR0500,GENE1365,E545K,Missense,Likely Pathogenic
+VAR0501,GENE1172,Q61R,Missense,Uncertain Significance
+VAR0502,GENE1239,E545K,Missense,Pathogenic
+VAR0503,GENE1204,F508del,Deletion,Pathogenic
+VAR0504,GENE1126,L858R,Missense,Uncertain Significance
+VAR0505,GENE0271,Y220C,Missense,Benign
+VAR0506,GENE1245,c.68_69delAG,Deletion,Likely Pathogenic
+VAR0507,GENE0965,T790M,Missense,Uncertain Significance
+VAR0508,GENE1238,F508del,Deletion,Uncertain Significance
+VAR0509,GENE0230,Q61R,Missense,Pathogenic
+VAR0510,GENE0409,Y220C,Missense,Likely Benign
+VAR0511,GENE0081,L858R,Missense,Pathogenic
+VAR0512,GENE1491,F508del,Deletion,Pathogenic
+VAR0513,GENE0899,c.68_69delAG,Deletion,Benign
+VAR0514,GENE0633,c.68_69delAG,Deletion,Pathogenic
+VAR0515,GENE1437,R175H,Missense,Pathogenic
+VAR0516,GENE0631,V600E,Missense,Uncertain Significance
+VAR0517,GENE1032,F508del,Deletion,Likely Pathogenic
+VAR0518,GENE0408,T790M,Missense,Pathogenic
+VAR0519,GENE0522,R175H,Missense,Likely Pathogenic
+VAR0520,GENE1247,Q61R,Missense,Likely Pathogenic
+VAR0521,GENE0857,L858R,Missense,Uncertain Significance
+VAR0522,GENE0938,T790M,Missense,Likely Pathogenic
+VAR0523,GENE0733,R175H,Missense,Uncertain Significance
+VAR0524,GENE0080,V600E,Missense,Likely Pathogenic
+VAR0525,GENE0057,R175H,Missense,Benign
+VAR0526,GENE0849,Y220C,Missense,Likely Pathogenic
+VAR0527,GENE1489,T790M,Missense,Likely Benign
+VAR0528,GENE0689,T790M,Missense,Likely Benign
+VAR0529,GENE0436,Y220C,Missense,Uncertain Significance
+VAR0530,GENE0971,Q61R,Missense,Likely Pathogenic
+VAR0531,GENE0374,L858R,Missense,Likely Benign
+VAR0532,GENE0098,L858R,Missense,Likely Benign
+VAR0533,GENE1481,L858R,Missense,Likely Benign
+VAR0534,GENE1012,G12D,Missense,Benign
+VAR0535,GENE0441,Q61R,Missense,Pathogenic
+VAR0536,GENE1435,T790M,Missense,Benign
+VAR0537,GENE0689,T790M,Missense,Benign
+VAR0538,GENE0773,G12D,Missense,Pathogenic
+VAR0539,GENE0795,Y220C,Missense,Pathogenic
+VAR0540,GENE0196,V600E,Missense,Uncertain Significance
+VAR0541,GENE0119,L858R,Missense,Pathogenic
+VAR0542,GENE0258,L858R,Missense,Likely Benign
+VAR0543,GENE0335,c.68_69delAG,Deletion,Likely Pathogenic
+VAR0544,GENE0335,L858R,Missense,Benign
+VAR0545,GENE1411,Y220C,Missense,Benign
+VAR0546,GENE0217,L858R,Missense,Uncertain Significance
+VAR0547,GENE0261,L858R,Missense,Benign
+VAR0548,GENE1035,c.68_69delAG,Deletion,Likely Pathogenic
+VAR0549,GENE0771,F508del,Deletion,Benign
+VAR0550,GENE0885,R175H,Missense,Benign
+VAR0551,GENE0624,Y220C,Missense,Uncertain Significance
+VAR0552,GENE0831,F508del,Deletion,Pathogenic
+VAR0553,GENE1332,G12D,Missense,Uncertain Significance
+VAR0554,GENE0964,E545K,Missense,Benign
+VAR0555,GENE0571,E545K,Missense,Likely Pathogenic
+VAR0556,GENE0373,R175H,Missense,Uncertain Significance
+VAR0557,GENE0215,L858R,Missense,Uncertain Significance
+VAR0558,GENE1067,V600E,Missense,Pathogenic
+VAR0559,GENE0017,G12D,Missense,Pathogenic
+VAR0560,GENE1474,R175H,Missense,Likely Pathogenic
+VAR0561,GENE0807,E545K,Missense,Benign
+VAR0562,GENE0756,Y220C,Missense,Uncertain Significance
+VAR0563,GENE1113,R175H,Missense,Uncertain Significance
+VAR0564,GENE0622,R175H,Missense,Benign
+VAR0565,GENE0296,Q61R,Missense,Likely Pathogenic
+VAR0566,GENE0970,Q61R,Missense,Pathogenic
+VAR0567,GENE0818,Y220C,Missense,Likely Benign
+VAR0568,GENE1157,G12D,Missense,Benign
+VAR0569,GENE0127,E545K,Missense,Likely Benign
+VAR0570,GENE1496,G12D,Missense,Benign
+VAR0571,GENE0433,V600E,Missense,Likely Pathogenic
+VAR0572,GENE0713,L858R,Missense,Benign
+VAR0573,GENE1332,T790M,Missense,Likely Pathogenic
+VAR0574,GENE0049,L858R,Missense,Uncertain Significance
+VAR0575,GENE0517,c.68_69delAG,Deletion,Uncertain Significance
+VAR0576,GENE0830,c.68_69delAG,Deletion,Uncertain Significance
+VAR0577,GENE0481,T790M,Missense,Pathogenic
+VAR0578,GENE0106,V600E,Missense,Likely Pathogenic
+VAR0579,GENE1143,c.68_69delAG,Deletion,Likely Pathogenic
+VAR0580,GENE0668,Q61R,Missense,Likely Benign
+VAR0581,GENE1433,R175H,Missense,Uncertain Significance
+VAR0582,GENE1350,E545K,Missense,Uncertain Significance
+VAR0583,GENE0687,G12D,Missense,Benign
+VAR0584,GENE1262,F508del,Deletion,Benign
+VAR0585,GENE0678,R175H,Missense,Benign
+VAR0586,GENE0484,V600E,Missense,Pathogenic
+VAR0587,GENE1088,c.68_69delAG,Deletion,Likely Benign
+VAR0588,GENE1094,F508del,Deletion,Likely Benign
+VAR0589,GENE0757,Q61R,Missense,Uncertain Significance
+VAR0590,GENE0651,E545K,Missense,Uncertain Significance
+VAR0591,GENE0442,F508del,Deletion,Pathogenic
+VAR0592,GENE1145,G12D,Missense,Pathogenic
+VAR0593,GENE0824,V600E,Missense,Likely Benign
+VAR0594,GENE1022,Y220C,Missense,Benign
+VAR0595,GENE1168,T790M,Missense,Uncertain Significance
+VAR0596,GENE0262,F508del,Deletion,Likely Benign
+VAR0597,GENE0705,c.68_69delAG,Deletion,Likely Pathogenic
+VAR0598,GENE0995,L858R,Missense,Likely Benign
+VAR0599,GENE0053,L858R,Missense,Benign
+VAR0600,GENE0659,V600E,Missense,Uncertain Significance
+VAR0601,GENE0950,Y220C,Missense,Uncertain Significance
+VAR0602,GENE0547,T790M,Missense,Uncertain Significance
+VAR0603,GENE1289,F508del,Deletion,Uncertain Significance
+VAR0604,GENE0479,L858R,Missense,Likely Benign
+VAR0605,GENE0958,R175H,Missense,Likely Pathogenic
+VAR0606,GENE0849,G12D,Missense,Uncertain Significance
+VAR0607,GENE0792,F508del,Deletion,Likely Pathogenic
+VAR0608,GENE1455,G12D,Missense,Likely Pathogenic
+VAR0609,GENE0472,T790M,Missense,Likely Pathogenic
+VAR0610,GENE0817,V600E,Missense,Pathogenic
+VAR0611,GENE1467,E545K,Missense,Likely Benign
+VAR0612,GENE0792,E545K,Missense,Pathogenic
+VAR0613,GENE1268,E545K,Missense,Likely Pathogenic
+VAR0614,GENE0015,L858R,Missense,Likely Benign
+VAR0615,GENE1479,c.68_69delAG,Deletion,Pathogenic
+VAR0616,GENE1189,L858R,Missense,Pathogenic
+VAR0617,GENE0395,L858R,Missense,Likely Benign
+VAR0618,GENE0823,R175H,Missense,Benign
+VAR0619,GENE1463,c.68_69delAG,Deletion,Benign
+VAR0620,GENE1011,L858R,Missense,Likely Benign
+VAR0621,GENE0444,V600E,Missense,Likely Benign
+VAR0622,GENE0171,L858R,Missense,Likely Pathogenic
+VAR0623,GENE0679,G12D,Missense,Pathogenic
+VAR0624,GENE1055,F508del,Deletion,Likely Pathogenic
+VAR0625,GENE1146,Y220C,Missense,Pathogenic
+VAR0626,GENE0687,Q61R,Missense,Likely Pathogenic
+VAR0627,GENE1330,Y220C,Missense,Pathogenic
+VAR0628,GENE0757,Q61R,Missense,Benign
+VAR0629,GENE1376,V600E,Missense,Likely Pathogenic
+VAR0630,GENE0219,Q61R,Missense,Pathogenic
+VAR0631,GENE0501,V600E,Missense,Likely Pathogenic
+VAR0632,GENE0553,G12D,Missense,Uncertain Significance
+VAR0633,GENE1359,R175H,Missense,Likely Benign
+VAR0634,GENE0521,R175H,Missense,Pathogenic
+VAR0635,GENE0471,c.68_69delAG,Deletion,Benign
+VAR0636,GENE1495,E545K,Missense,Likely Pathogenic
+VAR0637,GENE1099,T790M,Missense,Pathogenic
+VAR0638,GENE0511,G12D,Missense,Pathogenic
+VAR0639,GENE0074,L858R,Missense,Uncertain Significance
+VAR0640,GENE0387,L858R,Missense,Benign
+VAR0641,GENE1076,F508del,Deletion,Uncertain Significance
+VAR0642,GENE0091,T790M,Missense,Uncertain Significance
+VAR0643,GENE0981,T790M,Missense,Pathogenic
+VAR0644,GENE0800,L858R,Missense,Benign
+VAR0645,GENE0327,c.68_69delAG,Deletion,Uncertain Significance
+VAR0646,GENE0645,V600E,Missense,Uncertain Significance
+VAR0647,GENE0975,F508del,Deletion,Likely Pathogenic
+VAR0648,GENE0849,F508del,Deletion,Uncertain Significance
+VAR0649,GENE0861,c.68_69delAG,Deletion,Uncertain Significance
+VAR0650,GENE0109,c.68_69delAG,Deletion,Likely Benign
+VAR0651,GENE1314,Y220C,Missense,Likely Pathogenic
+VAR0652,GENE1497,R175H,Missense,Pathogenic
+VAR0653,GENE1236,c.68_69delAG,Deletion,Pathogenic
+VAR0654,GENE1343,T790M,Missense,Likely Benign
+VAR0655,GENE0817,V600E,Missense,Uncertain Significance
+VAR0656,GENE1026,T790M,Missense,Benign
+VAR0657,GENE1279,T790M,Missense,Benign
+VAR0658,GENE1410,E545K,Missense,Likely Benign
+VAR0659,GENE0181,G12D,Missense,Likely Benign
+VAR0660,GENE0034,G12D,Missense,Benign
+VAR0661,GENE0980,T790M,Missense,Benign
+VAR0662,GENE0373,T790M,Missense,Likely Benign
+VAR0663,GENE0411,c.68_69delAG,Deletion,Pathogenic
+VAR0664,GENE0429,V600E,Missense,Likely Pathogenic
+VAR0665,GENE0284,L858R,Missense,Likely Benign
+VAR0666,GENE0059,L858R,Missense,Benign
+VAR0667,GENE0673,R175H,Missense,Benign
+VAR0668,GENE0209,R175H,Missense,Uncertain Significance
+VAR0669,GENE0260,c.68_69delAG,Deletion,Pathogenic
+VAR0670,GENE0999,G12D,Missense,Likely Pathogenic
+VAR0671,GENE0499,Q61R,Missense,Likely Pathogenic
+VAR0672,GENE0319,G12D,Missense,Likely Pathogenic
+VAR0673,GENE1306,G12D,Missense,Likely Pathogenic
+VAR0674,GENE0775,E545K,Missense,Likely Pathogenic
+VAR0675,GENE1084,F508del,Deletion,Benign
+VAR0676,GENE0359,E545K,Missense,Uncertain Significance
+VAR0677,GENE0886,G12D,Missense,Likely Benign
+VAR0678,GENE0834,Q61R,Missense,Likely Pathogenic
+VAR0679,GENE1253,Y220C,Missense,Likely Benign
+VAR0680,GENE0905,Q61R,Missense,Likely Benign
+VAR0681,GENE0517,L858R,Missense,Likely Pathogenic
+VAR0682,GENE0677,E545K,Missense,Likely Pathogenic
+VAR0683,GENE0812,T790M,Missense,Likely Pathogenic
+VAR0684,GENE0443,G12D,Missense,Likely Benign
+VAR0685,GENE1265,Y220C,Missense,Pathogenic
+VAR0686,GENE0784,G12D,Missense,Pathogenic
+VAR0687,GENE0448,E545K,Missense,Likely Pathogenic
+VAR0688,GENE0751,Y220C,Missense,Likely Benign
+VAR0689,GENE0154,Q61R,Missense,Benign
+VAR0690,GENE1042,Y220C,Missense,Likely Pathogenic
+VAR0691,GENE1017,F508del,Deletion,Uncertain Significance
+VAR0692,GENE1215,Q61R,Missense,Likely Pathogenic
+VAR0693,GENE0196,c.68_69delAG,Deletion,Benign
+VAR0694,GENE0009,E545K,Missense,Pathogenic
+VAR0695,GENE0596,L858R,Missense,Benign
+VAR0696,GENE1061,T790M,Missense,Benign
+VAR0697,GENE0709,T790M,Missense,Benign
+VAR0698,GENE0305,V600E,Missense,Uncertain Significance
+VAR0699,GENE1346,E545K,Missense,Uncertain Significance
+VAR0700,GENE0770,F508del,Deletion,Uncertain Significance
+VAR0701,GENE0351,Y220C,Missense,Likely Benign
+VAR0702,GENE1325,R175H,Missense,Likely Benign
+VAR0703,GENE1198,G12D,Missense,Pathogenic
+VAR0704,GENE0257,T790M,Missense,Benign
+VAR0705,GENE1029,F508del,Deletion,Uncertain Significance
+VAR0706,GENE0818,Y220C,Missense,Likely Benign
+VAR0707,GENE1340,R175H,Missense,Likely Benign
+VAR0708,GENE0704,F508del,Deletion,Likely Benign
+VAR0709,GENE0847,E545K,Missense,Likely Benign
+VAR0710,GENE0708,Q61R,Missense,Likely Benign
+VAR0711,GENE0593,Y220C,Missense,Benign
+VAR0712,GENE1195,T790M,Missense,Likely Pathogenic
+VAR0713,GENE0559,F508del,Deletion,Uncertain Significance
+VAR0714,GENE0878,c.68_69delAG,Deletion,Likely Pathogenic
+VAR0715,GENE1123,R175H,Missense,Benign
+VAR0716,GENE0089,F508del,Deletion,Uncertain Significance
+VAR0717,GENE1059,V600E,Missense,Uncertain Significance
+VAR0718,GENE1041,R175H,Missense,Uncertain Significance
+VAR0719,GENE0340,c.68_69delAG,Deletion,Pathogenic
+VAR0720,GENE1229,L858R,Missense,Uncertain Significance
+VAR0721,GENE1360,L858R,Missense,Likely Pathogenic
+VAR0722,GENE0498,R175H,Missense,Benign
+VAR0723,GENE1474,V600E,Missense,Likely Benign
+VAR0724,GENE0927,T790M,Missense,Likely Benign
+VAR0725,GENE0721,L858R,Missense,Pathogenic
+VAR0726,GENE1043,G12D,Missense,Benign
+VAR0727,GENE1071,F508del,Deletion,Likely Benign
+VAR0728,GENE0567,c.68_69delAG,Deletion,Benign
+VAR0729,GENE1481,Q61R,Missense,Likely Pathogenic
+VAR0730,GENE0331,T790M,Missense,Benign
+VAR0731,GENE0119,R175H,Missense,Pathogenic
+VAR0732,GENE0089,T790M,Missense,Pathogenic
+VAR0733,GENE0193,T790M,Missense,Benign
+VAR0734,GENE0338,R175H,Missense,Benign
+VAR0735,GENE0143,R175H,Missense,Pathogenic
+VAR0736,GENE0491,G12D,Missense,Likely Pathogenic
+VAR0737,GENE1041,F508del,Deletion,Uncertain Significance
+VAR0738,GENE0283,R175H,Missense,Likely Benign
+VAR0739,GENE0020,F508del,Deletion,Pathogenic
+VAR0740,GENE1345,E545K,Missense,Likely Pathogenic
+VAR0741,GENE0957,V600E,Missense,Uncertain Significance
+VAR0742,GENE1261,E545K,Missense,Benign
+VAR0743,GENE0875,Q61R,Missense,Likely Benign
+VAR0744,GENE0180,Y220C,Missense,Uncertain Significance
+VAR0745,GENE0605,c.68_69delAG,Deletion,Uncertain Significance
+VAR0746,GENE0745,R175H,Missense,Likely Pathogenic
+VAR0747,GENE1374,R175H,Missense,Likely Pathogenic
+VAR0748,GENE0719,V600E,Missense,Likely Benign
+VAR0749,GENE0068,L858R,Missense,Likely Pathogenic
+VAR0750,GENE0265,G12D,Missense,Pathogenic
+VAR0751,GENE1260,R175H,Missense,Benign
+VAR0752,GENE1005,T790M,Missense,Likely Benign
+VAR0753,GENE0850,Y220C,Missense,Uncertain Significance
+VAR0754,GENE0043,Q61R,Missense,Likely Pathogenic
+VAR0755,GENE1447,V600E,Missense,Likely Pathogenic
+VAR0756,GENE0554,Q61R,Missense,Pathogenic
+VAR0757,GENE0405,R175H,Missense,Benign
+VAR0758,GENE0098,T790M,Missense,Benign
+VAR0759,GENE0487,Q61R,Missense,Likely Benign
+VAR0760,GENE0236,E545K,Missense,Benign
+VAR0761,GENE0106,L858R,Missense,Benign
+VAR0762,GENE1417,E545K,Missense,Uncertain Significance
+VAR0763,GENE0629,V600E,Missense,Likely Benign
+VAR0764,GENE0318,Y220C,Missense,Uncertain Significance
+VAR0765,GENE0550,L858R,Missense,Uncertain Significance
+VAR0766,GENE0953,Y220C,Missense,Uncertain Significance
+VAR0767,GENE0148,F508del,Deletion,Likely Pathogenic
+VAR0768,GENE0185,G12D,Missense,Uncertain Significance
+VAR0769,GENE0601,F508del,Deletion,Likely Benign
+VAR0770,GENE0503,V600E,Missense,Uncertain Significance
+VAR0771,GENE1021,E545K,Missense,Uncertain Significance
+VAR0772,GENE0047,F508del,Deletion,Pathogenic
+VAR0773,GENE0540,T790M,Missense,Uncertain Significance
+VAR0774,GENE1441,Y220C,Missense,Benign
+VAR0775,GENE0959,G12D,Missense,Likely Benign
+VAR0776,GENE0600,Q61R,Missense,Pathogenic
+VAR0777,GENE1490,L858R,Missense,Benign
+VAR0778,GENE0426,T790M,Missense,Likely Pathogenic
+VAR0779,GENE1305,c.68_69delAG,Deletion,Likely Benign
+VAR0780,GENE1260,V600E,Missense,Likely Pathogenic
+VAR0781,GENE1076,V600E,Missense,Likely Pathogenic
+VAR0782,GENE0474,c.68_69delAG,Deletion,Likely Pathogenic
+VAR0783,GENE0626,c.68_69delAG,Deletion,Uncertain Significance
+VAR0784,GENE0534,L858R,Missense,Uncertain Significance
+VAR0785,GENE0198,F508del,Deletion,Pathogenic
+VAR0786,GENE0771,Y220C,Missense,Likely Pathogenic
+VAR0787,GENE0480,c.68_69delAG,Deletion,Likely Benign
+VAR0788,GENE0646,Q61R,Missense,Benign
+VAR0789,GENE0658,Y220C,Missense,Likely Pathogenic
+VAR0790,GENE1044,Q61R,Missense,Benign
+VAR0791,GENE0662,R175H,Missense,Pathogenic
+VAR0792,GENE0889,E545K,Missense,Likely Benign
+VAR0793,GENE0523,R175H,Missense,Benign
+VAR0794,GENE1140,F508del,Deletion,Benign
+VAR0795,GENE0395,E545K,Missense,Uncertain Significance
+VAR0796,GENE1234,F508del,Deletion,Likely Benign
+VAR0797,GENE1445,Y220C,Missense,Likely Benign
+VAR0798,GENE0635,F508del,Deletion,Benign
+VAR0799,GENE1395,Q61R,Missense,Likely Pathogenic
+VAR0800,GENE1441,L858R,Missense,Likely Pathogenic
+VAR0801,GENE0697,L858R,Missense,Benign
+VAR0802,GENE0677,Q61R,Missense,Likely Benign
+VAR0803,GENE1010,T790M,Missense,Likely Pathogenic
+VAR0804,GENE0014,G12D,Missense,Pathogenic
+VAR0805,GENE0721,L858R,Missense,Benign
+VAR0806,GENE0049,Q61R,Missense,Pathogenic
+VAR0807,GENE0042,Q61R,Missense,Uncertain Significance
+VAR0808,GENE1076,L858R,Missense,Likely Pathogenic
+VAR0809,GENE0416,Q61R,Missense,Likely Benign
+VAR0810,GENE0012,R175H,Missense,Likely Pathogenic
+VAR0811,GENE0059,V600E,Missense,Likely Benign
+VAR0812,GENE0687,T790M,Missense,Pathogenic
+VAR0813,GENE1233,T790M,Missense,Likely Benign
+VAR0814,GENE1289,R175H,Missense,Benign
+VAR0815,GENE0364,c.68_69delAG,Deletion,Uncertain Significance
+VAR0816,GENE0958,c.68_69delAG,Deletion,Likely Pathogenic
+VAR0817,GENE0599,Q61R,Missense,Likely Pathogenic
+VAR0818,GENE0005,F508del,Deletion,Pathogenic
+VAR0819,GENE1094,c.68_69delAG,Deletion,Pathogenic
+VAR0820,GENE0753,E545K,Missense,Benign
+VAR0821,GENE0239,R175H,Missense,Likely Pathogenic
+VAR0822,GENE1436,Q61R,Missense,Pathogenic
+VAR0823,GENE0340,c.68_69delAG,Deletion,Benign
+VAR0824,GENE0238,T790M,Missense,Likely Pathogenic
+VAR0825,GENE0504,F508del,Deletion,Likely Pathogenic
+VAR0826,GENE1207,Q61R,Missense,Benign
+VAR0827,GENE0953,T790M,Missense,Benign
+VAR0828,GENE0513,V600E,Missense,Pathogenic
+VAR0829,GENE0944,R175H,Missense,Benign
+VAR0830,GENE1453,R175H,Missense,Pathogenic
+VAR0831,GENE1114,Y220C,Missense,Uncertain Significance
+VAR0832,GENE1483,Y220C,Missense,Likely Benign
+VAR0833,GENE0894,Q61R,Missense,Likely Benign
+VAR0834,GENE0052,F508del,Deletion,Uncertain Significance
+VAR0835,GENE0303,T790M,Missense,Likely Pathogenic
+VAR0836,GENE0097,F508del,Deletion,Likely Benign
+VAR0837,GENE1154,R175H,Missense,Likely Pathogenic
+VAR0838,GENE1237,L858R,Missense,Uncertain Significance
+VAR0839,GENE0199,F508del,Deletion,Uncertain Significance
+VAR0840,GENE0797,Q61R,Missense,Likely Pathogenic
+VAR0841,GENE1332,Y220C,Missense,Likely Benign
+VAR0842,GENE0964,E545K,Missense,Uncertain Significance
+VAR0843,GENE0019,c.68_69delAG,Deletion,Benign
+VAR0844,GENE0569,G12D,Missense,Likely Benign
+VAR0845,GENE0762,Y220C,Missense,Likely Pathogenic
+VAR0846,GENE0616,Y220C,Missense,Likely Benign
+VAR0847,GENE0151,E545K,Missense,Likely Benign
+VAR0848,GENE0115,Q61R,Missense,Uncertain Significance
+VAR0849,GENE0342,c.68_69delAG,Deletion,Uncertain Significance
+VAR0850,GENE1404,c.68_69delAG,Deletion,Pathogenic
+VAR0851,GENE0080,T790M,Missense,Benign
+VAR0852,GENE0913,T790M,Missense,Benign
+VAR0853,GENE0631,V600E,Missense,Likely Pathogenic
+VAR0854,GENE0873,Q61R,Missense,Uncertain Significance
+VAR0855,GENE0358,F508del,Deletion,Pathogenic
+VAR0856,GENE0155,R175H,Missense,Benign
+VAR0857,GENE0060,c.68_69delAG,Deletion,Pathogenic
+VAR0858,GENE0246,R175H,Missense,Uncertain Significance
+VAR0859,GENE1438,Y220C,Missense,Pathogenic
+VAR0860,GENE1490,E545K,Missense,Likely Pathogenic
+VAR0861,GENE0555,G12D,Missense,Pathogenic
+VAR0862,GENE0649,L858R,Missense,Likely Pathogenic
+VAR0863,GENE0066,Q61R,Missense,Benign
+VAR0864,GENE1011,c.68_69delAG,Deletion,Benign
+VAR0865,GENE0767,R175H,Missense,Benign
+VAR0866,GENE0041,T790M,Missense,Likely Benign
+VAR0867,GENE0794,c.68_69delAG,Deletion,Likely Pathogenic
+VAR0868,GENE0869,c.68_69delAG,Deletion,Likely Benign
+VAR0869,GENE0736,Q61R,Missense,Pathogenic
+VAR0870,GENE1282,G12D,Missense,Likely Benign
+VAR0871,GENE0639,Y220C,Missense,Pathogenic
+VAR0872,GENE1251,Q61R,Missense,Pathogenic
+VAR0873,GENE0383,R175H,Missense,Likely Pathogenic
+VAR0874,GENE0757,Q61R,Missense,Likely Benign
+VAR0875,GENE0746,F508del,Deletion,Likely Benign
+VAR0876,GENE0930,L858R,Missense,Likely Benign
+VAR0877,GENE1075,T790M,Missense,Likely Benign
+VAR0878,GENE0668,R175H,Missense,Likely Pathogenic
+VAR0879,GENE1485,E545K,Missense,Uncertain Significance
+VAR0880,GENE0083,T790M,Missense,Benign
+VAR0881,GENE1159,c.68_69delAG,Deletion,Likely Pathogenic
+VAR0882,GENE0902,L858R,Missense,Likely Pathogenic
+VAR0883,GENE0570,Q61R,Missense,Benign
+VAR0884,GENE1088,Q61R,Missense,Uncertain Significance
+VAR0885,GENE0664,E545K,Missense,Uncertain Significance
+VAR0886,GENE0299,G12D,Missense,Likely Pathogenic
+VAR0887,GENE0186,E545K,Missense,Uncertain Significance
+VAR0888,GENE0880,R175H,Missense,Uncertain Significance
+VAR0889,GENE0952,Q61R,Missense,Likely Pathogenic
+VAR0890,GENE0012,V600E,Missense,Benign
+VAR0891,GENE0637,F508del,Deletion,Likely Benign
+VAR0892,GENE0684,Q61R,Missense,Pathogenic
+VAR0893,GENE1043,Q61R,Missense,Pathogenic
+VAR0894,GENE0095,F508del,Deletion,Likely Benign
+VAR0895,GENE0473,R175H,Missense,Likely Pathogenic
+VAR0896,GENE1133,c.68_69delAG,Deletion,Pathogenic
+VAR0897,GENE1398,Y220C,Missense,Likely Pathogenic
+VAR0898,GENE1194,V600E,Missense,Pathogenic
+VAR0899,GENE0939,T790M,Missense,Uncertain Significance
+VAR0900,GENE0180,R175H,Missense,Pathogenic
+VAR0901,GENE1096,c.68_69delAG,Deletion,Likely Benign
+VAR0902,GENE0245,V600E,Missense,Likely Pathogenic
+VAR0903,GENE0743,Q61R,Missense,Uncertain Significance
+VAR0904,GENE0972,c.68_69delAG,Deletion,Likely Pathogenic
+VAR0905,GENE1492,G12D,Missense,Uncertain Significance
+VAR0906,GENE0867,R175H,Missense,Uncertain Significance
+VAR0907,GENE0168,L858R,Missense,Uncertain Significance
+VAR0908,GENE0663,c.68_69delAG,Deletion,Likely Benign
+VAR0909,GENE1462,V600E,Missense,Likely Pathogenic
+VAR0910,GENE0646,G12D,Missense,Pathogenic
+VAR0911,GENE0807,V600E,Missense,Likely Pathogenic
+VAR0912,GENE1034,c.68_69delAG,Deletion,Likely Pathogenic
+VAR0913,GENE0251,E545K,Missense,Benign
+VAR0914,GENE0638,L858R,Missense,Likely Benign
+VAR0915,GENE1004,L858R,Missense,Likely Pathogenic
+VAR0916,GENE0742,E545K,Missense,Benign
+VAR0917,GENE1154,Y220C,Missense,Uncertain Significance
+VAR0918,GENE0958,Y220C,Missense,Uncertain Significance
+VAR0919,GENE0373,R175H,Missense,Uncertain Significance
+VAR0920,GENE0278,E545K,Missense,Likely Pathogenic
+VAR0921,GENE0439,Y220C,Missense,Likely Benign
+VAR0922,GENE1128,R175H,Missense,Likely Benign
+VAR0923,GENE0920,V600E,Missense,Likely Benign
+VAR0924,GENE1260,T790M,Missense,Likely Pathogenic
+VAR0925,GENE1205,V600E,Missense,Likely Pathogenic
+VAR0926,GENE0250,Y220C,Missense,Benign
+VAR0927,GENE0667,Q61R,Missense,Likely Benign
+VAR0928,GENE0213,R175H,Missense,Uncertain Significance
+VAR0929,GENE0045,Y220C,Missense,Likely Benign
+VAR0930,GENE0160,Q61R,Missense,Uncertain Significance
+VAR0931,GENE0993,F508del,Deletion,Likely Pathogenic
+VAR0932,GENE0658,T790M,Missense,Benign
+VAR0933,GENE0977,V600E,Missense,Pathogenic
+VAR0934,GENE1380,G12D,Missense,Likely Benign
+VAR0935,GENE1145,F508del,Deletion,Pathogenic
+VAR0936,GENE0116,L858R,Missense,Pathogenic
+VAR0937,GENE1499,T790M,Missense,Likely Benign
+VAR0938,GENE0532,F508del,Deletion,Likely Benign
+VAR0939,GENE0644,c.68_69delAG,Deletion,Benign
+VAR0940,GENE0699,V600E,Missense,Pathogenic
+VAR0941,GENE0310,T790M,Missense,Likely Pathogenic
+VAR0942,GENE0497,c.68_69delAG,Deletion,Pathogenic
+VAR0943,GENE1002,F508del,Deletion,Pathogenic
+VAR0944,GENE1078,R175H,Missense,Uncertain Significance
+VAR0945,GENE0049,F508del,Deletion,Uncertain Significance
+VAR0946,GENE0584,c.68_69delAG,Deletion,Likely Benign
+VAR0947,GENE0284,R175H,Missense,Pathogenic
+VAR0948,GENE0261,E545K,Missense,Pathogenic
+VAR0949,GENE1200,E545K,Missense,Likely Benign
+VAR0950,GENE1003,T790M,Missense,Likely Pathogenic
+VAR0951,GENE0099,R175H,Missense,Uncertain Significance
+VAR0952,GENE0962,V600E,Missense,Likely Benign
+VAR0953,GENE0839,R175H,Missense,Likely Benign
+VAR0954,GENE0655,L858R,Missense,Uncertain Significance
+VAR0955,GENE0050,V600E,Missense,Benign
+VAR0956,GENE0157,T790M,Missense,Pathogenic
+VAR0957,GENE0577,T790M,Missense,Benign
+VAR0958,GENE0164,R175H,Missense,Uncertain Significance
+VAR0959,GENE1106,c.68_69delAG,Deletion,Benign
+VAR0960,GENE0300,T790M,Missense,Benign
+VAR0961,GENE1129,c.68_69delAG,Deletion,Benign
+VAR0962,GENE1477,T790M,Missense,Likely Pathogenic
+VAR0963,GENE0040,L858R,Missense,Uncertain Significance
+VAR0964,GENE0199,E545K,Missense,Benign
+VAR0965,GENE1262,Q61R,Missense,Pathogenic
+VAR0966,GENE1195,R175H,Missense,Likely Pathogenic
+VAR0967,GENE0282,E545K,Missense,Benign
+VAR0968,GENE0754,G12D,Missense,Likely Pathogenic
+VAR0969,GENE1390,T790M,Missense,Uncertain Significance
+VAR0970,GENE0656,Q61R,Missense,Likely Benign
+VAR0971,GENE0773,Q61R,Missense,Pathogenic
+VAR0972,GENE0931,F508del,Deletion,Uncertain Significance
+VAR0973,GENE1462,V600E,Missense,Benign
+VAR0974,GENE1464,L858R,Missense,Benign
+VAR0975,GENE0691,L858R,Missense,Uncertain Significance
+VAR0976,GENE0164,E545K,Missense,Uncertain Significance
+VAR0977,GENE0862,Q61R,Missense,Likely Pathogenic
+VAR0978,GENE0460,E545K,Missense,Benign
+VAR0979,GENE0814,V600E,Missense,Uncertain Significance
+VAR0980,GENE0118,F508del,Deletion,Likely Pathogenic
+VAR0981,GENE1208,G12D,Missense,Likely Pathogenic
+VAR0982,GENE1237,Q61R,Missense,Likely Benign
+VAR0983,GENE0953,c.68_69delAG,Deletion,Benign
+VAR0984,GENE1473,L858R,Missense,Likely Pathogenic
+VAR0985,GENE0164,Q61R,Missense,Likely Pathogenic
+VAR0986,GENE1231,L858R,Missense,Uncertain Significance
+VAR0987,GENE0133,L858R,Missense,Benign
+VAR0988,GENE0663,Q61R,Missense,Pathogenic
+VAR0989,GENE0693,L858R,Missense,Pathogenic
+VAR0990,GENE0422,F508del,Deletion,Likely Pathogenic
+VAR0991,GENE0757,E545K,Missense,Likely Benign
+VAR0992,GENE0809,L858R,Missense,Likely Pathogenic
+VAR0993,GENE1250,E545K,Missense,Uncertain Significance
+VAR0994,GENE0654,R175H,Missense,Uncertain Significance
+VAR0995,GENE0100,V600E,Missense,Uncertain Significance
+VAR0996,GENE1224,T790M,Missense,Likely Benign
+VAR0997,GENE1271,Q61R,Missense,Uncertain Significance
+VAR0998,GENE1470,E545K,Missense,Likely Pathogenic
+VAR0999,GENE0379,c.68_69delAG,Deletion,Uncertain Significance
+VAR1000,GENE0226,E545K,Missense,Likely Pathogenic
+VAR1001,GENE0263,R175H,Missense,Pathogenic
+VAR1002,GENE0653,V600E,Missense,Uncertain Significance
+VAR1003,GENE0121,c.68_69delAG,Deletion,Pathogenic
+VAR1004,GENE1443,L858R,Missense,Uncertain Significance
+VAR1005,GENE1167,F508del,Deletion,Likely Pathogenic
+VAR1006,GENE0243,V600E,Missense,Likely Pathogenic
+VAR1007,GENE0764,L858R,Missense,Uncertain Significance
+VAR1008,GENE0952,V600E,Missense,Likely Benign
+VAR1009,GENE0942,R175H,Missense,Likely Benign
+VAR1010,GENE1244,Y220C,Missense,Likely Pathogenic
+VAR1011,GENE1137,E545K,Missense,Uncertain Significance
+VAR1012,GENE0143,Q61R,Missense,Uncertain Significance
+VAR1013,GENE0191,E545K,Missense,Likely Pathogenic
+VAR1014,GENE0389,Y220C,Missense,Uncertain Significance
+VAR1015,GENE1204,F508del,Deletion,Pathogenic
+VAR1016,GENE1207,c.68_69delAG,Deletion,Likely Benign
+VAR1017,GENE0688,Y220C,Missense,Likely Pathogenic
+VAR1018,GENE0232,V600E,Missense,Pathogenic
+VAR1019,GENE0304,c.68_69delAG,Deletion,Pathogenic
+VAR1020,GENE0084,Y220C,Missense,Benign
+VAR1021,GENE0741,F508del,Deletion,Uncertain Significance
+VAR1022,GENE0344,Y220C,Missense,Likely Benign
+VAR1023,GENE1233,L858R,Missense,Likely Pathogenic
+VAR1024,GENE0543,c.68_69delAG,Deletion,Likely Benign
+VAR1025,GENE1366,T790M,Missense,Benign
+VAR1026,GENE1241,E545K,Missense,Uncertain Significance
+VAR1027,GENE1254,G12D,Missense,Likely Benign
+VAR1028,GENE1086,c.68_69delAG,Deletion,Benign
+VAR1029,GENE0610,c.68_69delAG,Deletion,Benign
+VAR1030,GENE0751,L858R,Missense,Likely Pathogenic
+VAR1031,GENE0557,F508del,Deletion,Pathogenic
+VAR1032,GENE1058,T790M,Missense,Uncertain Significance
+VAR1033,GENE0833,Y220C,Missense,Likely Benign
+VAR1034,GENE1102,G12D,Missense,Likely Benign
+VAR1035,GENE0167,Q61R,Missense,Likely Benign
+VAR1036,GENE1015,V600E,Missense,Uncertain Significance
+VAR1037,GENE0240,R175H,Missense,Uncertain Significance
+VAR1038,GENE0123,F508del,Deletion,Likely Pathogenic
+VAR1039,GENE0559,V600E,Missense,Pathogenic
+VAR1040,GENE0108,c.68_69delAG,Deletion,Likely Benign
+VAR1041,GENE0190,Q61R,Missense,Likely Benign
+VAR1042,GENE1093,Y220C,Missense,Pathogenic
+VAR1043,GENE1308,G12D,Missense,Likely Benign
+VAR1044,GENE0014,L858R,Missense,Likely Benign
+VAR1045,GENE1448,Q61R,Missense,Benign
+VAR1046,GENE0910,L858R,Missense,Benign
+VAR1047,GENE0433,F508del,Deletion,Uncertain Significance
+VAR1048,GENE0262,G12D,Missense,Likely Benign
+VAR1049,GENE0202,c.68_69delAG,Deletion,Uncertain Significance
+VAR1050,GENE0179,F508del,Deletion,Likely Benign
+VAR1051,GENE0196,E545K,Missense,Likely Benign
+VAR1052,GENE1166,c.68_69delAG,Deletion,Benign
+VAR1053,GENE1159,L858R,Missense,Uncertain Significance
+VAR1054,GENE1451,T790M,Missense,Pathogenic
+VAR1055,GENE1310,F508del,Deletion,Pathogenic
+VAR1056,GENE0252,F508del,Deletion,Benign
+VAR1057,GENE0627,E545K,Missense,Pathogenic
+VAR1058,GENE0229,Q61R,Missense,Benign
+VAR1059,GENE0498,T790M,Missense,Uncertain Significance
+VAR1060,GENE1419,T790M,Missense,Likely Pathogenic
+VAR1061,GENE0448,L858R,Missense,Benign
+VAR1062,GENE0492,V600E,Missense,Uncertain Significance
+VAR1063,GENE1431,Y220C,Missense,Pathogenic
+VAR1064,GENE1189,V600E,Missense,Uncertain Significance
+VAR1065,GENE0476,L858R,Missense,Likely Pathogenic
+VAR1066,GENE1019,Q61R,Missense,Benign
+VAR1067,GENE1245,R175H,Missense,Uncertain Significance
+VAR1068,GENE0344,V600E,Missense,Pathogenic
+VAR1069,GENE0840,E545K,Missense,Uncertain Significance
+VAR1070,GENE1066,Q61R,Missense,Benign
+VAR1071,GENE0049,E545K,Missense,Uncertain Significance
+VAR1072,GENE0384,F508del,Deletion,Uncertain Significance
+VAR1073,GENE0173,R175H,Missense,Likely Benign
+VAR1074,GENE0326,E545K,Missense,Likely Pathogenic
+VAR1075,GENE1137,T790M,Missense,Likely Benign
+VAR1076,GENE1175,F508del,Deletion,Likely Benign
+VAR1077,GENE0892,Q61R,Missense,Likely Benign
+VAR1078,GENE0131,T790M,Missense,Likely Benign
+VAR1079,GENE0749,c.68_69delAG,Deletion,Pathogenic
+VAR1080,GENE0182,G12D,Missense,Likely Benign
+VAR1081,GENE0741,F508del,Deletion,Likely Pathogenic
+VAR1082,GENE1120,T790M,Missense,Uncertain Significance
+VAR1083,GENE1005,E545K,Missense,Likely Benign
+VAR1084,GENE1283,T790M,Missense,Likely Benign
+VAR1085,GENE1038,F508del,Deletion,Likely Benign
+VAR1086,GENE1491,c.68_69delAG,Deletion,Likely Pathogenic
+VAR1087,GENE0299,V600E,Missense,Likely Benign
+VAR1088,GENE1231,c.68_69delAG,Deletion,Benign
+VAR1089,GENE0987,T790M,Missense,Benign
+VAR1090,GENE0457,Q61R,Missense,Benign
+VAR1091,GENE0738,c.68_69delAG,Deletion,Pathogenic
+VAR1092,GENE0172,Y220C,Missense,Likely Benign
+VAR1093,GENE0228,R175H,Missense,Likely Pathogenic
+VAR1094,GENE0453,Y220C,Missense,Uncertain Significance
+VAR1095,GENE1437,V600E,Missense,Benign
+VAR1096,GENE0868,c.68_69delAG,Deletion,Benign
+VAR1097,GENE0475,G12D,Missense,Uncertain Significance
+VAR1098,GENE1307,V600E,Missense,Likely Benign
+VAR1099,GENE0940,Q61R,Missense,Benign
+VAR1100,GENE1377,R175H,Missense,Benign
+VAR1101,GENE1344,T790M,Missense,Uncertain Significance
+VAR1102,GENE0742,c.68_69delAG,Deletion,Benign
+VAR1103,GENE0461,E545K,Missense,Benign
+VAR1104,GENE1183,T790M,Missense,Benign
+VAR1105,GENE0447,R175H,Missense,Uncertain Significance
+VAR1106,GENE1151,G12D,Missense,Likely Pathogenic
+VAR1107,GENE1044,F508del,Deletion,Likely Benign
+VAR1108,GENE1352,Q61R,Missense,Likely Benign
+VAR1109,GENE0908,T790M,Missense,Uncertain Significance
+VAR1110,GENE0967,E545K,Missense,Likely Benign
+VAR1111,GENE0005,R175H,Missense,Uncertain Significance
+VAR1112,GENE1209,c.68_69delAG,Deletion,Likely Pathogenic
+VAR1113,GENE1139,c.68_69delAG,Deletion,Pathogenic
+VAR1114,GENE1171,R175H,Missense,Likely Pathogenic
+VAR1115,GENE1053,Y220C,Missense,Pathogenic
+VAR1116,GENE0945,L858R,Missense,Likely Pathogenic
+VAR1117,GENE0889,c.68_69delAG,Deletion,Pathogenic
+VAR1118,GENE0254,c.68_69delAG,Deletion,Benign
+VAR1119,GENE0656,G12D,Missense,Likely Benign
+VAR1120,GENE1400,c.68_69delAG,Deletion,Likely Benign
+VAR1121,GENE0426,Q61R,Missense,Uncertain Significance
+VAR1122,GENE1371,L858R,Missense,Likely Benign
+VAR1123,GENE0552,G12D,Missense,Likely Benign
+VAR1124,GENE1071,G12D,Missense,Pathogenic
+VAR1125,GENE1333,c.68_69delAG,Deletion,Uncertain Significance
+VAR1126,GENE1136,c.68_69delAG,Deletion,Benign
+VAR1127,GENE0081,Y220C,Missense,Uncertain Significance
+VAR1128,GENE0151,G12D,Missense,Uncertain Significance
+VAR1129,GENE1028,G12D,Missense,Uncertain Significance
+VAR1130,GENE1159,F508del,Deletion,Uncertain Significance
+VAR1131,GENE1304,G12D,Missense,Likely Benign
+VAR1132,GENE0307,Q61R,Missense,Likely Benign
+VAR1133,GENE1259,E545K,Missense,Pathogenic
+VAR1134,GENE1070,R175H,Missense,Pathogenic
+VAR1135,GENE1214,F508del,Deletion,Likely Benign
+VAR1136,GENE0055,c.68_69delAG,Deletion,Likely Benign
+VAR1137,GENE0048,V600E,Missense,Pathogenic
+VAR1138,GENE0681,L858R,Missense,Benign
+VAR1139,GENE1346,T790M,Missense,Likely Benign
+VAR1140,GENE1439,Q61R,Missense,Uncertain Significance
+VAR1141,GENE1412,c.68_69delAG,Deletion,Likely Benign
+VAR1142,GENE1225,G12D,Missense,Likely Pathogenic
+VAR1143,GENE0799,T790M,Missense,Pathogenic
+VAR1144,GENE0979,G12D,Missense,Benign
+VAR1145,GENE1416,Y220C,Missense,Likely Pathogenic
+VAR1146,GENE0198,L858R,Missense,Uncertain Significance
+VAR1147,GENE0988,R175H,Missense,Uncertain Significance
+VAR1148,GENE0899,E545K,Missense,Uncertain Significance
+VAR1149,GENE0413,R175H,Missense,Benign
+VAR1150,GENE0729,R175H,Missense,Likely Pathogenic
+VAR1151,GENE0443,G12D,Missense,Uncertain Significance
+VAR1152,GENE1436,L858R,Missense,Likely Benign
+VAR1153,GENE1161,Y220C,Missense,Uncertain Significance
+VAR1154,GENE0312,G12D,Missense,Benign
+VAR1155,GENE0622,R175H,Missense,Benign
+VAR1156,GENE0924,Q61R,Missense,Likely Benign
+VAR1157,GENE0300,Q61R,Missense,Pathogenic
+VAR1158,GENE0351,G12D,Missense,Uncertain Significance
+VAR1159,GENE0925,L858R,Missense,Uncertain Significance
+VAR1160,GENE0568,F508del,Deletion,Pathogenic
+VAR1161,GENE0672,F508del,Deletion,Likely Pathogenic
+VAR1162,GENE0046,c.68_69delAG,Deletion,Likely Benign
+VAR1163,GENE0122,E545K,Missense,Likely Pathogenic
+VAR1164,GENE1188,E545K,Missense,Benign
+VAR1165,GENE0475,Y220C,Missense,Uncertain Significance
+VAR1166,GENE0512,V600E,Missense,Likely Pathogenic
+VAR1167,GENE1353,V600E,Missense,Likely Pathogenic
+VAR1168,GENE0489,c.68_69delAG,Deletion,Uncertain Significance
+VAR1169,GENE0396,T790M,Missense,Likely Pathogenic
+VAR1170,GENE0723,Q61R,Missense,Likely Benign
+VAR1171,GENE0122,Y220C,Missense,Pathogenic
+VAR1172,GENE0399,R175H,Missense,Uncertain Significance
+VAR1173,GENE0590,V600E,Missense,Likely Benign
+VAR1174,GENE1011,Q61R,Missense,Likely Benign
+VAR1175,GENE0390,Y220C,Missense,Uncertain Significance
+VAR1176,GENE0776,c.68_69delAG,Deletion,Uncertain Significance
+VAR1177,GENE1417,V600E,Missense,Uncertain Significance
+VAR1178,GENE0406,Y220C,Missense,Pathogenic
+VAR1179,GENE0044,c.68_69delAG,Deletion,Benign
+VAR1180,GENE1391,L858R,Missense,Benign
+VAR1181,GENE0486,E545K,Missense,Likely Pathogenic
+VAR1182,GENE1434,Y220C,Missense,Likely Pathogenic
+VAR1183,GENE0189,V600E,Missense,Likely Pathogenic
+VAR1184,GENE0502,Y220C,Missense,Pathogenic
+VAR1185,GENE1467,T790M,Missense,Likely Pathogenic
+VAR1186,GENE0037,V600E,Missense,Pathogenic
+VAR1187,GENE0567,G12D,Missense,Likely Benign
+VAR1188,GENE1078,L858R,Missense,Uncertain Significance
+VAR1189,GENE0336,c.68_69delAG,Deletion,Benign
+VAR1190,GENE1011,L858R,Missense,Benign
+VAR1191,GENE1108,E545K,Missense,Pathogenic
+VAR1192,GENE1065,G12D,Missense,Likely Benign
+VAR1193,GENE0374,V600E,Missense,Benign
+VAR1194,GENE0665,L858R,Missense,Likely Pathogenic
+VAR1195,GENE0482,E545K,Missense,Benign
+VAR1196,GENE0878,V600E,Missense,Likely Pathogenic
+VAR1197,GENE0907,G12D,Missense,Uncertain Significance
+VAR1198,GENE0329,T790M,Missense,Pathogenic
+VAR1199,GENE1152,F508del,Deletion,Likely Pathogenic
+VAR1200,GENE0122,Q61R,Missense,Pathogenic
+VAR1201,GENE0484,L858R,Missense,Likely Benign
+VAR1202,GENE0963,V600E,Missense,Likely Pathogenic
+VAR1203,GENE1039,F508del,Deletion,Benign
+VAR1204,GENE0059,E545K,Missense,Likely Pathogenic
+VAR1205,GENE0420,R175H,Missense,Uncertain Significance
+VAR1206,GENE1067,E545K,Missense,Likely Pathogenic
+VAR1207,GENE0840,E545K,Missense,Uncertain Significance
+VAR1208,GENE0171,V600E,Missense,Uncertain Significance
+VAR1209,GENE0034,L858R,Missense,Likely Benign
+VAR1210,GENE0224,G12D,Missense,Likely Benign
+VAR1211,GENE0232,Y220C,Missense,Benign
+VAR1212,GENE0793,V600E,Missense,Likely Pathogenic
+VAR1213,GENE0087,E545K,Missense,Uncertain Significance
+VAR1214,GENE1378,L858R,Missense,Likely Pathogenic
+VAR1215,GENE0027,R175H,Missense,Pathogenic
+VAR1216,GENE0776,c.68_69delAG,Deletion,Benign
+VAR1217,GENE0388,G12D,Missense,Likely Pathogenic
+VAR1218,GENE0809,V600E,Missense,Likely Pathogenic
+VAR1219,GENE1413,F508del,Deletion,Pathogenic
+VAR1220,GENE1184,V600E,Missense,Pathogenic
+VAR1221,GENE0501,Q61R,Missense,Likely Benign
+VAR1222,GENE0933,E545K,Missense,Likely Benign
+VAR1223,GENE0026,L858R,Missense,Likely Benign
+VAR1224,GENE0587,G12D,Missense,Likely Pathogenic
+VAR1225,GENE1427,Q61R,Missense,Pathogenic
+VAR1226,GENE0051,E545K,Missense,Likely Pathogenic
+VAR1227,GENE0148,c.68_69delAG,Deletion,Benign
+VAR1228,GENE1033,c.68_69delAG,Deletion,Likely Benign
+VAR1229,GENE1120,L858R,Missense,Pathogenic
+VAR1230,GENE1238,L858R,Missense,Likely Pathogenic
+VAR1231,GENE1175,Y220C,Missense,Pathogenic
+VAR1232,GENE0429,E545K,Missense,Pathogenic
+VAR1233,GENE1033,E545K,Missense,Pathogenic
+VAR1234,GENE0143,E545K,Missense,Likely Pathogenic
+VAR1235,GENE0751,E545K,Missense,Likely Benign
+VAR1236,GENE0856,Q61R,Missense,Likely Benign
+VAR1237,GENE0929,Q61R,Missense,Likely Benign
+VAR1238,GENE0658,G12D,Missense,Likely Pathogenic
+VAR1239,GENE0741,E545K,Missense,Likely Benign
+VAR1240,GENE0335,R175H,Missense,Benign
+VAR1241,GENE1300,T790M,Missense,Likely Pathogenic
+VAR1242,GENE0721,Q61R,Missense,Uncertain Significance
+VAR1243,GENE1450,G12D,Missense,Pathogenic
+VAR1244,GENE1338,c.68_69delAG,Deletion,Uncertain Significance
+VAR1245,GENE0263,V600E,Missense,Likely Benign
+VAR1246,GENE0198,F508del,Deletion,Benign
+VAR1247,GENE0445,F508del,Deletion,Likely Benign
+VAR1248,GENE0465,Y220C,Missense,Pathogenic
+VAR1249,GENE1141,c.68_69delAG,Deletion,Pathogenic
+VAR1250,GENE0763,T790M,Missense,Pathogenic
+VAR1251,GENE1008,E545K,Missense,Benign
+VAR1252,GENE0153,E545K,Missense,Likely Pathogenic
+VAR1253,GENE1344,F508del,Deletion,Likely Pathogenic
+VAR1254,GENE0302,c.68_69delAG,Deletion,Benign
+VAR1255,GENE0145,Q61R,Missense,Uncertain Significance
+VAR1256,GENE0005,R175H,Missense,Benign
+VAR1257,GENE0994,F508del,Deletion,Likely Pathogenic
+VAR1258,GENE1010,E545K,Missense,Likely Pathogenic
+VAR1259,GENE0400,c.68_69delAG,Deletion,Pathogenic
+VAR1260,GENE1007,V600E,Missense,Likely Pathogenic
+VAR1261,GENE0071,c.68_69delAG,Deletion,Benign
+VAR1262,GENE0211,c.68_69delAG,Deletion,Benign
+VAR1263,GENE0495,G12D,Missense,Benign
+VAR1264,GENE0613,T790M,Missense,Likely Pathogenic
+VAR1265,GENE0062,L858R,Missense,Benign
+VAR1266,GENE0868,V600E,Missense,Likely Pathogenic
+VAR1267,GENE1488,c.68_69delAG,Deletion,Benign
+VAR1268,GENE0088,Q61R,Missense,Likely Pathogenic
+VAR1269,GENE0644,T790M,Missense,Likely Pathogenic
+VAR1270,GENE0590,E545K,Missense,Likely Pathogenic
+VAR1271,GENE0881,Q61R,Missense,Likely Benign
+VAR1272,GENE1121,Y220C,Missense,Likely Pathogenic
+VAR1273,GENE0204,Q61R,Missense,Benign
+VAR1274,GENE0453,F508del,Deletion,Likely Benign
+VAR1275,GENE1129,L858R,Missense,Uncertain Significance
+VAR1276,GENE1221,c.68_69delAG,Deletion,Likely Benign
+VAR1277,GENE0079,c.68_69delAG,Deletion,Uncertain Significance
+VAR1278,GENE0086,G12D,Missense,Likely Benign
+VAR1279,GENE0241,F508del,Deletion,Likely Pathogenic
+VAR1280,GENE0749,Y220C,Missense,Likely Pathogenic
+VAR1281,GENE0539,G12D,Missense,Likely Benign
+VAR1282,GENE1253,T790M,Missense,Benign
+VAR1283,GENE0332,E545K,Missense,Likely Benign
+VAR1284,GENE0274,G12D,Missense,Pathogenic
+VAR1285,GENE1401,Q61R,Missense,Likely Benign
+VAR1286,GENE1242,Y220C,Missense,Benign
+VAR1287,GENE1071,T790M,Missense,Uncertain Significance
+VAR1288,GENE0823,F508del,Deletion,Pathogenic
+VAR1289,GENE0977,Q61R,Missense,Uncertain Significance
+VAR1290,GENE0977,V600E,Missense,Benign
+VAR1291,GENE0582,F508del,Deletion,Uncertain Significance
+VAR1292,GENE0351,R175H,Missense,Benign
+VAR1293,GENE0679,F508del,Deletion,Uncertain Significance
+VAR1294,GENE0045,Y220C,Missense,Pathogenic
+VAR1295,GENE0744,T790M,Missense,Uncertain Significance
+VAR1296,GENE0373,E545K,Missense,Benign
+VAR1297,GENE0987,c.68_69delAG,Deletion,Pathogenic
+VAR1298,GENE1485,R175H,Missense,Pathogenic
+VAR1299,GENE1038,L858R,Missense,Likely Pathogenic
+VAR1300,GENE0138,Y220C,Missense,Benign
+VAR1301,GENE0516,E545K,Missense,Likely Benign
+VAR1302,GENE0421,c.68_69delAG,Deletion,Likely Pathogenic
+VAR1303,GENE0036,V600E,Missense,Pathogenic
+VAR1304,GENE0321,Q61R,Missense,Benign
+VAR1305,GENE1317,F508del,Deletion,Uncertain Significance
+VAR1306,GENE0731,R175H,Missense,Likely Benign
+VAR1307,GENE1472,F508del,Deletion,Pathogenic
+VAR1308,GENE0492,c.68_69delAG,Deletion,Likely Pathogenic
+VAR1309,GENE1395,R175H,Missense,Uncertain Significance
+VAR1310,GENE0949,T790M,Missense,Likely Benign
+VAR1311,GENE0316,E545K,Missense,Uncertain Significance
+VAR1312,GENE0719,L858R,Missense,Likely Benign
+VAR1313,GENE0424,Q61R,Missense,Pathogenic
+VAR1314,GENE1124,E545K,Missense,Pathogenic
+VAR1315,GENE0256,c.68_69delAG,Deletion,Likely Pathogenic
+VAR1316,GENE1341,Q61R,Missense,Likely Benign
+VAR1317,GENE1314,Y220C,Missense,Benign
+VAR1318,GENE0775,E545K,Missense,Likely Benign
+VAR1319,GENE0779,F508del,Deletion,Likely Benign
+VAR1320,GENE0270,T790M,Missense,Pathogenic
+VAR1321,GENE0922,G12D,Missense,Likely Benign
+VAR1322,GENE0042,T790M,Missense,Pathogenic
+VAR1323,GENE1293,L858R,Missense,Benign
+VAR1324,GENE0917,E545K,Missense,Uncertain Significance
+VAR1325,GENE1490,c.68_69delAG,Deletion,Likely Pathogenic
+VAR1326,GENE0619,V600E,Missense,Benign
+VAR1327,GENE1140,E545K,Missense,Pathogenic
+VAR1328,GENE0228,F508del,Deletion,Likely Pathogenic
+VAR1329,GENE0916,E545K,Missense,Likely Pathogenic
+VAR1330,GENE0681,V600E,Missense,Benign
+VAR1331,GENE0539,G12D,Missense,Uncertain Significance
+VAR1332,GENE1061,R175H,Missense,Likely Benign
+VAR1333,GENE1318,L858R,Missense,Benign
+VAR1334,GENE0716,R175H,Missense,Likely Benign
+VAR1335,GENE0380,V600E,Missense,Likely Pathogenic
+VAR1336,GENE0222,c.68_69delAG,Deletion,Likely Pathogenic
+VAR1337,GENE1267,E545K,Missense,Pathogenic
+VAR1338,GENE0290,R175H,Missense,Pathogenic
+VAR1339,GENE1435,V600E,Missense,Uncertain Significance
+VAR1340,GENE1062,L858R,Missense,Likely Benign
+VAR1341,GENE0565,Y220C,Missense,Likely Benign
+VAR1342,GENE0832,R175H,Missense,Likely Benign
+VAR1343,GENE0253,R175H,Missense,Likely Pathogenic
+VAR1344,GENE1418,F508del,Deletion,Pathogenic
+VAR1345,GENE1125,V600E,Missense,Uncertain Significance
+VAR1346,GENE0452,L858R,Missense,Uncertain Significance
+VAR1347,GENE0238,E545K,Missense,Likely Pathogenic
+VAR1348,GENE1436,V600E,Missense,Uncertain Significance
+VAR1349,GENE0700,Q61R,Missense,Likely Pathogenic
+VAR1350,GENE0170,G12D,Missense,Likely Pathogenic
+VAR1351,GENE1233,L858R,Missense,Uncertain Significance
+VAR1352,GENE0923,V600E,Missense,Likely Benign
+VAR1353,GENE0498,G12D,Missense,Likely Pathogenic
+VAR1354,GENE0955,R175H,Missense,Pathogenic
+VAR1355,GENE0349,R175H,Missense,Likely Pathogenic
+VAR1356,GENE0362,T790M,Missense,Likely Benign
+VAR1357,GENE0038,L858R,Missense,Likely Benign
+VAR1358,GENE0010,T790M,Missense,Likely Pathogenic
+VAR1359,GENE1155,E545K,Missense,Pathogenic
+VAR1360,GENE0794,Y220C,Missense,Benign
+VAR1361,GENE1369,c.68_69delAG,Deletion,Likely Benign
+VAR1362,GENE0484,T790M,Missense,Benign
+VAR1363,GENE0569,F508del,Deletion,Likely Pathogenic
+VAR1364,GENE0642,F508del,Deletion,Likely Benign
+VAR1365,GENE1182,V600E,Missense,Uncertain Significance
+VAR1366,GENE0738,T790M,Missense,Benign
+VAR1367,GENE0090,T790M,Missense,Uncertain Significance
+VAR1368,GENE0601,R175H,Missense,Likely Benign
+VAR1369,GENE0496,F508del,Deletion,Likely Pathogenic
+VAR1370,GENE0586,V600E,Missense,Likely Benign
+VAR1371,GENE0598,T790M,Missense,Pathogenic
+VAR1372,GENE0863,Y220C,Missense,Likely Pathogenic
+VAR1373,GENE0380,Y220C,Missense,Benign
+VAR1374,GENE1074,T790M,Missense,Uncertain Significance
+VAR1375,GENE0718,R175H,Missense,Benign
+VAR1376,GENE0717,G12D,Missense,Likely Pathogenic
+VAR1377,GENE1378,T790M,Missense,Benign
+VAR1378,GENE1342,R175H,Missense,Uncertain Significance
+VAR1379,GENE0387,T790M,Missense,Likely Pathogenic
+VAR1380,GENE0024,V600E,Missense,Likely Benign
+VAR1381,GENE0419,Y220C,Missense,Benign
+VAR1382,GENE0160,L858R,Missense,Pathogenic
+VAR1383,GENE0823,c.68_69delAG,Deletion,Pathogenic
+VAR1384,GENE1447,R175H,Missense,Pathogenic
+VAR1385,GENE1224,R175H,Missense,Likely Pathogenic
+VAR1386,GENE0088,Y220C,Missense,Uncertain Significance
+VAR1387,GENE0405,Y220C,Missense,Uncertain Significance
+VAR1388,GENE1041,G12D,Missense,Pathogenic
+VAR1389,GENE1246,Q61R,Missense,Pathogenic
+VAR1390,GENE0524,Q61R,Missense,Likely Pathogenic
+VAR1391,GENE0673,F508del,Deletion,Pathogenic
+VAR1392,GENE0130,G12D,Missense,Pathogenic
+VAR1393,GENE0585,T790M,Missense,Likely Benign
+VAR1394,GENE0921,Q61R,Missense,Benign
+VAR1395,GENE1350,Y220C,Missense,Benign
+VAR1396,GENE0639,Y220C,Missense,Benign
+VAR1397,GENE0669,R175H,Missense,Uncertain Significance
+VAR1398,GENE0471,R175H,Missense,Pathogenic
+VAR1399,GENE0987,L858R,Missense,Benign
+VAR1400,GENE0211,Y220C,Missense,Benign
+VAR1401,GENE1071,c.68_69delAG,Deletion,Pathogenic
+VAR1402,GENE0105,V600E,Missense,Likely Pathogenic
+VAR1403,GENE0304,F508del,Deletion,Benign
+VAR1404,GENE0189,Q61R,Missense,Likely Pathogenic
+VAR1405,GENE0297,c.68_69delAG,Deletion,Uncertain Significance
+VAR1406,GENE1223,E545K,Missense,Benign
+VAR1407,GENE0304,E545K,Missense,Uncertain Significance
+VAR1408,GENE1275,Y220C,Missense,Pathogenic
+VAR1409,GENE0369,Y220C,Missense,Likely Benign
+VAR1410,GENE1171,R175H,Missense,Likely Benign
+VAR1411,GENE1431,R175H,Missense,Likely Pathogenic
+VAR1412,GENE0369,E545K,Missense,Uncertain Significance
+VAR1413,GENE1374,T790M,Missense,Benign
+VAR1414,GENE0367,Q61R,Missense,Pathogenic
+VAR1415,GENE0261,Q61R,Missense,Likely Pathogenic
+VAR1416,GENE1071,G12D,Missense,Benign
+VAR1417,GENE0830,c.68_69delAG,Deletion,Likely Pathogenic
+VAR1418,GENE0488,R175H,Missense,Benign
+VAR1419,GENE0746,Y220C,Missense,Uncertain Significance
+VAR1420,GENE0844,T790M,Missense,Likely Benign
+VAR1421,GENE0287,Q61R,Missense,Pathogenic
+VAR1422,GENE0882,F508del,Deletion,Uncertain Significance
+VAR1423,GENE0354,Y220C,Missense,Pathogenic
+VAR1424,GENE1476,Q61R,Missense,Likely Benign
+VAR1425,GENE1497,Y220C,Missense,Uncertain Significance
+VAR1426,GENE0638,G12D,Missense,Likely Benign
+VAR1427,GENE0592,E545K,Missense,Likely Pathogenic
+VAR1428,GENE0633,c.68_69delAG,Deletion,Likely Pathogenic
+VAR1429,GENE1447,R175H,Missense,Likely Benign
+VAR1430,GENE0843,V600E,Missense,Likely Pathogenic
+VAR1431,GENE0520,L858R,Missense,Benign
+VAR1432,GENE1461,L858R,Missense,Likely Benign
+VAR1433,GENE0209,E545K,Missense,Pathogenic
+VAR1434,GENE1146,Y220C,Missense,Benign
+VAR1435,GENE1091,F508del,Deletion,Likely Pathogenic
+VAR1436,GENE0778,L858R,Missense,Likely Pathogenic
+VAR1437,GENE0223,Q61R,Missense,Likely Pathogenic
+VAR1438,GENE0246,V600E,Missense,Likely Pathogenic
+VAR1439,GENE1015,L858R,Missense,Likely Benign
+VAR1440,GENE1414,Y220C,Missense,Pathogenic
+VAR1441,GENE0615,L858R,Missense,Likely Pathogenic
+VAR1442,GENE0666,Q61R,Missense,Uncertain Significance
+VAR1443,GENE0577,V600E,Missense,Likely Benign
+VAR1444,GENE0723,E545K,Missense,Likely Pathogenic
+VAR1445,GENE1318,L858R,Missense,Likely Benign
+VAR1446,GENE0632,c.68_69delAG,Deletion,Pathogenic
+VAR1447,GENE0748,L858R,Missense,Pathogenic
+VAR1448,GENE0103,E545K,Missense,Pathogenic
+VAR1449,GENE0140,E545K,Missense,Pathogenic
+VAR1450,GENE0921,F508del,Deletion,Pathogenic
+VAR1451,GENE0169,V600E,Missense,Likely Pathogenic
+VAR1452,GENE1079,Y220C,Missense,Benign
+VAR1453,GENE0869,E545K,Missense,Benign
+VAR1454,GENE0927,L858R,Missense,Benign
+VAR1455,GENE0049,F508del,Deletion,Pathogenic
+VAR1456,GENE0262,G12D,Missense,Pathogenic
+VAR1457,GENE0797,V600E,Missense,Uncertain Significance
+VAR1458,GENE1065,G12D,Missense,Pathogenic
+VAR1459,GENE0901,R175H,Missense,Benign
+VAR1460,GENE1369,Y220C,Missense,Pathogenic
+VAR1461,GENE0699,R175H,Missense,Uncertain Significance
+VAR1462,GENE1221,R175H,Missense,Likely Benign
+VAR1463,GENE0320,V600E,Missense,Benign
+VAR1464,GENE0436,Q61R,Missense,Uncertain Significance
+VAR1465,GENE1353,Y220C,Missense,Pathogenic
+VAR1466,GENE0755,T790M,Missense,Pathogenic
+VAR1467,GENE1450,L858R,Missense,Likely Benign
+VAR1468,GENE1369,Y220C,Missense,Benign
+VAR1469,GENE0806,Y220C,Missense,Pathogenic
+VAR1470,GENE0527,G12D,Missense,Uncertain Significance
+VAR1471,GENE0108,F508del,Deletion,Benign
+VAR1472,GENE1294,T790M,Missense,Likely Benign
+VAR1473,GENE0386,V600E,Missense,Benign
+VAR1474,GENE1482,L858R,Missense,Benign
+VAR1475,GENE0924,T790M,Missense,Pathogenic
+VAR1476,GENE0885,Y220C,Missense,Likely Pathogenic
+VAR1477,GENE1281,Y220C,Missense,Likely Pathogenic
+VAR1478,GENE0626,E545K,Missense,Uncertain Significance
+VAR1479,GENE0977,L858R,Missense,Likely Benign
+VAR1480,GENE1013,L858R,Missense,Likely Pathogenic
+VAR1481,GENE1021,E545K,Missense,Likely Benign
+VAR1482,GENE0901,R175H,Missense,Pathogenic
+VAR1483,GENE0663,Y220C,Missense,Likely Benign
+VAR1484,GENE0576,V600E,Missense,Likely Pathogenic
+VAR1485,GENE0977,Q61R,Missense,Pathogenic
+VAR1486,GENE1080,F508del,Deletion,Uncertain Significance
+VAR1487,GENE1172,L858R,Missense,Pathogenic
+VAR1488,GENE0423,V600E,Missense,Uncertain Significance
+VAR1489,GENE0214,c.68_69delAG,Deletion,Pathogenic
+VAR1490,GENE1064,V600E,Missense,Pathogenic
+VAR1491,GENE1323,V600E,Missense,Uncertain Significance
+VAR1492,GENE0021,V600E,Missense,Uncertain Significance
+VAR1493,GENE0977,L858R,Missense,Likely Benign
+VAR1494,GENE0213,E545K,Missense,Pathogenic
+VAR1495,GENE1071,L858R,Missense,Uncertain Significance
+VAR1496,GENE0264,Q61R,Missense,Pathogenic
+VAR1497,GENE1292,Y220C,Missense,Likely Pathogenic
+VAR1498,GENE1093,c.68_69delAG,Deletion,Likely Benign
+VAR1499,GENE0180,Q61R,Missense,Pathogenic
+VAR1500,GENE1413,Q61R,Missense,Uncertain Significance
+VAR1501,GENE0534,Y220C,Missense,Likely Benign
+VAR1502,GENE0213,G12D,Missense,Likely Pathogenic
+VAR1503,GENE1083,F508del,Deletion,Benign
+VAR1504,GENE0527,R175H,Missense,Likely Pathogenic
+VAR1505,GENE0801,L858R,Missense,Likely Benign
+VAR1506,GENE0593,Y220C,Missense,Benign
+VAR1507,GENE1018,F508del,Deletion,Pathogenic
+VAR1508,GENE1223,c.68_69delAG,Deletion,Likely Pathogenic
+VAR1509,GENE1314,R175H,Missense,Likely Pathogenic
+VAR1510,GENE1067,R175H,Missense,Benign
+VAR1511,GENE0521,G12D,Missense,Benign
+VAR1512,GENE0937,c.68_69delAG,Deletion,Pathogenic
+VAR1513,GENE0244,Y220C,Missense,Benign
+VAR1514,GENE0740,L858R,Missense,Likely Benign
+VAR1515,GENE0244,c.68_69delAG,Deletion,Likely Pathogenic
+VAR1516,GENE0251,E545K,Missense,Benign
+VAR1517,GENE1242,T790M,Missense,Likely Pathogenic
+VAR1518,GENE1454,R175H,Missense,Pathogenic
+VAR1519,GENE0486,E545K,Missense,Likely Pathogenic
+VAR1520,GENE0471,E545K,Missense,Likely Benign
+VAR1521,GENE1331,c.68_69delAG,Deletion,Pathogenic
+VAR1522,GENE0432,V600E,Missense,Uncertain Significance
+VAR1523,GENE0586,V600E,Missense,Likely Pathogenic
+VAR1524,GENE1158,Y220C,Missense,Benign
+VAR1525,GENE1409,Q61R,Missense,Likely Benign
+VAR1526,GENE0506,V600E,Missense,Likely Benign
+VAR1527,GENE0975,Y220C,Missense,Uncertain Significance
+VAR1528,GENE0500,L858R,Missense,Likely Benign
+VAR1529,GENE1344,T790M,Missense,Pathogenic
+VAR1530,GENE0955,c.68_69delAG,Deletion,Likely Pathogenic
+VAR1531,GENE0842,V600E,Missense,Pathogenic
+VAR1532,GENE0634,c.68_69delAG,Deletion,Likely Pathogenic
+VAR1533,GENE1366,E545K,Missense,Uncertain Significance
+VAR1534,GENE0311,V600E,Missense,Likely Benign
+VAR1535,GENE0170,Y220C,Missense,Likely Pathogenic
+VAR1536,GENE0325,Y220C,Missense,Pathogenic
+VAR1537,GENE1203,V600E,Missense,Uncertain Significance
+VAR1538,GENE1366,F508del,Deletion,Benign
+VAR1539,GENE0369,R175H,Missense,Uncertain Significance
+VAR1540,GENE0468,G12D,Missense,Likely Pathogenic
+VAR1541,GENE0162,Q61R,Missense,Likely Benign
+VAR1542,GENE0381,G12D,Missense,Likely Benign
+VAR1543,GENE0824,Y220C,Missense,Likely Benign
+VAR1544,GENE1140,Q61R,Missense,Likely Benign
+VAR1545,GENE1378,V600E,Missense,Likely Pathogenic
+VAR1546,GENE1400,Q61R,Missense,Likely Benign
+VAR1547,GENE0549,E545K,Missense,Uncertain Significance
+VAR1548,GENE1419,G12D,Missense,Likely Pathogenic
+VAR1549,GENE1338,F508del,Deletion,Uncertain Significance
+VAR1550,GENE1116,Y220C,Missense,Likely Pathogenic
+VAR1551,GENE0228,T790M,Missense,Likely Pathogenic
+VAR1552,GENE0747,V600E,Missense,Uncertain Significance
+VAR1553,GENE0713,L858R,Missense,Benign
+VAR1554,GENE0100,Y220C,Missense,Uncertain Significance
+VAR1555,GENE0360,V600E,Missense,Benign
+VAR1556,GENE0574,E545K,Missense,Pathogenic
+VAR1557,GENE0864,R175H,Missense,Likely Benign
+VAR1558,GENE0546,Q61R,Missense,Likely Benign
+VAR1559,GENE0339,V600E,Missense,Likely Pathogenic
+VAR1560,GENE0152,Y220C,Missense,Pathogenic
+VAR1561,GENE0081,L858R,Missense,Likely Benign
+VAR1562,GENE1265,L858R,Missense,Benign
+VAR1563,GENE0833,L858R,Missense,Pathogenic
+VAR1564,GENE0798,c.68_69delAG,Deletion,Likely Benign
+VAR1565,GENE0153,T790M,Missense,Likely Benign
+VAR1566,GENE0814,G12D,Missense,Pathogenic
+VAR1567,GENE1363,T790M,Missense,Likely Pathogenic
+VAR1568,GENE0599,Q61R,Missense,Likely Pathogenic
+VAR1569,GENE0868,c.68_69delAG,Deletion,Likely Benign
+VAR1570,GENE1090,E545K,Missense,Likely Benign
+VAR1571,GENE1278,Q61R,Missense,Benign
+VAR1572,GENE1329,G12D,Missense,Likely Benign
+VAR1573,GENE0742,E545K,Missense,Uncertain Significance
+VAR1574,GENE0063,L858R,Missense,Likely Benign
+VAR1575,GENE1279,Q61R,Missense,Likely Pathogenic
+VAR1576,GENE0662,V600E,Missense,Uncertain Significance
+VAR1577,GENE1184,c.68_69delAG,Deletion,Pathogenic
+VAR1578,GENE1070,G12D,Missense,Uncertain Significance
+VAR1579,GENE0297,G12D,Missense,Likely Pathogenic
+VAR1580,GENE0772,G12D,Missense,Uncertain Significance
+VAR1581,GENE1420,Q61R,Missense,Likely Benign
+VAR1582,GENE0573,F508del,Deletion,Pathogenic
+VAR1583,GENE1043,L858R,Missense,Uncertain Significance
+VAR1584,GENE1340,c.68_69delAG,Deletion,Benign
+VAR1585,GENE0329,V600E,Missense,Likely Benign
+VAR1586,GENE1211,R175H,Missense,Uncertain Significance
+VAR1587,GENE0022,G12D,Missense,Pathogenic
+VAR1588,GENE0798,Q61R,Missense,Likely Pathogenic
+VAR1589,GENE1034,c.68_69delAG,Deletion,Pathogenic
+VAR1590,GENE1287,T790M,Missense,Uncertain Significance
+VAR1591,GENE1233,Y220C,Missense,Likely Pathogenic
+VAR1592,GENE0202,E545K,Missense,Likely Benign
+VAR1593,GENE0014,V600E,Missense,Benign
+VAR1594,GENE0251,c.68_69delAG,Deletion,Likely Pathogenic
+VAR1595,GENE1253,c.68_69delAG,Deletion,Benign
+VAR1596,GENE0263,Q61R,Missense,Pathogenic
+VAR1597,GENE0548,T790M,Missense,Likely Benign
+VAR1598,GENE0938,E545K,Missense,Benign
+VAR1599,GENE1102,T790M,Missense,Pathogenic
+VAR1600,GENE1020,Q61R,Missense,Uncertain Significance
+VAR1601,GENE0057,Q61R,Missense,Likely Pathogenic
+VAR1602,GENE0606,F508del,Deletion,Benign
+VAR1603,GENE0870,T790M,Missense,Likely Benign
+VAR1604,GENE0590,R175H,Missense,Uncertain Significance
+VAR1605,GENE0212,R175H,Missense,Likely Benign
+VAR1606,GENE1282,Q61R,Missense,Pathogenic
+VAR1607,GENE0607,V600E,Missense,Benign
+VAR1608,GENE1079,Q61R,Missense,Benign
+VAR1609,GENE0074,Q61R,Missense,Benign
+VAR1610,GENE0491,F508del,Deletion,Benign
+VAR1611,GENE0783,c.68_69delAG,Deletion,Benign
+VAR1612,GENE1445,Q61R,Missense,Likely Benign
+VAR1613,GENE0815,G12D,Missense,Uncertain Significance
+VAR1614,GENE0673,F508del,Deletion,Likely Pathogenic
+VAR1615,GENE1411,G12D,Missense,Pathogenic
+VAR1616,GENE1118,R175H,Missense,Pathogenic
+VAR1617,GENE0110,E545K,Missense,Benign
+VAR1618,GENE0494,Y220C,Missense,Uncertain Significance
+VAR1619,GENE1390,Q61R,Missense,Likely Benign
+VAR1620,GENE1039,Y220C,Missense,Likely Pathogenic
+VAR1621,GENE0267,Q61R,Missense,Pathogenic
+VAR1622,GENE0831,c.68_69delAG,Deletion,Likely Benign
+VAR1623,GENE0594,F508del,Deletion,Pathogenic
+VAR1624,GENE1217,G12D,Missense,Pathogenic
+VAR1625,GENE0389,G12D,Missense,Pathogenic
+VAR1626,GENE1333,E545K,Missense,Uncertain Significance
+VAR1627,GENE0397,Y220C,Missense,Likely Benign
+VAR1628,GENE1473,G12D,Missense,Benign
+VAR1629,GENE0498,R175H,Missense,Likely Pathogenic
+VAR1630,GENE0849,R175H,Missense,Uncertain Significance
+VAR1631,GENE1422,T790M,Missense,Uncertain Significance
+VAR1632,GENE1493,F508del,Deletion,Uncertain Significance
+VAR1633,GENE0728,E545K,Missense,Likely Benign
+VAR1634,GENE1295,R175H,Missense,Likely Pathogenic
+VAR1635,GENE0537,V600E,Missense,Uncertain Significance
+VAR1636,GENE1304,G12D,Missense,Benign
+VAR1637,GENE1071,V600E,Missense,Uncertain Significance
+VAR1638,GENE1225,G12D,Missense,Benign
+VAR1639,GENE0696,G12D,Missense,Benign
+VAR1640,GENE0009,Q61R,Missense,Likely Pathogenic
+VAR1641,GENE0907,T790M,Missense,Pathogenic
+VAR1642,GENE0317,G12D,Missense,Benign
+VAR1643,GENE0726,Y220C,Missense,Likely Pathogenic
+VAR1644,GENE0922,c.68_69delAG,Deletion,Likely Pathogenic
+VAR1645,GENE0757,E545K,Missense,Likely Pathogenic
+VAR1646,GENE0948,R175H,Missense,Uncertain Significance
+VAR1647,GENE0950,F508del,Deletion,Pathogenic
+VAR1648,GENE0220,c.68_69delAG,Deletion,Likely Benign
+VAR1649,GENE1017,Q61R,Missense,Benign
+VAR1650,GENE0508,G12D,Missense,Likely Benign
+VAR1651,GENE1024,L858R,Missense,Likely Pathogenic
+VAR1652,GENE0394,F508del,Deletion,Pathogenic
+VAR1653,GENE0577,c.68_69delAG,Deletion,Likely Benign
+VAR1654,GENE0560,R175H,Missense,Likely Pathogenic
+VAR1655,GENE0751,L858R,Missense,Pathogenic
+VAR1656,GENE1053,F508del,Deletion,Uncertain Significance
+VAR1657,GENE0818,L858R,Missense,Likely Pathogenic
+VAR1658,GENE0942,R175H,Missense,Likely Pathogenic
+VAR1659,GENE0912,R175H,Missense,Benign
+VAR1660,GENE0740,R175H,Missense,Likely Benign
+VAR1661,GENE0140,T790M,Missense,Likely Benign
+VAR1662,GENE0883,R175H,Missense,Benign
+VAR1663,GENE1384,F508del,Deletion,Pathogenic
+VAR1664,GENE0869,L858R,Missense,Likely Benign
+VAR1665,GENE1281,Q61R,Missense,Benign
+VAR1666,GENE1398,Y220C,Missense,Pathogenic
+VAR1667,GENE1224,Q61R,Missense,Benign
+VAR1668,GENE0767,R175H,Missense,Pathogenic
+VAR1669,GENE1127,T790M,Missense,Likely Benign
+VAR1670,GENE1132,L858R,Missense,Uncertain Significance
+VAR1671,GENE1310,c.68_69delAG,Deletion,Pathogenic
+VAR1672,GENE0208,G12D,Missense,Likely Benign
+VAR1673,GENE0643,F508del,Deletion,Likely Benign
+VAR1674,GENE0554,E545K,Missense,Pathogenic
+VAR1675,GENE1336,T790M,Missense,Benign
+VAR1676,GENE0572,L858R,Missense,Likely Pathogenic
+VAR1677,GENE0312,Y220C,Missense,Uncertain Significance
+VAR1678,GENE1268,Y220C,Missense,Benign
+VAR1679,GENE0702,T790M,Missense,Benign
+VAR1680,GENE0824,V600E,Missense,Pathogenic
+VAR1681,GENE1310,T790M,Missense,Benign
+VAR1682,GENE0244,Q61R,Missense,Pathogenic
+VAR1683,GENE0961,T790M,Missense,Benign
+VAR1684,GENE1004,T790M,Missense,Benign
+VAR1685,GENE0671,F508del,Deletion,Likely Pathogenic
+VAR1686,GENE0362,R175H,Missense,Likely Benign
+VAR1687,GENE0569,c.68_69delAG,Deletion,Likely Benign
+VAR1688,GENE0501,T790M,Missense,Benign
+VAR1689,GENE0008,Y220C,Missense,Uncertain Significance
+VAR1690,GENE0628,F508del,Deletion,Likely Pathogenic
+VAR1691,GENE1016,F508del,Deletion,Pathogenic
+VAR1692,GENE1165,T790M,Missense,Pathogenic
+VAR1693,GENE1310,L858R,Missense,Uncertain Significance
+VAR1694,GENE0414,T790M,Missense,Benign
+VAR1695,GENE0651,Y220C,Missense,Likely Benign
+VAR1696,GENE1348,R175H,Missense,Pathogenic
+VAR1697,GENE1418,V600E,Missense,Likely Pathogenic
+VAR1698,GENE0952,Q61R,Missense,Likely Pathogenic
+VAR1699,GENE0113,V600E,Missense,Benign
+VAR1700,GENE1253,L858R,Missense,Likely Benign
+VAR1701,GENE0318,L858R,Missense,Benign
+VAR1702,GENE0187,F508del,Deletion,Benign
+VAR1703,GENE1027,c.68_69delAG,Deletion,Uncertain Significance
+VAR1704,GENE0710,V600E,Missense,Uncertain Significance
+VAR1705,GENE0331,Y220C,Missense,Likely Benign
+VAR1706,GENE1119,c.68_69delAG,Deletion,Uncertain Significance
+VAR1707,GENE0311,V600E,Missense,Pathogenic
+VAR1708,GENE0105,R175H,Missense,Likely Benign
+VAR1709,GENE0523,Q61R,Missense,Uncertain Significance
+VAR1710,GENE0600,F508del,Deletion,Likely Pathogenic
+VAR1711,GENE1475,L858R,Missense,Likely Pathogenic
+VAR1712,GENE0793,c.68_69delAG,Deletion,Benign
+VAR1713,GENE1486,R175H,Missense,Pathogenic
+VAR1714,GENE1172,Q61R,Missense,Likely Pathogenic
+VAR1715,GENE0341,T790M,Missense,Likely Pathogenic
+VAR1716,GENE1322,c.68_69delAG,Deletion,Likely Benign
+VAR1717,GENE0547,Q61R,Missense,Uncertain Significance
+VAR1718,GENE0165,E545K,Missense,Uncertain Significance
+VAR1719,GENE0537,F508del,Deletion,Likely Pathogenic
+VAR1720,GENE1431,Y220C,Missense,Likely Pathogenic
+VAR1721,GENE1198,T790M,Missense,Uncertain Significance
+VAR1722,GENE1273,T790M,Missense,Benign
+VAR1723,GENE1437,E545K,Missense,Uncertain Significance
+VAR1724,GENE1432,E545K,Missense,Likely Pathogenic
+VAR1725,GENE0407,F508del,Deletion,Likely Pathogenic
+VAR1726,GENE0277,c.68_69delAG,Deletion,Pathogenic
+VAR1727,GENE0828,c.68_69delAG,Deletion,Likely Benign
+VAR1728,GENE1070,R175H,Missense,Benign
+VAR1729,GENE0903,L858R,Missense,Likely Pathogenic
+VAR1730,GENE0229,T790M,Missense,Pathogenic
+VAR1731,GENE0728,E545K,Missense,Pathogenic
+VAR1732,GENE0140,L858R,Missense,Uncertain Significance
+VAR1733,GENE1412,V600E,Missense,Uncertain Significance
+VAR1734,GENE0778,T790M,Missense,Benign
+VAR1735,GENE0059,R175H,Missense,Benign
+VAR1736,GENE1256,Q61R,Missense,Likely Benign
+VAR1737,GENE0800,F508del,Deletion,Benign
+VAR1738,GENE0186,E545K,Missense,Benign
+VAR1739,GENE0814,R175H,Missense,Likely Pathogenic
+VAR1740,GENE1209,R175H,Missense,Likely Pathogenic
+VAR1741,GENE0589,F508del,Deletion,Uncertain Significance
+VAR1742,GENE1471,R175H,Missense,Uncertain Significance
+VAR1743,GENE1335,E545K,Missense,Likely Benign
+VAR1744,GENE0819,Q61R,Missense,Pathogenic
+VAR1745,GENE1320,V600E,Missense,Benign
+VAR1746,GENE0280,T790M,Missense,Likely Pathogenic
+VAR1747,GENE0107,Y220C,Missense,Benign
+VAR1748,GENE1443,c.68_69delAG,Deletion,Likely Benign
+VAR1749,GENE1280,R175H,Missense,Benign
+VAR1750,GENE1340,V600E,Missense,Likely Benign
+VAR1751,GENE1353,R175H,Missense,Uncertain Significance
+VAR1752,GENE1134,Q61R,Missense,Uncertain Significance
+VAR1753,GENE1182,Q61R,Missense,Benign
+VAR1754,GENE0291,T790M,Missense,Pathogenic
+VAR1755,GENE0977,c.68_69delAG,Deletion,Benign
+VAR1756,GENE1022,V600E,Missense,Likely Pathogenic
+VAR1757,GENE0876,Q61R,Missense,Likely Pathogenic
+VAR1758,GENE1403,F508del,Deletion,Likely Pathogenic
+VAR1759,GENE0956,T790M,Missense,Pathogenic
+VAR1760,GENE0682,R175H,Missense,Pathogenic
+VAR1761,GENE0091,F508del,Deletion,Pathogenic
+VAR1762,GENE1301,F508del,Deletion,Benign
+VAR1763,GENE0707,E545K,Missense,Benign
+VAR1764,GENE1190,E545K,Missense,Benign
+VAR1765,GENE0668,T790M,Missense,Pathogenic
+VAR1766,GENE0318,R175H,Missense,Pathogenic
+VAR1767,GENE1081,E545K,Missense,Likely Benign
+VAR1768,GENE1386,E545K,Missense,Pathogenic
+VAR1769,GENE0727,Q61R,Missense,Likely Benign
+VAR1770,GENE1036,L858R,Missense,Benign
+VAR1771,GENE1396,F508del,Deletion,Uncertain Significance
+VAR1772,GENE0799,L858R,Missense,Likely Benign
+VAR1773,GENE0028,c.68_69delAG,Deletion,Likely Pathogenic
+VAR1774,GENE0231,G12D,Missense,Likely Pathogenic
+VAR1775,GENE0424,G12D,Missense,Pathogenic
+VAR1776,GENE0986,Q61R,Missense,Pathogenic
+VAR1777,GENE1239,E545K,Missense,Likely Benign
+VAR1778,GENE0101,V600E,Missense,Likely Pathogenic
+VAR1779,GENE0275,V600E,Missense,Uncertain Significance
+VAR1780,GENE0740,E545K,Missense,Benign
+VAR1781,GENE0480,G12D,Missense,Likely Benign
+VAR1782,GENE0573,Y220C,Missense,Uncertain Significance
+VAR1783,GENE0112,Y220C,Missense,Pathogenic
+VAR1784,GENE0077,G12D,Missense,Likely Pathogenic
+VAR1785,GENE0055,E545K,Missense,Likely Benign
+VAR1786,GENE0407,R175H,Missense,Pathogenic
+VAR1787,GENE0331,L858R,Missense,Likely Pathogenic
+VAR1788,GENE0002,F508del,Deletion,Uncertain Significance
+VAR1789,GENE0993,Q61R,Missense,Likely Benign
+VAR1790,GENE0597,T790M,Missense,Uncertain Significance
+VAR1791,GENE0055,E545K,Missense,Likely Benign
+VAR1792,GENE0237,Q61R,Missense,Uncertain Significance
+VAR1793,GENE1172,Q61R,Missense,Pathogenic
+VAR1794,GENE0178,c.68_69delAG,Deletion,Likely Benign
+VAR1795,GENE0434,G12D,Missense,Likely Benign
+VAR1796,GENE0723,F508del,Deletion,Benign
+VAR1797,GENE1134,F508del,Deletion,Pathogenic
+VAR1798,GENE1214,Q61R,Missense,Uncertain Significance
+VAR1799,GENE0901,L858R,Missense,Likely Benign
+VAR1800,GENE1345,G12D,Missense,Uncertain Significance
+VAR1801,GENE1014,G12D,Missense,Benign
+VAR1802,GENE1260,G12D,Missense,Uncertain Significance
+VAR1803,GENE0971,V600E,Missense,Likely Pathogenic
+VAR1804,GENE0354,Y220C,Missense,Pathogenic
+VAR1805,GENE0554,L858R,Missense,Likely Benign
+VAR1806,GENE0052,Q61R,Missense,Likely Benign
+VAR1807,GENE0923,c.68_69delAG,Deletion,Likely Pathogenic
+VAR1808,GENE1175,Q61R,Missense,Uncertain Significance
+VAR1809,GENE0653,Q61R,Missense,Benign
+VAR1810,GENE0646,V600E,Missense,Benign
+VAR1811,GENE0400,E545K,Missense,Likely Benign
+VAR1812,GENE1324,Y220C,Missense,Likely Pathogenic
+VAR1813,GENE0893,Y220C,Missense,Likely Pathogenic
+VAR1814,GENE0572,F508del,Deletion,Benign
+VAR1815,GENE0388,V600E,Missense,Likely Benign
+VAR1816,GENE1312,R175H,Missense,Pathogenic
+VAR1817,GENE0348,c.68_69delAG,Deletion,Likely Pathogenic
+VAR1818,GENE1129,Y220C,Missense,Pathogenic
+VAR1819,GENE1470,G12D,Missense,Pathogenic
+VAR1820,GENE0165,E545K,Missense,Uncertain Significance
+VAR1821,GENE0361,G12D,Missense,Pathogenic
+VAR1822,GENE1020,R175H,Missense,Likely Pathogenic
+VAR1823,GENE0454,L858R,Missense,Pathogenic
+VAR1824,GENE0641,Y220C,Missense,Uncertain Significance
+VAR1825,GENE0063,Y220C,Missense,Uncertain Significance
+VAR1826,GENE1488,F508del,Deletion,Likely Benign
+VAR1827,GENE1387,L858R,Missense,Benign
+VAR1828,GENE1267,V600E,Missense,Likely Benign
+VAR1829,GENE0962,Q61R,Missense,Likely Pathogenic
+VAR1830,GENE1237,F508del,Deletion,Uncertain Significance
+VAR1831,GENE0370,G12D,Missense,Benign
+VAR1832,GENE0024,F508del,Deletion,Likely Pathogenic
+VAR1833,GENE0770,F508del,Deletion,Benign
+VAR1834,GENE0688,T790M,Missense,Likely Benign
+VAR1835,GENE1474,E545K,Missense,Likely Benign
+VAR1836,GENE0807,Q61R,Missense,Pathogenic
+VAR1837,GENE1383,Q61R,Missense,Pathogenic
+VAR1838,GENE0790,T790M,Missense,Benign
+VAR1839,GENE0464,G12D,Missense,Likely Benign
+VAR1840,GENE0883,Y220C,Missense,Likely Pathogenic
+VAR1841,GENE0013,V600E,Missense,Uncertain Significance
+VAR1842,GENE0709,Q61R,Missense,Likely Benign
+VAR1843,GENE0215,L858R,Missense,Pathogenic
+VAR1844,GENE0528,Y220C,Missense,Uncertain Significance
+VAR1845,GENE0541,T790M,Missense,Likely Benign
+VAR1846,GENE0360,Y220C,Missense,Likely Benign
+VAR1847,GENE0117,R175H,Missense,Likely Pathogenic
+VAR1848,GENE1381,E545K,Missense,Benign
+VAR1849,GENE0147,V600E,Missense,Likely Benign
+VAR1850,GENE0280,F508del,Deletion,Benign
+VAR1851,GENE0681,F508del,Deletion,Likely Benign
+VAR1852,GENE0867,E545K,Missense,Likely Pathogenic
+VAR1853,GENE0853,F508del,Deletion,Pathogenic
+VAR1854,GENE1091,R175H,Missense,Pathogenic
+VAR1855,GENE1128,E545K,Missense,Benign
+VAR1856,GENE1234,Q61R,Missense,Uncertain Significance
+VAR1857,GENE1015,R175H,Missense,Likely Benign
+VAR1858,GENE0640,c.68_69delAG,Deletion,Likely Benign
+VAR1859,GENE0266,E545K,Missense,Pathogenic
+VAR1860,GENE0855,T790M,Missense,Likely Benign
+VAR1861,GENE0126,E545K,Missense,Pathogenic
+VAR1862,GENE1299,F508del,Deletion,Uncertain Significance
+VAR1863,GENE0441,V600E,Missense,Likely Pathogenic
+VAR1864,GENE0158,R175H,Missense,Benign
+VAR1865,GENE0392,V600E,Missense,Pathogenic
+VAR1866,GENE0124,c.68_69delAG,Deletion,Likely Pathogenic
+VAR1867,GENE0849,L858R,Missense,Benign
+VAR1868,GENE0442,G12D,Missense,Benign
+VAR1869,GENE0706,c.68_69delAG,Deletion,Likely Pathogenic
+VAR1870,GENE1190,G12D,Missense,Benign
+VAR1871,GENE0414,Y220C,Missense,Likely Pathogenic
+VAR1872,GENE1259,Q61R,Missense,Likely Pathogenic
+VAR1873,GENE0938,G12D,Missense,Pathogenic
+VAR1874,GENE0057,V600E,Missense,Pathogenic
+VAR1875,GENE0952,c.68_69delAG,Deletion,Benign
+VAR1876,GENE0960,E545K,Missense,Likely Pathogenic
+VAR1877,GENE0102,Y220C,Missense,Pathogenic
+VAR1878,GENE0377,c.68_69delAG,Deletion,Likely Pathogenic
+VAR1879,GENE1451,G12D,Missense,Pathogenic
+VAR1880,GENE0946,T790M,Missense,Benign
+VAR1881,GENE0754,R175H,Missense,Likely Pathogenic
+VAR1882,GENE0771,E545K,Missense,Uncertain Significance
+VAR1883,GENE0744,E545K,Missense,Uncertain Significance
+VAR1884,GENE0740,V600E,Missense,Uncertain Significance
+VAR1885,GENE0305,T790M,Missense,Likely Benign
+VAR1886,GENE1095,Y220C,Missense,Pathogenic
+VAR1887,GENE0436,G12D,Missense,Uncertain Significance
+VAR1888,GENE1106,T790M,Missense,Pathogenic
+VAR1889,GENE1135,Q61R,Missense,Benign
+VAR1890,GENE1143,G12D,Missense,Benign
+VAR1891,GENE0372,R175H,Missense,Benign
+VAR1892,GENE0624,G12D,Missense,Benign
+VAR1893,GENE0823,V600E,Missense,Likely Pathogenic
+VAR1894,GENE0214,V600E,Missense,Likely Pathogenic
+VAR1895,GENE0654,G12D,Missense,Likely Benign
+VAR1896,GENE0818,T790M,Missense,Pathogenic
+VAR1897,GENE0023,V600E,Missense,Uncertain Significance
+VAR1898,GENE0101,c.68_69delAG,Deletion,Likely Pathogenic
+VAR1899,GENE0743,Q61R,Missense,Likely Benign
+VAR1900,GENE0495,c.68_69delAG,Deletion,Likely Pathogenic
+VAR1901,GENE0211,F508del,Deletion,Likely Benign
+VAR1902,GENE1052,F508del,Deletion,Pathogenic
+VAR1903,GENE0244,c.68_69delAG,Deletion,Pathogenic
+VAR1904,GENE0546,T790M,Missense,Pathogenic
+VAR1905,GENE0989,L858R,Missense,Benign
+VAR1906,GENE0193,E545K,Missense,Benign
+VAR1907,GENE1314,c.68_69delAG,Deletion,Benign
+VAR1908,GENE0117,T790M,Missense,Likely Benign
+VAR1909,GENE0845,T790M,Missense,Pathogenic
+VAR1910,GENE1366,R175H,Missense,Pathogenic
+VAR1911,GENE0138,V600E,Missense,Likely Pathogenic
+VAR1912,GENE0784,L858R,Missense,Likely Benign
+VAR1913,GENE0289,Q61R,Missense,Uncertain Significance
+VAR1914,GENE0389,c.68_69delAG,Deletion,Pathogenic
+VAR1915,GENE0784,T790M,Missense,Likely Pathogenic
+VAR1916,GENE1376,R175H,Missense,Pathogenic
+VAR1917,GENE0170,E545K,Missense,Uncertain Significance
+VAR1918,GENE1198,F508del,Deletion,Benign
+VAR1919,GENE0058,F508del,Deletion,Uncertain Significance
+VAR1920,GENE0785,R175H,Missense,Likely Benign
+VAR1921,GENE0834,c.68_69delAG,Deletion,Likely Benign
+VAR1922,GENE0962,R175H,Missense,Likely Benign
+VAR1923,GENE0064,G12D,Missense,Likely Pathogenic
+VAR1924,GENE0107,L858R,Missense,Likely Pathogenic
+VAR1925,GENE0782,R175H,Missense,Benign
+VAR1926,GENE0735,L858R,Missense,Uncertain Significance
+VAR1927,GENE0477,V600E,Missense,Uncertain Significance
+VAR1928,GENE0005,G12D,Missense,Likely Pathogenic
+VAR1929,GENE0116,R175H,Missense,Pathogenic
+VAR1930,GENE0632,T790M,Missense,Likely Benign
+VAR1931,GENE1192,G12D,Missense,Pathogenic
+VAR1932,GENE0258,c.68_69delAG,Deletion,Likely Benign
+VAR1933,GENE1296,F508del,Deletion,Benign
+VAR1934,GENE0317,R175H,Missense,Uncertain Significance
+VAR1935,GENE0504,Q61R,Missense,Benign
+VAR1936,GENE0627,T790M,Missense,Likely Pathogenic
+VAR1937,GENE1160,Y220C,Missense,Uncertain Significance
+VAR1938,GENE1434,T790M,Missense,Likely Benign
+VAR1939,GENE0842,Q61R,Missense,Benign
+VAR1940,GENE0475,Q61R,Missense,Likely Pathogenic
+VAR1941,GENE0606,V600E,Missense,Uncertain Significance
+VAR1942,GENE1150,L858R,Missense,Likely Pathogenic
+VAR1943,GENE1108,E545K,Missense,Pathogenic
+VAR1944,GENE0003,T790M,Missense,Benign
+VAR1945,GENE0308,R175H,Missense,Likely Pathogenic
+VAR1946,GENE0429,Q61R,Missense,Uncertain Significance
+VAR1947,GENE0205,R175H,Missense,Likely Benign
+VAR1948,GENE1144,G12D,Missense,Likely Benign
+VAR1949,GENE1141,Y220C,Missense,Likely Benign
+VAR1950,GENE0780,R175H,Missense,Likely Benign
+VAR1951,GENE0041,Y220C,Missense,Benign
+VAR1952,GENE1292,L858R,Missense,Benign
+VAR1953,GENE0993,L858R,Missense,Likely Pathogenic
+VAR1954,GENE1056,E545K,Missense,Likely Pathogenic
+VAR1955,GENE0082,E545K,Missense,Benign
+VAR1956,GENE0128,c.68_69delAG,Deletion,Pathogenic
+VAR1957,GENE0057,Y220C,Missense,Likely Benign
+VAR1958,GENE0423,F508del,Deletion,Benign
+VAR1959,GENE0447,T790M,Missense,Uncertain Significance
+VAR1960,GENE0995,E545K,Missense,Uncertain Significance
+VAR1961,GENE0357,R175H,Missense,Uncertain Significance
+VAR1962,GENE0923,T790M,Missense,Pathogenic
+VAR1963,GENE0329,c.68_69delAG,Deletion,Benign
+VAR1964,GENE0425,c.68_69delAG,Deletion,Benign
+VAR1965,GENE1159,R175H,Missense,Benign
+VAR1966,GENE1277,L858R,Missense,Likely Benign
+VAR1967,GENE0271,T790M,Missense,Likely Pathogenic
+VAR1968,GENE0027,R175H,Missense,Pathogenic
+VAR1969,GENE0328,Q61R,Missense,Uncertain Significance
+VAR1970,GENE0797,V600E,Missense,Benign
+VAR1971,GENE1147,Q61R,Missense,Likely Pathogenic
+VAR1972,GENE0317,Q61R,Missense,Uncertain Significance
+VAR1973,GENE1356,F508del,Deletion,Likely Pathogenic
+VAR1974,GENE0753,c.68_69delAG,Deletion,Likely Benign
+VAR1975,GENE1101,F508del,Deletion,Likely Benign
+VAR1976,GENE0022,G12D,Missense,Pathogenic
+VAR1977,GENE1457,Q61R,Missense,Pathogenic
+VAR1978,GENE0226,G12D,Missense,Uncertain Significance
+VAR1979,GENE0130,Q61R,Missense,Benign
+VAR1980,GENE1350,Y220C,Missense,Likely Pathogenic
+VAR1981,GENE0264,R175H,Missense,Pathogenic
+VAR1982,GENE0015,Q61R,Missense,Benign
+VAR1983,GENE0544,R175H,Missense,Likely Pathogenic
+VAR1984,GENE0893,T790M,Missense,Likely Benign
+VAR1985,GENE1410,E545K,Missense,Likely Pathogenic
+VAR1986,GENE0748,F508del,Deletion,Likely Pathogenic
+VAR1987,GENE0448,F508del,Deletion,Uncertain Significance
+VAR1988,GENE0108,c.68_69delAG,Deletion,Likely Pathogenic
+VAR1989,GENE0866,V600E,Missense,Uncertain Significance
+VAR1990,GENE0291,T790M,Missense,Uncertain Significance
+VAR1991,GENE0967,F508del,Deletion,Likely Benign
+VAR1992,GENE0290,T790M,Missense,Uncertain Significance
+VAR1993,GENE1224,T790M,Missense,Likely Pathogenic
+VAR1994,GENE0287,Q61R,Missense,Likely Pathogenic
+VAR1995,GENE1253,G12D,Missense,Uncertain Significance
+VAR1996,GENE1258,Y220C,Missense,Uncertain Significance
+VAR1997,GENE0898,E545K,Missense,Benign
+VAR1998,GENE0952,G12D,Missense,Benign
+VAR1999,GENE1375,G12D,Missense,Uncertain Significance
+VAR2000,GENE1047,Q61R,Missense,Pathogenic

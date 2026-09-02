@@ -1,0 +1,4 @@
+gene_id,gene_symbol,gene_name,chromosome,function,protein
+GENE9999,TESTGENE1,Synthetic Test Gene Alpha,1,Experimental signal regulation,Test Protein Alpha
+GENE10000,TESTGENE2,Synthetic Test Gene Beta,2,Experimental metabolic pathway control,Test Protein Beta
+GENE10001,TESTGENE3,Synthetic Test Gene Gamma,3,Cell communication testing,Test Protein Gamma

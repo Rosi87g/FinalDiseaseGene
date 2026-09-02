@@ -1,0 +1,12 @@
+venv/
+.next/
+node_modules/
+__pycache__/
+.env
+.env.local
+
+# Android build artifacts
+android/app/build/
+android/.gradle/
+android/build/
+android/local.properties
