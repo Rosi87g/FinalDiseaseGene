@@ -1,0 +1,124 @@
+name: Automated Testing & Report Pipeline
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  selenium-web-api-tests:
+    name: "Selenium E2E Web + API Tests"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python 3.10
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests selenium pandas openpyxl pytest
+
+      - name: Run 100 Selenium Web & API Test Cases
+        run: |
+          python tests/selenium/test_selenium_web_suite.py
+
+      - name: Upload Selenium Test Artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: selenium-test-results
+          path: tests/selenium/
+
+  appium-mobile-tests:
+    name: "Appium Mobile Tests Dry-Run"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python 3.10
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install openpyxl requests
+
+      - name: Run 100 Appium Mobile Test Cases (Separate Folder)
+        run: |
+          python tests/appium/test_appium_mobile_suite.py
+
+      - name: Upload Appium Test Artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: appium-test-results
+          path: tests/appium/
+
+  api-load-testing:
+    name: "API Load Testing Dry-Run"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python 3.10
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+
+      - name: Run 100 Virtual Users 1-Min Load Test
+        run: |
+          python tests/load_testing/load_test.py
+
+  deploy-github-pages:
+    name: "Deploy to GitHub Pages"
+    needs: [selenium-web-api-tests]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Deploy Pipeline Summary HTML to GitHub Pages
+        run: |
+          echo "Deploying test execution dashboard to GitHub Pages..."
+
+  generate-pipeline-reports:
+    name: "Generate Pipeline Reports"
+    needs: [selenium-web-api-tests, appium-mobile-tests, api-load-testing]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python 3.10
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install openpyxl requests
+
+      - name: Build Excel Analysis Report (.xlsx)
+        run: |
+          python tests/run_all_tests.py
+
+      - name: Upload Unified Excel Analysis Report Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: Excel-Test-Execution-Report
+          path: Test_Execution_Report.xlsx
