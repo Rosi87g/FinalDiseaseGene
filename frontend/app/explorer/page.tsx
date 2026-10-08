@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect, useRef, Suspense } from 'react'
 import { useSearchParams } from 'next/navigation'
 import Link from 'next/link'
 import { createPortal } from 'react-dom'
@@ -257,7 +257,7 @@ function RecentSearchCard({ item, onClick, onRemove }: { item: RecentSearch; onC
 }
 
 // ─── Main Page ─────────────────────────────────────────────────────────────────
-export default function ExplorerPage() {
+function ExplorerContent() {
     const searchParams = useSearchParams()
     const initialSearch = searchParams.get('search')
 
@@ -509,5 +509,17 @@ export default function ExplorerPage() {
 
             <style>{`@keyframes spin { from { transform: rotate(0deg) } to { transform: rotate(360deg) } }`}</style>
         </div>
+    )
+}
+
+export default function ExplorerPage() {
+    return (
+        <Suspense fallback={
+            <div style={{ padding: '40px', textAlign: 'center', color: '#06b6d4', fontFamily: 'monospace' }}>
+                LOADING_EXPLORER_NODE...
+            </div>
+        }>
+            <ExplorerContent />
+        </Suspense>
     )
 }
