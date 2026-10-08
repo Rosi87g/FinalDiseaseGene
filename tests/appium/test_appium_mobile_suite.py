@@ -1,11 +1,9 @@
-"""
-Appium Mobile End-to-End Test Suite for FinalDiseaseGene Android Application
-Saved in dedicated folder: tests/appium/
-Contains 100 comprehensive Appium test cases testing Mobile UI, Gestures, Capacitors, Device Hardware, Navigation, & Responsiveness.
-"""
-
+import os
+import sys
 import time
 import unittest
+
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "../..")))
 
 class AppiumMobileE2ETestSuite(unittest.TestCase):
     @classmethod

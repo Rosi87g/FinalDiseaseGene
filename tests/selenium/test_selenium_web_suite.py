@@ -1,11 +1,10 @@
-"""
-Selenium Web & API End-to-End Test Suite for FinalDiseaseGene
-Contains 100 comprehensive test cases testing Web UI, REST API Endpoints, Data Schemas, Form Validation, & Security.
-"""
-
+import os
+import sys
 import time
 import requests
 import unittest
+
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "../..")))
 
 BASE_URL = "http://localhost:8000"
 

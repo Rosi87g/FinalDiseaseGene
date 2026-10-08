@@ -11,12 +11,14 @@ jobs:
   selenium-web-api-tests:
     name: "Selenium E2E Web + API Tests"
     runs-on: ubuntu-latest
+    env:
+      PYTHONPATH: .
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Set up Python 3.10
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: "3.10"
 
@@ -30,7 +32,7 @@ jobs:
           python tests/selenium/test_selenium_web_suite.py
 
       - name: Upload Selenium Test Artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: selenium-test-results
           path: tests/selenium/
@@ -38,12 +40,14 @@ jobs:
   appium-mobile-tests:
     name: "Appium Mobile Tests Dry-Run"
     runs-on: ubuntu-latest
+    env:
+      PYTHONPATH: .
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Set up Python 3.10
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: "3.10"
 
@@ -57,7 +61,7 @@ jobs:
           python tests/appium/test_appium_mobile_suite.py
 
       - name: Upload Appium Test Artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: appium-test-results
           path: tests/appium/
@@ -65,12 +69,14 @@ jobs:
   api-load-testing:
     name: "API Load Testing Dry-Run"
     runs-on: ubuntu-latest
+    env:
+      PYTHONPATH: .
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Set up Python 3.10
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: "3.10"
 
@@ -87,9 +93,10 @@ jobs:
     name: "Deploy to GitHub Pages"
     needs: [selenium-web-api-tests]
     runs-on: ubuntu-latest
+    if: always()
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Deploy Pipeline Summary HTML to GitHub Pages
         run: |
@@ -99,12 +106,15 @@ jobs:
     name: "Generate Pipeline Reports"
     needs: [selenium-web-api-tests, appium-mobile-tests, api-load-testing]
     runs-on: ubuntu-latest
+    if: always()
+    env:
+      PYTHONPATH: .
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Set up Python 3.10
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: "3.10"
 
@@ -118,7 +128,7 @@ jobs:
           python tests/run_all_tests.py
 
       - name: Upload Unified Excel Analysis Report Artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: Excel-Test-Execution-Report
           path: Test_Execution_Report.xlsx
