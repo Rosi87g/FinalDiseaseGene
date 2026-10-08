@@ -216,6 +216,7 @@ async def upload_dataset(
         dataset_type=dataset_type,
         row_count=row_count,
         file_path=file_path,
+        content=decoded,
     )
     db.add(upload)
     db.commit()
@@ -275,6 +276,9 @@ def get_upload_data(
 
     if not upload:
         raise HTTPException(status_code=404, detail="Upload not found")
+
+    if upload.content:
+        return list(csv.DictReader(io.StringIO(upload.content)))[skip: skip + limit]
 
     try:
         with open(upload.file_path, 'r', encoding='utf-8') as f:

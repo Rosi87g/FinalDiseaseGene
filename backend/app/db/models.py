@@ -249,6 +249,7 @@ class UserUpload(Base):
     dataset_type: Mapped[str] = mapped_column(String(50), nullable=False)  # genes/diseases/variants/custom
     row_count: Mapped[int] = mapped_column(Integer, default=0)
     file_path: Mapped[str] = mapped_column(String(500), nullable=False)
+    content: Mapped[Optional[str]] = mapped_column(Text, nullable=True)  # CSV text stored in DB so it survives restarts
     uploaded_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now())
 
     # Relationship

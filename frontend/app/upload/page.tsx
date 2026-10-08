@@ -34,6 +34,7 @@ interface ConflictRow {
 
 type ResolutionMode = 'skip' | 'overwrite' | 'merge'
 
+const API = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000'
 const getToken = () => typeof window !== 'undefined' ? localStorage.getItem('token') : null
 
 export default function UploadPage() {
@@ -52,34 +53,10 @@ export default function UploadPage() {
     const [resolution, setResolution]           = useState<ResolutionMode>('skip')
     const [conflictChecked, setConflictChecked] = useState(false)
 
-    // ─── Styles ───────────────────────────────────────────────────────────────
-
-    const card: React.CSSProperties = {
-        background: '#111827', border: '1px solid #1f2937',
-        borderRadius: '8px', padding: '20px', marginBottom: '12px', fontFamily: 'monospace',
-    }
-    const labelStyle: React.CSSProperties = {
-        fontSize: '9px', color: '#4b5563', letterSpacing: '1.5px',
-        display: 'block', marginBottom: '6px', textTransform: 'uppercase',
-    }
-    const inputStyle: React.CSSProperties = {
-        width: '100%', background: '#0d1117', border: '1px solid #1f2937',
-        color: '#d1d5db', fontSize: '12px', padding: '10px 14px',
-        borderRadius: '6px', fontFamily: 'monospace', outline: 'none', boxSizing: 'border-box',
-    }
-    const th: React.CSSProperties = {
-        fontSize: '9px', color: '#4b5563', letterSpacing: '1.5px',
-        textAlign: 'left', padding: '6px 10px', borderBottom: '1px solid #1f2937', fontWeight: 500,
-    }
-    const td: React.CSSProperties = {
-        fontSize: '11px', color: '#9ca3af', padding: '7px 10px',
-        borderBottom: '1px solid #111827', fontFamily: 'monospace', verticalAlign: 'top',
-    }
-
     // ─── Parse CSV to rows ────────────────────────────────────────────────────
 
     const parseCSV = (text: string): Record<string, string>[] => {
-        const lines = text.split('\n').filter(l => l.trim())
+        const lines = text.split(/\r?\n/).filter(l => l.trim())
         if (lines.length < 2) return []
         const headers = lines[0].split(',').map(h => h.trim().replace(/"/g, '').toLowerCase())
         return lines.slice(1).map(line => {
@@ -90,10 +67,19 @@ export default function UploadPage() {
         })
     }
 
+    const resetFileState = () => {
+        setFile(null)
+        setConflicts([])
+        setConflictChecked(false)
+        setParsedRows([])
+    }
+
     // ─── File change → parse + conflict check ────────────────────────────────
 
     const handleFileChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
         const f = e.target.files?.[0] || null
+        // Allow re-selecting the same file later (Android WebView needs this)
+        e.target.value = ''
         setFile(f)
         setError('')
         setSuccess(false)
@@ -103,8 +89,7 @@ export default function UploadPage() {
 
         if (!f) return
 
-        // Validate extension
-        if (!f.name.endsWith('.csv')) {
+        if (!f.name.toLowerCase().endsWith('.csv')) {
             setError('Only CSV files are supported.')
             return
         }
@@ -117,8 +102,7 @@ export default function UploadPage() {
             return
         }
 
-        // Validate headers
-        const firstLine = text.split('\n')[0]
+        const firstLine = text.split(/\r?\n/)[0]
         const headers = firstLine.split(',').map(h => h.trim().toLowerCase().replace(/"/g, ''))
         const required = UPLOAD_SCHEMAS[datasetType].columns
         const missing = required.filter(r => !headers.includes(r))
@@ -130,11 +114,10 @@ export default function UploadPage() {
         const rows = parseCSV(text)
         setParsedRows(rows)
 
-        // Run conflict check against backend
         setConflictLoading(true)
         try {
             const token = getToken()
-            const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/v1/uploads/check-conflicts`, {
+            const res = await fetch(`${API}/api/v1/uploads/check-conflicts`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -172,33 +155,32 @@ export default function UploadPage() {
             form.append('dataset_name', datasetName)
             form.append('dataset_type', datasetType)
             form.append('conflict_resolution', resolution)
-            // Send conflict IDs so backend knows which rows need resolution
-            const conflictIds = conflicts.map(c => c.id_value).join(',')
-            form.append('conflict_ids', conflictIds)
+            form.append('conflict_ids', conflicts.map(c => c.id_value).join(','))
 
-            const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/v1/uploads/`, {
+            const res = await fetch(`${API}/api/v1/uploads/`, {
                 method: 'POST',
                 headers: { ...(token ? { Authorization: `Bearer ${token}` } : {}) },
                 body: form,
             })
 
             if (!res.ok) {
-                const data = await res.json()
-                throw new Error(data.detail || 'Upload failed')
+                const data = await res.json().catch(() => ({}))
+                throw new Error(data.detail || `Upload failed (${res.status})`)
             }
 
             setSuccess(true)
             setDatasetName('')
-            setFile(null)
+            resetFileState()
             setDatasetType('genes')
-            setConflicts([])
-            setConflictChecked(false)
-            setParsedRows([])
 
             setTimeout(() => router.push('/my-uploads'), 1500)
-
         } catch (err: any) {
-            setError(err.message || 'Upload failed. Please try again.')
+            const msg = err?.message || ''
+            setError(
+                msg === 'Failed to fetch'
+                    ? 'Cannot reach the server. If it was idle, wait about a minute and try again.'
+                    : msg || 'Upload failed. Please try again.'
+            )
         } finally {
             setLoading(false)
         }
@@ -207,17 +189,15 @@ export default function UploadPage() {
     // ─── Diff cell renderer ───────────────────────────────────────────────────
 
     const renderDiffCell = (uploadedVal: string, existingVal: string) => {
-        const differs = uploadedVal?.trim() !== existingVal?.trim()
+        const differs = (uploadedVal || '').trim() !== (existingVal || '').trim()
         return (
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '3px' }}>
-                <div style={{ color: differs ? '#fbbf24' : '#9ca3af', fontSize: '11px' }}>
+            <div className="flex flex-col gap-0.5 break-words">
+                <div className={`text-[11px] ${differs ? 'text-amber-400' : 'text-gray-400'}`}>
                     {uploadedVal || '—'}
-                    {differs && <span style={{ fontSize: '9px', color: '#fbbf24', marginLeft: '4px' }}>↑ NEW</span>}
+                    {differs && <span className="text-[9px] text-amber-400 ml-1">↑ NEW</span>}
                 </div>
                 {differs && (
-                    <div style={{ color: '#4b5563', fontSize: '10px', textDecoration: 'line-through' }}>
-                        {existingVal || '—'}
-                    </div>
+                    <div className="text-[10px] text-gray-600 line-through">{existingVal || '—'}</div>
                 )}
             </div>
         )
@@ -226,50 +206,60 @@ export default function UploadPage() {
     const columns = UPLOAD_SCHEMAS[datasetType].columns
     const hasConflicts = conflicts.length > 0
     const cleanRows = parsedRows.length - conflicts.length
+    const blocked = loading || success || !!error || conflictLoading
+
+    const resolutionStyles: Record<ResolutionMode, { on: string }> = {
+        skip:      { on: 'border-gray-500 text-gray-300 bg-gray-500/20' },
+        overwrite: { on: 'border-red-400 text-red-400 bg-red-400/10' },
+        merge:     { on: 'border-emerald-400 text-emerald-400 bg-emerald-400/10' },
+    }
+
+    const card = 'bg-[#111827] border border-[#1f2937] rounded-lg p-4 sm:p-5 mb-3 font-mono'
+    const label = 'block text-[10px] text-gray-500 tracking-[1.5px] uppercase mb-1.5'
+    const field = 'w-full min-h-[44px] bg-[#0d1117] border border-[#1f2937] text-gray-300 text-[16px] sm:text-[12px] px-3.5 py-2.5 rounded-md font-mono outline-none focus:border-cyan-500/50 transition-colors'
 
     return (
-        <div style={{ background: '#060810', padding: '20px', borderRadius: '8px', minHeight: '600px', fontFamily: 'monospace' }}>
-
+        <div
+            className="bg-[#060810] p-3 sm:p-5 rounded-lg min-h-[600px] font-mono"
+            style={{ paddingBottom: 'max(1.5rem, env(safe-area-inset-bottom))' }}
+        >
             {/* Header */}
-            <div style={card}>
-                <div style={{ background: 'linear-gradient(90deg, #06b6d4, #34d399)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', fontSize: '13px', fontWeight: 500, letterSpacing: '2px', marginBottom: '4px' }}>
+            <div className={card}>
+                <div className="bg-gradient-to-r from-cyan-500 to-emerald-400 bg-clip-text text-transparent text-[13px] font-medium tracking-[2px] mb-1">
                     UPLOAD DATASET
                 </div>
-                <div style={{ color: '#4b5563', fontSize: '11px', letterSpacing: '1px' }}>
+                <div className="text-gray-500 text-[11px] tracking-wide leading-relaxed">
                     Upload a CSV file to add your own dataset. Must match the required column format.
                 </div>
             </div>
 
             {/* Form */}
-            <div style={card}>
+            <div className={card}>
 
                 {/* Dataset Name */}
-                <div style={{ marginBottom: '18px' }}>
-                    <label style={labelStyle}>Dataset Name</label>
+                <div className="mb-4">
+                    <label className={label} htmlFor="dataset-name">Dataset Name</label>
                     <input
-                        style={inputStyle}
+                        id="dataset-name"
+                        className={field}
                         placeholder="e.g. My Custom Gene Set"
                         value={datasetName}
                         onChange={e => { setDatasetName(e.target.value); setError('') }}
-                        onFocus={e => { (e.currentTarget as HTMLInputElement).style.borderColor = 'rgba(6,182,212,0.5)' }}
-                        onBlur={e => { (e.currentTarget as HTMLInputElement).style.borderColor = '#1f2937' }}
                     />
                 </div>
 
                 {/* Category */}
-                <div style={{ marginBottom: '18px' }}>
-                    <label style={labelStyle}>Category</label>
+                <div className="mb-4">
+                    <label className={label} htmlFor="dataset-type">Category</label>
                     <select
+                        id="dataset-type"
                         value={datasetType}
                         onChange={e => {
                             setDatasetType(e.target.value)
                             setError('')
-                            setFile(null)
-                            setConflicts([])
-                            setConflictChecked(false)
-                            setParsedRows([])
+                            resetFileState()
                         }}
-                        style={{ ...inputStyle, background: '#1f2937', border: '1px solid #374151', color: '#9ca3af' }}
+                        className={`${field} !bg-[#1f2937] !border-[#374151] !text-gray-400`}
                     >
                         {Object.keys(UPLOAD_SCHEMAS).map(k => (
                             <option key={k} value={k}>{k.charAt(0).toUpperCase() + k.slice(1)}</option>
@@ -278,75 +268,73 @@ export default function UploadPage() {
                 </div>
 
                 {/* Required columns hint */}
-                <div style={{ marginBottom: '18px', background: '#0d1117', border: '1px solid #1f2937', borderRadius: '6px', padding: '12px 14px' }}>
-                    <div style={{ fontSize: '9px', color: '#4b5563', letterSpacing: '1.5px', marginBottom: '6px', textTransform: 'uppercase' }}>
+                <div className="mb-4 bg-[#0d1117] border border-[#1f2937] rounded-md p-3">
+                    <div className="text-[10px] text-gray-500 tracking-[1.5px] mb-2 uppercase">
                         Required CSV Columns
                     </div>
-                    <div style={{ fontSize: '11px', color: '#06b6d4', lineHeight: '1.8', letterSpacing: '0.5px' }}>
-                        {UPLOAD_SCHEMAS[datasetType].columns.map((col, i) => (
-                            <span key={col}>
-                                <span style={{ color: '#34d399' }}>{col}</span>
-                                {i < UPLOAD_SCHEMAS[datasetType].columns.length - 1 && <span style={{ color: '#374151' }}>,  </span>}
+                    <div className="flex flex-wrap gap-1.5">
+                        {columns.map(col => (
+                            <span key={col} className="text-[11px] text-emerald-400 bg-emerald-400/5 border border-emerald-400/20 rounded px-1.5 py-0.5 break-all">
+                                {col}
                             </span>
                         ))}
                     </div>
-                    <div style={{ marginTop: '8px', fontSize: '11px', color: '#97a1b1' }}>
-                        ↑ Your CSV header row must contain exactly these column names.
+                    <div className="mt-2 text-[11px] text-gray-400 leading-snug">
+                        Your CSV header row must contain these column names.
                     </div>
                 </div>
 
-                {/* File picker */}
-                <div style={{ marginBottom: '18px' }}>
-                    <label style={labelStyle}>CSV File</label>
-                    <div
-                        style={{ border: '2px dashed #1f2937', borderRadius: '8px', padding: '30px 20px', textAlign: 'center', cursor: 'pointer', transition: 'border-color 0.2s', background: '#0d1117' }}
-                        onMouseEnter={e => { (e.currentTarget as HTMLDivElement).style.borderColor = 'rgba(6,182,212,0.4)' }}
-                        onMouseLeave={e => { (e.currentTarget as HTMLDivElement).style.borderColor = file ? 'rgba(52,211,153,0.4)' : '#1f2937' }}
-                        onClick={() => document.getElementById('csv-input')?.click()}
+                {/* File picker — <label> works reliably in Android WebView */}
+                <div className="mb-4">
+                    <span className={label}>CSV File</span>
+                    <label
+                        htmlFor="csv-input"
+                        className={`block cursor-pointer rounded-lg border-2 border-dashed bg-[#0d1117] px-4 py-7 sm:py-8 text-center transition-colors active:bg-[#111827] hover:border-cyan-500/40 ${file ? 'border-emerald-400/40' : 'border-[#1f2937]'}`}
                     >
                         {conflictLoading ? (
                             <div>
-                                <div style={{ fontSize: '12px', color: '#06b6d4', marginBottom: '4px' }}>CHECKING CONFLICTS...</div>
-                                <div style={{ fontSize: '10px', color: '#4b5563' }}>Comparing against existing database records</div>
+                                <div className="text-[12px] text-cyan-400 mb-1">CHECKING CONFLICTS...</div>
+                                <div className="text-[10px] text-gray-500">Comparing against existing database records</div>
                             </div>
                         ) : file ? (
                             <div>
-                                <FileText style={{ width: '24px', height: '24px', color: '#34d399', margin: '0 auto 8px' }} />
-                                <div style={{ fontSize: '12px', color: '#34d399' }}>{file.name}</div>
-                                <div style={{ fontSize: '10px', color: '#4b5563', marginTop: '4px' }}>
-                                    {(file.size / 1024).toFixed(1)} KB · {parsedRows.length} rows — Click to change
+                                <FileText className="w-6 h-6 text-emerald-400 mx-auto mb-2" />
+                                <div className="text-[12px] text-emerald-400 break-all">{file.name}</div>
+                                <div className="text-[10px] text-gray-500 mt-1">
+                                    {(file.size / 1024).toFixed(1)} KB · {parsedRows.length} rows
                                 </div>
+                                <div className="text-[10px] text-gray-600 mt-0.5">Tap to change</div>
                             </div>
                         ) : (
                             <div>
-                                <Upload style={{ width: '24px', height: '24px', color: '#374151', margin: '0 auto 8px' }} />
-                                <div style={{ fontSize: '12px', color: '#4b5563' }}>Click to select CSV file</div>
-                                <div style={{ fontSize: '10px', color: '#374151', marginTop: '4px' }}>Only .csv files supported</div>
+                                <Upload className="w-6 h-6 text-gray-600 mx-auto mb-2" />
+                                <div className="text-[12px] text-gray-500">Tap to select CSV file</div>
+                                <div className="text-[10px] text-gray-600 mt-1">Only .csv files supported</div>
                             </div>
                         )}
-                    </div>
+                    </label>
                     <input
                         id="csv-input"
                         type="file"
-                        accept=".csv"
-                        style={{ display: 'none' }}
+                        accept=".csv,text/csv,text/comma-separated-values,application/vnd.ms-excel"
+                        className="sr-only"
                         onChange={handleFileChange}
                     />
                 </div>
 
-                {/* Conflict-free summary */}
+                {/* Summary */}
                 {conflictChecked && !conflictLoading && file && !error && (
-                    <div style={{ marginBottom: '16px', display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
-                        <div style={{ flex: 1, padding: '10px 14px', background: 'rgba(52,211,153,0.05)', border: '1px solid rgba(52,211,153,0.2)', borderRadius: '6px', display: 'flex', alignItems: 'center', gap: '8px' }}>
-                            <CheckCircle style={{ width: '13px', height: '13px', color: '#34d399', flexShrink: 0 }} />
-                            <span style={{ fontSize: '11px', color: '#34d399' }}>
+                    <div className="mb-4 flex flex-col sm:flex-row gap-2">
+                        <div className="flex-1 px-3.5 py-2.5 bg-emerald-400/5 border border-emerald-400/20 rounded-md flex items-center gap-2">
+                            <CheckCircle className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
+                            <span className="text-[11px] text-emerald-400">
                                 <strong>{cleanRows}</strong> clean rows — ready to import
                             </span>
                         </div>
                         {hasConflicts && (
-                            <div style={{ flex: 1, padding: '10px 14px', background: 'rgba(251,191,36,0.05)', border: '1px solid rgba(251,191,36,0.25)', borderRadius: '6px', display: 'flex', alignItems: 'center', gap: '8px' }}>
-                                <AlertTriangle style={{ width: '13px', height: '13px', color: '#fbbf24', flexShrink: 0 }} />
-                                <span style={{ fontSize: '11px', color: '#fbbf24' }}>
+                            <div className="flex-1 px-3.5 py-2.5 bg-amber-400/5 border border-amber-400/25 rounded-md flex items-center gap-2">
+                                <AlertTriangle className="w-3.5 h-3.5 text-amber-400 shrink-0" />
+                                <span className="text-[11px] text-amber-400">
                                     <strong>{conflicts.length}</strong> conflicts detected — review below
                                 </span>
                             </div>
@@ -356,125 +344,94 @@ export default function UploadPage() {
 
                 {/* Error */}
                 {error && (
-                    <div style={{ marginBottom: '16px', padding: '10px 14px', background: 'rgba(248,113,113,0.05)', border: '1px solid rgba(248,113,113,0.2)', borderRadius: '6px', display: 'flex', alignItems: 'flex-start', gap: '8px' }}>
-                        <AlertCircle style={{ width: '14px', height: '14px', color: '#f87171', flexShrink: 0, marginTop: '1px' }} />
-                        <span style={{ fontSize: '11px', color: '#f87171' }}>{error}</span>
+                    <div className="mb-4 px-3.5 py-2.5 bg-red-400/5 border border-red-400/20 rounded-md flex items-start gap-2">
+                        <AlertCircle className="w-3.5 h-3.5 text-red-400 shrink-0 mt-px" />
+                        <span className="text-[11px] text-red-400 break-words min-w-0">{error}</span>
                     </div>
                 )}
 
                 {/* Success */}
                 {success && (
-                    <div style={{ marginBottom: '16px', padding: '10px 14px', background: 'rgba(52,211,153,0.05)', border: '1px solid rgba(52,211,153,0.2)', borderRadius: '6px', display: 'flex', alignItems: 'center', gap: '8px' }}>
-                        <CheckCircle style={{ width: '14px', height: '14px', color: '#34d399' }} />
-                        <span style={{ fontSize: '11px', color: '#34d399' }}>Upload successful! Redirecting to My Uploads...</span>
+                    <div className="mb-4 px-3.5 py-2.5 bg-emerald-400/5 border border-emerald-400/20 rounded-md flex items-center gap-2">
+                        <CheckCircle className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
+                        <span className="text-[11px] text-emerald-400">Upload successful! Redirecting to My Uploads...</span>
                     </div>
                 )}
 
                 {/* Submit */}
                 <button
                     onClick={handleSubmit}
-                    disabled={loading || success || !!error || conflictLoading}
-                    style={{
-                        width: '100%', padding: '12px',
-                        background: success ? 'rgba(52,211,153,0.1)' : loading ? '#1f2937' : '#06b6d4',
-                        color: success ? '#34d399' : loading ? '#4b5563' : '#000',
-                        fontSize: '11px', fontWeight: 700,
-                        border: success ? '1px solid rgba(52,211,153,0.3)' : 'none',
-                        borderRadius: '6px',
-                        cursor: (loading || success || !!error || conflictLoading) ? 'not-allowed' : 'pointer',
-                        letterSpacing: '2px', fontFamily: 'monospace', transition: 'background 0.2s',
-                        opacity: (!!error || conflictLoading) ? 0.5 : 1,
-                    }}
+                    disabled={blocked}
+                    className={`w-full min-h-[48px] rounded-md text-[11px] font-bold tracking-[2px] font-mono transition-colors ${
+                        success
+                            ? 'bg-emerald-400/10 text-emerald-400 border border-emerald-400/30'
+                            : loading
+                              ? 'bg-[#1f2937] text-gray-500'
+                              : 'bg-cyan-500 text-black active:bg-cyan-400'
+                    } ${blocked ? 'cursor-not-allowed' : 'cursor-pointer'} ${(!!error || conflictLoading) ? 'opacity-50' : ''}`}
                 >
                     {success ? '✓ UPLOAD_COMPLETE' : loading ? 'UPLOADING...' : 'EXECUTE_UPLOAD'}
                 </button>
             </div>
 
-            {/* ─── Conflict Panel ─────────────────────────────────────────────────── */}
+            {/* ─── Conflict Panel ──────────────────────────────────────────── */}
             {hasConflicts && !conflictLoading && (
-                <div style={{ background: '#111827', border: '1px solid rgba(251,191,36,0.3)', borderRadius: '8px', padding: '20px', marginBottom: '12px', fontFamily: 'monospace' }}>
+                <div className="bg-[#111827] border border-amber-400/30 rounded-lg p-4 sm:p-5 mb-3 font-mono">
 
-                    {/* Panel header */}
-                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '16px', flexWrap: 'wrap', gap: '8px' }}>
-                        <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                            <AlertTriangle style={{ width: '14px', height: '14px', color: '#fbbf24' }} />
-                            <span style={{ color: '#fbbf24', fontSize: '10px', letterSpacing: '2px' }}>
+                    <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-3 mb-4">
+                        <div className="flex items-start gap-2">
+                            <AlertTriangle className="w-3.5 h-3.5 text-amber-400 shrink-0 mt-0.5" />
+                            <span className="text-amber-400 text-[10px] tracking-[1.5px] leading-snug">
                                 CONFLICT REVIEW — {conflicts.length} record{conflicts.length !== 1 ? 's' : ''} already exist in database
                             </span>
                         </div>
 
-                        {/* Resolution selector */}
-                        <div style={{ display: 'flex', gap: '6px' }}>
-                            {(['skip', 'overwrite', 'merge'] as ResolutionMode[]).map(mode => {
-                                const active = resolution === mode
-                                const colors: Record<ResolutionMode, string> = {
-                                    skip:      '#4b5563',
-                                    overwrite: '#f87171',
-                                    merge:     '#34d399',
-                                }
-                                const activeBg: Record<ResolutionMode, string> = {
-                                    skip:      'rgba(75,85,99,0.2)',
-                                    overwrite: 'rgba(248,113,113,0.1)',
-                                    merge:     'rgba(52,211,153,0.1)',
-                                }
-                                return (
-                                    <button
-                                        key={mode}
-                                        onClick={() => setResolution(mode)}
-                                        style={{
-                                            fontSize: '9px', padding: '5px 12px', borderRadius: '4px',
-                                            border: `1px solid ${active ? colors[mode] : '#1f2937'}`,
-                                            color: active ? colors[mode] : '#4b5563',
-                                            background: active ? activeBg[mode] : 'transparent',
-                                            cursor: 'pointer', fontFamily: 'monospace', letterSpacing: '1px',
-                                            transition: 'all 0.15s',
-                                        }}
-                                    >
-                                        {mode.toUpperCase()}
-                                    </button>
-                                )
-                            })}
+                        <div className="grid grid-cols-3 gap-2 w-full md:w-auto">
+                            {(['skip', 'overwrite', 'merge'] as ResolutionMode[]).map(mode => (
+                                <button
+                                    key={mode}
+                                    onClick={() => setResolution(mode)}
+                                    className={`min-h-[40px] text-[10px] px-3 rounded border tracking-wider font-mono transition-colors ${
+                                        resolution === mode ? resolutionStyles[mode].on : 'border-[#1f2937] text-gray-500'
+                                    }`}
+                                >
+                                    {mode.toUpperCase()}
+                                </button>
+                            ))}
                         </div>
                     </div>
 
-                    {/* Resolution explanation */}
-                    <div style={{ marginBottom: '14px', padding: '8px 12px', background: '#0d1117', borderRadius: '4px', fontSize: '10px', color: '#6b7280', letterSpacing: '0.5px' }}>
+                    <div className="mb-4 px-3 py-2 bg-[#0d1117] rounded text-[10px] text-gray-500 tracking-wide leading-relaxed">
                         {resolution === 'skip'      && '⊘  SKIP — conflicting rows will NOT be imported. Existing database records stay unchanged.'}
                         {resolution === 'overwrite' && '↺  OVERWRITE — uploaded values will REPLACE the existing database records entirely.'}
                         {resolution === 'merge'     && '⊕  MERGE — only empty fields in the database will be filled from the uploaded data.'}
                     </div>
 
-                    {/* Diff table */}
-                    <div style={{ overflowX: 'auto' }}>
-                        <table style={{ width: '100%', borderCollapse: 'collapse', minWidth: '600px' }}>
+                    {/* Desktop / tablet: table */}
+                    <div className="hidden md:block overflow-x-auto">
+                        <table className="w-full border-collapse min-w-[600px]">
                             <thead>
                                 <tr>
-                                    <th style={{ ...th, color: '#fbbf24' }}>CONFLICT</th>
+                                    <th className="text-[9px] text-amber-400 tracking-[1.5px] text-left px-2.5 py-1.5 border-b border-[#1f2937] font-medium">CONFLICT</th>
                                     {columns.map(col => (
-                                        <th key={col} style={th}>{col.toUpperCase()}</th>
+                                        <th key={col} className="text-[9px] text-gray-500 tracking-[1.5px] text-left px-2.5 py-1.5 border-b border-[#1f2937] font-medium">
+                                            {col.toUpperCase()}
+                                        </th>
                                     ))}
                                 </tr>
                             </thead>
                             <tbody>
                                 {conflicts.map((conflict, i) => (
                                     <tr key={i}>
-                                        {/* Status badge */}
-                                        <td style={{ ...td, whiteSpace: 'nowrap' }}>
-                                            <div style={{ display: 'flex', flexDirection: 'column', gap: '3px' }}>
-                                                <span style={{ fontSize: '9px', padding: '2px 6px', borderRadius: '3px', background: 'rgba(251,191,36,0.1)', color: '#fbbf24', letterSpacing: '1px' }}>
-                                                    ⚠ EXISTS
-                                                </span>
-                                                <span style={{ fontSize: '9px', color: '#4b5563' }}>{conflict.id_value}</span>
+                                        <td className="px-2.5 py-2 border-b border-[#111827] align-top whitespace-nowrap">
+                                            <div className="flex flex-col gap-0.5">
+                                                <span className="text-[9px] px-1.5 py-0.5 rounded bg-amber-400/10 text-amber-400 tracking-wider">⚠ EXISTS</span>
+                                                <span className="text-[9px] text-gray-500">{conflict.id_value}</span>
                                             </div>
                                         </td>
-
-                                        {/* Per-column diff */}
                                         {columns.map(col => (
-                                            <td key={col} style={td}>
-                                                {renderDiffCell(
-                                                    conflict.uploaded[col] || '',
-                                                    conflict.existing[col] || ''
-                                                )}
+                                            <td key={col} className="px-2.5 py-2 border-b border-[#111827] align-top">
+                                                {renderDiffCell(conflict.uploaded[col] || '', conflict.existing[col] || '')}
                                             </td>
                                         ))}
                                     </tr>
@@ -483,19 +440,39 @@ export default function UploadPage() {
                         </table>
                     </div>
 
+                    {/* Mobile: one card per conflict */}
+                    <div className="md:hidden space-y-3">
+                        {conflicts.map((conflict, i) => (
+                            <div key={i} className="bg-[#0d1117] border border-[#1f2937] rounded-md p-3">
+                                <div className="flex items-center justify-between gap-2 mb-2 pb-2 border-b border-[#1f2937]">
+                                    <span className="text-[9px] px-1.5 py-0.5 rounded bg-amber-400/10 text-amber-400 tracking-wider shrink-0">⚠ EXISTS</span>
+                                    <span className="text-[11px] text-cyan-400 break-all text-right">{conflict.id_value}</span>
+                                </div>
+                                <div className="space-y-2">
+                                    {columns.map(col => (
+                                        <div key={col} className="grid grid-cols-[88px_1fr] gap-2">
+                                            <span className="text-[9px] text-gray-500 tracking-wider uppercase pt-0.5 break-words">{col}</span>
+                                            {renderDiffCell(conflict.uploaded[col] || '', conflict.existing[col] || '')}
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+
                     {/* Legend */}
-                    <div style={{ marginTop: '12px', display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
-                        <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-                            <span style={{ fontSize: '11px', color: '#fbbf24' }}>value ↑ NEW</span>
-                            <span style={{ fontSize: '10px', color: '#4b5563' }}>= uploaded (differs)</span>
+                    <div className="mt-3 flex flex-col sm:flex-row sm:flex-wrap gap-1.5 sm:gap-4">
+                        <div className="flex items-center gap-1.5">
+                            <span className="text-[11px] text-amber-400">value ↑ NEW</span>
+                            <span className="text-[10px] text-gray-500">= uploaded (differs)</span>
                         </div>
-                        <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-                            <span style={{ fontSize: '11px', color: '#4b5563', textDecoration: 'line-through' }}>value</span>
-                            <span style={{ fontSize: '10px', color: '#4b5563' }}>= existing (will be replaced on overwrite)</span>
+                        <div className="flex items-center gap-1.5">
+                            <span className="text-[11px] text-gray-500 line-through">value</span>
+                            <span className="text-[10px] text-gray-500">= existing (replaced on overwrite)</span>
                         </div>
-                        <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-                            <span style={{ fontSize: '11px', color: '#9ca3af' }}>value</span>
-                            <span style={{ fontSize: '10px', color: '#4b5563' }}>= same in both</span>
+                        <div className="flex items-center gap-1.5">
+                            <span className="text-[11px] text-gray-400">value</span>
+                            <span className="text-[10px] text-gray-500">= same in both</span>
                         </div>
                     </div>
                 </div>
@@ -503,11 +480,11 @@ export default function UploadPage() {
 
             {/* No conflicts confirmed */}
             {conflictChecked && !hasConflicts && !conflictLoading && file && !error && (
-                <div style={{ background: '#111827', border: '1px solid rgba(52,211,153,0.2)', borderRadius: '8px', padding: '16px', marginBottom: '12px', display: 'flex', alignItems: 'center', gap: '10px' }}>
-                    <CheckCircle style={{ width: '16px', height: '16px', color: '#34d399', flexShrink: 0 }} />
+                <div className="bg-[#111827] border border-emerald-400/20 rounded-lg p-4 mb-3 flex items-center gap-2.5">
+                    <CheckCircle className="w-4 h-4 text-emerald-400 shrink-0" />
                     <div>
-                        <div style={{ fontSize: '10px', color: '#34d399', letterSpacing: '1.5px', marginBottom: '2px' }}>NO CONFLICTS DETECTED</div>
-                        <div style={{ fontSize: '11px', color: '#4b5563' }}>All {parsedRows.length} rows are new records — safe to upload.</div>
+                        <div className="text-[10px] text-emerald-400 tracking-[1.5px] mb-0.5">NO CONFLICTS DETECTED</div>
+                        <div className="text-[11px] text-gray-500">All {parsedRows.length} rows are new records — safe to upload.</div>
                     </div>
                 </div>
             )}

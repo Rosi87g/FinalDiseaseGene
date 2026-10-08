@@ -23,6 +23,7 @@ const COLUMN_MAP: Record<string, { key: string; label: string; color?: string }[
     pathways:     [{ key: 'pathway_id', label: 'PATHWAY_ID', color: '#06b6d4' }, { key: 'pathway_name', label: 'NAME' }, { key: 'description', label: 'DESCRIPTION' }],
 }
 
+const API = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000'
 const ITEMS_PER_PAGE = 10
 const getToken = () => typeof window !== 'undefined' ? localStorage.getItem('token') : null
 
@@ -39,34 +40,39 @@ const TYPE_COLORS: Record<string, { bg: string; color: string }> = {
 export default function MyUploadsPage() {
     const [uploads, setUploads] = useState<UploadRecord[]>([])
     const [loading, setLoading] = useState(true)
+    const [loadError, setLoadError] = useState('')
     const [expandedId, setExpandedId] = useState<string | null>(null)
     const [previewRows, setPreviewRows] = useState<Record<string, unknown>[]>([])
     const [previewLoading, setPreviewLoading] = useState(false)
     const [previewPage, setPreviewPage] = useState(1)
     const [deleteConfirm, setDeleteConfirm] = useState<string | null>(null)
 
-    const card: React.CSSProperties = {
-        background: '#111827',
-        border: '1px solid #1f2937',
-        borderRadius: '8px',
-        padding: '20px',
-        marginBottom: '12px',
-        fontFamily: 'monospace',
+    const authHeaders = (): Record<string, string> => {
+        const token = getToken()
+        return token ? { Authorization: `Bearer ${token}` } : {}
     }
 
     const fetchUploads = async () => {
         setLoading(true)
+        setLoadError('')
         try {
-            const token = getToken()
-            const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/v1/uploads/`, {
-                headers: { ...(token ? { Authorization: `Bearer ${token}` } : {}) }
-            })
+            const res = await fetch(`${API}/api/v1/uploads/`, { headers: authHeaders() })
             if (res.ok) {
                 const data = await res.json()
                 setUploads(Array.isArray(data) ? data : [])
+            } else if (res.status === 401) {
+                setUploads([])
+                setLoadError('Please sign in to see your uploads.')
+            } else {
+                setUploads([])
+                setLoadError(`Could not load uploads (${res.status}).`)
             }
-        } catch { setUploads([]) }
-        finally { setLoading(false) }
+        } catch {
+            setUploads([])
+            setLoadError('Cannot reach the server. If it was idle, wait about a minute and refresh.')
+        } finally {
+            setLoading(false)
+        }
     }
 
     useEffect(() => { fetchUploads() }, [])
@@ -80,10 +86,7 @@ export default function MyUploadsPage() {
         setPreviewPage(1)
         setPreviewLoading(true)
         try {
-            const token = getToken()
-            const res = await fetch(`/api/v1/uploads/${uploadId}/data`, {
-                headers: { ...(token ? { Authorization: `Bearer ${token}` } : {}) }
-            })
+            const res = await fetch(`${API}/api/v1/uploads/${uploadId}/data`, { headers: authHeaders() })
             if (res.ok) setPreviewRows(await res.json())
         } catch { setPreviewRows([]) }
         finally { setPreviewLoading(false) }
@@ -91,11 +94,7 @@ export default function MyUploadsPage() {
 
     const handleDelete = async (uploadId: string) => {
         try {
-            const token = getToken()
-            await fetch(`/api/v1/uploads/${uploadId}`, {
-                method: 'DELETE',
-                headers: { ...(token ? { Authorization: `Bearer ${token}` } : {}) }
-            })
+            await fetch(`${API}/api/v1/uploads/${uploadId}`, { method: 'DELETE', headers: authHeaders() })
             setUploads(prev => prev.filter(u => u.upload_id !== uploadId))
             if (expandedId === uploadId) { setExpandedId(null); setPreviewRows([]) }
             setDeleteConfirm(null)
@@ -106,33 +105,35 @@ export default function MyUploadsPage() {
         const d = new Date(iso)
         return d.toLocaleString('en-GB', {
             day: '2-digit', month: 'short', year: 'numeric',
-            hour: '2-digit', minute: '2-digit', second: '2-digit'
+            hour: '2-digit', minute: '2-digit',
         })
     }
-
-    const th: React.CSSProperties = { fontSize: '10px', color: '#4b5563', letterSpacing: '1.5px', textAlign: 'left', padding: '6px 10px', borderBottom: '1px solid #1f2937', fontWeight: 500 }
-    const td: React.CSSProperties = { fontSize: '11px', color: '#9ca3af', padding: '8px 10px', borderBottom: '1px solid #111827', fontFamily: 'monospace' }
 
     const totalPages = Math.ceil(previewRows.length / ITEMS_PER_PAGE)
     const previewSlice = previewRows.slice((previewPage - 1) * ITEMS_PER_PAGE, previewPage * ITEMS_PER_PAGE)
 
-    return (
-        <div style={{ background: '#060810', padding: '20px', borderRadius: '8px', minHeight: '600px', fontFamily: 'monospace' }}>
+    const card = 'bg-[#111827] border border-[#1f2937] rounded-lg p-3 sm:p-5 mb-3 font-mono'
+    const navBtn = 'min-h-[40px] text-[10px] px-3.5 rounded border border-[#1f2937] bg-[#0d1117] font-mono'
 
+    return (
+        <div
+            className="bg-[#060810] p-3 sm:p-5 rounded-lg min-h-[600px] font-mono"
+            style={{ paddingBottom: 'max(1.5rem, env(safe-area-inset-bottom))' }}
+        >
             {/* Header */}
-            <div style={card}>
-                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '8px' }}>
+            <div className={card}>
+                <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
                     <div>
-                        <div style={{ background: 'linear-gradient(90deg, #06b6d4, #34d399)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', fontSize: '13px', fontWeight: 500, letterSpacing: '2px', marginBottom: '4px' }}>
+                        <div className="bg-gradient-to-r from-cyan-500 to-emerald-400 bg-clip-text text-transparent text-[13px] font-medium tracking-[2px] mb-1">
                             MY UPLOADS
                         </div>
-                        <div style={{ color: '#4b5563', fontSize: '11px', letterSpacing: '1px' }}>
+                        <div className="text-gray-500 text-[11px] tracking-wide leading-relaxed">
                             Your uploaded datasets with timestamps and row previews.
                         </div>
                     </div>
                     <Link
                         href="/upload"
-                        style={{ fontSize: '10px', padding: '6px 14px', borderRadius: '4px', border: '1px solid rgba(52,211,153,0.4)', color: '#34d399', background: 'rgba(52,211,153,0.05)', cursor: 'pointer', fontFamily: 'monospace', letterSpacing: '1px', textDecoration: 'none', display: 'inline-block' }}
+                        className="inline-flex items-center justify-center min-h-[44px] sm:min-h-[36px] text-[11px] sm:text-[10px] px-4 rounded border border-emerald-400/40 text-emerald-400 bg-emerald-400/5 tracking-wider no-underline active:bg-emerald-400/15 shrink-0"
                     >
                         + NEW UPLOAD
                     </Link>
@@ -140,101 +141,142 @@ export default function MyUploadsPage() {
             </div>
 
             {/* Content */}
-            <div style={card}>
+            <div className={card}>
                 {loading ? (
-                    <div style={{ padding: '40px', textAlign: 'center', color: '#4b5563', fontSize: '11px', letterSpacing: '2px' }}>
-                        LOADING_UPLOADS...
+                    <div className="py-10 text-center text-gray-500 text-[11px] tracking-[2px]">LOADING_UPLOADS...</div>
+                ) : loadError ? (
+                    <div className="border border-red-400/20 bg-red-400/5 rounded-md p-4 text-center">
+                        <p className="text-red-400 text-[11px] leading-relaxed mb-3 break-words">{loadError}</p>
+                        <button
+                            onClick={fetchUploads}
+                            className="min-h-[40px] px-4 text-[10px] rounded border border-red-400/40 text-red-400 tracking-wider font-mono"
+                        >
+                            RETRY
+                        </button>
                     </div>
                 ) : uploads.length === 0 ? (
-                    <div style={{ border: '1px dashed #1f2937', borderRadius: '6px', padding: '50px', textAlign: 'center' }}>
-                        <FolderOpen style={{ width: '32px', height: '32px', color: '#1f2937', margin: '0 auto 12px' }} />
-                        <p style={{ color: '#374151', fontSize: '11px', letterSpacing: '2px', marginBottom: '16px' }}>NO_UPLOADS_FOUND</p>
-                        <Link href="/upload" style={{ fontSize: '10px', padding: '8px 16px', borderRadius: '4px', border: '1px solid rgba(52,211,153,0.4)', color: '#34d399', background: 'transparent', fontFamily: 'monospace', letterSpacing: '1px', textDecoration: 'none' }}>
+                    <div className="border border-dashed border-[#1f2937] rounded-md px-4 py-10 sm:py-12 text-center">
+                        <FolderOpen className="w-8 h-8 text-gray-700 mx-auto mb-3" />
+                        <p className="text-gray-600 text-[11px] tracking-[2px] mb-4">NO_UPLOADS_FOUND</p>
+                        <Link
+                            href="/upload"
+                            className="inline-flex items-center justify-center min-h-[44px] text-[10px] px-4 rounded border border-emerald-400/40 text-emerald-400 tracking-wider no-underline"
+                        >
                             + UPLOAD YOUR FIRST DATASET
                         </Link>
                     </div>
                 ) : (
-                    <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                    <div className="flex flex-col gap-2">
                         {uploads.map(u => {
                             const tc = TYPE_COLORS[u.dataset_type] || TYPE_COLORS.genes
                             const isExpanded = expandedId === u.upload_id
                             const cols = COLUMN_MAP[u.dataset_type] || []
 
                             return (
-                                <div key={u.upload_id} style={{ border: `1px solid ${isExpanded ? '#06b6d4' : '#1f2937'}`, borderRadius: '6px', overflow: 'hidden', transition: 'border-color 0.2s' }}>
-
+                                <div
+                                    key={u.upload_id}
+                                    className={`border rounded-md overflow-hidden transition-colors ${isExpanded ? 'border-cyan-500' : 'border-[#1f2937]'}`}
+                                >
                                     {/* Row header */}
-                                    <div style={{ background: isExpanded ? '#0e2936' : '#0d1117', padding: '12px 14px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '8px' }}>
+                                    <div className={`${isExpanded ? 'bg-[#0e2936]' : 'bg-[#0d1117]'} p-3 flex flex-col gap-3 lg:flex-row lg:items-center lg:justify-between`}>
 
-                                        {/* Left info */}
-                                        <div style={{ display: 'flex', alignItems: 'center', gap: '10px', flexWrap: 'wrap', flex: 1, minWidth: 0 }}>
-                                            <span style={{ fontSize: '9px', padding: '2px 8px', borderRadius: '3px', background: tc.bg, color: tc.color, letterSpacing: '1px', textTransform: 'uppercase', flexShrink: 0 }}>
-                                                {u.dataset_type}
-                                            </span>
-                                            <span style={{ fontSize: '12px', color: '#e5e7eb', fontWeight: 600 }}>{u.dataset_name}</span>
-                                            <span style={{ fontSize: '10px', color: '#4b5563' }}>{u.filename}</span>
+                                        {/* Info */}
+                                        <div className="min-w-0 flex-1">
+                                            <div className="flex items-center justify-between gap-2 mb-1.5 lg:justify-start lg:gap-3 lg:mb-0 lg:flex-wrap">
+                                                <span
+                                                    className="text-[9px] px-2 py-0.5 rounded tracking-wider uppercase shrink-0"
+                                                    style={{ background: tc.bg, color: tc.color }}
+                                                >
+                                                    {u.dataset_type}
+                                                </span>
+                                                <span className="text-[11px] text-emerald-400 lg:order-last">
+                                                    {u.row_count.toLocaleString()} rows
+                                                </span>
+                                                <span className="hidden lg:inline text-[12px] text-gray-200 font-semibold break-words">{u.dataset_name}</span>
+                                                <span className="hidden lg:inline text-[10px] text-gray-500 break-all">{u.filename}</span>
+                                            </div>
+                                            <div className="lg:hidden">
+                                                <div className="text-[13px] text-gray-200 font-semibold break-words leading-snug">{u.dataset_name}</div>
+                                                <div className="text-[10px] text-gray-500 break-all mt-0.5">{u.filename}</div>
+                                            </div>
                                         </div>
 
-                                        {/* Right meta */}
-                                        <div style={{ display: 'flex', alignItems: 'center', gap: '12px', flexShrink: 0 }}>
-                                            <span style={{ fontSize: '10px', color: '#34d399' }}>{u.row_count.toLocaleString()} rows</span>
-
-                                            {/* Timestamp badge */}
-                                            <span style={{ fontSize: '10px', color: '#4b5563', background: '#060810', border: '1px solid #1f2937', padding: '3px 8px', borderRadius: '4px', letterSpacing: '0.5px' }}>
+                                        {/* Meta + actions */}
+                                        <div className="flex flex-col gap-2.5 sm:flex-row sm:items-center lg:gap-3 shrink-0">
+                                            <span className="text-[10px] text-gray-500 bg-[#060810] border border-[#1f2937] px-2 py-1 rounded tracking-wide self-start sm:self-auto whitespace-nowrap">
                                                 🕐 {formatDate(u.uploaded_at)}
                                             </span>
 
-                                            {/* Preview toggle */}
-                                            <button
-                                                onClick={() => loadPreview(u.upload_id)}
-                                                style={{ fontSize: '9px', padding: '4px 10px', borderRadius: '3px', border: `1px solid ${isExpanded ? '#06b6d4' : 'rgba(6,182,212,0.3)'}`, color: isExpanded ? '#06b6d4' : '#4b5563', background: 'transparent', cursor: 'pointer', fontFamily: 'monospace', letterSpacing: '1px', display: 'flex', alignItems: 'center', gap: '4px' }}
-                                            >
-                                                {isExpanded ? <ChevronUp style={{ width: '10px', height: '10px' }} /> : <ChevronDown style={{ width: '10px', height: '10px' }} />}
-                                                {isExpanded ? 'HIDE' : 'PREVIEW'}
-                                            </button>
-
-                                            {/* Delete */}
-                                            {deleteConfirm === u.upload_id ? (
-                                                <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-                                                    <span style={{ fontSize: '9px', color: '#f87171' }}>Sure?</span>
-                                                    <button onClick={() => handleDelete(u.upload_id)} style={{ fontSize: '9px', padding: '3px 8px', borderRadius: '3px', border: '1px solid rgba(248,113,113,0.5)', color: '#f87171', background: 'rgba(248,113,113,0.05)', cursor: 'pointer', fontFamily: 'monospace' }}>YES</button>
-                                                    <button onClick={() => setDeleteConfirm(null)} style={{ fontSize: '9px', padding: '3px 8px', borderRadius: '3px', border: '1px solid #1f2937', color: '#4b5563', background: 'transparent', cursor: 'pointer', fontFamily: 'monospace' }}>NO</button>
-                                                </div>
-                                            ) : (
+                                            <div className="flex items-center gap-2">
                                                 <button
-                                                    onClick={() => setDeleteConfirm(u.upload_id)}
-                                                    style={{ background: 'none', border: 'none', cursor: 'pointer', padding: '4px', color: '#374151' }}
-                                                    onMouseEnter={e => { (e.currentTarget as HTMLButtonElement).style.color = '#f87171' }}
-                                                    onMouseLeave={e => { (e.currentTarget as HTMLButtonElement).style.color = '#374151' }}
+                                                    onClick={() => loadPreview(u.upload_id)}
+                                                    className={`flex-1 sm:flex-none min-h-[40px] lg:min-h-[32px] px-3.5 text-[10px] rounded border flex items-center justify-center gap-1 tracking-wider font-mono ${
+                                                        isExpanded ? 'border-cyan-500 text-cyan-400' : 'border-cyan-500/30 text-gray-400'
+                                                    }`}
                                                 >
-                                                    <Trash2 style={{ width: '13px', height: '13px' }} />
+                                                    {isExpanded ? <ChevronUp className="w-3 h-3" /> : <ChevronDown className="w-3 h-3" />}
+                                                    {isExpanded ? 'HIDE' : 'PREVIEW'}
                                                 </button>
-                                            )}
+
+                                                {deleteConfirm === u.upload_id ? (
+                                                    <div className="flex items-center gap-1.5">
+                                                        <span className="text-[10px] text-red-400">Sure?</span>
+                                                        <button
+                                                            onClick={() => handleDelete(u.upload_id)}
+                                                            className="min-h-[40px] lg:min-h-[32px] px-3 text-[10px] rounded border border-red-400/50 text-red-400 bg-red-400/5 font-mono"
+                                                        >
+                                                            YES
+                                                        </button>
+                                                        <button
+                                                            onClick={() => setDeleteConfirm(null)}
+                                                            className="min-h-[40px] lg:min-h-[32px] px-3 text-[10px] rounded border border-[#1f2937] text-gray-500 font-mono"
+                                                        >
+                                                            NO
+                                                        </button>
+                                                    </div>
+                                                ) : (
+                                                    <button
+                                                        onClick={() => setDeleteConfirm(u.upload_id)}
+                                                        aria-label="Delete upload"
+                                                        className="min-w-[44px] min-h-[40px] lg:min-w-[32px] lg:min-h-[32px] flex items-center justify-center rounded border border-[#1f2937] sm:border-transparent text-gray-600 hover:text-red-400 active:text-red-400"
+                                                    >
+                                                        <Trash2 className="w-4 h-4 lg:w-3.5 lg:h-3.5" />
+                                                    </button>
+                                                )}
+                                            </div>
                                         </div>
                                     </div>
 
-                                    {/* Preview rows */}
+                                    {/* Preview */}
                                     {isExpanded && (
-                                        <div style={{ borderTop: '1px solid #1f2937', background: '#060810', padding: '12px' }}>
+                                        <div className="border-t border-[#1f2937] bg-[#060810] p-2.5 sm:p-3">
                                             {previewLoading ? (
-                                                <div style={{ padding: '20px', textAlign: 'center', color: '#4b5563', fontSize: '11px', letterSpacing: '1px' }}>LOADING_PREVIEW...</div>
+                                                <div className="py-5 text-center text-gray-500 text-[11px] tracking-wider">LOADING_PREVIEW...</div>
                                             ) : previewRows.length === 0 ? (
-                                                <div style={{ padding: '20px', textAlign: 'center', color: '#374151', fontSize: '11px' }}>NO_DATA_FOUND</div>
+                                                <div className="py-5 text-center text-gray-600 text-[11px]">NO_DATA_FOUND</div>
                                             ) : (
                                                 <>
-                                                    <div style={{ overflowX: 'auto' }}>
-                                                        <table style={{ width: '100%', borderCollapse: 'collapse', minWidth: '400px' }}>
+                                                    {/* Desktop / tablet: table */}
+                                                    <div className="hidden md:block overflow-x-auto">
+                                                        <table className="w-full border-collapse min-w-[400px]">
                                                             <thead>
-                                                                <tr>{cols.map(c => <th key={c.key} style={th}>{c.label}</th>)}</tr>
+                                                                <tr>
+                                                                    {cols.map(c => (
+                                                                        <th key={c.key} className="text-[10px] text-gray-600 tracking-[1.5px] text-left px-2.5 py-1.5 border-b border-[#1f2937] font-medium">
+                                                                            {c.label}
+                                                                        </th>
+                                                                    ))}
+                                                                </tr>
                                                             </thead>
                                                             <tbody>
                                                                 {previewSlice.map((row, i) => (
-                                                                    <tr key={i}
-                                                                        onMouseEnter={e => Array.from((e.currentTarget as HTMLTableRowElement).cells).forEach(c => { (c as HTMLTableCellElement).style.background = '#0f1a25' })}
-                                                                        onMouseLeave={e => Array.from((e.currentTarget as HTMLTableRowElement).cells).forEach(c => { (c as HTMLTableCellElement).style.background = '' })}
-                                                                    >
+                                                                    <tr key={i} className="hover:bg-[#0f1a25]">
                                                                         {cols.map(c => (
-                                                                            <td key={c.key} style={{ ...td, ...(c.color ? { color: c.color } : {}) }}>
+                                                                            <td
+                                                                                key={c.key}
+                                                                                className="text-[11px] text-gray-400 px-2.5 py-2 border-b border-[#111827] font-mono"
+                                                                                style={c.color ? { color: c.color } : undefined}
+                                                                            >
                                                                                 {row[c.key] as string}
                                                                             </td>
                                                                         ))}
@@ -244,16 +286,47 @@ export default function MyUploadsPage() {
                                                         </table>
                                                     </div>
 
-                                                    {/* Preview pagination */}
+                                                    {/* Mobile: one card per row */}
+                                                    <div className="md:hidden space-y-2">
+                                                        {previewSlice.map((row, i) => (
+                                                            <div key={i} className="bg-[#0d1117] border border-[#1f2937] rounded-md p-2.5 space-y-1.5">
+                                                                {cols.map(c => (
+                                                                    <div key={c.key} className="grid grid-cols-[84px_1fr] gap-2">
+                                                                        <span className="text-[9px] text-gray-600 tracking-wider uppercase pt-0.5 break-words">{c.label}</span>
+                                                                        <span
+                                                                            className="text-[11px] text-gray-400 break-words min-w-0"
+                                                                            style={c.color ? { color: c.color } : undefined}
+                                                                        >
+                                                                            {(row[c.key] as string) || '—'}
+                                                                        </span>
+                                                                    </div>
+                                                                ))}
+                                                            </div>
+                                                        ))}
+                                                    </div>
+
+                                                    {/* Pagination */}
                                                     {totalPages > 1 && (
-                                                        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginTop: '10px', flexWrap: 'wrap', gap: '8px' }}>
-                                                            <span style={{ fontSize: '10px', color: '#4b5563' }}>
-                                                                Showing <span style={{ color: '#06b6d4' }}>{(previewPage - 1) * ITEMS_PER_PAGE + 1}–{Math.min(previewPage * ITEMS_PER_PAGE, previewRows.length)}</span> of <span style={{ color: '#06b6d4' }}>{previewRows.length}</span> rows
+                                                        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2.5 mt-3">
+                                                            <span className="text-[10px] text-gray-500 text-center sm:text-left">
+                                                                Showing <span className="text-cyan-400">{(previewPage - 1) * ITEMS_PER_PAGE + 1}–{Math.min(previewPage * ITEMS_PER_PAGE, previewRows.length)}</span> of <span className="text-cyan-400">{previewRows.length}</span> rows
                                                             </span>
-                                                            <div style={{ display: 'flex', gap: '4px' }}>
-                                                                <button disabled={previewPage === 1} onClick={() => setPreviewPage(p => p - 1)} style={{ fontSize: '10px', padding: '4px 10px', borderRadius: '4px', border: '1px solid #1f2937', color: previewPage === 1 ? '#374151' : '#6b7280', background: '#0d1117', cursor: previewPage === 1 ? 'not-allowed' : 'pointer', fontFamily: 'monospace' }}>← PREV</button>
-                                                                <span style={{ fontSize: '10px', color: '#4b5563', padding: '4px 8px', fontFamily: 'monospace' }}>{previewPage} / {totalPages}</span>
-                                                                <button disabled={previewPage === totalPages} onClick={() => setPreviewPage(p => p + 1)} style={{ fontSize: '10px', padding: '4px 10px', borderRadius: '4px', border: '1px solid #1f2937', color: previewPage === totalPages ? '#374151' : '#6b7280', background: '#0d1117', cursor: previewPage === totalPages ? 'not-allowed' : 'pointer', fontFamily: 'monospace' }}>NEXT →</button>
+                                                            <div className="flex items-center justify-center gap-2">
+                                                                <button
+                                                                    disabled={previewPage === 1}
+                                                                    onClick={() => setPreviewPage(p => p - 1)}
+                                                                    className={`${navBtn} ${previewPage === 1 ? 'text-gray-700 cursor-not-allowed' : 'text-gray-400'}`}
+                                                                >
+                                                                    ← PREV
+                                                                </button>
+                                                                <span className="text-[10px] text-gray-500 px-1">{previewPage} / {totalPages}</span>
+                                                                <button
+                                                                    disabled={previewPage === totalPages}
+                                                                    onClick={() => setPreviewPage(p => p + 1)}
+                                                                    className={`${navBtn} ${previewPage === totalPages ? 'text-gray-700 cursor-not-allowed' : 'text-gray-400'}`}
+                                                                >
+                                                                    NEXT →
+                                                                </button>
                                                             </div>
                                                         </div>
                                                     )}
