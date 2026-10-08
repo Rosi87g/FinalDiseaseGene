@@ -58,7 +58,7 @@ export default function MyUploadsPage() {
         setLoading(true)
         try {
             const token = getToken()
-            const res = await fetch('http://localhost:8000/api/v1/uploads/', {
+            const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/v1/uploads/`, {
                 headers: { ...(token ? { Authorization: `Bearer ${token}` } : {}) }
             })
             if (res.ok) {

@@ -4,7 +4,7 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
-import { Terminal, ShieldAlert, UserPlus, Check, X, Dna } from 'lucide-react'
+import { Terminal, ShieldAlert, UserPlus, Check, X, Dna, Eye, EyeOff } from 'lucide-react'
 
 export default function SignUpPage() {
   const router = useRouter()
@@ -12,6 +12,7 @@ export default function SignUpPage() {
   const [username, setUsername] = useState('')
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
+  const [showPassword, setShowPassword] = useState(false)
 
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState('')
@@ -90,7 +91,7 @@ export default function SignUpPage() {
               <Terminal className="w-3.5 h-3.5" />
               INITIALIZE_REGISTRATION
             </div>
-            
+
             <h1 className="text-[17px] font-bold tracking-tight text-white font-mono uppercase pt-1">
               Create Researcher Identity
             </h1>
@@ -100,7 +101,7 @@ export default function SignUpPage() {
           </div>
 
           <form onSubmit={handleSignup} className="space-y-4">
-            
+
             <div className="space-y-1.5">
               <label className="block text-[10px] font-mono font-bold tracking-widest text-zinc-300 uppercase">
                 // System Identity Name
@@ -133,16 +134,27 @@ export default function SignUpPage() {
               <label className="block text-[10px] font-mono font-bold tracking-widest text-zinc-300 uppercase">
                 // Cryptographic Codephrase
               </label>
-              <input
-                type="password"
-                placeholder="••••••••••••"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                onFocus={() => setPasswordFocused(true)}
-                onBlur={() => setPasswordFocused(false)}
-                required
-                className="w-full px-3 py-2.5 bg-[#050507] border border-[#181b24] rounded text-[13px] text-white font-mono placeholder:text-zinc-500 focus:outline-none focus:border-[#00f5d4]/50 transition-colors"
-              />
+              <div className="relative">
+                <input
+                  type={showPassword ? 'text' : 'password'}
+                  placeholder="••••••••••••"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                  onFocus={() => setPasswordFocused(true)}
+                  onBlur={() => setPasswordFocused(false)}
+                  required
+                  className="w-full px-3 py-2.5 pr-10 bg-[#050507] border border-[#181b24] rounded text-[13px] text-white font-mono placeholder:text-zinc-500 focus:outline-none focus:border-[#00f5d4]/50 transition-colors"
+                />
+                <button
+                  type="button"
+                  onMouseDown={(e) => e.preventDefault()}
+                  onClick={() => setShowPassword((v) => !v)}
+                  aria-label={showPassword ? 'Hide password' : 'Show password'}
+                  className="absolute inset-y-0 right-0 px-3 flex items-center text-zinc-400 hover:text-[#00f5d4] transition-colors"
+                >
+                  {showPassword ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
+                </button>
+              </div>
 
               {(passwordFocused || password.length > 0) && (
                 <div className="bg-[#050507] border border-[#181b24] rounded p-2.5 space-y-1.5 mt-1.5">
@@ -176,8 +188,8 @@ export default function SignUpPage() {
             <div className="text-center pt-4 border-t border-[#181b24] mt-4">
               <p className="text-[13px] text-zinc-400 font-mono">
                 Existing security token?{' '}
-                <Link 
-                  href="/signin" 
+                <Link
+                  href="/signin"
                   className="text-[#00f5d4] hover:text-[#00d7ba] underline underline-offset-4 font-semibold transition-colors"
                 >
                   [ SIGN_IN ]

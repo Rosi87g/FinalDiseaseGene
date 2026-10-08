@@ -134,7 +134,7 @@ export default function UploadPage() {
         setConflictLoading(true)
         try {
             const token = getToken()
-            const res = await fetch('http://localhost:8000/api/v1/uploads/check-conflicts', {
+            const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/v1/uploads/check-conflicts`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -176,7 +176,7 @@ export default function UploadPage() {
             const conflictIds = conflicts.map(c => c.id_value).join(',')
             form.append('conflict_ids', conflictIds)
 
-            const res = await fetch('http://localhost:8000/api/v1/uploads/', {
+            const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/v1/uploads/`, {
                 method: 'POST',
                 headers: { ...(token ? { Authorization: `Bearer ${token}` } : {}) },
                 body: form,
