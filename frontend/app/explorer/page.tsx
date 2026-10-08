@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect, useRef } from 'react'
+import { useSearchParams } from 'next/navigation'
 import Link from 'next/link'
 import { createPortal } from 'react-dom'
 import { Search, Loader2, ArrowRight, Bookmark, BookmarkCheck, Quote, Clock, X } from 'lucide-react'
@@ -193,12 +194,12 @@ function ResultCard({ item, saved, canSave, onToggleSave, onDownload, onCite }: 
 
 // ─── Type badge colors ─────────────────────────────────────────────────────────
 const TYPE_COLORS: Record<string, { bg: string; color: string; border: string }> = {
-    gene:      { bg: 'rgba(6,182,212,0.1)',   color: '#06b6d4',  border: 'rgba(6,182,212,0.3)' },
-    disease:   { bg: 'rgba(248,113,113,0.1)', color: '#f87171',  border: 'rgba(248,113,113,0.3)' },
-    variant:   { bg: 'rgba(167,139,250,0.1)', color: '#a78bfa',  border: 'rgba(167,139,250,0.3)' },
-    pathway:   { bg: 'rgba(52,211,153,0.1)',  color: '#34d399',  border: 'rgba(52,211,153,0.3)' },
-    drug:      { bg: 'rgba(251,191,36,0.1)',  color: '#fbbf24',  border: 'rgba(251,191,36,0.3)' },
-    default:   { bg: 'rgba(107,114,128,0.1)', color: '#9ca3af',  border: 'rgba(107,114,128,0.3)' },
+    gene: { bg: 'rgba(6,182,212,0.1)', color: '#06b6d4', border: 'rgba(6,182,212,0.3)' },
+    disease: { bg: 'rgba(248,113,113,0.1)', color: '#f87171', border: 'rgba(248,113,113,0.3)' },
+    variant: { bg: 'rgba(167,139,250,0.1)', color: '#a78bfa', border: 'rgba(167,139,250,0.3)' },
+    pathway: { bg: 'rgba(52,211,153,0.1)', color: '#34d399', border: 'rgba(52,211,153,0.3)' },
+    drug: { bg: 'rgba(251,191,36,0.1)', color: '#fbbf24', border: 'rgba(251,191,36,0.3)' },
+    default: { bg: 'rgba(107,114,128,0.1)', color: '#9ca3af', border: 'rgba(107,114,128,0.3)' },
 }
 
 // ─── Time helper ───────────────────────────────────────────────────────────────
@@ -257,6 +258,9 @@ function RecentSearchCard({ item, onClick, onRemove }: { item: RecentSearch; onC
 
 // ─── Main Page ─────────────────────────────────────────────────────────────────
 export default function ExplorerPage() {
+    const searchParams = useSearchParams()
+    const initialSearch = searchParams.get('search')
+
     const [searchTerm, setSearchTerm] = useState('')
     const [selectedType, setSelectedType] = useState('all')
     const [results, setResults] = useState<AnyRecord[]>([])
@@ -265,8 +269,8 @@ export default function ExplorerPage() {
     const [savedGenes, setSavedGenes] = useState<string[]>([])
     const [savedDiseases, setSavedDiseases] = useState<string[]>([])
 
-    // ─── Recent Searches (max 5, stored as objects with timestamp) ─────────────
-    const MAX_RECENTS = 5
+    // ─── Recent Searches (max 10, stored as objects with timestamp) ─────────────
+    const MAX_RECENTS = 10
     const [recentSearches, setRecentSearches] = useState<RecentSearch[]>([])
 
     useEffect(() => {
@@ -322,6 +326,17 @@ export default function ExplorerPage() {
         } catch { setResults([]) }
         finally { setLoading(false) }
     }
+
+    useEffect(() => {
+        if (!initialSearch?.trim()) return
+
+        const term = initialSearch.trim()
+
+        setSearchTerm(term)
+        setSelectedType('gene')
+
+        handleSearch(term, 'gene')
+    }, [initialSearch])
 
     const isSaved = (item: AnyRecord) => {
         if (item.type === 'gene') return savedGenes.includes(item.id)

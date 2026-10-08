@@ -9,7 +9,14 @@ import {
 
 export default function Home() {
   const [user, setUser] = useState<any>(null)
-  const [stats, setStats] = useState({ genes: 0, diseases: 0, variants: 0, pathways: 0, associations: 0 })
+  const [stats, setStats] = useState({
+    genes: 0,
+    diseases: 0,
+    variants: 0,
+    pathways: 0,
+    associations: 0,
+    last_updated: null as string | null,
+  })
 
   useEffect(() => {
     const s = localStorage.getItem('user')
@@ -114,7 +121,16 @@ export default function Home() {
           </h2>
           <span className="text-[9px] font-mono px-2 py-0.5 rounded"
             style={{ background: '#0e1018', border: '1px solid #1e2130', color: '#7a7f99' }}>
-            LAST UPDATE: JUNE 2026
+            LAST UPDATE:{' '}
+            {stats.last_updated
+              ? new Date(stats.last_updated).toLocaleString('en-US', {
+                month: 'long',
+                day: '2-digit',
+                year: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit',
+              }).toUpperCase()
+              : 'NO DATA'}
           </span>
         </div>
 

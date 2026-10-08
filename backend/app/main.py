@@ -42,7 +42,14 @@ from fastapi import Depends
 from sqlalchemy.orm import Session
 from app.api.v1.router import api_router
 from app.api.deps import get_db
-from app.db.models import Gene, Disease, DiseaseGeneAssociation, Variant, Pathway
+from app.db.models import (
+    Gene,
+    Disease,
+    DiseaseGeneAssociation,
+    Variant,
+    Pathway,
+    UserUpload,
+)
 
 app.include_router(api_router, prefix=settings.API_V1_STR)
 
@@ -55,12 +62,23 @@ def get_stats(db: Session = Depends(get_db)):
     variants_count = db.query(Variant).count()
     pathways_count = db.query(Pathway).count()
 
-    # 2. Aggregations (Use correct primary key names)
-    # Using Gene.gene_id instead of Gene.id
-    chr_dist = db.query(Gene.chromosome, func.count(Gene.gene_id)).group_by(Gene.chromosome).all()
-    
-    # Using DiseaseGeneAssociation.association_id instead of DiseaseGeneAssociation.id
-    ev_dist = db.query(DiseaseGeneAssociation.evidence_level, func.count(DiseaseGeneAssociation.association_id)).group_by(DiseaseGeneAssociation.evidence_level).all()
+    # Latest dataset upload
+    latest_upload = (
+        db.query(UserUpload)
+        .order_by(UserUpload.uploaded_at.desc())
+        .first()
+    )
+
+    # 2. Aggregations
+    chr_dist = db.query(
+        Gene.chromosome,
+        func.count(Gene.gene_id)
+    ).group_by(Gene.chromosome).all()
+
+    ev_dist = db.query(
+        DiseaseGeneAssociation.evidence_level,
+        func.count(DiseaseGeneAssociation.association_id)
+    ).group_by(DiseaseGeneAssociation.evidence_level).all()
 
     return {
         "genes": genes_count,
@@ -68,10 +86,18 @@ def get_stats(db: Session = Depends(get_db)):
         "associations": associations_count,
         "variants": variants_count,
         "pathways": pathways_count,
+
+        "last_updated": (
+            latest_upload.uploaded_at
+            if latest_upload
+            else None
+        ),
+
         "chromosome_data": {
             "labels": [f"Chr {row[0]}" for row in chr_dist],
             "values": [row[1] for row in chr_dist]
         },
+
         "pathogenicity_data": {
             "labels": [row[0] for row in ev_dist],
             "values": [row[1] for row in ev_dist]
