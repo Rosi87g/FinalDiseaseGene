@@ -7,6 +7,7 @@
 ![Capacitor Android](https://img.shields.io/badge/Mobile-Android%20Capacitor-3DDC84.svg)
 ![Appium 2.0](https://img.shields.io/badge/Appium-Mobile--E2E-green.svg)
 ![Selenium 4.0](https://img.shields.io/badge/Selenium-Web--API--E2E-orange.svg)
+![Vercel Ready](https://img.shields.io/badge/Deploy-Vercel%20Ready-black.svg)
 ![License](https://img.shields.io/badge/License-MIT-purple.svg)
 
 ---
@@ -21,14 +22,15 @@
 7. [Android Mobile Application (Capacitor Setup)](#-android-mobile-application-capacitor-setup)
 8. [Data Ingestion & ETL Pipeline](#-data-ingestion--etl-pipeline)
 9. [Automated Testing Framework (200 E2E Test Cases)](#-automated-testing-framework-200-e2e-test-cases)
-   - [Appium Mobile Suite (100 Tests)](#-appium-mobile-suite-100-test-cases)
-   - [Selenium Web & API Suite (100 Tests)](#-selenium-web--api-suite-100-test-cases)
+   - [Appium Mobile Suite (100 Tests in `tests/appium/`)](#-appium-mobile-suite-100-test-cases)
+   - [Selenium Web & API Suite (100 Tests in `tests/selenium/`)](#-selenium-web--api-suite-100-test-cases)
    - [Baseline & Load Testing (100 Virtual Users)](#-baseline--load-testing-100-virtual-users)
    - [Excel Analysis Report (`Test_Execution_Report.xlsx`)](#-excel-analysis-report-test_execution_reportxlsx)
-10. [GitHub Actions CI/CD Pipeline](#-github-actions-cicd-pipeline)
-11. [Local Development Setup Guide](#-local-development-setup-guide)
-12. [Environment Variables (`.env`)](#-environment-variables-env)
-13. [License](#-license)
+10. [Vercel Deployment Guide](#-vercel-deployment-guide)
+11. [GitHub Actions CI/CD Pipeline](#-github-actions-cicd-pipeline)
+12. [Local Development Setup Guide](#-local-development-setup-guide)
+13. [Environment Variables (`.env`)](#-environment-variables-env)
+14. [License](#-license)
 
 ---
 
@@ -37,7 +39,7 @@
 **FinalDiseaseGene** is an integrated genomic intelligence platform designed to explore, map, analyze, and visualize complex relationships between human genetic variations, biological pathways, targetable drug compounds, and disease phenotypes.
 
 The platform provides a dual-interface system:
-1. **Responsive Web Application:** Built with **Next.js 14**, React, Tailwind CSS, and Chart.js for data visualization.
+1. **Responsive Web Application:** Built with **Next.js 14**, React, Tailwind CSS, and Chart.js / Plotly for data visualization.
 2. **Native Android Mobile Application:** Packaged using **Capacitor**, featuring touch-optimized gestures, biometric authentication, offline caching, and native Android intent sharing.
 3. **Backend Core Services:** Powered by **FastAPI** and **SQLAlchemy** for high-performance RESTful APIs, global multi-entity search, data ingestion, and AI insights.
 
@@ -270,7 +272,7 @@ Location: `frontend/android/`
 
 The mobile client wraps the Next.js frontend into a native Android APK using **Capacitor**.
 
-### Android Capabilities Config (`appium_config.py`):
+### Android Capabilities Config (`tests/appium/appium_config.py`):
 ```python
 ANDROID_CAPABILITIES = {
     "platformName": "Android",
@@ -399,6 +401,24 @@ The test pipeline generates an Excel workbook formatted with an explicit **PASS/
 
 ---
 
+## ☁️ Vercel Deployment Guide
+
+The repository is configured for zero-configuration, seamless deployment to **Vercel**:
+
+### Automatic Detection:
+* Root `vercel.json` and `frontend/vercel.json` are pre-configured.
+* Build Command: `npm --prefix frontend install && npm --prefix frontend run build`
+* Output Directory: `frontend/.next`
+* Framework Preset: `Next.js`
+
+### Deploy via Vercel Dashboard:
+1. Connect your repository on [Vercel](https://vercel.com).
+2. If prompted for **Root Directory**, you can leave it as `./` or select `frontend`.
+3. Add any environment variables (e.g. `NEXT_PUBLIC_API_URL=https://your-backend-api.com`).
+4. Click **Deploy** — Vercel builds all 19 pages with **zero errors**.
+
+---
+
 ## 🚀 GitHub Actions CI/CD Pipeline
 
 Workflow File: `.github/workflows/selenium-login.yml`
@@ -468,6 +488,12 @@ SECRET_KEY="YOUR_SUPER_SECRET_JWT_KEY"
 ACCESS_TOKEN_EXPIRE_MINUTES=60
 SQLALCHEMY_DATABASE_URI="sqlite:///./disease_gene_map.db"
 BACKEND_CORS_ORIGINS=["http://localhost:3000","http://localhost:8100"]
+```
+
+Frontend Environment Configuration (`frontend/.env.local`):
+```env
+NEXT_PUBLIC_API_URL="http://localhost:8000"
+APK_DOWNLOAD_URL="https://github.com/Rosi87g/FinalDiseaseGene/releases/download/v1.0.0/app-debug.apk"
 ```
 
 ---
