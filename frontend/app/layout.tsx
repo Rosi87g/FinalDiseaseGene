@@ -528,28 +528,17 @@ export default function RootLayout({
                 </Link>
               </div>
 
-              {/* Dataset Uploads */}
+              {/* Dataset Uploads 
               <div className="flex flex-col gap-0.5">
                 <span className="text-[9px] font-mono font-bold tracking-widest text-zinc-200 uppercase px-3 mb-2 block">// DATASET_MANAGEMENT</span>
                 <Link href="/upload" className={getLinkClass('/upload')}><Upload className="w-3.5 h-3.5" /> Upload Dataset</Link>
                 <Link href="/my-uploads" className={getLinkClass('/my-uploads')}><FolderOpen className="w-3.5 h-3.5" /> My Uploads</Link>
-              </div>
+              </div> */}
 
               {/* Analytics */}
               <div className="flex flex-col gap-0.5">
                 <span className="text-[9px] font-mono font-bold tracking-widest text-zinc-200 uppercase px-3 mb-2 block">// GRAPH_ANALYTICS</span>
                 <Link href="/analytics" className={getLinkClass('/analytics')}><PieChart className="w-3.5 h-3.5" /> Visualizations</Link>
-                {!isApp && (
-                  <Link href="/download" className={getLinkClass('/download')}>
-                    <Smartphone className="w-3.5 h-3.5" />
-                    <span className="flex-1">Download APK</span>
-                    {!isActive('/download') && (
-                      <span className="text-[8px] bg-[#f59e0b]/10 text-[#f59e0b] border border-[#f59e0b]/20 px-1.5 py-0.5 rounded font-mono leading-none">
-                        v1.0
-                      </span>
-                    )}
-                  </Link>
-                )}
                 <Link href="/favorites" className={getLinkClass('/favorites')}><Bookmark className="w-3.5 h-3.5" /> My Saved Lists</Link>
                 <Link href="/about" className={getLinkClass('/about')}><Activity className="w-3.5 h-3.5" /> About</Link>
                 <Link href="/admin" className={getLinkClass('/admin')}><ShieldAlert className="w-3.5 h-3.5" /> Admin Matrix Panel</Link>
