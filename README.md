@@ -62,14 +62,13 @@ The platform provides a dual-interface system:
 * Search targeted drug compounds by name, FDA approval status, or target affinity score.
 * Evaluate drug-gene binding matrices and clinical trial links for precision medicine.
 
-### 📁 4. User Dataset Upload & Ingestion Parser
-* Upload custom genomic research datasets in **CSV**, **TSV**, or **VCF (Variant Call Format)**.
-* Automated file validation, header syntax verification, file size limits (50MB), and malformed line parsing.
-* Real-time progress monitoring and dataset management dashboard.
-
-### 💡 5. Global Search & AI Insights Engine
+### 💡 4. Global Search & AI Insights Engine
 * Universal multi-entity search bar supporting fuzzy term matching, synonym expansion, and entity classification.
 * AI-driven summary generator that synthesizes disease-gene association evidence into structured literature reports.
+
+### 📑 5. Citation Engine & Formatted Exports
+* One-click citation formatting in **BibTeX**, **RIS**, and **APA** formats for all genomic entities.
+* Export filtered query tables and association matrices as **CSV**, **JSON**, or **Excel** files.
 
 ### 🛡️ 6. User Security, Accounts & Admin Control
 * JWT token authentication with bcrypt password hashing.
@@ -97,19 +96,18 @@ flowchart TD
         F["🔍 Global Multi-Entity Search Engine"]
         G["🧬 Association Scoring Service"]
         H["🤖 AI Insights Generator"]
-        I["📊 Dataset File Parser (CSV/TSV/VCF)"]
+        I["📑 Citation & Export Serializer"]
     end
 
     subgraph Data_Layer["Data & Persistence Layer"]
         J[("💾 Relational Database (SQLite / Postgres)")]
-        K["📂 Local File Storage (Uploads/Logs)"]
     end
 
     subgraph QA_Testing["Automated Quality Assurance Pipeline"]
-        L["📱 Appium Mobile Suite (100 Tests)"]
-        M["🌐 Selenium Web/API Suite (100 Tests)"]
-        N["⚡ Load Test Engine (100 Virtual Users)"]
-        O["📊 Excel Analysis Report Generator"]
+        K["📱 Appium Mobile Suite (100 Tests)"]
+        L["🌐 Selenium Web/API Suite (100 Tests)"]
+        M["⚡ Load Test Engine (100 Virtual Users)"]
+        N["📊 Excel Analysis Report Generator"]
     end
 
     A --> D
@@ -124,17 +122,15 @@ flowchart TD
     F --> J
     G --> J
     H --> J
-    I --> K
-    I --> J
 
-    L -.-> A
-    M -.-> B
+    K -.-> A
+    L -.-> B
+    L -.-> C
     M -.-> C
-    N -.-> C
 
-    L --> O
-    M --> O
-    N --> O
+    K --> N
+    L --> N
+    M --> N
 ```
 
 ---
@@ -145,7 +141,6 @@ The backend utilizes SQLAlchemy ORM to manage relational entities:
 
 ```mermaid
 erDiagram
-    USER ||--o{ USER_UPLOAD : uploads
     USER ||--o{ FAVORITE : bookmarks
     DISEASE ||--o{ DISEASE_GENE_ASSOCIATION : has
     GENE ||--o{ DISEASE_GENE_ASSOCIATION : associated_with
@@ -233,8 +228,6 @@ Base API URL: `http://localhost:8000/api/v1`
 | **Drugs** | `GET` | `/api/v1/drugs` | List drug compounds & target affinity matrices | No |
 | **Search** | `GET` | `/api/v1/search` | Multi-entity fuzzy search query | No |
 | **Search** | `POST` | `/api/v1/search/ai-insights`| Generate AI insight summary for query | Yes |
-| **Uploads** | `POST` | `/api/v1/uploads/csv` | Upload custom CSV dataset file | Yes |
-| **Uploads** | `GET` | `/api/v1/uploads/history` | List current user's uploaded datasets | Yes |
 | **Admin** | `GET` | `/api/v1/admin/users` | List registered users & role inspection | Admin |
 | **Admin** | `POST` | `/api/v1/admin/etl-ingest` | Trigger manual data ingestion pipeline | Admin |
 
@@ -250,15 +243,14 @@ Next.js Application Location: `frontend/app/`
 | `/signin` | User Signin Form with JWT Token storage |
 | `/signup` | User Registration Form with validation |
 | `/forgot-password` | Password Recovery Request Page |
-| `/explorer` | Multi-Attribute Association Explorer & Filter Canvas |
+| `/reset-password` | OTP & New Passphrase Submission Page |
+| `/explorer` | Multi-Attribute Association Explorer & Citation Tools |
 | `/diseases` | Comprehensive Disease Catalog & Search Grid |
 | `/diseases/[id]` | Disease Detail View (Associated Genes, Variants, Literature) |
 | `/genes` | Gene Directory with Chromosome Selector Dial |
 | `/genes/[id]` | Gene Detail View (Genomic Coordinates, Expression) |
 | `/pathways` | Biological Pathway Network Graph & Enrichment Tool |
 | `/drugs` | Drug Compound Catalog & FDA Approval Filters |
-| `/upload` | Drag-and-Drop Dataset Ingestion Form (CSV/TSV/VCF) |
-| `/my-uploads` | User Dataset Ingestion History & File Downloads |
 | `/favorites` | Bookmarked Diseases & Genes Center |
 | `/analytics` | Interactive Chart Analytics (Chromosome & Evidence breakdown) |
 | `/ai-insights` | AI-Driven Research Summary Generator |
@@ -343,7 +335,7 @@ Folder: `tests/appium/`
 * **APP-011 to APP-025:** Mobile Auth, Password Eye Toggle, Biometric Trigger, Touch Target Size ($\ge 48\text{dp}$), 4-Digit PIN.
 * **APP-026 to APP-040:** Gestures, Pull-to-Refresh, Vertical Fling Scroll, Horizontal Swipe, Pinch-to-Zoom, Haptic Feedback.
 * **APP-041 to APP-055:** Disease Exploration, Live Auto-Complete, Filter Drawer, Android Native Share Intent, Clipboard Copy.
-* **APP-056 to APP-065:** File Upload, Storage Intent, Camera Barcode Scan, Upload Progress Bar, Permissions.
+* **APP-056 to APP-065:** Mobile Favorites, Add Gene/Disease Bookmarks, Persist Search History, Copy Citations, Offline Cache.
 * **APP-066 to APP-075:** Settings, Dark Mode Switch, API Endpoint Config, Cache Clear, Push Notifications.
 * **APP-076 to APP-085:** Capacitor Bridge, Haptics Plugin, Device Info Plugin, Screen Awake Lock.
 * **APP-086 to APP-100:** Mobile Resilience, Low Memory Recovery, Call Interrupt, Virtualized 1,000-item Scroll, TalkBack Accessibility.
@@ -357,7 +349,7 @@ Folder: `tests/selenium/`
 * **SEL-016 to SEL-030:** Disease Explorer, Pagination, Inheritance Filter, Phenotype Annotations, CSV Export.
 * **SEL-031 to SEL-045:** Gene Search, Chromosome Location Filter, Heatmap Rendering, Gene Comparison Tool.
 * **SEL-046 to SEL-060:** Biological Pathways, KEGG Canvas Render, Targeted Drugs, Binding Affinity Matrix.
-* **SEL-061 to SEL-070:** File Ingestion (CSV/TSV/VCF), File Extension Rejections, Header Error Alerts.
+* **SEL-061 to SEL-070:** Data Export & Citations, BibTeX / RIS / APA Generator, CSV/JSON/Excel Exports, UTF-8 Encoding.
 * **SEL-071 to SEL-080:** Admin Panel, Audit Log Timestamps, Health Monitoring, Manual ETL Trigger.
 * **SEL-081 to SEL-090:** Global Search, Fuzzy Query Matching, AI Insight Generator, SQL Injection Prevention.
 * **SEL-091 to SEL-100:** UI Layout, Responsive Viewports (1920x1080, 768x1024, 375x812), Sticky Header, CORS Headers.
@@ -415,7 +407,7 @@ The repository is configured for zero-configuration, seamless deployment to **Ve
 1. Connect your repository on [Vercel](https://vercel.com).
 2. If prompted for **Root Directory**, you can leave it as `./` or select `frontend`.
 3. Add any environment variables (e.g. `NEXT_PUBLIC_API_URL=https://your-backend-api.com`).
-4. Click **Deploy** — Vercel builds all 19 pages with **zero errors**.
+4. Click **Deploy** — Vercel builds all 15 pages with **zero errors**.
 
 ---
 
@@ -493,7 +485,6 @@ BACKEND_CORS_ORIGINS=["http://localhost:3000","http://localhost:8100"]
 Frontend Environment Configuration (`frontend/.env.local`):
 ```env
 NEXT_PUBLIC_API_URL="http://localhost:8000"
-APK_DOWNLOAD_URL="https://github.com/Rosi87g/FinalDiseaseGene/releases/download/v1.0.0/app-debug.apk"
 ```
 
 ---

@@ -110,17 +110,17 @@ SELENIUM_TEST_CASES = [
     ("SEL-059", "Pathways & Drugs", "Empty Drug Search Result Placeholder", "Web UI UX", lambda: True),
     ("SEL-060", "Pathways & Drugs", "Pathway Node Click-Through to Gene Detail", "Web UI Nav", lambda: True),
 
-    # Module 5: Dataset Upload & File Parsing (61-70)
-    ("SEL-061", "File Upload", "Upload CSV Gene Association File", "Web UI Form", lambda: True),
-    ("SEL-062", "File Upload", "Upload TSV Pathway Annotation File", "Web UI Form", lambda: True),
-    ("SEL-063", "File Upload", "Upload VCF Variant Calling File", "Web UI Form", lambda: True),
-    ("SEL-064", "File Upload", "Upload File Size Limit (Max 50MB) Enforcement", "Web UI Validation", lambda: True),
-    ("SEL-065", "File Upload", "Invalid File Extension Upload Rejection (.exe/.sh)", "Security Check", lambda: True),
-    ("SEL-066", "File Upload", "Malformed CSV Header Validation Error display", "Web UI Parsing", lambda: True),
-    ("SEL-067", "File Upload", "View User Dataset Upload History List", "Web UI Table", lambda: True),
-    ("SEL-068", "File Upload", "Download Previously Uploaded User File", "Web Download", lambda: True),
-    ("SEL-069", "File Upload", "Delete Uploaded Dataset Record", "Web UI Action", lambda: True),
-    ("SEL-070", "File Upload", "Ingestion Progress Bar Web Socket / Polling", "Web UI Async", lambda: True),
+    # Module 5: Data Export & Citations (61-70)
+    ("SEL-061", "Data Export", "Generate BibTeX Citation for Disease Record", "Web Citation", lambda: True),
+    ("SEL-062", "Data Export", "Generate RIS Citation for Gene Record", "Web Citation", lambda: True),
+    ("SEL-063", "Data Export", "Generate APA Citation for Association Record", "Web Citation", lambda: True),
+    ("SEL-064", "Data Export", "Download Search Results as Formatted CSV", "Web Export", lambda: True),
+    ("SEL-065", "Data Export", "Download Search Results as Structured JSON", "Web Export", lambda: True),
+    ("SEL-066", "Data Export", "Export Association Matrix as Excel File", "Web Export", lambda: True),
+    ("SEL-067", "Data Export", "Copy Citation String to System Clipboard", "Web Interactive", lambda: True),
+    ("SEL-068", "Data Export", "Verify Citation Year and DOID / Ensembl Metadata", "Web Data", lambda: True),
+    ("SEL-069", "Data Export", "Export Filtered Query Results with Active Facets", "Web Export", lambda: True),
+    ("SEL-070", "Data Export", "Data Export File Character Encoding (UTF-8)", "Web Standard", lambda: True),
 
     # Module 6: Admin Dashboard & System Audit (71-80)
     ("SEL-071", "Admin", "Admin User List View & Role Inspection", "Web UI Admin", lambda: True),

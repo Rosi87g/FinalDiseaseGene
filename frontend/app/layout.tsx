@@ -17,11 +17,8 @@ import {
   Radio,
   Menu,
   X,
-  Upload,
-  FolderOpen,
   Database,
   Sparkles,
-  Smartphone,
   Wifi,
   WifiOff,
   ServerCrash,
@@ -527,13 +524,6 @@ export default function RootLayout({
                   )}
                 </Link>
               </div>
-
-              {/* Dataset Uploads 
-              <div className="flex flex-col gap-0.5">
-                <span className="text-[9px] font-mono font-bold tracking-widest text-zinc-200 uppercase px-3 mb-2 block">// DATASET_MANAGEMENT</span>
-                <Link href="/upload" className={getLinkClass('/upload')}><Upload className="w-3.5 h-3.5" /> Upload Dataset</Link>
-                <Link href="/my-uploads" className={getLinkClass('/my-uploads')}><FolderOpen className="w-3.5 h-3.5" /> My Uploads</Link>
-              </div> */}
 
               {/* Analytics */}
               <div className="flex flex-col gap-0.5">

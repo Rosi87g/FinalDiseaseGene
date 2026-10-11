@@ -9,7 +9,7 @@ from app.api.v1.endpoints import (
     associations,
     search,
     drugs, publications,
-    stats, uploads
+    stats
 )
 
 api_router = APIRouter()
@@ -23,7 +23,6 @@ api_router.include_router(associations.router, prefix="/associations", tags=["As
 api_router.include_router(drugs.router, prefix="/drugs", tags=["Drugs"])
 api_router.include_router(publications.router, prefix="/publications", tags=["Publications"])
 api_router.include_router(search.router, prefix="/search", tags=["Search"])
-api_router.include_router(uploads.router, prefix="/uploads", tags=["uploads"])
 api_router.include_router(
     stats.router,
     prefix="/stats",

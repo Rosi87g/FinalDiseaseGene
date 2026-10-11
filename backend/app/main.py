@@ -48,7 +48,6 @@ from app.db.models import (
     DiseaseGeneAssociation,
     Variant,
     Pathway,
-    UserUpload,
 )
 
 app.include_router(api_router, prefix=settings.API_V1_STR)
@@ -61,13 +60,6 @@ def get_stats(db: Session = Depends(get_db)):
     associations_count = db.query(DiseaseGeneAssociation).count()
     variants_count = db.query(Variant).count()
     pathways_count = db.query(Pathway).count()
-
-    # Latest dataset upload
-    latest_upload = (
-        db.query(UserUpload)
-        .order_by(UserUpload.uploaded_at.desc())
-        .first()
-    )
 
     # 2. Aggregations
     chr_dist = db.query(
@@ -86,12 +78,7 @@ def get_stats(db: Session = Depends(get_db)):
         "associations": associations_count,
         "variants": variants_count,
         "pathways": pathways_count,
-
-        "last_updated": (
-            latest_upload.uploaded_at
-            if latest_upload
-            else None
-        ),
+        "last_updated": None,
 
         "chromosome_data": {
             "labels": [f"Chr {row[0]}" for row in chr_dist],

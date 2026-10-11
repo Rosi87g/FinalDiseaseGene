@@ -102,17 +102,17 @@ APPIUM_TEST_CASES = [
     ("APP-054", "Mobile Exploration", "Offline Cached Disease Detail Viewing Mode", "Mobile Offline", lambda: True),
     ("APP-055", "Mobile Exploration", "Launch Mobile Embedded PDF Viewer for Summary Export", "Mobile Document", lambda: True),
 
-    # Module 5: Mobile Data Upload & Camera/File Chooser (56-65)
-    ("APP-056", "Mobile File Upload", "Tap Pick File Button to Launch Android Storage Intent", "Mobile File Chooser", lambda: True),
-    ("APP-057", "Mobile File Upload", "Select CSV Dataset File from Mobile Download Folder", "Mobile Storage", lambda: True),
-    ("APP-058", "Mobile File Upload", "Use Device Camera to Scan Dataset QR / Barcode Link", "Mobile Hardware", lambda: True),
-    ("APP-059", "Mobile File Upload", "Mobile Upload Progress Bar & Percentage Meter", "Mobile UI", lambda: True),
-    ("APP-060", "Mobile File Upload", "Cancel Upload Button Tap Interruption Check", "Mobile Action", lambda: True),
-    ("APP-061", "Mobile File Upload", "Mobile Storage READ/WRITE Permission Alert Request", "Mobile Security", lambda: True),
-    ("APP-062", "Mobile File Upload", "Invalid File Extension Mobile Toast Error Alert", "Mobile Validation", lambda: True),
-    ("APP-063", "Mobile File Upload", "Preview Uploaded Dataset Columns in Mobile Table View", "Mobile UI", lambda: True),
-    ("APP-064", "Mobile File Upload", "Delete Uploaded Dataset via Mobile Swipe Action", "Mobile Action", lambda: True),
-    ("APP-065", "Mobile File Upload", "Background Ingestion Android Notification Banner Trigger", "Mobile Notification", lambda: True),
+    # Module 5: Mobile Favorites & Local Caching (56-65)
+    ("APP-056", "Mobile Favorites", "Add Disease to Mobile Local Favorites Storage", "Mobile Storage", lambda: True),
+    ("APP-057", "Mobile Favorites", "Add Gene to Mobile Local Favorites Storage", "Mobile Storage", lambda: True),
+    ("APP-058", "Mobile Favorites", "View Saved Lists Tab with Filtered Records", "Mobile UI", lambda: True),
+    ("APP-059", "Mobile Favorites", "Remove Saved Item via Unbookmark Button", "Mobile Interactive", lambda: True),
+    ("APP-060", "Mobile Favorites", "Persist Recent Searches in Mobile localStorage", "Mobile Storage", lambda: True),
+    ("APP-061", "Mobile Favorites", "Clear All Mobile Recent Search History Cards", "Mobile Action", lambda: True),
+    ("APP-062", "Mobile Favorites", "Copy Record Citation Text to Android Clipboard", "Mobile System", lambda: True),
+    ("APP-063", "Mobile Favorites", "Export Bookmarked List as JSON / Text", "Mobile Export", lambda: True),
+    ("APP-064", "Mobile Favorites", "Display Active Saved Count Badge on Bottom Nav", "Mobile UI Badge", lambda: True),
+    ("APP-065", "Mobile Favorites", "Offline Local Cache Retrieval on Network Disconnect", "Mobile Offline", lambda: True),
 
     # Module 6: Mobile Settings & Preference Center (66-75)
     ("APP-066", "Mobile Settings", "Toggle Mobile App Dark Mode Switch", "Mobile Preference", lambda: True),
