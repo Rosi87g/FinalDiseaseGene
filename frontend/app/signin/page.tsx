@@ -19,11 +19,20 @@ export default function SignInPage() {
     setLoading(true)
     setError('')
 
+<<<<<<< HEAD
+    const cleanUsername = username.trim()
+
+=======
+>>>>>>> aea26ac9ac182b5cb8785740858bc039e7ec4962
     try {
       const apiUrl = (process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000') + '/api/v1'
 
       const formData = new URLSearchParams()
+<<<<<<< HEAD
+      formData.append('username', cleanUsername)
+=======
       formData.append('username', username)
+>>>>>>> aea26ac9ac182b5cb8785740858bc039e7ec4962
       formData.append('password', password)
 
       const response = await fetch(`${apiUrl}/auth/login`, {
@@ -37,16 +46,38 @@ export default function SignInPage() {
       const data = await response.json()
 
       if (response.status === 403) {
+<<<<<<< HEAD
+        router.push(`/verify-email?email=${encodeURIComponent(cleanUsername.includes('@') ? cleanUsername : '')}`)
+=======
         router.push(`/verify-email?email=${encodeURIComponent(username.includes('@') ? username : '')}`)
+>>>>>>> aea26ac9ac182b5cb8785740858bc039e7ec4962
         return
       }
 
       if (!response.ok) {
+<<<<<<< HEAD
+        let msg = 'Authentication failed'
+        if (typeof data.detail === 'string') {
+          msg = data.detail
+        } else if (Array.isArray(data.detail) && data.detail.length > 0) {
+          msg = data.detail.map((d: any) => d.msg || d.detail || JSON.stringify(d)).join(', ')
+        }
+        throw new Error(msg)
+=======
         throw new Error(data.detail || 'Authentication failed')
+>>>>>>> aea26ac9ac182b5cb8785740858bc039e7ec4962
       }
 
       localStorage.setItem('token', data.access_token)
 
+<<<<<<< HEAD
+      // Fetch real user profile including email and actual role
+      try {
+        const meRes = await fetch(`${apiUrl}/auth/me`, {
+          headers: { Authorization: `Bearer ${data.access_token}` }
+        })
+        const defaultAvatar = `https://api.dicebear.com/7.x/identicon/svg?seed=${encodeURIComponent(cleanUsername)}&backgroundColor=0e1018`
+=======
       // After getting token, fetch user profile properly
       localStorage.setItem('token', data.access_token)
 
@@ -55,11 +86,27 @@ export default function SignInPage() {
         const meRes = await fetch('/api/v1/auth/me', {
           headers: { Authorization: `Bearer ${data.access_token}` }
         })
+>>>>>>> aea26ac9ac182b5cb8785740858bc039e7ec4962
         if (meRes.ok) {
           const meData = await meRes.json()
           localStorage.setItem('user', JSON.stringify({
             username: meData.username,
             email: meData.email,
+<<<<<<< HEAD
+            role: meData.role,
+            avatar_url: defaultAvatar
+          }))
+        } else {
+          // Fallback — at least store what we know
+          localStorage.setItem('user', JSON.stringify({ username: cleanUsername, email: '', role: 'Researcher', avatar_url: defaultAvatar }))
+        }
+      } catch {
+        const defaultAvatar = `https://api.dicebear.com/7.x/identicon/svg?seed=${encodeURIComponent(cleanUsername)}&backgroundColor=0e1018`
+        localStorage.setItem('user', JSON.stringify({ username: cleanUsername, email: '', role: 'Researcher', avatar_url: defaultAvatar }))
+      }
+
+      window.dispatchEvent(new Event('auth-changed'))
+=======
             role: meData.role
           }))
         } else {
@@ -70,6 +117,7 @@ export default function SignInPage() {
         localStorage.setItem('user', JSON.stringify({ username: username, email: '', role: 'Researcher' }))
       }
 
+>>>>>>> aea26ac9ac182b5cb8785740858bc039e7ec4962
       router.push('/')
       router.refresh()
     } catch (err: any) {
@@ -120,6 +168,16 @@ export default function SignInPage() {
 
             <div className="space-y-1.5">
               <label className="block text-[10px] font-mono font-bold tracking-widest text-zinc-300 uppercase">
+<<<<<<< HEAD
+                // Identity Token (Username or Email)
+              </label>
+              <input
+                type="text"
+                placeholder="Username or Email"
+                value={username}
+                onChange={(e) => setUsername(e.target.value)}
+                autoComplete="username"
+=======
                 // Identity Token Name
               </label>
               <input
@@ -127,6 +185,7 @@ export default function SignInPage() {
                 placeholder="Username"
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
+>>>>>>> aea26ac9ac182b5cb8785740858bc039e7ec4962
                 required
                 className="w-full px-3 py-2.5 bg-[#050507] border border-[#181b24] rounded text-[13px] text-white font-mono placeholder:text-zinc-500 focus:outline-none focus:border-[#00f5d4]/50 transition-colors"
               />
@@ -150,6 +209,10 @@ export default function SignInPage() {
                   placeholder="••••••••••••"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
+<<<<<<< HEAD
+                  autoComplete="current-password"
+=======
+>>>>>>> aea26ac9ac182b5cb8785740858bc039e7ec4962
                   required
                   className="w-full px-3 py-2.5 pr-10 bg-[#050507] border border-[#181b24] rounded text-[13px] text-white font-mono placeholder:text-zinc-500 focus:outline-none focus:border-[#00f5d4]/50 transition-colors"
                 />

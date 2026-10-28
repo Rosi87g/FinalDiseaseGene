@@ -142,7 +142,11 @@ export default function AnalyticsPage() {
     node.append('text')
       .text(d => d.label)
       .attr('x', d => d.type === 'gene' ? 11 : 15).attr('y', 4)
+<<<<<<< HEAD
+      .style('font-size', '10px').style('font-family', 'Inter, sans-serif')
+=======
       .style('font-size', '10px').style('font-family', 'JetBrains Mono, monospace')
+>>>>>>> aea26ac9ac182b5cb8785740858bc039e7ec4962
       .style('fill', C.textSec).style('pointer-events', 'none')
     simulation.on('tick', () => {
       link
@@ -186,7 +190,11 @@ export default function AnalyticsPage() {
   const plotLayout = {
     paper_bgcolor: 'rgba(0,0,0,0)',
     plot_bgcolor: 'rgba(0,0,0,0)',
+<<<<<<< HEAD
+    font: { color: C.textSec, family: 'Inter, sans-serif', size: 11 },
+=======
     font: { color: C.textSec, family: 'JetBrains Mono, Inter, sans-serif', size: 11 },
+>>>>>>> aea26ac9ac182b5cb8785740858bc039e7ec4962
     xaxis: { gridcolor: C.border, color: C.textMut },
     yaxis: { gridcolor: C.border, color: C.textMut },
     margin: { t: 16, b: 44, l: 36, r: 10 },
@@ -408,7 +416,11 @@ export default function AnalyticsPage() {
                   },
                   text: activeChartData.chromosome_data.values.map(String),
                   textposition: 'outside' as const,
+<<<<<<< HEAD
+                  textfont: { color: C.textSec, family: 'Inter', size: 9 },
+=======
                   textfont: { color: C.textSec, family: 'JetBrains Mono', size: 9 },
+>>>>>>> aea26ac9ac182b5cb8785740858bc039e7ec4962
                 }]}
                 layout={{
                   ...plotLayout,
@@ -417,7 +429,11 @@ export default function AnalyticsPage() {
                   xaxis: {
                     ...plotLayout.xaxis,
                     tickangle: -45,
+<<<<<<< HEAD
+                    tickfont: { size: 9, family: 'Inter', color: C.textMut },
+=======
                     tickfont: { size: 9, family: 'JetBrains Mono', color: C.textMut },
+>>>>>>> aea26ac9ac182b5cb8785740858bc039e7ec4962
                   },
                   yaxis: {
                     ...plotLayout.yaxis,
@@ -457,7 +473,11 @@ export default function AnalyticsPage() {
                   type: 'pie',
                   hole: 0.45,
                   marker: { colors: [C.indigo, C.teal, '#f59e0b', C.pink, C.textDim] },
+<<<<<<< HEAD
+                  textfont: { color: C.textSec, family: 'Inter' },
+=======
                   textfont: { color: C.textSec, family: 'JetBrains Mono' },
+>>>>>>> aea26ac9ac182b5cb8785740858bc039e7ec4962
                 }]}
                 layout={{
                   ...plotLayout,

@@ -1,9 +1,18 @@
+<<<<<<< HEAD
+from fastapi import FastAPI, Request
+=======
 from fastapi import FastAPI
+>>>>>>> aea26ac9ac182b5cb8785740858bc039e7ec4962
 from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy import func
 from app.config import settings
 from app.db.session import engine
 from app.db.models import Base
+<<<<<<< HEAD
+from app.api.v1.endpoints.admin import record_internal_gateway_telemetry
+import time
+=======
+>>>>>>> aea26ac9ac182b5cb8785740858bc039e7ec4962
 
 Base.metadata.create_all(bind=engine)
 
@@ -22,6 +31,31 @@ if settings.BACKEND_CORS_ORIGINS:
         allow_headers=["*"],
     )
 
+<<<<<<< HEAD
+@app.middleware("http")
+async def gateway_telemetry_middleware(request: Request, call_next):
+    path = request.url.path
+    # Exclude internal telemetry polling, health check, and docs to avoid circular floods
+    is_telemetry = "/admin/telemetry" in path
+    is_internal_doc = "/docs" in path or "/openapi.json" in path or "/health" in path
+    
+    start_time = time.time()
+    response = await call_next(request)
+    duration_ms = round((time.time() - start_time) * 1000, 2)
+
+    if not is_telemetry and not is_internal_doc and path.startswith("/api"):
+        full_query = f"?{request.url.query}" if request.url.query else ""
+        record_internal_gateway_telemetry(
+            method=request.method,
+            path=f"{path}{full_query}",
+            status_code=response.status_code,
+            duration_ms=duration_ms
+        )
+
+    return response
+
+=======
+>>>>>>> aea26ac9ac182b5cb8785740858bc039e7ec4962
 @app.get("/", tags=["Root"])
 def root_check():
     return {

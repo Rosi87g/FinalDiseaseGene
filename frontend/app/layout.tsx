@@ -22,8 +22,21 @@ import {
   Wifi,
   WifiOff,
   ServerCrash,
+<<<<<<< HEAD
+  Trash2,
+  ChevronDown,
+  RefreshCw,
+  Edit3,
+  Check,
 } from 'lucide-react'
 import { useEffect, useState, useCallback, useRef } from 'react'
+import UserAvatar from '../components/UserAvatar'
+import AvatarPicker from '../components/AvatarPicker'
+import { logUserInteraction, initApiGatewayInterceptor } from '../lib/telemetry'
+=======
+} from 'lucide-react'
+import { useEffect, useState, useCallback, useRef } from 'react'
+>>>>>>> aea26ac9ac182b5cb8785740858bc039e7ec4962
 
 // ─── Server-connection status types ──────────────────────────────────────────
 type ServerStatus = 'checking' | 'online' | 'offline'
@@ -215,11 +228,30 @@ export default function RootLayout({
 }) {
   const pathname = usePathname()
   const [user, setUser] = useState<any>(null)
+<<<<<<< HEAD
+  const [userMenuOpen, setUserMenuOpen] = useState(false)
+  const [showProfileModal, setShowProfileModal] = useState(false)
+  const [editProfileUsername, setEditProfileUsername] = useState('')
+  const [editAvatarUrl, setEditAvatarUrl] = useState('')
+  const [profileSaving, setProfileSaving] = useState(false)
+  const [profileError, setProfileError] = useState('')
+  const [profileSuccess, setProfileSuccess] = useState('')
+  const userMenuRef = useRef<HTMLDivElement | null>(null)
+=======
+>>>>>>> aea26ac9ac182b5cb8785740858bc039e7ec4962
   const [realTime, setRealTime] = useState('')
   const [ping, setPing] = useState(24)
   const [sidebarOpen, setSidebarOpen] = useState(false)
   const [isApp, setIsApp] = useState(false)
 
+<<<<<<< HEAD
+  // ── Initialize automatic API Gateway interception ──
+  useEffect(() => {
+    initApiGatewayInterceptor()
+  }, [])
+
+=======
+>>>>>>> aea26ac9ac182b5cb8785740858bc039e7ec4962
   // ── Server status state ──
   const [serverStatus, setServerStatus] = useState<ServerStatus>('checking')
   const retryTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null)
@@ -303,7 +335,123 @@ export default function RootLayout({
     }
   }, [loadUser])
 
+<<<<<<< HEAD
+  useEffect(() => { setSidebarOpen(false); setUserMenuOpen(false) }, [pathname])
+
+  // Close user dropdown on outside click
+  useEffect(() => {
+    const handleClickOutside = (e: MouseEvent) => {
+      if (userMenuRef.current && !userMenuRef.current.contains(e.target as Node)) {
+        setUserMenuOpen(false)
+      }
+    }
+    document.addEventListener('mousedown', handleClickOutside)
+    return () => document.removeEventListener('mousedown', handleClickOutside)
+  }, [])
+
+  // ── Global Telemetry & Interaction Logger ──
+  useEffect(() => {
+    logUserInteraction('NAVIGATE', pathname, `Page view: ${pathname}`, pathname)
+  }, [pathname])
+
+  useEffect(() => {
+    const handleGlobalClick = (e: MouseEvent) => {
+      const target = e.target as HTMLElement
+      if (!target) return
+      const interactive = target.closest('button, a, input[type="submit"], [role="button"]') as HTMLElement | null
+      if (interactive) {
+        let label = interactive.getAttribute('aria-label') ||
+                    interactive.getAttribute('title') ||
+                    interactive.innerText ||
+                    interactive.getAttribute('name') ||
+                    interactive.tagName.toLowerCase()
+
+        label = label.replace(/\s+/g, ' ').trim()
+        if (label.length > 35) label = label.substring(0, 35) + '...'
+        if (!label) label = interactive.tagName.toLowerCase()
+
+        logUserInteraction('CLICK', label, `Interacted with [${interactive.tagName.toLowerCase()}] on ${pathname}`, pathname)
+      }
+    }
+
+    const handleGlobalSubmit = (e: SubmitEvent) => {
+      const form = e.target as HTMLFormElement
+      const input = form?.querySelector('input[type="text"], input[type="search"]') as HTMLInputElement | null
+      const query = input?.value ? `"${input.value}"` : 'Form Submit'
+      logUserInteraction('SEARCH', query, `Submitted search query on ${pathname}`, pathname)
+    }
+
+    document.addEventListener('click', handleGlobalClick, true)
+    document.addEventListener('submit', handleGlobalSubmit, true)
+    return () => {
+      document.removeEventListener('click', handleGlobalClick, true)
+      document.removeEventListener('submit', handleGlobalSubmit, true)
+    }
+  }, [pathname])
+
+  // ── Profile Update Handler (Username & Profile Picture only, email locked) ──
+  const handleSaveProfile = async (e?: React.FormEvent) => {
+    if (e) e.preventDefault()
+    const cleanUsername = editProfileUsername.trim()
+
+    if (!cleanUsername || cleanUsername.length < 3) {
+      setProfileError('Username must be at least 3 characters long')
+      return
+    }
+
+    setProfileSaving(true)
+    setProfileError('')
+    setProfileSuccess('')
+
+    try {
+      const token = localStorage.getItem('token')
+      const apiUrl = (process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000') + '/api/v1'
+
+      const res = await fetch(`${apiUrl}/auth/profile`, {
+        method: 'PUT',
+        headers: {
+          'Content-Type': 'application/json',
+          ...(token ? { Authorization: `Bearer ${token}` } : {})
+        },
+        body: JSON.stringify({
+          username: cleanUsername,
+          avatar_url: editAvatarUrl || user?.avatar_url
+        })
+      })
+
+      const data = await res.json().catch(() => ({}))
+      if (!res.ok) {
+        throw new Error(data.detail || data.message || 'Failed to update profile')
+      }
+
+      if (data.access_token) {
+        localStorage.setItem('token', data.access_token)
+      }
+      const updatedUser = {
+        ...user,
+        username: data.username,
+        role: data.role || user?.role || 'Guest',
+        avatar_url: editAvatarUrl || data.avatar_url || user?.avatar_url
+      }
+      localStorage.setItem('user', JSON.stringify(updatedUser))
+      setUser(updatedUser)
+      setProfileSuccess('Profile picture & username updated successfully!')
+      logUserInteraction('SYSTEM', 'Profile Updated', `Identity updated to @${data.username}`, pathname)
+      window.dispatchEvent(new Event('auth-changed'))
+
+      setTimeout(() => {
+        setShowProfileModal(false)
+        setProfileSuccess('')
+      }, 1100)
+    } catch (err: any) {
+      setProfileError(err.message || 'Error occurred while saving profile changes')
+    } finally {
+      setProfileSaving(false)
+    }
+  }
+=======
   useEffect(() => { setSidebarOpen(false) }, [pathname])
+>>>>>>> aea26ac9ac182b5cb8785740858bc039e7ec4962
 
   // ── Detect app (Capacitor / PWA) ──
   useEffect(() => {
@@ -434,6 +582,89 @@ export default function RootLayout({
 
           <div className="flex items-center gap-3">
             {user ? (
+<<<<<<< HEAD
+              <div className="relative" ref={userMenuRef}>
+                <div
+                  onClick={() => setUserMenuOpen(prev => !prev)}
+                  className="flex items-center gap-2.5 px-2.5 py-1 rounded-full bg-[#0d0e12] border border-[#1e2130] hover:border-[#00f5d4]/40 cursor-pointer transition-all select-none"
+                  title="Operator Profile Options"
+                >
+                  <UserAvatar username={user.username} role={user.role} avatarUrl={user.avatar_url} size={28} />
+                  <div className="flex flex-col text-left leading-none pr-1">
+                    <span className="text-[12px] font-bold text-white tracking-wide font-sans">{user.username}</span>
+                    <span className="text-[9px] font-mono text-[#00f5d4] uppercase tracking-wider">{user.role || 'Researcher'}</span>
+                  </div>
+                  <ChevronDown className={`w-3.5 h-3.5 text-zinc-500 transition-transform ${userMenuOpen ? 'rotate-180' : ''}`} />
+                </div>
+
+                {/* Dropdown Menu */}
+                {userMenuOpen && (
+                  <div className="absolute right-0 mt-2 w-64 bg-[#0a0d14] border border-[#1e2130] rounded-xl shadow-[0_10px_35px_rgba(0,0,0,0.85)] p-2 z-50 backdrop-blur-xl">
+                    <div className="flex items-center gap-3 p-2.5 rounded-lg bg-[#050507] border border-[#181b24] mb-2">
+                      <UserAvatar username={user.username} role={user.role} avatarUrl={user.avatar_url} size={40} />
+                      <div className="flex flex-col overflow-hidden">
+                        <span className="text-sm font-bold text-white truncate font-sans">{user.username}</span>
+                        <span className="text-[10px] text-zinc-400 truncate font-mono">{user.email || 'operator@diseasegenemap'}</span>
+                        <span className="text-[9px] text-[#00f5d4] uppercase font-mono font-semibold">{user.role || 'Researcher'} Clearance</span>
+                      </div>
+                    </div>
+
+                    <div className="space-y-1">
+                      {user.role === 'Admin' && (
+                        <Link
+                          href="/admin"
+                          onClick={() => setUserMenuOpen(false)}
+                          className="flex items-center gap-2 w-full px-3 py-2 text-xs font-mono text-zinc-300 hover:text-white hover:bg-[#141824] rounded-lg transition-colors"
+                        >
+                          <ShieldAlert className="w-3.5 h-3.5 text-[#00f5d4]" />
+                          Admin Matrix Panel
+                        </Link>
+                      )}
+                      <Link
+                        href="/favorites"
+                        onClick={() => setUserMenuOpen(false)}
+                        className="flex items-center gap-2 w-full px-3 py-2 text-xs font-mono text-zinc-300 hover:text-white hover:bg-[#141824] rounded-lg transition-colors"
+                      >
+                        <Bookmark className="w-3.5 h-3.5 text-indigo-400" />
+                        My Saved Lists
+                      </Link>
+
+                      <div className="border-t border-[#181b24] my-1 pt-1 space-y-1">
+                        <button
+                          onClick={() => {
+                            setUserMenuOpen(false)
+                            setEditProfileUsername(user.username || '')
+                            setEditAvatarUrl(user.avatar_url || '')
+                            setProfileError('')
+                            setProfileSuccess('')
+                            setShowProfileModal(true)
+                          }}
+                          className="flex items-center gap-2 w-full px-3 py-2 text-xs font-mono text-cyan-400 hover:text-cyan-300 hover:bg-cyan-500/10 rounded-lg transition-colors text-left"
+                        >
+                          <Edit3 className="w-3.5 h-3.5" />
+                          Edit Profile
+                        </button>
+
+                        <button
+                          onClick={() => {
+                            setUserMenuOpen(false)
+                            logUserInteraction('AUTH', 'Terminate Session', `Operator ${user.username} signed out`, pathname)
+                            localStorage.removeItem('token')
+                            localStorage.removeItem('user')
+                            setUser(null)
+                            window.dispatchEvent(new Event('auth-changed'))
+                            window.location.href = '/'
+                          }}
+                          className="flex items-center gap-2 w-full px-3 py-2 text-xs font-mono text-zinc-400 hover:text-amber-400 hover:bg-amber-500/10 rounded-lg transition-colors text-left"
+                        >
+                          <LogOut className="w-3.5 h-3.5" />
+                          Terminate Session (Logout)
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                )}
+=======
               <div className="flex items-center gap-2.5 px-2.5 py-1 rounded bg-[#050507] border border-[#181b24]">
                 <div className="text-[11px] font-mono text-[#00f5d4] flex items-center gap-1.5">
                   <span className="hidden sm:inline text-[9px] text-zinc-600 uppercase">OPERATOR:</span>
@@ -449,6 +680,7 @@ export default function RootLayout({
                 >
                   <LogOut className="w-3.5 h-3.5 group-hover:scale-105 transition-transform" />
                 </button>
+>>>>>>> aea26ac9ac182b5cb8785740858bc039e7ec4962
               </div>
             ) : (
               <div className="flex items-center gap-2">
@@ -606,6 +838,122 @@ export default function RootLayout({
           </div>
         </div>
 
+<<<<<<< HEAD
+        {/* ── Edit Operator Profile Modal ── */}
+        {showProfileModal && (
+          <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/80 backdrop-blur-md">
+            <div className="w-full max-w-md bg-[#0a0d14] border border-[#1e2333] hover:border-cyan-500/40 rounded-xl p-6 shadow-[0_0_50px_rgba(0,245,212,0.15)] space-y-4">
+              <div className="flex items-center justify-between pb-2 border-b border-[#181b24]">
+                <div className="flex items-center gap-3">
+                  <div className="p-2.5 rounded-lg bg-cyan-500/10 border border-cyan-500/30 text-cyan-400">
+                    <Edit3 className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <h3 className="text-sm font-bold text-white font-mono uppercase tracking-wider">Edit Operator Profile</h3>
+                    <p className="text-[11px] text-zinc-400 font-mono">Update operator identity & credentials</p>
+                  </div>
+                </div>
+                <button
+                  type="button"
+                  onClick={() => setShowProfileModal(false)}
+                  className="text-zinc-500 hover:text-white transition-colors"
+                >
+                  <X className="w-4 h-4" />
+                </button>
+              </div>
+
+              {/* Avatar Live Preview */}
+              <div className="flex items-center gap-3.5 p-3 rounded-lg bg-[#050507] border border-[#181b24]">
+                <UserAvatar username={editProfileUsername || user?.username || 'Operator'} role={user?.role} avatarUrl={editAvatarUrl || user?.avatar_url} size={52} />
+                <div className="flex-1 overflow-hidden">
+                  <div className="text-xs font-bold text-white font-mono truncate">
+                    @{editProfileUsername || user?.username || 'Operator'}
+                  </div>
+                  <div className="text-[10px] text-zinc-400 font-mono truncate">
+                    {user?.email || 'operator@diseasegenemap'}
+                  </div>
+                  <span className="text-[9px] text-[#00f5d4] uppercase font-mono">
+                    Profile Identity & Avatar
+                  </span>
+                </div>
+              </div>
+
+              <form onSubmit={handleSaveProfile} className="space-y-3.5 font-mono text-xs">
+                {/* Profile Picture Selector */}
+                <AvatarPicker
+                  currentUrl={editAvatarUrl || user?.avatar_url}
+                  seed={editProfileUsername || user?.username || 'Operator'}
+                  onChange={(url) => setEditAvatarUrl(url)}
+                />
+
+                <div>
+                  <label className="text-zinc-400 uppercase text-[10px] font-semibold block mb-1">Username</label>
+                  <input
+                    type="text"
+                    value={editProfileUsername}
+                    onChange={(e) => setEditProfileUsername(e.target.value)}
+                    className="w-full bg-[#050507] border border-[#1e2333] rounded px-3 py-2 text-white text-xs focus:outline-none focus:border-[#00f5d4]/60 transition-colors"
+                    placeholder="Enter new username"
+                    minLength={3}
+                    maxLength={50}
+                    required
+                  />
+                </div>
+
+                <div>
+                  <div className="flex justify-between items-center mb-1">
+                    <label className="text-zinc-500 uppercase text-[9px] font-semibold">Email Address</label>
+                    <span className="text-[9px] font-mono text-zinc-600 bg-[#12151e] px-1.5 py-0.5 rounded">LOCKED</span>
+                  </div>
+                  <div className="w-full bg-[#050507] border border-[#181b24] rounded px-3 py-2 text-zinc-400 text-xs font-mono select-all">
+                    {user?.email || 'operator@diseasegenemap'}
+                  </div>
+                </div>
+
+                {profileError && (
+                  <div className="p-2.5 rounded bg-red-500/10 border border-red-500/30 text-red-400 text-xs font-mono">
+                    {profileError}
+                  </div>
+                )}
+
+                {profileSuccess && (
+                  <div className="p-2.5 rounded bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-mono flex items-center gap-1.5">
+                    <Check className="w-3.5 h-3.5 text-emerald-400" />
+                    {profileSuccess}
+                  </div>
+                )}
+
+                <div className="flex items-center justify-end gap-2.5 pt-2">
+                  <button
+                    type="button"
+                    disabled={profileSaving}
+                    onClick={() => setShowProfileModal(false)}
+                    className="px-4 py-2 rounded bg-[#181b24] text-zinc-300 hover:text-white font-mono text-xs uppercase transition-colors"
+                  >
+                    Cancel
+                  </button>
+                  <button
+                    type="submit"
+                    disabled={profileSaving}
+                    className="px-4 py-2 rounded bg-[#00f5d4] hover:bg-[#00d7ba] text-[#050507] font-mono text-xs font-bold uppercase transition-colors flex items-center gap-1.5 disabled:opacity-50"
+                  >
+                    {profileSaving ? (
+                      <>
+                        <RefreshCw className="w-3.5 h-3.5 animate-spin" />
+                        Saving Changes...
+                      </>
+                    ) : (
+                      'Save Changes'
+                    )}
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        )}
+
+=======
+>>>>>>> aea26ac9ac182b5cb8785740858bc039e7ec4962
       </body>
     </html>
   )
