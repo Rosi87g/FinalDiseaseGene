@@ -1,18 +1,11 @@
-<<<<<<< HEAD
 from fastapi import FastAPI, Request
-=======
-from fastapi import FastAPI
->>>>>>> aea26ac9ac182b5cb8785740858bc039e7ec4962
 from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy import func
 from app.config import settings
 from app.db.session import engine
 from app.db.models import Base
-<<<<<<< HEAD
 from app.api.v1.endpoints.admin import record_internal_gateway_telemetry
 import time
-=======
->>>>>>> aea26ac9ac182b5cb8785740858bc039e7ec4962
 
 Base.metadata.create_all(bind=engine)
 
@@ -31,7 +24,6 @@ if settings.BACKEND_CORS_ORIGINS:
         allow_headers=["*"],
     )
 
-<<<<<<< HEAD
 @app.middleware("http")
 async def gateway_telemetry_middleware(request: Request, call_next):
     path = request.url.path
@@ -54,8 +46,6 @@ async def gateway_telemetry_middleware(request: Request, call_next):
 
     return response
 
-=======
->>>>>>> aea26ac9ac182b5cb8785740858bc039e7ec4962
 @app.get("/", tags=["Root"])
 def root_check():
     return {

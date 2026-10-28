@@ -22,15 +22,10 @@ module.exports = {
         },
       },
       fontFamily: {
-<<<<<<< HEAD
         sans: ["'Inter'", "sans-serif"],
         serif: ["'Inter'", "sans-serif"],
         display: ["'Inter'", "sans-serif"],
         mono: ["'Inter'", "sans-serif"],
-=======
-        sans: ["Inter", "sans-serif"],
-        display: ["Outfit", "sans-serif"],
->>>>>>> aea26ac9ac182b5cb8785740858bc039e7ec4962
       },
     },
   },

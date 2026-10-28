@@ -22,7 +22,6 @@ import {
   Wifi,
   WifiOff,
   ServerCrash,
-<<<<<<< HEAD
   Trash2,
   ChevronDown,
   RefreshCw,
@@ -33,10 +32,6 @@ import { useEffect, useState, useCallback, useRef } from 'react'
 import UserAvatar from '../components/UserAvatar'
 import AvatarPicker from '../components/AvatarPicker'
 import { logUserInteraction, initApiGatewayInterceptor } from '../lib/telemetry'
-=======
-} from 'lucide-react'
-import { useEffect, useState, useCallback, useRef } from 'react'
->>>>>>> aea26ac9ac182b5cb8785740858bc039e7ec4962
 
 // ─── Server-connection status types ──────────────────────────────────────────
 type ServerStatus = 'checking' | 'online' | 'offline'
@@ -228,7 +223,6 @@ export default function RootLayout({
 }) {
   const pathname = usePathname()
   const [user, setUser] = useState<any>(null)
-<<<<<<< HEAD
   const [userMenuOpen, setUserMenuOpen] = useState(false)
   const [showProfileModal, setShowProfileModal] = useState(false)
   const [editProfileUsername, setEditProfileUsername] = useState('')
@@ -237,21 +231,16 @@ export default function RootLayout({
   const [profileError, setProfileError] = useState('')
   const [profileSuccess, setProfileSuccess] = useState('')
   const userMenuRef = useRef<HTMLDivElement | null>(null)
-=======
->>>>>>> aea26ac9ac182b5cb8785740858bc039e7ec4962
   const [realTime, setRealTime] = useState('')
   const [ping, setPing] = useState(24)
   const [sidebarOpen, setSidebarOpen] = useState(false)
   const [isApp, setIsApp] = useState(false)
 
-<<<<<<< HEAD
   // ── Initialize automatic API Gateway interception ──
   useEffect(() => {
     initApiGatewayInterceptor()
   }, [])
 
-=======
->>>>>>> aea26ac9ac182b5cb8785740858bc039e7ec4962
   // ── Server status state ──
   const [serverStatus, setServerStatus] = useState<ServerStatus>('checking')
   const retryTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null)
@@ -335,7 +324,6 @@ export default function RootLayout({
     }
   }, [loadUser])
 
-<<<<<<< HEAD
   useEffect(() => { setSidebarOpen(false); setUserMenuOpen(false) }, [pathname])
 
   // Close user dropdown on outside click
@@ -449,9 +437,6 @@ export default function RootLayout({
       setProfileSaving(false)
     }
   }
-=======
-  useEffect(() => { setSidebarOpen(false) }, [pathname])
->>>>>>> aea26ac9ac182b5cb8785740858bc039e7ec4962
 
   // ── Detect app (Capacitor / PWA) ──
   useEffect(() => {
@@ -582,7 +567,6 @@ export default function RootLayout({
 
           <div className="flex items-center gap-3">
             {user ? (
-<<<<<<< HEAD
               <div className="relative" ref={userMenuRef}>
                 <div
                   onClick={() => setUserMenuOpen(prev => !prev)}
@@ -664,23 +648,6 @@ export default function RootLayout({
                     </div>
                   </div>
                 )}
-=======
-              <div className="flex items-center gap-2.5 px-2.5 py-1 rounded bg-[#050507] border border-[#181b24]">
-                <div className="text-[11px] font-mono text-[#00f5d4] flex items-center gap-1.5">
-                  <span className="hidden sm:inline text-[9px] text-zinc-600 uppercase">OPERATOR:</span>
-                  {user.username}
-                </div>
-                <button onClick={() => {
-                  localStorage.removeItem('token')
-                  localStorage.removeItem('user')
-                  setUser(null)
-                  window.location.href = '/'
-                }} title="Terminate Session"
-                  className="p-1 rounded text-red-500/80 hover:text-red-400 hover:bg-red-500/10 transition-all group"
-                >
-                  <LogOut className="w-3.5 h-3.5 group-hover:scale-105 transition-transform" />
-                </button>
->>>>>>> aea26ac9ac182b5cb8785740858bc039e7ec4962
               </div>
             ) : (
               <div className="flex items-center gap-2">
@@ -838,7 +805,6 @@ export default function RootLayout({
           </div>
         </div>
 
-<<<<<<< HEAD
         {/* ── Edit Operator Profile Modal ── */}
         {showProfileModal && (
           <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/80 backdrop-blur-md">
@@ -952,8 +918,6 @@ export default function RootLayout({
           </div>
         )}
 
-=======
->>>>>>> aea26ac9ac182b5cb8785740858bc039e7ec4962
       </body>
     </html>
   )

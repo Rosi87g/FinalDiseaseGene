@@ -29,7 +29,6 @@ export default function SignUpPage() {
     e.preventDefault()
     setError('')
 
-<<<<<<< HEAD
     const cleanUsername = username.trim()
     const cleanEmail = email.trim().toLowerCase()
 
@@ -38,8 +37,6 @@ export default function SignUpPage() {
       return
     }
 
-=======
->>>>>>> aea26ac9ac182b5cb8785740858bc039e7ec4962
     if (!isPasswordValid) {
       setError('Password does not meet the minimum security requirements')
       return
@@ -56,13 +53,8 @@ export default function SignUpPage() {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-<<<<<<< HEAD
           username: cleanUsername,
           email: cleanEmail,
-=======
-          username,
-          email,
->>>>>>> aea26ac9ac182b5cb8785740858bc039e7ec4962
           password,
           role: 'Researcher',
         }),
@@ -71,7 +63,6 @@ export default function SignUpPage() {
       const data = await response.json()
 
       if (!response.ok) {
-<<<<<<< HEAD
         let msg = 'Registration failed'
         if (typeof data.detail === 'string') {
           msg = data.detail
@@ -113,12 +104,6 @@ export default function SignUpPage() {
       }
 
       router.push('/signin')
-=======
-        throw new Error(data.detail || 'Registration failed')
-      }
-
-      router.push('/')
->>>>>>> aea26ac9ac182b5cb8785740858bc039e7ec4962
     } catch (err) {
       const message = err instanceof Error ? err.message : 'SYSTEM_ERR: Ingestion sequence failed'
       setError(message)
@@ -171,12 +156,9 @@ export default function SignUpPage() {
                 placeholder="e.g., bio_explorer"
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
-<<<<<<< HEAD
                 minLength={3}
                 maxLength={50}
                 autoComplete="username"
-=======
->>>>>>> aea26ac9ac182b5cb8785740858bc039e7ec4962
                 required
                 className="w-full px-3 py-2.5 bg-[#050507] border border-[#181b24] rounded text-[13px] text-white font-mono placeholder:text-zinc-500 focus:outline-none focus:border-[#00f5d4]/50 transition-colors"
               />
@@ -191,10 +173,7 @@ export default function SignUpPage() {
                 placeholder="name@institution.org"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-<<<<<<< HEAD
                 autoComplete="email"
-=======
->>>>>>> aea26ac9ac182b5cb8785740858bc039e7ec4962
                 required
                 className="w-full px-3 py-2.5 bg-[#050507] border border-[#181b24] rounded text-[13px] text-white font-mono placeholder:text-zinc-500 focus:outline-none focus:border-[#00f5d4]/50 transition-colors"
               />
@@ -212,10 +191,7 @@ export default function SignUpPage() {
                   onChange={(e) => setPassword(e.target.value)}
                   onFocus={() => setPasswordFocused(true)}
                   onBlur={() => setPasswordFocused(false)}
-<<<<<<< HEAD
                   autoComplete="new-password"
-=======
->>>>>>> aea26ac9ac182b5cb8785740858bc039e7ec4962
                   required
                   className="w-full px-3 py-2.5 pr-10 bg-[#050507] border border-[#181b24] rounded text-[13px] text-white font-mono placeholder:text-zinc-500 focus:outline-none focus:border-[#00f5d4]/50 transition-colors"
                 />

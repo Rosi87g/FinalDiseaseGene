@@ -1,10 +1,7 @@
 from fastapi import APIRouter, Depends, HTTPException, status
 from fastapi.security import OAuth2PasswordRequestForm
 from sqlalchemy.orm import Session
-<<<<<<< HEAD
 from typing import Optional
-=======
->>>>>>> aea26ac9ac182b5cb8785740858bc039e7ec4962
 import random
 
 from app.api import deps
@@ -39,18 +36,12 @@ def register(
     user_in: UserCreate,
     db: Session = Depends(deps.get_db)
 ):
-<<<<<<< HEAD
     clean_username = user_in.username.strip()
     clean_email = user_in.email.strip().lower()
 
     db_user = db.query(User).filter(
         (User.username == clean_username)
         | (User.email == clean_email)
-=======
-    db_user = db.query(User).filter(
-        (User.username == user_in.username)
-        | (User.email == user_in.email)
->>>>>>> aea26ac9ac182b5cb8785740858bc039e7ec4962
     ).first()
 
     if db_user:
@@ -66,13 +57,8 @@ def register(
     role = "Admin" if user_count == 0 else "Researcher"
 
     db_user = User(
-<<<<<<< HEAD
         username=clean_username,
         email=clean_email,
-=======
-        username=user_in.username,
-        email=user_in.email,
->>>>>>> aea26ac9ac182b5cb8785740858bc039e7ec4962
         password_hash=hashed_password,
         role=role,
         email_verified=True,
@@ -142,14 +128,10 @@ def login(
     form_data: OAuth2PasswordRequestForm = Depends(),
     db: Session = Depends(deps.get_db)
 ):
-<<<<<<< HEAD
     login_id = form_data.username.strip() if form_data.username else ""
     user = db.query(User).filter(
         (User.username == login_id) | (User.email == login_id)
     ).first()
-=======
-    user = db.query(User).filter(User.username == form_data.username).first()
->>>>>>> aea26ac9ac182b5cb8785740858bc039e7ec4962
 
     if not user or not verify_password(form_data.password, user.password_hash):
         raise HTTPException(
@@ -168,15 +150,12 @@ def login(
     return {"access_token": access_token, "token_type": "bearer"}
 
 
-<<<<<<< HEAD
 class ProfileUpdateRequest(BaseModel):
     username: str
     email: Optional[str] = None
     avatar_url: Optional[str] = None
 
 
-=======
->>>>>>> aea26ac9ac182b5cb8785740858bc039e7ec4962
 @router.get("/me", response_model=UserResponse)
 def get_me(
     current_user: User = Depends(deps.get_current_user)
@@ -188,7 +167,6 @@ def get_me(
         )
     return current_user
 
-<<<<<<< HEAD
 
 @router.put("/profile")
 def update_profile(
@@ -265,8 +243,6 @@ def delete_account(
         "message": f"Account '{deleted_username}' and all associated records have been permanently deleted."
     }
 
-=======
->>>>>>> aea26ac9ac182b5cb8785740858bc039e7ec4962
 @router.delete("/clear-stuck-user")
 def clear_stuck_user(email: str, db: Session = Depends(deps.get_db)):
     user = db.query(User).filter(User.email == email).first()

@@ -6,7 +6,6 @@ from app.db.models import (
     Disease,
     Variant,
     Pathway,
-<<<<<<< HEAD
     DiseaseGeneAssociation,
     User
 )
@@ -64,15 +63,6 @@ def record_internal_gateway_telemetry(method: str, path: str, status_code: int, 
         "details": f"Status: {status_code} • Latency: {duration_ms}ms"
     }
     telemetry_stream.append(event)
-=======
-    DiseaseGeneAssociation
-)
-from pydantic import BaseModel
-
-class UpdateProfileRequest(BaseModel):
-    username: str
-    email: str
->>>>>>> aea26ac9ac182b5cb8785740858bc039e7ec4962
 
 router = APIRouter()
 
@@ -99,7 +89,6 @@ def admin_overview(
 def update_profile(
     payload: UpdateProfileRequest,
     db: Session = Depends(deps.get_db),
-<<<<<<< HEAD
     current_user: User = Depends(deps.get_current_user)
 ):
     # Security check: Ensure user is authenticated
@@ -122,26 +111,10 @@ def update_profile(
     # Re-attach and update username only
     user_in_db = db.merge(current_user)
     user_in_db.username = new_username
-=======
-    current_user = Depends(deps.get_current_user)
-):
-    # Security check: Ensure user is authenticated and is an Admin
-    if not current_user:
-        raise HTTPException(status_code=401, detail="Not authenticated")
-    if current_user.role != "Admin":
-        raise HTTPException(status_code=403, detail="Admin access required")
-
-    # Re-attach and update
-    user_in_db = db.merge(current_user)
-    
-    user_in_db.username = payload.username
-    user_in_db.email = payload.email
->>>>>>> aea26ac9ac182b5cb8785740858bc039e7ec4962
 
     db.commit()
     db.refresh(user_in_db)
 
-<<<<<<< HEAD
     # Re-issue access token with new username subject
     access_token_expires = timedelta(minutes=settings.ACCESS_TOKEN_EXPIRE_MINUTES)
     new_token = create_access_token(
@@ -211,10 +184,3 @@ def clear_telemetry_stream():
         "details": "Diagnostic buffer cleared by operator."
     })
     return {"status": "cleared"}
-=======
-    return {
-        "username": user_in_db.username,
-        "email": user_in_db.email,
-        "role": user_in_db.role
-    }
->>>>>>> aea26ac9ac182b5cb8785740858bc039e7ec4962
