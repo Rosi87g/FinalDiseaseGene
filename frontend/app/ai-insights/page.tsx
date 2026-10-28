@@ -357,19 +357,16 @@ function ModeTab({ mode, active, onClick, icon: Icon, label, color }: {
   return (
     <button
       onClick={onClick}
+      className="flex items-center gap-1.5 px-3 py-2 sm:px-3.5 sm:py-1.5 rounded-lg text-xs font-mono font-bold whitespace-nowrap shrink-0 transition-all cursor-pointer border"
       style={{
-        display: 'flex', alignItems: 'center', gap: '6px',
-        padding: '7px 14px', borderRadius: '8px',
-        fontSize: '12px', fontFamily: 'monospace', fontWeight: 'bold',
-        cursor: 'pointer', transition: 'all 0.15s', border: '1px solid',
         background: active ? `${color}18` : 'transparent',
         borderColor: active ? `${color}70` : C.border,
         color: active ? color : C.textMut,
         boxShadow: active ? `0 0 14px ${color}22` : 'none',
       }}
     >
-      <Icon size={12} />
-      {label.toUpperCase()}
+      <Icon size={13} className="shrink-0" />
+      <span>{label.toUpperCase()}</span>
     </button>
   )
 }
@@ -378,18 +375,10 @@ function ExampleChip({ text, onClick }: { text: string; onClick: () => void }) {
   return (
     <button
       onClick={onClick}
-      style={{
-        display: 'flex', alignItems: 'center', gap: '5px',
-        padding: '5px 10px', borderRadius: '6px', cursor: 'pointer',
-        fontSize: '12px', fontFamily: 'monospace', textAlign: 'left',
-        background: '#07080f', border: `1px solid ${C.border}`,
-        color: C.textMut, transition: 'all 0.15s',
-      }}
-      onMouseEnter={e => { e.currentTarget.style.borderColor = C.borderHover; e.currentTarget.style.color = C.textSec }}
-      onMouseLeave={e => { e.currentTarget.style.borderColor = C.border; e.currentTarget.style.color = C.textMut }}
+      className="flex items-start gap-1.5 px-2.5 py-1.5 rounded-md text-[11px] sm:text-xs font-mono text-left bg-[#07080f] border border-[#1e2130] text-zinc-400 hover:border-zinc-700 hover:text-zinc-200 transition-all max-w-full break-words"
     >
-      <ChevronRight size={9} style={{ color: C.textDim, flexShrink: 0 }} />
-      {text}
+      <ChevronRight size={10} className="text-zinc-600 shrink-0 mt-0.5" />
+      <span className="line-clamp-2">{text}</span>
     </button>
   )
 }
@@ -453,35 +442,37 @@ function InsightCard({
   return (
     <div style={{ background: '#0a0b12', border: '1px solid rgba(0,245,212,0.25)', borderRadius: '12px', overflow: 'hidden', boxShadow: '0 8px 32px rgba(0,0,0,0.4)' }}>
       {/* Header */}
-      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '10px 16px', borderBottom: '1px solid rgba(0,245,212,0.15)', background: 'rgba(0,245,212,0.04)' }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-          <Cpu size={13} style={{ color: '#00f5d4' }} />
-          <span style={{ fontSize: '10px', fontFamily: 'monospace', color: '#00f5d4', letterSpacing: '1.5px', fontWeight: 'bold' }}>
-            {sourceLabel}
-          </span>
-          <span style={{ fontSize: '9px', fontFamily: 'monospace', color: '#4ade80', background: 'rgba(74,222,128,0.1)', padding: '2px 6px', borderRadius: '4px', border: '1px solid rgba(74,222,128,0.2)' }}>
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 p-3 sm:px-4 sm:py-2.5 border-b border-[#00f5d4]/15 bg-[#00f5d4]/[0.03]">
+        <div className="flex flex-wrap items-center gap-2">
+          <div className="flex items-center gap-1.5 text-[#00f5d4]">
+            <Cpu size={13} className="shrink-0" />
+            <span className="text-[10px] sm:text-[11px] font-mono tracking-wider font-bold">
+              {sourceLabel}
+            </span>
+          </div>
+          <span className="text-[9px] font-mono text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded border border-emerald-500/20">
             HIGH-YIELD DOSSIER
           </span>
         </div>
         <button
           onClick={onCopy}
-          style={{ display: 'flex', alignItems: 'center', gap: '4px', padding: '4px 10px', borderRadius: '5px', cursor: 'pointer', fontSize: '10px', fontFamily: 'monospace', background: 'transparent', border: `1px solid ${C.border}`, color: copied ? C.teal : C.textDim, transition: 'all 0.15s' }}
+          className="self-end sm:self-auto flex items-center gap-1.5 px-3 py-1.5 rounded text-[10px] font-mono bg-transparent border border-[#1e2130] text-zinc-400 hover:text-white hover:border-zinc-700 transition-all cursor-pointer"
         >
-          {copied ? <Check size={10} /> : <Copy size={10} />}
-          {copied ? 'COPIED' : 'COPY REPORT'}
+          {copied ? <Check size={11} className="text-[#00f5d4]" /> : <Copy size={11} />}
+          <span className={copied ? 'text-[#00f5d4]' : ''}>{copied ? 'COPIED' : 'COPY REPORT'}</span>
         </button>
       </div>
 
       {/* Content */}
-      <div style={{ padding: '18px 20px' }}>
+      <div className="p-3 sm:p-5">
         <FormattedInsightView text={content} />
       </div>
 
       {/* Footer & Quick Actions */}
-      <div style={{ padding: '10px 18px', borderTop: `1px solid ${C.border}`, display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between', gap: '8px', background: '#05060a' }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-          <ShieldCheck size={11} style={{ color: '#00f5d4' }} />
-          <span style={{ fontSize: '9px', fontFamily: 'monospace', color: C.textDim }}>
+      <div className="p-2.5 sm:px-4 sm:py-2.5 border-t border-[#1e2130] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 bg-[#05060a]">
+        <div className="flex items-center gap-1.5 text-zinc-500">
+          <ShieldCheck size={12} className="text-[#00f5d4] shrink-0" />
+          <span className="text-[9px] sm:text-[10px] font-mono">
             DiseaseGeneMap Precision Intelligence Core · Validated with PubMed & ClinVar
           </span>
         </div>
@@ -639,7 +630,7 @@ export default function AIInsightsPage() {
       </div>
 
       {/* ── Mode tabs ── */}
-      <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap', justifyContent: 'center' }}>
+      <div className="flex gap-2 overflow-x-auto pb-2 pt-1 px-1 -mx-2 sm:mx-0 sm:flex-wrap sm:justify-center scrollbar-thin scrollbar-thumb-zinc-800">
         {MODE_CONFIG.map(({ mode: m, label, icon, color }) => (
           <ModeTab key={m} mode={m} active={mode === m} onClick={() => switchMode(m)} icon={icon} label={label} color={color} />
         ))}
@@ -647,7 +638,7 @@ export default function AIInsightsPage() {
 
       {/* ── Search input ── */}
       <div style={{ ...cardBase, padding: '16px', boxShadow: '0 4px 20px rgba(0,0,0,0.3)' }}>
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '8px' }}>
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-2.5">
           <div style={{ fontSize: '10px', fontFamily: 'monospace', color: activeConfig.color, letterSpacing: '1.5px', textTransform: 'uppercase', fontWeight: 'bold' }}>
             // {modeLabel[mode].toUpperCase()}
           </div>
@@ -656,35 +647,33 @@ export default function AIInsightsPage() {
           </span>
         </div>
 
-        <div style={{ display: 'flex', gap: '8px' }}>
-          <div style={{ flex: 1, position: 'relative' }}>
-            <Search size={14} style={{ position: 'absolute', left: '12px', top: '50%', transform: 'translateY(-50%)', color: C.textDim, pointerEvents: 'none' }} />
+        <div className="flex flex-col sm:flex-row gap-2.5">
+          <div className="flex-1 relative">
+            <Search size={14} className="absolute left-3 top-1/2 -translate-y-1/2 text-zinc-500 pointer-events-none" />
             <input
               ref={inputRef}
               value={query}
               onChange={e => setQuery(e.target.value)}
               onKeyDown={e => e.key === 'Enter' && handleQuery()}
               placeholder={modePlaceholder[mode]}
-              style={{ width: '100%', padding: '10px 14px 10px 34px', background: '#07080f', border: `1px solid ${C.border}`, borderRadius: '8px', color: C.textSec, fontSize: '12px', fontFamily: 'monospace', outline: 'none', boxSizing: 'border-box' }}
-              onFocus={e => { e.target.style.borderColor = `${activeConfig.color}80` }}
-              onBlur={e => { e.target.style.borderColor = C.border }}
+              className="w-full py-2.5 pl-9 pr-3 bg-[#07080f] border border-[#1e2130] rounded-lg text-zinc-200 text-xs font-mono outline-none focus:border-[#00f5d4]/70 transition-colors"
             />
           </div>
           <button
             onClick={() => handleQuery()}
             disabled={loading || !query.trim()}
+            className="w-full sm:w-auto flex items-center justify-center gap-2 px-5 py-2.5 rounded-lg text-xs font-mono font-bold transition-all whitespace-nowrap cursor-pointer disabled:cursor-not-allowed"
             style={{
-              display: 'flex', alignItems: 'center', gap: '6px', padding: '10px 20px', borderRadius: '8px',
-              cursor: loading || !query.trim() ? 'not-allowed' : 'pointer', fontSize: '11px', fontFamily: 'monospace', fontWeight: 'bold',
-              background: loading || !query.trim() ? 'rgba(0,245,212,0.05)' : 'rgba(0,245,212,0.15)',
-              border: '1px solid', borderColor: loading || !query.trim() ? 'rgba(0,245,212,0.1)' : '#00f5d4',
-              color: loading || !query.trim() ? C.textDim : '#00f5d4', transition: 'all 0.15s', whiteSpace: 'nowrap',
-              boxShadow: !loading && query.trim() ? '0 0 15px rgba(0,245,212,0.2)' : 'none'
+              background: loading || !query.trim() ? 'rgba(0,245,212,0.05)' : 'rgba(0,245,212,0.18)',
+              border: '1px solid',
+              borderColor: loading || !query.trim() ? 'rgba(0,245,212,0.1)' : '#00f5d4',
+              color: loading || !query.trim() ? C.textDim : '#00f5d4',
+              boxShadow: !loading && query.trim() ? '0 0 16px rgba(0,245,212,0.25)' : 'none'
             }}
           >
             {loading
-              ? <><RefreshCw size={12} style={{ animation: 'spin 1s linear infinite' }} /> ANALYZING...</>
-              : <><Sparkles size={12} /> GENERATE DOSSIER</>
+              ? <><RefreshCw size={13} className="animate-spin" /> ANALYZING...</>
+              : <><Sparkles size={13} /> GENERATE DOSSIER</>
             }
           </button>
         </div>

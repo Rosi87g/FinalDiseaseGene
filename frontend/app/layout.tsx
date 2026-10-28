@@ -565,27 +565,27 @@ export default function RootLayout({
             </div>
           </div>
 
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2 sm:gap-3">
             {user ? (
               <div className="relative" ref={userMenuRef}>
                 <div
                   onClick={() => setUserMenuOpen(prev => !prev)}
-                  className="flex items-center gap-2.5 px-2.5 py-1 rounded-full bg-[#0d0e12] border border-[#1e2130] hover:border-[#00f5d4]/40 cursor-pointer transition-all select-none"
+                  className="flex items-center gap-1.5 sm:gap-2.5 px-2 sm:px-2.5 py-1 rounded-full bg-[#0d0e12] border border-[#1e2130] hover:border-[#00f5d4]/40 cursor-pointer transition-all select-none"
                   title="Operator Profile Options"
                 >
                   <UserAvatar username={user.username} role={user.role} avatarUrl={user.avatar_url} size={28} />
-                  <div className="flex flex-col text-left leading-none pr-1">
-                    <span className="text-[12px] font-bold text-white tracking-wide font-sans">{user.username}</span>
-                    <span className="text-[9px] font-mono text-[#00f5d4] uppercase tracking-wider">{user.role || 'Researcher'}</span>
+                  <div className="flex flex-col text-left leading-none pr-0.5 sm:pr-1">
+                    <span className="text-[11px] sm:text-[12px] font-bold text-white tracking-wide font-sans max-w-[70px] sm:max-w-[120px] truncate">{user.username}</span>
+                    <span className="hidden sm:inline-block text-[9px] font-mono text-[#00f5d4] uppercase tracking-wider">{user.role || 'Researcher'}</span>
                   </div>
-                  <ChevronDown className={`w-3.5 h-3.5 text-zinc-500 transition-transform ${userMenuOpen ? 'rotate-180' : ''}`} />
+                  <ChevronDown className={`w-3 h-3 sm:w-3.5 sm:h-3.5 text-zinc-500 transition-transform ${userMenuOpen ? 'rotate-180' : ''}`} />
                 </div>
 
                 {/* Dropdown Menu */}
                 {userMenuOpen && (
-                  <div className="absolute right-0 mt-2 w-64 bg-[#0a0d14] border border-[#1e2130] rounded-xl shadow-[0_10px_35px_rgba(0,0,0,0.85)] p-2 z-50 backdrop-blur-xl">
+                  <div className="absolute right-0 mt-2 w-72 max-w-[calc(100vw-24px)] bg-[#0a0d14] border border-[#1e2130] rounded-xl shadow-[0_10px_35px_rgba(0,0,0,0.85)] p-2.5 z-50 backdrop-blur-xl">
                     <div className="flex items-center gap-3 p-2.5 rounded-lg bg-[#050507] border border-[#181b24] mb-2">
-                      <UserAvatar username={user.username} role={user.role} avatarUrl={user.avatar_url} size={40} />
+                      <UserAvatar username={user.username} role={user.role} avatarUrl={user.avatar_url} size={38} />
                       <div className="flex flex-col overflow-hidden">
                         <span className="text-sm font-bold text-white truncate font-sans">{user.username}</span>
                         <span className="text-[10px] text-zinc-400 truncate font-mono">{user.email || 'operator@diseasegenemap'}</span>
@@ -598,7 +598,7 @@ export default function RootLayout({
                         <Link
                           href="/admin"
                           onClick={() => setUserMenuOpen(false)}
-                          className="flex items-center gap-2 w-full px-3 py-2 text-xs font-mono text-zinc-300 hover:text-white hover:bg-[#141824] rounded-lg transition-colors"
+                          className="flex items-center gap-2 w-full px-3 py-2.5 text-xs font-mono text-zinc-300 hover:text-white hover:bg-[#141824] rounded-lg transition-colors"
                         >
                           <ShieldAlert className="w-3.5 h-3.5 text-[#00f5d4]" />
                           Admin Matrix Panel
@@ -607,7 +607,7 @@ export default function RootLayout({
                       <Link
                         href="/favorites"
                         onClick={() => setUserMenuOpen(false)}
-                        className="flex items-center gap-2 w-full px-3 py-2 text-xs font-mono text-zinc-300 hover:text-white hover:bg-[#141824] rounded-lg transition-colors"
+                        className="flex items-center gap-2 w-full px-3 py-2.5 text-xs font-mono text-zinc-300 hover:text-white hover:bg-[#141824] rounded-lg transition-colors"
                       >
                         <Bookmark className="w-3.5 h-3.5 text-indigo-400" />
                         My Saved Lists
@@ -623,7 +623,7 @@ export default function RootLayout({
                             setProfileSuccess('')
                             setShowProfileModal(true)
                           }}
-                          className="flex items-center gap-2 w-full px-3 py-2 text-xs font-mono text-cyan-400 hover:text-cyan-300 hover:bg-cyan-500/10 rounded-lg transition-colors text-left"
+                          className="flex items-center gap-2 w-full px-3 py-2.5 text-xs font-mono text-cyan-400 hover:text-cyan-300 hover:bg-cyan-500/10 rounded-lg transition-colors text-left"
                         >
                           <Edit3 className="w-3.5 h-3.5" />
                           Edit Profile
@@ -639,7 +639,7 @@ export default function RootLayout({
                             window.dispatchEvent(new Event('auth-changed'))
                             window.location.href = '/'
                           }}
-                          className="flex items-center gap-2 w-full px-3 py-2 text-xs font-mono text-zinc-400 hover:text-amber-400 hover:bg-amber-500/10 rounded-lg transition-colors text-left"
+                          className="flex items-center gap-2 w-full px-3 py-2.5 text-xs font-mono text-zinc-400 hover:text-amber-400 hover:bg-amber-500/10 rounded-lg transition-colors text-left"
                         >
                           <LogOut className="w-3.5 h-3.5" />
                           Terminate Session (Logout)
@@ -807,8 +807,8 @@ export default function RootLayout({
 
         {/* ── Edit Operator Profile Modal ── */}
         {showProfileModal && (
-          <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/80 backdrop-blur-md">
-            <div className="w-full max-w-md bg-[#0a0d14] border border-[#1e2333] hover:border-cyan-500/40 rounded-xl p-6 shadow-[0_0_50px_rgba(0,245,212,0.15)] space-y-4">
+          <div className="fixed inset-0 z-[100] flex items-center justify-center p-3 sm:p-4 bg-black/80 backdrop-blur-md overflow-y-auto">
+            <div className="w-full max-w-md my-auto max-h-[92vh] overflow-y-auto bg-[#0a0d14] border border-[#1e2333] hover:border-cyan-500/40 rounded-xl p-4 sm:p-6 shadow-[0_0_50px_rgba(0,245,212,0.15)] space-y-4">
               <div className="flex items-center justify-between pb-2 border-b border-[#181b24]">
                 <div className="flex items-center gap-3">
                   <div className="p-2.5 rounded-lg bg-cyan-500/10 border border-cyan-500/30 text-cyan-400">
