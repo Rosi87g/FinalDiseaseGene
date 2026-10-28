@@ -36,9 +36,10 @@ def main():
     appium_results = run_appium_tests()
     app_duration = round(time.time() - t0, 2)
 
-    # 3. Run Baseline & Load Test (100 Virtual Users)
-    print("\n[STEP 3/4] Executing Baseline & Load Testing (100 Virtual Users, 1 Min)...")
-    load_tester = LoadTester(num_users=100, duration=10) # 10s execution for runner, 60s configurable
+    # 3. Run Baseline & Load Test (100 Virtual Users, 1 Minute)
+    duration = 60 if ("--quick" not in sys.argv) else 10
+    print(f"\n[STEP 3/4] Executing Baseline & Load Testing (100 Virtual Users, {duration}s / 1 Min)...")
+    load_tester = LoadTester(num_users=100, duration=duration)
     load_metrics = load_tester.run_load_test()
 
     # 4. Generate Unified Excel Analysis Report
